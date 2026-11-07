@@ -5,6 +5,16 @@ pillar: label-materials
 order: 3
 updated: "2026-11"
 relatedProducts: ["waterproof-labels", "bottle-labels", "food-labels"]
+view: >-
+  Calling a paper label waterproof is the most common exaggeration in this trade. Our position: if the product goes in a fridge, an ice bucket or a shower, specify film plus a laminate, and treat water-resistant paper as a short-life option only. The cost difference is small next to a failed batch, and the failure is always at the edge.
+faq:
+  - q: "What makes a label waterproof rather than water-resistant?"
+    a: "The film and the laminate, not the print. A PP or PET face stock stops water reaching the paper, and a laminate keeps it away from the ink. Water-resistant paper only slows absorption, so it survives a damp cloth but not condensation or immersion."
+  - q: "Do I need a special adhesive for a chilled product?"
+    a: "Yes. Standard acrylic loses tack on a wet surface, so chilled and frozen packaging needs a chill-grade or freezer-grade adhesive. A waterproof film with the wrong adhesive still lifts at the edge, which is the failure most often blamed on the material."
+sources:
+  - label: "ISO 4892-2:2013 — Plastics: exposure to xenon-arc lamps"
+    url: "https://www.iso.org/standard/55481.html"
 ---
 
 "Waterproof" is the most abused word in label sales. A paper label with a coating can be called water-resistant; a PP film with the wrong adhesive can fail in a cooler. The useful question is not whether a label is waterproof, but what it must survive and for how long.

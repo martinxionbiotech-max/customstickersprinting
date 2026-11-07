@@ -5,6 +5,16 @@ pillar: artwork
 order: 2
 updated: "2026-11"
 relatedProducts: ["custom-labels", "bottle-labels", "die-cut-stickers"]
+view: >-
+  Bleed is the cheapest insurance in printing and the most commonly skipped. We would rather receive a file with 3 mm of extra background than a beautiful layout that trims with a white sliver on one edge. On small labels the safe area eats a larger share of the design, so the answer is simplification, not shrinkage.
+faq:
+  - q: "How much bleed do labels need?"
+    a: "3 mm on every side is the working standard. The background must extend into the bleed rather than stopping at the trim line, so that any drift in the cut lands on printed area. Text and logos stay at least 3 mm inside the trim."
+  - q: "What happens if I forget the safe area?"
+    a: "Text placed near the edge looks like a mistake even when the print is perfect, because hand application and die cutting both drift. On a curved bottle the drift is exaggerated, so a design that looks centred on screen can sit visibly off on the product."
+sources:
+  - label: "ISO 15930-7:2010 — PDF/X-4 for prepress digital data exchange"
+    url: "https://www.iso.org/standard/55843.html"
 ---
 
 Most artwork problems that reach a printer are not design problems. They are two measurements: bleed and safe area.

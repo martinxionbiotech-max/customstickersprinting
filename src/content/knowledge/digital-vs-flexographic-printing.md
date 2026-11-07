@@ -5,6 +5,16 @@ pillar: printing
 order: 1
 updated: "2026-11"
 relatedProducts: ["roll-labels", "custom-labels", "logo-stickers"]
+view: >-
+  The 50-unit minimum exists because digital removed the plate cost, not because we are generous. Our advice is to stay digital while the design is unproven and move to flexo once volume makes the plates effectively free. The crossover is not a fixed number: fewer colours and a stable design cross earlier.
+faq:
+  - q: "Why do most label printers have a 1,000 unit minimum?"
+    a: "Because flexographic printing needs a plate per colour and a make-ready before the first label. That setup costs roughly the same at 500 units and at 500,000, so printers push quantity up until the unit price looks reasonable, and decline below it."
+  - q: "Is digital printing lower quality than flexo?"
+    a: "Not for labels at normal viewing distance. Digital resolution and colour are good, but it matches spot colours approximately rather than exactly, and it is limited to digital-compatible stocks. Flexo wins on exact brand colour and on cost at volume."
+sources:
+  - label: "ISO 12647-6:2020 — Process control for flexographic printing"
+    url: "https://www.iso.org/standard/75219.html"
 ---
 
 The reason most label printers quote in thousands is not policy. It is the economics of flexographic printing, which needs plates and make-ready before the first label is printed.

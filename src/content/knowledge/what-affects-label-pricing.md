@@ -5,6 +5,13 @@ pillar: procurement
 order: 2
 updated: "2026-11"
 relatedProducts: ["custom-labels", "roll-labels", "die-cut-stickers"]
+view: >-
+  The lever buyers reach for is material, and it is usually the wrong one. Reshaping the label or combining two designs into one order saves more and risks nothing about the application. Downgrading from PP to paper to save a fifth of the unit price is how a chilled product ends up with a reprint.
+faq:
+  - q: "What makes custom labels expensive?"
+    a: "Five things: printed area, material, finishing, quantity and cutting. At low volume the fixed setup dominates, so the unit price is high even though the material cost per label barely changes. Quantity is the largest single lever once a design is proven."
+  - q: "Are labels cheaper per unit at higher quantities?"
+    a: "Yes, because the setup is fixed and spreads across more pieces. The curve is steep at the start and flattens out, which is why the price at 50 and at 5,000 can differ by a factor of several while the material cost per label hardly moves."
 ---
 
 Label pricing looks opaque because five variables move at once. In practice, each one behaves predictably, and knowing which to change is how a quote gets cheaper without losing quality.

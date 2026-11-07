@@ -5,6 +5,13 @@ pillar: label-materials
 order: 5
 updated: "2026-11"
 relatedProducts: ["clear-labels", "bottle-labels", "cosmetic-labels"]
+view: >-
+  Clear film is worth its premium only on a container that suits it, and only when the white ink layer is decided in the artwork rather than at the quote. Where a customer is unsure, we recommend matte clear: it hides the bubbles and dust that gloss clear puts on display, and hand-applied labels are rarely perfect.
+faq:
+  - q: "Why does my clear label look transparent instead of white?"
+    a: "Because CMYK inks are translucent and there is no white layer behind them. Clear labels need a white ink pass under the design — either a full flood or spot white behind the logo and text. Without it, the label takes on the colour of whatever is behind it."
+  - q: "Is a clear label more expensive than a white one?"
+    a: "Usually yes. Clear film costs more than white stock and the white ink layer is an extra pass. It earns the difference on glass and dark containers where an opaque label would break the design, and rarely earns it on kraft or textured packaging."
 ---
 
 A clear label is a film, a print and a decision about opacity. Most of the cost and all of the visual result come from that third part.

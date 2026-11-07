@@ -5,6 +5,16 @@ pillar: printing
 order: 2
 updated: "2026-11"
 relatedProducts: ["roll-labels", "bottle-labels", "custom-labels"]
+view: >-
+  Most roll-label problems we are asked to fix are specification errors, not printing errors: wrong winding, wrong core, wrong gap for the sensor. Send a photo of the spindle and the roll currently in the machine before ordering, and half the risk disappears before a quote is written.
+faq:
+  - q: "What is the difference between roll labels and sheet labels?"
+    a: "Rolls are wound for an applicator or a hand dispenser, with a defined core, winding direction and gap between labels. Sheets are flat and cut for hand application. Rolls add handling cost, which is why sheets suit a first sample run and rolls suit production."
+  - q: "Does the roll direction matter?"
+    a: "Yes. If the label leads rather than trails as the web unwinds, it feeds upside down or backwards into the applicator. Direction, winding side and core diameter all have to match the machine, and none of them can be corrected by the printer after the fact."
+sources:
+  - label: "ISO 12647-6:2020 — Process control for flexographic printing"
+    url: "https://www.iso.org/standard/75219.html"
 ---
 
 A roll label is not a sheet label wound up. The roll format adds a set of mechanical parameters that decide whether the labels feed through an applicator or jam it.

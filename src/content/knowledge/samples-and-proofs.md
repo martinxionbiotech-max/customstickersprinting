@@ -5,6 +5,16 @@ pillar: procurement
 order: 3
 updated: "2026-11"
 relatedProducts: ["custom-labels", "custom-stickers", "waterproof-labels"]
+view: >-
+  We would not run a first order without a physical sample. It costs a little and it answers the only questions that matter — colour on this stock, adhesion on this bottle — before several thousand labels make the answer permanent. A digital proof approves the layout; it cannot approve the product.
+faq:
+  - q: "What is the difference between a digital proof and a press proof?"
+    a: "A digital proof is a PDF or calibrated print that shows layout and approximate colour. A press proof is a short run on the production press, which is the only proof that includes the real stock, ink and press conditions. Brand colours usually justify the press proof."
+  - q: "Should I approve a sample before a full run?"
+    a: "For a first order, yes. Apply the sample to the actual container and store it as the product will be stored. That single test catches the two failures that cause most reprints: colour that reads wrong on the stock, and adhesive that does not hold on the plastic."
+sources:
+  - label: "ISO 12647-7:2016 — Proofing processes working from digital data"
+    url: "https://www.iso.org/standard/66426.html"
 ---
 
 Approving a design on screen and approving a printed label are different acts. Between them sit three kinds of proof, and knowing which one you have prevents most disputes.

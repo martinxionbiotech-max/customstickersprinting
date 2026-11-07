@@ -5,6 +5,18 @@ pillar: printing
 order: 5
 updated: "2026-11"
 relatedProducts: ["custom-labels", "cosmetic-labels", "food-labels"]
+view: >-
+  Buyers expect run two to match run one exactly, and print does not work that way. Our position: approve a physical sample, keep it, and compare future runs against it rather than against memory. If the colour is a brand asset, pay for a spot colour instead of hoping the CMYK conversion lands in the same place twice.
+faq:
+  - q: "How much colour variation between print runs is normal?"
+    a: "A small shift is normal. A colour difference (Delta E) of about 2 to 3 is imperceptible to most viewers, 4 to 5 becomes visible side by side. Larger shifts usually mean the stock, the print method or the ink batch changed rather than the printer being careless."
+  - q: "How do I keep a brand colour consistent across runs?"
+    a: "Specify a spot colour mixed to a reference and keep an approved physical sample as the contract. Spot colour costs an extra plate or a dedicated ink, but it is the only approach that reproduces the same colour across substrates and runs."
+sources:
+  - label: "ISO 12647-6:2020 — Process control for flexographic printing"
+    url: "https://www.iso.org/standard/75219.html"
+  - label: "ISO 12647-7:2016 — Proofing processes working from digital data"
+    url: "https://www.iso.org/standard/66426.html"
 ---
 
 Buyers often expect the second print run to match the first exactly. It rarely does, and understanding why separates a normal variation from a supplier problem.

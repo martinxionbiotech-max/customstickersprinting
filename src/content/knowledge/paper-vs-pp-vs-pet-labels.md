@@ -5,6 +5,13 @@ pillar: label-materials
 order: 1
 updated: "2026-11"
 relatedProducts: ["custom-labels", "waterproof-labels", "food-labels"]
+view: >-
+  We would put almost every first order on PP rather than paper, even though it costs more per unit. The reason is not durability in the abstract: a paper label that fails on a chilled or handled product becomes a reprint, and the reprint costs more than the price difference. Paper still wins on dry cartons and boxed cosmetics, where nothing will ever get it wet.
+faq:
+  - q: "Is PP better than paper for labels?"
+    a: "For anything chilled, wet or handled, yes. PP does not absorb water, it flexes with a squeeze bottle and it holds its shape on a curve. On dry cartons, boxed cosmetics and indoor retail, paper prints better and costs less, and there is no reason to pay for film."
+  - q: "Can paper labels be made waterproof?"
+    a: "Only water-resistant. A coating slows absorption for a short chilled life, but the fibres still swell and the label cockles at the edges. If the product sits in a cooler or a fridge for months, the answer is film plus laminate, not coated paper."
 ---
 
 Every label quote starts with a material question, and most buyers answer it with a preference rather than a condition. That is backwards: the material is decided by what the label has to survive, not by what looks good in a swatch.

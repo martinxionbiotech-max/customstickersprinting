@@ -5,6 +5,13 @@ pillar: artwork
 order: 5
 updated: "2026-11"
 relatedProducts: ["die-cut-stickers", "custom-labels", "sticker-sheets"]
+view: >-
+  A custom contour is often the most expensive way to look different. At low volume we would choose a rounded rectangle and put the difference into the artwork: no die cost, no tearing on peel, and a shape that still reads as deliberate. Fiddly outlines are a volume decision, not a branding one.
+faq:
+  - q: "What is a dieline in label printing?"
+    a: "The vector path the blade follows. It is separate from the artwork, must be a closed shape, and must sit inside the bleed so the cut lands on printed material. A dieline supplied as a picture rather than a path cannot be used to cut."
+  - q: "Why does my die-cut sticker tear when peeled?"
+    a: "Usually because the shape has features thinner than the material can hold — spikes under about 1.5 mm, letter-shaped cut-outs, or tight internal corners. Paper tears first; vinyl tolerates more. Simplifying the outline fixes it more reliably than changing material."
 ---
 
 A dieline is the shape a label or sticker is cut to. It is not decoration — it is machine instruction, and a dieline that is visually right can still be technically unusable.

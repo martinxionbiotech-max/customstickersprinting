@@ -5,6 +5,13 @@ pillar: printing
 order: 4
 updated: "2026-11"
 relatedProducts: ["cosmetic-labels", "custom-labels", "logo-stickers"]
+view: >-
+  Spot UV at 50 units is mostly a vanity purchase: the screen cost dominates and the contrast is invisible at arm's length. We would rather sell a matte laminate and a well-chosen stock than a finish nobody can see. Above a few thousand units the economics change and the effect starts to earn its setup.
+faq:
+  - q: "What does spot UV look like on a label?"
+    a: "A glossy raised-looking area over a matte laminate, usually on a logo or a pattern. The contrast between matte and gloss is the effect. On uncoated paper the varnish sinks in and the contrast disappears, which is the most common disappointment."
+  - q: "Is soft-touch suitable for product labels?"
+    a: "For boxed or shelf products, yes. For anything handled with wet or oily hands, no: the surface holds marks permanently. It is a premium signal that trades durability for feel, and it should be chosen with that trade in mind."
 ---
 
 Beyond gloss and matte, a handful of finishes change how a label feels and catches light. They are applied after printing, they add a pass, and each has a failure mode worth knowing.

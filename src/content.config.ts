@@ -46,6 +46,9 @@ const knowledge = defineCollection({
     order: z.number().default(50),
     updated: z.string().default('2026-11'),
     relatedProducts: z.array(z.string()).default([]),
+    view: z.string().optional(),
+    faq: z.array(z.object({ q: z.string(), a: z.string() })).default([]),
+    sources: z.array(z.object({ label: z.string(), url: z.string() })).default([]),
   }),
 });
 

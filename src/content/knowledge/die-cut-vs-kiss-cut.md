@@ -5,6 +5,13 @@ pillar: sticker-materials
 order: 2
 updated: "2026-11"
 relatedProducts: ["die-cut-stickers", "sticker-sheets", "custom-stickers"]
+view: >-
+  At 50 units we steer customers towards kiss-cut sheets, because a custom die can double the price of a first order and the shape is rarely the thing being tested. Move to individual die cuts once the design is proven and the quantity justifies the tooling — which is usually somewhere around a few hundred pieces.
+faq:
+  - q: "What is the difference between die cut and kiss cut?"
+    a: "Die cutting cuts through the sticker, the adhesive and the backing, so each piece comes off individually. Kiss cutting cuts the sticker and adhesive but stops at the liner, so the stickers stay on the sheet and are peeled one at a time."
+  - q: "Which is cheaper for a small order?"
+    a: "Kiss cut, at low volume. It needs no steel die and one cutting pass covers the whole sheet. A custom die adds a one-off cost that dominates at 50 units and becomes negligible only once the run is in the thousands."
 ---
 
 The two terms describe where the blade stops, and that single difference decides the format, the handling and often the price.

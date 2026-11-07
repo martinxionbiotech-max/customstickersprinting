@@ -5,6 +5,16 @@ pillar: label-materials
 order: 6
 updated: "2026-11"
 relatedProducts: ["waterproof-labels", "food-labels", "vinyl-stickers"]
+view: >-
+  Buyers ask whether a label is durable and mean five different things: water, oil, sun, abrasion or time on a shelf. Our view is that the question should be a condition and a duration before it is a material, and that lamination buys more service life per pound than upgrading the film. Answer those two and the material choice stops being a debate.
+faq:
+  - q: "How long will a paper label last outdoors?"
+    a: "Days to weeks in weather, not months. Paper absorbs water and the print fades without a UV barrier, so edges lift and the ink blooms. Even a coated stock only delays it. For an outdoor label, film plus laminate is the starting point, not an upgrade."
+  - q: "Does lamination really extend label life?"
+    a: "Yes, and by more than most buyers expect. The laminate keeps water and abrasion away from the ink and, on PP or vinyl, can multiply service life several times. On paper it helps but cannot rescue a material that is wrong for the condition."
+sources:
+  - label: "ISO 4892-2:2013 — Plastics: exposure to xenon-arc lamps"
+    url: "https://www.iso.org/standard/55481.html"
 ---
 
 "Is this label durable?" is unanswerable without a condition and a duration. The same material can last five years on a warehouse shelf and three weeks in a shower.

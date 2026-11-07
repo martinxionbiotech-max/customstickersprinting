@@ -5,6 +5,18 @@ pillar: label-materials
 order: 4
 updated: "2026-11"
 relatedProducts: ["bottle-labels", "cosmetic-labels", "custom-labels"]
+view: >-
+  Nine out of ten adhesion failures we are asked to look at are a standard acrylic on a low-energy plastic, not a bad film. Before changing material we would change the adhesive, and test on the production bottle rather than a stock sample, because recycled HDPE varies enough between batches to fail a test that passed last month.
+faq:
+  - q: "Why does a label slide off an HDPE bottle?"
+    a: "HDPE has low surface energy, so a standard acrylic never wets out properly and holds by tack alone. A low-surface-energy adhesive is formulated for that plastic. Recycled HDPE is worse because release agents and blend variation make the surface inconsistent."
+  - q: "Can I test adhesion myself before ordering?"
+    a: "Yes, and you should. Apply a sample to the actual container, store it the way the product is stored, and check the edges at 24 hours, one week and one month. A peel test at a fixed angle and speed gives a number, but the edge check tells you what will happen in service."
+sources:
+  - label: "FINAT Test Methods — peel adhesion and loop tack"
+    url: "https://www.finat.com/knowledge/finat-test-methods"
+  - label: "ASTM D903 — Peel or Stripping Strength of Adhesive Bonds"
+    url: "https://store.astm.org/d0903-98r17.html"
 ---
 
 Face stock gets the attention; adhesive decides whether the label stays. The same permanent acrylic that holds for years on glass can slide off a recycled HDPE bottle within a day, and the difference is surface energy, not glue quality.

@@ -5,6 +5,13 @@ pillar: sticker-materials
 order: 5
 updated: "2026-11"
 relatedProducts: ["vinyl-stickers", "die-cut-stickers", "custom-stickers"]
+view: >-
+  We would spend the money on lamination before thickness. A 150 micron vinyl with a laminate outlasts a 250 micron vinyl without one, costs less, and conforms better to a curved surface. Thickness is worth paying for when the sticker is a product in the hand, not when it is protection you are trying to buy.
+faq:
+  - q: "Is a thicker sticker more durable?"
+    a: "Not by itself. Thickness adds body and resists tearing during peeling, but scratch and water resistance come from the laminate on top. A thin laminated vinyl usually outperforms a thick unlaminated one in service."
+  - q: "What thickness should a sticker be for a bottle?"
+    a: "Around 150 microns, or thinner on a small diameter. Stiff film lifts at the edges below about 30 mm radius, so a heavy stock that feels premium on a laptop can be the wrong choice on a narrow bottle or tube."
 ---
 
 Sticker thickness is quoted in microns and felt in the hand. It affects three things: how premium the sticker feels, how well it conforms to a curve, and how it survives peeling and abrasion.

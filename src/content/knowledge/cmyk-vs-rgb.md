@@ -5,6 +5,18 @@ pillar: artwork
 order: 1
 updated: "2026-11"
 relatedProducts: ["custom-labels", "cosmetic-labels", "logo-stickers"]
+view: >-
+  If the brand colour lives on screens and packaging, design in CMYK and proof on the real stock. We would rather tell a customer that their neon green cannot be printed than print it dull and call it a colour difference. Spot colour exists precisely for the colours CMYK cannot reach.
+faq:
+  - q: "Why does my label look duller than my screen?"
+    a: "Because screens emit light and ink absorbs it, so CMYK covers a smaller range of colour. Bright greens, oranges and deep blues fall outside it and get approximated. A physical proof on the actual stock shows what will really print."
+  - q: "Can neon or metallic colours be printed?"
+    a: "Not with CMYK. Neons need fluorescent inks, metallics need foil or a metallised stock. Both are separate processes with their own setup cost, and both are worth asking about before the design is finalised rather than after."
+sources:
+  - label: "ISO 12647-6:2020 — Process control for flexographic printing"
+    url: "https://www.iso.org/standard/75219.html"
+  - label: "ISO 12647-7:2016 — Proofing processes working from digital data"
+    url: "https://www.iso.org/standard/66426.html"
 ---
 
 A file that looks perfect on screen can print duller, darker or simply different. That is not a printing fault; it is two colour models describing different physical realities.

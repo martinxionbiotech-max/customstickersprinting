@@ -5,6 +5,16 @@ pillar: artwork
 order: 4
 updated: "2026-11"
 relatedProducts: ["custom-labels", "custom-stickers", "logo-stickers"]
+view: >-
+  Upscaling is the most common false fix we see. If the pixel count is short at final size, we would redraw the logo rather than enlarge the file: interpolation adds no detail, and a die-cut edge shows exactly how little was added. Vector artwork removes the problem entirely.
+faq:
+  - q: "What resolution do I need for a label?"
+    a: "300 dpi at the final print size. For a 50 mm label that is about 600 pixels across; for 100 mm, about 1,200. A file that is 300 dpi at a smaller size becomes 150 dpi when enlarged to fit, because the same pixels spread further."
+  - q: "Can a low-resolution logo be fixed by upscaling?"
+    a: "No. Interpolation invents pixels by averaging neighbours, which smooths the blur without restoring detail. AI upscalers produce plausible sharpening that still fails at a cut edge or under a loupe. Only re-drawing the logo as vector actually fixes it."
+sources:
+  - label: "ISO/IEC 15416:2016 — Bar code print quality test specification"
+    url: "https://www.iso.org/standard/65577.html"
 ---
 
 Resolution questions cause more reprints than any other artwork issue, and they are entirely preventable with one calculation.

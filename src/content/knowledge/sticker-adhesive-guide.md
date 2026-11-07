@@ -5,6 +5,18 @@ pillar: sticker-materials
 order: 4
 updated: "2026-11"
 relatedProducts: ["vinyl-stickers", "custom-stickers", "logo-stickers"]
+view: >-
+  Permanent is the honest default. We push back on removable requests unless the surface belongs to the customer, because a removable sticker on painted drywall usually takes the paint with it and the complaint lands on the printer. Outdoor is a separate specification again: film, adhesive and laminate all change.
+faq:
+  - q: "What adhesive should I use for stickers on laptops?"
+    a: "A permanent acrylic on a clean anodised or plastic lid. Textured finishes reduce contact area, so clean the surface first. Removable adhesive is a poor choice here because a laptop is handled daily and the sticker will curl at the edges."
+  - q: "Do stickers stick to powder-coated metal?"
+    a: "Often, but it needs a low-surface-energy adhesive and a test. Powder coating is textured, so a standard adhesive touches only the peaks and lifts across the valleys. A sample on the actual panel is the only reliable check."
+sources:
+  - label: "FINAT Test Methods — peel adhesion and loop tack"
+    url: "https://www.finat.com/knowledge/finat-test-methods"
+  - label: "ASTM D903 — Peel or Stripping Strength of Adhesive Bonds"
+    url: "https://store.astm.org/d0903-98r17.html"
 ---
 
 Stickers fail at the adhesive far more often than at the print. The choice is narrower than for labels, because stickers go on unpredictable surfaces — a laptop, a window, a painted wall, a shipping box.

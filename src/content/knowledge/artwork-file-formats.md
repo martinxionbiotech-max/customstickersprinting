@@ -5,6 +5,16 @@ pillar: artwork
 order: 3
 updated: "2026-11"
 relatedProducts: ["custom-labels", "logo-stickers", "die-cut-stickers"]
+view: >-
+  The single most useful thing a customer can do is ask their designer for the vector original. Everything else — resolution, cut paths, spot white — becomes easier once the file is vector. A flattened PNG is not a design file, and the setup charge for redrawing it lands on the order.
+faq:
+  - q: "What file format should I send for label printing?"
+    a: "A vector PDF or AI file at final size with 3 mm bleed, fonts outlined and the cut path on a separate layer. EPS and SVG also work. PNG or JPG is acceptable only at 300 dpi at final size, and never for a cut path."
+  - q: "Can you print from a JPG?"
+    a: "Yes, if it is at least 300 dpi at the final print size and does not need a custom cut shape. Above that size it softens visibly, text loses its edge, and any die-cut outline has to be redrawn as a vector, which is a setup charge."
+sources:
+  - label: "ISO 15930-7:2010 — PDF/X-4 for prepress digital data exchange"
+    url: "https://www.iso.org/standard/55843.html"
 ---
 
 The file you send determines how much of the design survives. A vector file scales and cuts cleanly; a screenshot does neither.

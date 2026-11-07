@@ -51,10 +51,23 @@ const ld = {
   author: { "@type": "Organization", name: site.brand },
   publisher: { "@id": `${site.url}/#organization` },
   mainEntityOfPage: new URL(Astro.url.pathname, Astro.site).href,
+  ...(d.sources.length > 0 ? { citation: d.sources.map((s) => s.url) } : {}),
 };
+
+const faqLd = d.faq.length > 0
+  ? {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: d.faq.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    }
+  : null;
 ---
 
-<BaseLayout title={d.title} description={d.description} type="article" jsonLd={[ld]}>
+<BaseLayout title={d.title} description={d.description} type="article" jsonLd={faqLd ? [ld, faqLd] : [ld]} alternateMd={`/knowledge/${article.id}/index.md`}>
   <Breadcrumbs items={[{ label: "Knowledge", href: "/knowledge/" }, { label: PILLAR_TITLES[d.pillar], href: "/knowledge/" }, { label: d.title }]} />
   <section class="tight">
     <div class="wrap narrow">
@@ -62,7 +75,38 @@ const ld = {
       <h1>{d.title}</h1>
       <p style="font-size:1.06rem;color:var(--ink-2)">{d.description}</p>
       <p class="small">Updated {d.updated}</p>
+
+      {d.view && (
+        <aside class="our-view">
+          <p class="eyebrow" style="margin:0 0 6px">Our view</p>
+          <p style="margin:0">{d.view}</p>
+        </aside>
+      )}
+
       <div class="prose" style="margin-top:26px"><Content /></div>
+
+      {d.faq.length > 0 && (
+        <section style="margin-top:38px;border-top:1px solid var(--line);padding-top:26px">
+          <h2 style="font-size:1.25rem">Quick answers</h2>
+          {d.faq.map((f) => (
+            <div style="margin-top:18px">
+              <h3 style="font-size:1rem;margin:0 0 4px">{f.q}</h3>
+              <p style="margin:0;color:var(--ink-2)">{f.a}</p>
+            </div>
+          ))}
+        </section>
+      )}
+
+      {d.sources.length > 0 && (
+        <section style="margin-top:34px;border-top:1px solid var(--line);padding-top:20px">
+          <h2 style="font-size:1rem;color:var(--ink-3)">Sources</h2>
+          <ul class="small" style="margin:8px 0 0;padding-left:18px;line-height:1.7">
+            {d.sources.map((s) => (
+              <li><a href={s.url} rel="noopener">{s.label}</a></li>
+            ))}
+          </ul>
+        </section>
+      )}
     </div>
   </section>
 

@@ -18,7 +18,7 @@ const products = await getCollection("products");
 const related = d.products.map((s) => products.find((p) => p.id === s)).filter((p): p is CollectionEntry<"products"> => Boolean(p));
 ---
 
-<BaseLayout title={d.heading} description={d.description} type="article">
+<BaseLayout title={d.heading} description={d.description} type="article" alternateMd={`/industries/${industry.id}/index.md`}>
   <Breadcrumbs items={[{ label: "Industries", href: "/industries/" }, { label: d.heading }]} />
   <section class="tight">
     <div class="wrap narrow">

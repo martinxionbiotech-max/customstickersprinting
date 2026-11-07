@@ -5,6 +5,13 @@ pillar: sticker-materials
 order: 1
 updated: "2026-11"
 relatedProducts: ["vinyl-stickers", "custom-stickers", "sticker-sheets"]
+view: >-
+  If a sticker leaves the building, we would not print it on paper. Not because paper is bad — it prints beautifully and it is the cheapest way to test a design — but because the failure is public: a torn, soggy sticker on a customer laptop or a parcel is worse advertising than no sticker at all.
+faq:
+  - q: "Are vinyl stickers waterproof?"
+    a: "Vinyl repels water, so the sticker survives rain and washing. But the adhesive and the ink matter too: an uncoated vinyl print scuffs and fades, and a standard adhesive can lift from a wet or oily surface. Vinyl plus laminate is what people mean by waterproof."
+  - q: "Can I use paper stickers on packaging?"
+    a: "Yes, on dry packaging that stays dry. Paper is fine on a boxed product, an insert card or a price tag. It is the wrong choice on a mailer that travels, a bottle, or anything that will be handled with wet hands."
 ---
 
 The vinyl-versus-paper question has a mechanical answer, not an aesthetic one. Three questions settle it: where does the sticker go, how long must it last, and what will touch it.

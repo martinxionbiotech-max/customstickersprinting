@@ -5,6 +5,13 @@ pillar: procurement
 order: 1
 updated: "2026-11"
 relatedProducts: ["custom-labels", "custom-stickers", "roll-labels"]
+view: >-
+  Fifty units is a deliberate number: low enough to validate a product in the market, high enough to keep the setup cost from making the unit price absurd. We would rather see a customer order 50 and reorder 2,000 than commit to 5,000 on a design that has not met a customer yet.
+faq:
+  - q: "Why is the minimum order 50 units?"
+    a: "Because digital printing removed the plate cost, leaving only file setup and a short make-ready to spread across the order. At 50 units that setup is visible in the price; at 5,000 it is nearly invisible. The minimum is arithmetic, not policy."
+  - q: "Can I mix designs in one 50-unit order?"
+    a: "Often yes, where the designs share a material, size and finish, because the setup is then paid once. We confirm before quoting. Mixing different materials or significantly different sizes breaks the economics and is quoted separately."
 ---
 
 MOQ is one of the most misunderstood numbers in printing. It is not a policy imposed to annoy small buyers; it is the quantity below which the fixed costs of a job dominate the variable ones.

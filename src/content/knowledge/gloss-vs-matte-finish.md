@@ -5,6 +5,13 @@ pillar: sticker-materials
 order: 3
 updated: "2026-11"
 relatedProducts: ["custom-stickers", "cosmetic-labels", "vinyl-stickers"]
+view: >-
+  Matte is our default for anything that will be handled, because fingerprints on gloss make new stock look used by the time it reaches a shelf. Soft-touch we reserve for products that are looked at rather than touched — a boxed serum, a spirit bottle — and we say so before a customer chooses it for a bathroom product.
+faq:
+  - q: "Does matte or gloss last longer?"
+    a: "Both are laminates and both protect the print, so durability is close. Matte hides scuffs and fingerprints better; gloss wipes clean more easily and looks sharper. The choice is about handling and lighting more than about wear."
+  - q: "Why does soft-touch look smudged after handling?"
+    a: "The velvety surface holds oils from skin. Once marked it cannot be wiped clean without changing the texture. It photographs beautifully and it is the wrong finish for anything a customer touches with wet or oily hands."
 ---
 
 Finish is usually discussed as a look. It is also a durability decision, and on some products it decides whether the label survives its first week.

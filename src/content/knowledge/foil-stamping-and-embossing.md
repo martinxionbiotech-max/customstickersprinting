@@ -5,6 +5,13 @@ pillar: printing
 order: 3
 updated: "2026-11"
 relatedProducts: ["cosmetic-labels", "logo-stickers", "jar-labels"]
+view: >-
+  Foil is the finish most often requested for the wrong reason. If the brief is make it look expensive, embossing on a heavy stock usually photographs better and costs less. Foil earns its die when the metallic colour is the brand itself, not when it is decoration added at the end.
+faq:
+  - q: "Does foil stamping work on any label material?"
+    a: "No. It needs a smooth, coated surface, because foil on uncoated paper looks pitted and foil over heavy ink can read muddy. It also has a minimum stroke width of roughly 0.3 mm, below which the foil tears instead of transferring cleanly."
+  - q: "What quantity makes foil stamping worthwhile?"
+    a: "It depends on the die, but the setup dominates below a few hundred units. At 50 units the die can be a large share of the order, which is why we usually suggest a printed metallic effect or a metallised stock for a first run."
 ---
 
 Foil and embossing are the two finishes that change a label's physical surface rather than its ink. Both need a die, both work best on certain stocks, and both fail visibly when specified at the wrong quantity.

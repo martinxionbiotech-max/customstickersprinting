@@ -11,9 +11,10 @@ interface Props {
   noindex?: boolean;
   jsonLd?: Record<string, unknown>[];
   image?: string | null;
+  alternateMd?: string | null;
 }
 
-const { title, description, type = 'website', noindex = false, jsonLd = [], image = null } = Astro.props;
+const { title, description, type = 'website', noindex = false, jsonLd = [], image = null, alternateMd = null } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const withBrand = `${title} | ${site.brand}`;
 const fullTitle = title.includes(site.brand)
@@ -57,6 +58,7 @@ const website = {
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+    {alternateMd && <link rel="alternate" type="text/markdown" href={new URL(alternateMd, Astro.site).href} />}
     {noindex && <meta name="robots" content="noindex, follow" />}
     <meta property="og:site_name" content={site.brand} />
     <meta property="og:type" content={type} />

@@ -5,6 +5,13 @@ pillar: procurement
 order: 4
 updated: "2026-11"
 relatedProducts: ["custom-labels", "roll-labels", "custom-stickers"]
+view: >-
+  Quoted lead times are honest, and they start at approval rather than at order. The two delays we cannot recover are slow proof approval and late artwork edits, and both sit with the customer. If a launch date matters, approve within a day and freeze the file; that saves more time than any express option.
+faq:
+  - q: "How long does custom label printing take?"
+    a: "Our standard window is 7 to 12 working days from artwork approval, covering artwork check, printing, finishing and packing. Shipping is additional: one to three days domestically, three to seven by international express."
+  - q: "Can production be expedited?"
+    a: "Sometimes, and it buys press time rather than approval time. The steps before the press — artwork check and proofing — cannot be compressed much without risk. A print-ready file and a same-day approval do more for the schedule than paying for express production."
 ---
 
 A quoted lead time is a sum of steps, and most of them are not printing. Knowing the sequence tells you which delays are yours to control.

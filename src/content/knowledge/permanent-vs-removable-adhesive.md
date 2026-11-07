@@ -5,6 +5,18 @@ pillar: label-materials
 order: 2
 updated: "2026-11"
 relatedProducts: ["custom-labels", "bottle-labels", "clear-labels"]
+view: >-
+  Our default is permanent unless the customer owns the surface. The exception we see most is a promotional label on retail packaging, where removable is worth the extra cost because a torn label on a shelf reads as damaged stock. On glass and rigid plastic, permanent is simply the cheaper correct answer.
+faq:
+  - q: "Will a permanent label come off without damage?"
+    a: "Usually not cleanly. Permanent acrylic builds adhesion over hours and pulls fibre, paint or laminate when removed. If the label has to come off, specify removable and state the surface and the time it will stay on, because both change the adhesive."
+  - q: "Does removable mean reusable?"
+    a: "No. A removable adhesive peels cleanly from a smooth surface for weeks or months, but it loses tack once lifted and will not hold again on a dusty or textured surface. It is designed for clean removal, not for repeated repositioning."
+sources:
+  - label: "FINAT Test Methods — peel adhesion and loop tack"
+    url: "https://www.finat.com/knowledge/finat-test-methods"
+  - label: "ASTM D903 — Peel or Stripping Strength of Adhesive Bonds"
+    url: "https://store.astm.org/d0903-98r17.html"
 ---
 
 Buyers spend most of their attention on the face stock and almost none on the adhesive. That is a mistake: in practice, more labels fail because of the glue than because of the film.
