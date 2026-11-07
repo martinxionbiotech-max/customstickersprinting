@@ -10,9 +10,10 @@ interface Props {
   type?: 'website' | 'article';
   noindex?: boolean;
   jsonLd?: Record<string, unknown>[];
+  image?: string | null;
 }
 
-const { title, description, type = 'website', noindex = false, jsonLd = [] } = Astro.props;
+const { title, description, type = 'website', noindex = false, jsonLd = [], image = null } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const withBrand = `${title} | ${site.brand}`;
 const fullTitle = title.includes(site.brand)
@@ -62,6 +63,8 @@ const website = {
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
+    {image && <meta property="og:image" content={new URL(image, Astro.site).href} />}
+    {image && <meta name="twitter:image" content={new URL(image, Astro.site).href} />}
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <script type="application/ld+json" set:html={JSON.stringify(org)} />

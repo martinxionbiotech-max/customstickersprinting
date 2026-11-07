@@ -4,6 +4,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import CtaBand from '../components/CtaBand.astro';
 import { site, mailLink, waLink } from '../data/site';
+import ProductMedia from '../components/ProductMedia.astro';
+import { productImage } from '../lib/media';
 
 export async function getStaticPaths() {
   const products = await getCollection('products', (p) => p.data.status === 'published');
@@ -22,6 +24,7 @@ const related = d.relatedProducts
   .map((slug) => all.find((p) => p.id === slug))
   .filter((p): p is CollectionEntry<'products'> => Boolean(p));
 
+const image = productImage(product.id);
 const categoryLabel = d.category === 'labels' ? 'Labels' : 'Stickers';
 const categoryHref = d.category === 'labels' ? '/custom-labels/' : '/custom-stickers/';
 
@@ -70,7 +73,7 @@ const faqLd = {
 };
 ---
 
-<BaseLayout title={d.title} description={d.seoDescription ?? d.description} type="article" jsonLd={[productLd, faqLd]}>
+<BaseLayout title={d.title} description={d.seoDescription ?? d.description} type="article" jsonLd={[productLd, faqLd]} image={image}>
   <Breadcrumbs items={[{ label: categoryLabel, href: categoryHref }, { label: d.title }]} />
 
   <section class="tight">
@@ -80,6 +83,7 @@ const faqLd = {
           <p class="eyebrow">{categoryLabel}</p>
           <h1>{d.title}</h1>
           <p class="lead" style="font-size:1.08rem;color:var(--ink-2);max-width:60ch">{d.description}</p>
+          <div style="margin-top:22px"><ProductMedia slug={product.id} alt={`${d.title} printed by ${site.brand}`} eager /></div>
           <div class="actions" style="display:flex;gap:12px;flex-wrap:wrap;margin-top:20px">
             <a class="btn btn-primary" href={mailLink(`Quotation request — ${d.title}`)}>Request a quote</a>
             <a class="btn btn-wa" href={waLink(`Hello, I am interested in ${d.title}.\n\nSize:\nMaterial:\nQuantity:\nDestination country:\n\nCould you send a quotation?`)} rel="noopener">WhatsApp</a>

@@ -1,0 +1,26 @@
+---
+import { productImage } from "../lib/media";
+
+interface Props {
+  slug: string;
+  alt: string;
+  width?: number;
+  height?: number;
+  eager?: boolean;
+}
+
+const { slug, alt, width = 1200, height = 900, eager = false } = Astro.props;
+const src = productImage(slug);
+---
+
+{src && (
+  <img
+    src={src}
+    alt={alt}
+    width={width}
+    height={height}
+    loading={eager ? "eager" : "lazy"}
+    decoding="async"
+    style="width:100%;height:auto;border-radius:10px;border:1px solid var(--line)"
+  />
+)}

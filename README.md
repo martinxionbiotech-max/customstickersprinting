@@ -58,7 +58,15 @@ npm run dev
 - Prices are quoted per project; no price is published on the site.
 - Every product page states materials, finishes and MOQ, and ends with the same inquiry path.
 
+## Images
+
+Product photos live in `public/images/products/<slug>.webp` (1200 × 900, under 200 KB). The build checks for
+the file and renders it on the product page and in the Open Graph tags; if it is missing, no image tag is
+emitted — nothing breaks, the page is simply text.
+
+The brief for the shoot, including a per-product shot list and props, is in `docs/photo-shot-list.md`.
+
 ## Status
 
 Phase 1 complete: 33 pages, 14 products, 4 industries, 0 broken internal links.
-Next: MkDocs knowledge base (materials, artwork, processes) and real product photography.
+Knowledge base live at `/knowledge/` (12 articles, 5 pillars). Next: product photography, then scope expansion.
