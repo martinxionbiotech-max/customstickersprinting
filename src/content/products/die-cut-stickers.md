@@ -17,6 +17,8 @@ seoDescription: "Die cut stickers in any shape: how contour cutting works, when 
 order: 4
 lastVerified: "2026-11"
 knowledgeLinks:
+  - label: "What a setup charge covers"
+    href: "/knowledge/label-setup-costs/"
   - label: "Die cut vs kiss cut"
     href: "/knowledge/die-cut-vs-kiss-cut/"
   - label: "Bleed and safe area"

@@ -1,8 +1,8 @@
 ---
 title: "What actually affects custom label pricing"
 description: "Five variables that move a label price — area, material, finishing, quantity and cutting — and how each one changes the unit cost at 50 versus 5,000 units."
-pillar: procurement
-order: 2
+pillar: label-cost
+order: 1
 updated: "2026-11"
 relatedProducts: ["custom-labels", "roll-labels", "die-cut-stickers"]
 view: >-

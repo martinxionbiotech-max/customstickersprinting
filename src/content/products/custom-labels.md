@@ -17,6 +17,8 @@ seoDescription: "Custom printed labels from 50 units in paper, PP, PET or clear 
 order: 1
 lastVerified: "2026-11"
 knowledgeLinks:
+  - label: "What drives label cost"
+    href: "/knowledge/custom-label-printing-cost/"
   - label: "Label size guide"
     href: "/knowledge/label-size-guide/"
   - label: "Paper vs PP vs PET labels"

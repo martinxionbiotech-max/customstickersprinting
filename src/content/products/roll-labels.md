@@ -17,6 +17,8 @@ seoDescription: "Custom roll labels for applicators or hand application: consist
 order: 2
 lastVerified: "2026-11"
 knowledgeLinks:
+  - label: "How many to order"
+    href: "/knowledge/how-many-labels-to-order/"
   - label: "Calculating a wrap label"
     href: "/knowledge/label-wrap-calculation/"
   - label: "How roll labels are made"

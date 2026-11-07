@@ -1,7 +1,7 @@
 ---
 title: "Production lead time: what actually takes the time"
 description: "Where the days go between approval and delivery — artwork check, proofing, print, finishing, packing — and how to compress a schedule honestly."
-pillar: procurement
+pillar: label-cost
 order: 4
 updated: "2026-11"
 relatedProducts: ["custom-labels", "roll-labels", "custom-stickers"]
