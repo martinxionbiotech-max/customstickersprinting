@@ -17,6 +17,8 @@ seoDescription: "Custom stickers from 50 units in white or clear vinyl, paper, d
 order: 1
 lastVerified: "2026-11"
 knowledgeLinks:
+  - label: "Standard sticker and label sizes"
+    href: "/knowledge/standard-label-sizes/"
   - label: "Vinyl vs paper stickers"
     href: "/knowledge/vinyl-vs-paper-stickers/"
   - label: "What MOQ means"

@@ -17,6 +17,8 @@ seoDescription: "Custom bottle labels for curved glass and plastic: condensation
 order: 3
 lastVerified: "2026-11"
 knowledgeLinks:
+  - label: "Label size guide"
+    href: "/knowledge/label-size-guide/"
   - label: "Waterproof label materials"
     href: "/knowledge/waterproof-label-materials/"
   - label: "Permanent vs removable adhesive"

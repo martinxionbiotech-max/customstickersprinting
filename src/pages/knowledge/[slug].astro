@@ -16,6 +16,7 @@ const d = article.data;
 const { Content } = await render(article);
 
 const PILLAR_TITLES: Record<string, string> = {
+  "label-sizing": "Label sizing and dimensions",
   "label-materials": "Label materials and adhesives",
   "sticker-materials": "Sticker materials and cutting",
   printing: "Printing and production",
@@ -28,6 +29,10 @@ const siblings = all.filter((a) => a.data.pillar === d.pillar).sort((a, b) => a.
 const pos = siblings.findIndex((a) => a.id === article.id);
 const prev = pos > 0 ? siblings[pos - 1] : null;
 const next = pos >= 0 && pos < siblings.length - 1 ? siblings[pos + 1] : null;
+
+const chapters = d.order === 0
+  ? siblings.filter((s) => s.id !== article.id).sort((a, b) => a.data.order - b.data.order)
+  : [];
 
 const myTags = new Set(d.relatedProducts);
 const relatedReading = all
@@ -81,6 +86,17 @@ const faqLd = d.faq.length > 0
           <p class="eyebrow" style="margin:0 0 6px">Our view</p>
           <p style="margin:0">{d.view}</p>
         </aside>
+      )}
+
+      {chapters.length > 0 && (
+        <nav class="pillar-toc">
+          <p class="eyebrow" style="margin:0 0 8px">In this guide</p>
+          <ol>
+            {chapters.map((c) => (
+              <li><a href={`/knowledge/${c.id}/`}>{c.data.title}</a></li>
+            ))}
+          </ol>
+        </nav>
       )}
 
       <div class="prose" style="margin-top:26px"><Content /></div>

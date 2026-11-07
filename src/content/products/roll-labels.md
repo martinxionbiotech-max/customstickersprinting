@@ -17,6 +17,8 @@ seoDescription: "Custom roll labels for applicators or hand application: consist
 order: 2
 lastVerified: "2026-11"
 knowledgeLinks:
+  - label: "Calculating a wrap label"
+    href: "/knowledge/label-wrap-calculation/"
   - label: "How roll labels are made"
     href: "/knowledge/how-roll-labels-are-made/"
   - label: "Digital vs flexographic"

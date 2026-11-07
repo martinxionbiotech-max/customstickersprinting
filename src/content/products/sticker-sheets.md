@@ -17,6 +17,8 @@ seoDescription: "Custom sticker sheets with several designs on one backing: kiss
 order: 5
 lastVerified: "2026-11"
 knowledgeLinks:
+  - label: "Standard sticker and label sizes"
+    href: "/knowledge/standard-label-sizes/"
   - label: "Die cut vs kiss cut"
     href: "/knowledge/die-cut-vs-kiss-cut/"
   - label: "Vinyl vs paper stickers"

@@ -173,3 +173,9 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 34px 0; }
 /* Legal entity line in the footer */
 .footer-legal { margin-top: 28px; padding-top: 14px; border-top: 1px solid var(--line, #e5e2da); }
 .footer-legal p { font-size: .78rem; line-height: 1.6; color: var(--ink-3, #6b6b6b); max-width: 78ch; }
+
+/* Pillar table of contents */
+.pillar-toc { margin: 26px 0 0; padding: 18px 22px; border: 1px solid var(--line, #e5e2da); border-radius: 8px; background: var(--bg-2, #f6f5f1); }
+.pillar-toc ol { margin: 0; padding-left: 20px; line-height: 1.9; }
+.pillar-toc a { text-decoration: none; }
+.pillar-toc a:hover { text-decoration: underline; }

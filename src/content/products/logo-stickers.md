@@ -17,6 +17,8 @@ seoDescription: "Custom logo stickers die cut to your brand shape from 50 units:
 order: 3
 lastVerified: "2026-11"
 knowledgeLinks:
+  - label: "Standard sticker and label sizes"
+    href: "/knowledge/standard-label-sizes/"
   - label: "CMYK vs RGB"
     href: "/knowledge/cmyk-vs-rgb/"
   - label: "Die cut vs kiss cut"

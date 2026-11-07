@@ -17,6 +17,8 @@ seoDescription: "Custom food labels for chilled, frozen and dry products: freeze
 order: 5
 lastVerified: "2026-11"
 knowledgeLinks:
+  - label: "Label sizes for jars"
+    href: "/knowledge/label-size-for-jars/"
   - label: "Waterproof label materials"
     href: "/knowledge/waterproof-label-materials/"
   - label: "Paper vs PP vs PET labels"

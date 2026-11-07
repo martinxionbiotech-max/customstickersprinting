@@ -6,6 +6,7 @@ import CtaBand from "../../components/CtaBand.astro";
 
 const articles = await getCollection("knowledge");
 const PILLARS: { key: string; title: string; intro: string }[] = [
+  { key: "label-sizing", title: "Label sizing and dimensions", intro: "How to measure a container, choose a size, and calculate a wrap." },
   { key: "label-materials", title: "Label materials and adhesives", intro: "Paper, PP, PET, adhesive and the conditions each one survives." },
   { key: "sticker-materials", title: "Sticker materials and cutting", intro: "Vinyl versus paper, die cut versus kiss cut, and what a finish actually does." },
   { key: "printing", title: "Printing and production", intro: "Digital versus flexo, how a roll is made, and where the crossover sits." },

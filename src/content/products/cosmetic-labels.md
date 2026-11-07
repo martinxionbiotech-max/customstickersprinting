@@ -17,6 +17,8 @@ seoDescription: "Cosmetic labels for skincare and beauty: oil- and alcohol-resis
 order: 4
 lastVerified: "2026-11"
 knowledgeLinks:
+  - label: "Label sizes for bottles"
+    href: "/knowledge/label-size-for-bottles/"
   - label: "Waterproof label materials"
     href: "/knowledge/waterproof-label-materials/"
   - label: "Gloss vs matte finish"

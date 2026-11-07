@@ -17,6 +17,8 @@ seoDescription: "Custom jar labels for preserves, candles and cosmetics: wrap si
 order: 6
 lastVerified: "2026-11"
 knowledgeLinks:
+  - label: "Label size guide"
+    href: "/knowledge/label-size-guide/"
   - label: "Paper vs PP vs PET labels"
     href: "/knowledge/paper-vs-pp-vs-pet-labels/"
   - label: "Gloss vs matte finish"
