@@ -51,7 +51,16 @@ export const GET: APIRoute = async ({ site }) => {
 
   lines.push(
     "",
-    "## Company and ordering",
+    "## Company",
+    "",
+    `- Legal name: 义乌市丁威贸易商行 (Yiwu Dingwei Trading Company), an individual business registered in China.`,
+    `- Registration number (USCC): 92330782MA8GW3PLXB`,
+    `- D-U-N-S: 585974555`,
+    `- Location: Yiwu, Zhejiang, China`,
+    `- Principal: Wang Wei`,
+    `- Invoices are issued by the legal entity; banking details appear only on the invoice for a confirmed order.`,
+    "",
+    "## Ordering",
     "",
     `- [How to order](${base}/how-to-order/): the four steps from artwork to delivery.`,
     `- [Request a quote](${base}/request-a-quote/): what to send for a same-day quotation.`,

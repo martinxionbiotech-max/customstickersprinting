@@ -44,8 +44,25 @@ import { site, mailLink, waLink, quoteMessage } from "../data/site";
         longer depending on complexity, and we will tell you when to expect a reply rather than leaving you to ask.
       </p>
 
+      <h2>Who you are dealing with</h2>
+      <table>
+        <tbody>
+          <tr><th scope="row">Legal entity</th><td>{site.company.legalNameZh} ({site.company.legalNameEn})</td></tr>
+          <tr><th scope="row">Location</th><td>{site.company.city}, {site.company.region}, {site.company.country}</td></tr>
+          <tr><th scope="row">Registration no.</th><td>{site.company.uscc}</td></tr>
+          <tr><th scope="row">D-U-N-S</th><td>{site.company.duns}</td></tr>
+          <tr><th scope="row">Principal</th><td>{site.company.founder}</td></tr>
+        </tbody>
+      </table>
       <p class="small">
-        {site.brand} · {site.addressRegion} · Orders to the United States, United Kingdom and European Union.
+        Invoices are issued in the name of {site.company.legalNameEn}. Banking details appear only on the invoice
+        for a confirmed order — if payment instructions arrive by email or chat and do not match the invoice,
+        verify with <a href={`mailto:${site.email}`}>{site.email}</a> before sending funds.
+      </p>
+
+      <p class="small">
+        {site.brand} · {site.company.city}, {site.company.region} · Orders shipped worldwide.
+        Full company details on the <a href="/about/">about page</a>.
       </p>
     </div>
   </section>

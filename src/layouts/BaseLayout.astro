@@ -28,9 +28,22 @@ const org = {
   '@type': 'Organization',
   '@id': `${site.url}/#organization`,
   name: site.brand,
+  legalName: site.company.legalNameEn,
+  alternateName: [site.company.legalNameZh, 'Yiwu Dingwei Trading Co.'],
   url: site.url,
   email: site.email,
   description: site.description,
+  identifier: [
+    { '@type': 'PropertyValue', propertyID: 'USCC', value: site.company.uscc },
+    { '@type': 'PropertyValue', propertyID: 'DUNS', value: site.company.duns },
+  ],
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: site.company.city,
+    addressRegion: site.company.region,
+    addressCountry: site.company.countryCode,
+  },
+  founder: { '@type': 'Person', name: site.company.founder },
   areaServed: site.markets,
   contactPoint: {
     '@type': 'ContactPoint',

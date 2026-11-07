@@ -16,9 +16,19 @@ export const site = {
   moq: 50,
   moqLabel: 'From 50 units',
   leadTime: 'Typically 7–12 working days after artwork approval',
-  markets: ['United States', 'United Kingdom', 'European Union'],
-  addressRegion: 'Hebei, China',
-  founded: '2026',
+  markets: ['United States', 'United Kingdom', 'European Union', 'Worldwide'],
+  company: {
+    legalNameEn: 'Yiwu Dingwei Trading Company',
+    legalNameZh: '义乌市丁威贸易商行',
+    uscc: '92330782MA8GW3PLXB',
+    duns: '585974555',
+    city: 'Yiwu',
+    region: 'Zhejiang',
+    country: 'China',
+    countryCode: 'CN',
+    founder: 'Wang Wei',
+    businessType: 'individual business (个体工商户)',
+  },
 };
 
 export const waLink = (message: string) =>

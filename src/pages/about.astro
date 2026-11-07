@@ -3,58 +3,130 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import CtaBand from "../components/CtaBand.astro";
 import { site } from "../data/site";
+
+const c = site.company;
 ---
 
-<BaseLayout title="About us" description={`Who we are, where production happens, how quality is checked and what we will not promise — plus how labels and stickers are quoted, from ${site.moq} units.`}>
+<BaseLayout
+  title="About the company behind Custom Stickers Printing"
+  description={`Label and sticker brand of ${c.legalNameZh} (${c.legalNameEn}), Yiwu, China. Registration number, D-U-N-S and how to verify us before you pay.`}
+>
   <Breadcrumbs items={[{ label: "About" }]} />
   <section class="tight">
     <div class="wrap narrow prose">
       <h1>About {site.brand}</h1>
       <p class="lead" style="font-size:1.08rem;color:var(--ink-2)">
-        An independent custom printing brand with China-based manufacturing and international delivery.
-        We print labels and stickers for brands that need a real minimum, a real quotation and a person who answers.
+        {site.brand} is the label and sticker brand of {c.legalNameZh} ({c.legalNameEn}),
+        a registered business in Yiwu, Zhejiang, China. We quote, specify and quality-check custom
+        labels and stickers from {site.moq} units, and ship them worldwide.
       </p>
 
-      <h2>What we do</h2>
+      <h2>Company details</h2>
+      <table>
+        <tbody>
+          <tr><th scope="row">Trading name</th><td>{site.brand} — {site.domain}</td></tr>
+          <tr><th scope="row">Legal entity</th><td>{c.legalNameZh} · {c.legalNameEn}</td></tr>
+          <tr><th scope="row">Business type</th><td>{c.businessType}, registered in China</td></tr>
+          <tr><th scope="row">Registration no.</th><td>{c.uscc} (统一社会信用代码)</td></tr>
+          <tr><th scope="row">D-U-N-S number</th><td>{c.duns}</td></tr>
+          <tr><th scope="row">Registered location</th><td>{c.city}, {c.region}, {c.country}</td></tr>
+          <tr><th scope="row">Principal</th><td>{c.founder}</td></tr>
+          <tr><th scope="row">Contact</th><td><a href={`mailto:${site.email}`}>{site.email}</a> · <a href={`https://wa.me/${site.whatsapp}`} rel="noopener">{site.whatsappDisplay}</a></td></tr>
+        </tbody>
+      </table>
+
+      <h2>How to verify us before you pay</h2>
       <p>
-        We produce custom labels and custom stickers: product and packaging labels, bottle and jar labels,
-        cosmetic and food labels, vinyl and die-cut stickers, logo stickers and sticker sheets. Orders start at
-        {" "}{site.moq} units per design and are quoted per project, because a 30 mm circle and a 90 × 120 mm wrap
-        do not share a unit price.
+        A business that asks for a bank transfer should be checkable. Three ways, in order of speed:
       </p>
-
-      <h2>How we work</h2>
-      <p>
-        Manufacturing is in China; the commercial relationship is direct. You send a specification, we check what is
-        producible, quote it, and — if you want — produce a physical sample before the full run. There is no
-        distributor between you and the press, which is why we can answer a question about material or colour
-        without forwarding an email.
-      </p>
-
-      <h2>What we will not do</h2>
       <ul>
-        <li>Quote a price before knowing the size, material and quantity — those three decide it.</li>
-        <li>Publish a "from $0.05 per label" headline that assumes the smallest size and the largest run.</li>
-        <li>Promise a certification, a test result or a delivery date we cannot evidence.</li>
-        <li>Claim a US or EU factory, warehouse or office that does not exist.</li>
+        <li>
+          <strong>Company registry.</strong> Search {c.uscc} in China's National Enterprise Credit
+          Information Publicity System (<a href="https://www.gsxt.gov.cn/index.html" rel="noopener">gsxt.gov.cn</a>).
+          The record shows the registered name, location and status.
+        </li>
+        <li>
+          <strong>D-U-N-S.</strong> {c.duns} can be looked up through Dun &amp; Bradstreet
+          (<a href="https://www.dnb.com/duns-number/lookup.html" rel="noopener">dnb.com</a>), which is the number
+          used in international trade and by some payment providers.
+        </li>
+        <li>
+          <strong>The work itself.</strong> Ask for a physical sample on your own container before a full run, or a
+          short video call to see the labels being checked. We offer both, and neither requires an order.
+        </li>
+      </ul>
+
+      <h2>What we actually do</h2>
+      <p>
+        The work is specification, pre-press and quality control, not running a press. We take your artwork and
+        container, decide which material and adhesive will survive them, check the file for bleed, colour and cut
+        paths, place the job with a printing partner in China, inspect the output against the approved proof, and
+        arrange the shipment.
+      </p>
+      <p>
+        That is the honest division of labour: production capacity sits with the presses, and the judgement about
+        what to print on what sits here. It is also why we can run {site.moq} units when a converter with its own
+        plant will not — we are not protecting a press schedule.
+      </p>
+
+      <h2>What we print</h2>
+      <p>
+        Product and packaging labels, bottle and jar labels, cosmetic and food labels, waterproof and clear film
+        labels, roll labels for applicators, vinyl and die-cut stickers, logo stickers and sticker sheets. Every
+        order starts at {site.moq} units per design and is quoted per project, because a 30 mm circle and a
+        90 × 120 mm wrap do not share a unit price.
+      </p>
+
+      <h2>What we will not claim</h2>
+      <ul>
+        <li>That we operate a factory. We do not, and saying so would be the first thing a buyer checks.</li>
+        <li>A certification, test result or factory audit we cannot produce on request.</li>
+        <li>A price before we know the size, material and quantity — those three decide it.</li>
+        <li>A delivery date that ignores the approval step, which is where most schedules actually slip.</li>
+        <li>Customer names or logos without written permission, which is why you will not see a wall of them here.</li>
       </ul>
 
       <h2>Quality control</h2>
       <p>
-        Every job is checked against the approved proof before packing: print registration, colour against the
-        approved reference, die-cut alignment, and adhesion on a production sample. If something is outside
-        tolerance we tell you before shipping rather than after the parcel arrives.
+        Every job is checked against the approved proof before packing: registration, colour against the approved
+        reference, die-cut alignment, and adhesion on a production sample. If something falls outside tolerance we
+        tell you before it ships, not after the parcel arrives. Where a problem is ours, we reprint; where it comes
+        from artwork approved as supplied, we will say so plainly and quote the fix.
+      </p>
+
+      <h2>Payment and invoicing</h2>
+      <p>
+        Quotations and invoices are issued in the name of {c.legalNameEn}. Payment is by bank transfer to the
+        account shown on the invoice, or by an agreed platform method; we do not take card details over chat or
+        email. The full banking details — account name, number and SWIFT — appear only on the invoice issued for a
+        confirmed order, never on this website or in an unsolicited message.
+      </p>
+      <p class="small">
+        If you receive payment instructions that differ from your invoice, stop and confirm with us at
+        {" "}<a href={`mailto:${site.email}`}>{site.email}</a> before sending anything. Invoice fraud is common in
+        this trade and a five-minute check prevents it.
       </p>
 
       <h2>Who we work with</h2>
       <p>
         Skincare and candle brands launching a first SKU, food and beverage producers testing a new container,
-        ecommerce sellers who need packaging stickers in short runs, and agencies managing several client brands
-        at once. The common thread is a quantity too small for a traditional label converter and too specific
-        for a consumer sticker site.
+        ecommerce sellers who need packaging stickers in short runs, and agencies managing several client brands at
+        once. The common thread is a quantity too small for a traditional label converter and too specific for a
+        consumer sticker site.
       </p>
 
-      <p class="small">Last reviewed: November 2026. Questions about this page: <a href={`mailto:${site.email}`}>{site.email}</a>.</p>
+      <h2>About the knowledge base</h2>
+      <p>
+        The technical articles on this site are written by the same team that quotes the work, from the problems
+        that arrive in quotations. Where a claim rests on a published standard — adhesion testing, colour control,
+        proofing, barcode grading — the standard is linked at the foot of the article. Where no standard applies,
+        we say what the recommendation is based on rather than attaching an unrelated reference.
+      </p>
+
+      <p class="small">
+        Last reviewed: November 2026. Corrections and questions about this page:
+        {" "}<a href={`mailto:${site.email}`}>{site.email}</a>.
+      </p>
     </div>
   </section>
   <CtaBand />
