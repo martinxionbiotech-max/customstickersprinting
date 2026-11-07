@@ -1,0 +1,74 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import CtaBand from "../components/CtaBand.astro";
+import { site } from "../data/site";
+
+const groups = [
+  {
+    title: "Ordering",
+    items: [
+      { q: "What is the minimum order?", a: `50 units per design. The minimum applies to the whole order, so three designs that share a material and size can be combined — the total still has to reach 50.` },
+      { q: "Can I order a sample before the full run?", a: "Yes. A digital proof is always included; a physical sample can be produced and shipped so you can check material, colour and adhesion on your actual container. Sample cost and timing are quoted with the job." },
+      { q: "How long does production take?", a: `${site.leadTime}. Shipping is additional and depends on destination and method.` },
+      { q: "Do you print different designs in one order?", a: "Yes, when the material, size and finishing are identical. Mixed sizes are usually quoted as separate setups." },
+    ],
+  },
+  {
+    title: "Materials and printing",
+    items: [
+      { q: "Which material should I choose?", a: "Paper for dry, indoor products and short-life packaging; PP for squeezable bottles and chilled food; PET for durability and a premium feel; vinyl for outdoor stickers and harsh surfaces; clear stock when the container should show through. If you are unsure, describe the product and we will recommend one." },
+      { q: "Are your labels waterproof?", a: "Water-resistant and waterproof options exist, but the right question is what the label must survive: condensation, immersion, oil, alcohol or freezer cycling. Tell us the condition and we will specify a material and adhesive for it rather than promise a generic 'waterproof'." },
+      { q: "Can I print white on clear material?", a: "Yes, with a white ink layer — otherwise the colours sit directly on clear film and appear translucent. White ink is a quoted option, not a default." },
+      { q: "What finishes are available?", a: "Gloss and matte lamination, spot UV and foil are the common options; availability depends on the material and quantity. Every finish is confirmed in the quotation." },
+    ],
+  },
+  {
+    title: "Artwork",
+    items: [
+      { q: "What file do you need?", a: "A vector file — AI, EPS, PDF or SVG — at final size with fonts outlined. A high-resolution PNG or JPG can work for simple designs, but text and fine detail will not be as sharp." },
+      { q: "What is bleed?", a: "3 mm of extra artwork beyond the cut line, so small cutting tolerances do not leave a white edge. If your file has no bleed we will add it or ask you to resupply." },
+      { q: "Can you design the label for me?", a: "We check and prepare files for print, but we do not offer brand design. We will tell you exactly what needs fixing and, where it is simple, fix it." },
+    ],
+  },
+  {
+    title: "Shipping and payment",
+    items: [
+      { q: "Which countries do you ship to?", a: "United States, United Kingdom and European Union as standard; other destinations can be quoted." },
+      { q: "Who pays import duties?", a: "Duties and taxes are set by the destination country. We state the shipping terms in the quotation so it is clear before you order." },
+      { q: "How do I pay?", a: "Bank transfer or the payment method confirmed in the quotation. This website does not take card details." },
+    ],
+  },
+];
+
+const faqLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: groups.flatMap((g) => g.items).map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+};
+---
+
+<BaseLayout title="FAQ: custom labels and stickers" description={`Answers on minimum order, materials, waterproof options, artwork files, samples, lead times, shipping and payment for custom labels and stickers.`} jsonLd={[faqLd]}>
+  <Breadcrumbs items={[{ label: "FAQ" }]} />
+  <section class="tight">
+    <div class="wrap narrow prose">
+      <h1>Frequently asked questions</h1>
+      <p class="lead" style="color:var(--ink-2)">The questions that come up before every first order, answered without marketing language.</p>
+
+      {groups.map((g) => (
+        <>
+          <h2>{g.title}</h2>
+          {g.items.map((f) => (
+            <details style="border-bottom:1px solid var(--line);padding:14px 0">
+              <summary style="cursor:pointer;font-weight:600">{f.q}</summary>
+              <p style="margin-top:10px">{f.a}</p>
+            </details>
+          ))}
+        </>
+      ))}
+
+      <p style="margin-top:28px">Still unsure? <a href="/contact/">Send the question directly</a> — a short answer is faster than a long page.</p>
+    </div>
+  </section>
+  <CtaBand />
+</BaseLayout>

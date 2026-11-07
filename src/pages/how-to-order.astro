@@ -1,0 +1,71 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import CtaBand from "../components/CtaBand.astro";
+import { site, mailLink, waLink } from "../data/site";
+---
+
+<BaseLayout title="How to order custom labels and stickers" description={`The ordering process from specification to delivery: what to send, how proofs work, sample policy, payment and shipping. Minimum ${site.moq} units.`}>
+  <Breadcrumbs items={[{ label: "How to order" }]} />
+  <section class="tight">
+    <div class="wrap narrow prose">
+      <h1>How to order</h1>
+      <p class="lead" style="font-size:1.08rem;color:var(--ink-2)">
+        Four steps from an idea to a delivered box. No account, no cart, no automated pricing — a person checks
+        the specification and quotes it.
+      </p>
+
+      <h2>1. Send your specification</h2>
+      <p>Email or WhatsApp is enough. What we need to quote accurately:</p>
+      <table>
+        <tbody>
+          <tr><th scope="row">Product type</th><td>Label or sticker; roll or sheet</td></tr>
+          <tr><th scope="row">Size and shape</th><td>Width × height in mm, diameter, or a dieline for irregular shapes</td></tr>
+          <tr><th scope="row">Material preference</th><td>Paper, PP, PET, vinyl, clear — or ask for a recommendation</td></tr>
+          <tr><th scope="row">Quantity</th><td>Per design; multiple designs are fine if material and size match</td></tr>
+          <tr><th scope="row">Finishing</th><td>Gloss, matte, laminate, foil — optional</td></tr>
+          <tr><th scope="row">Destination</th><td>Country and postcode, for the shipping line</td></tr>
+          <tr><th scope="row">Artwork</th><td>Vector file if you have one; not required for a first quote</td></tr>
+        </tbody>
+      </table>
+
+      <h2>2. Quotation</h2>
+      <p>
+        We confirm what is producible at your quantity, flag anything that will not work (a 2 mm text on a matte
+        uncoated stock, a white logo on clear vinyl without a white backing layer), and quote the job.
+        Quotations normally go out within one working day and state the unit price, setup, shipping and lead time.
+      </p>
+
+      <h2>3. Artwork approval and sample</h2>
+      <p>
+        A digital proof is always included and must be approved in writing before production. If you want to see
+        and feel the material first, a physical sample can be produced — useful when the label has to survive
+        condensation, oil or a curved jar.
+      </p>
+      <p><a href="/artwork-guidelines/">Artwork guidelines</a> covers file formats, bleed, colour and resolution.</p>
+
+      <h2>4. Production and delivery</h2>
+      <p>
+        Production typically takes 7–12 working days after artwork approval. Shipping is quoted with the order:
+        express courier for small runs, air or sea freight for larger ones. Tracking is provided, and duties or
+        import taxes are explained before you confirm rather than on delivery.
+      </p>
+
+      <h2>Payment</h2>
+      <p>
+        Payment terms are confirmed with the quotation. Production starts after the deposit clears and the proof is
+        approved; the balance is due before dispatch. We do not take card details through this website.
+      </p>
+
+      <h2>What we need from you, in one line</h2>
+      <p><strong>Size · quantity · material (or “recommend one”) · destination · artwork or reference photo.</strong></p>
+      <p>
+        <a class="btn btn-primary" href={mailLink("New order — specification")}>Email the specification</a>
+        <a class="btn btn-wa" href={waLink("Hello, I would like to order custom labels or stickers.\n\nProduct:\nSize:\nQuantity:\nDestination:")} rel="noopener">Send on WhatsApp</a>
+      </p>
+
+      <p class="small">Minimum order: {site.moq} units per design. Lead time: {site.leadTime}.</p>
+    </div>
+  </section>
+  <CtaBand />
+</BaseLayout>

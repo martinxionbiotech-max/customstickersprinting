@@ -1,0 +1,56 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import CtaBand from "../components/CtaBand.astro";
+import { site } from "../data/site";
+---
+
+<BaseLayout title="Shipping and delivery" description="How custom labels and stickers are shipped to the US, UK and EU: production lead time, courier and freight options, tracking, duties and packaging.">
+  <Breadcrumbs items={[{ label: "Shipping & delivery" }]} />
+  <section class="tight">
+    <div class="wrap narrow prose">
+      <h1>Shipping and delivery</h1>
+      <p>Production and delivery are two separate clocks. Production is ours; transit is the carrier's. Both are stated in the quotation.</p>
+
+      <h2>Production</h2>
+      <table>
+        <tbody>
+          <tr><th scope="row">Standard</th><td>7–12 working days after artwork approval</td></tr>
+          <tr><th scope="row">Samples</th><td>Quoted separately; usually 5–8 working days plus transit</td></tr>
+          <tr><th scope="row">Peak periods</th><td>Longer around public holidays in China; we flag it when you order</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Transit</h2>
+      <p>
+        Small and medium runs ship by express courier (typically 3–7 working days to the US, UK or EU). Larger runs
+        can go by air or sea freight, which is cheaper per kilogram and slower. The quotation states which option is
+        being priced.
+      </p>
+
+      <h2>Duties and taxes</h2>
+      <p>
+        Import duties and VAT are set by the destination country and are not included unless the quotation says
+        delivered duty paid. We state the shipping terms explicitly so there is no surprise at customs. If you have
+        a tax number for the EU or UK, send it with the order.
+      </p>
+
+      <h2>Packaging</h2>
+      <p>
+        Labels ship on rolls or flat sheets, boxed and wrapped against moisture. Stickers ship flat or on rolls
+        depending on the die and quantity. If you need retail-ready packaging or individual poly bags, say so before
+        the quote — it changes both packing time and cost.
+      </p>
+
+      <h2>Tracking and issues</h2>
+      <p>
+        Every shipment gets a tracking number. If a parcel is delayed, damaged or short, tell us within seven days
+        of delivery with photos of the carton and the contents; we will raise it with the carrier and replace
+        defective stock.
+      </p>
+
+      <p class="small">Destinations: United States, United Kingdom, European Union. Other countries on request.</p>
+    </div>
+  </section>
+  <CtaBand />
+</BaseLayout>

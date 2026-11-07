@@ -1,0 +1,70 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import CtaBand from "../components/CtaBand.astro";
+import { site } from "../data/site";
+---
+
+<BaseLayout title="Low MOQ label printing from 50 units" description="Low minimum label printing from 50 units per design: what the minimum covers, why converters quote in thousands, and how to keep a first run affordable.">
+  <Breadcrumbs items={[{ label: "Low MOQ label printing" }]} />
+  <section class="tight">
+    <div class="wrap narrow prose">
+      <h1>Low MOQ label printing</h1>
+      <p class="lead" style="font-size:1.08rem;color:var(--ink-2)">
+        Fifty units per design. That is the production minimum — enough to label a real first batch,
+        test a market, or cover a short seasonal run without committing to thousands.
+      </p>
+
+      <h2>Why most label quotes start at 1,000</h2>
+      <p>
+        Traditional label printing is built around setup: plates, dies, make-ready and press time. The setup cost
+        is roughly the same whether you print 500 labels or 50,000, so converters push the quantity up to spread it.
+        Below their threshold the unit price becomes embarrassing, and they would rather not quote.
+      </p>
+      <p>
+        Digital printing changes that arithmetic. There are no plates, the make-ready is short, and a 50-unit run
+        is a legitimate job rather than a favour. That is the entire reason a 50-unit minimum is possible.
+      </p>
+
+      <h2>What 50 units actually covers</h2>
+      <table>
+        <tbody>
+          <tr><th scope="row">First product batch</th><td>50–200 labels for a launch or a market test</td></tr>
+          <tr><th scope="row">Multiple designs</th><td>Several designs combined in one order when material and size match</td></tr>
+          <tr><th scope="row">Samples and photography</th><td>Enough for a shoot, a trade show or a buyer meeting</td></tr>
+          <tr><th scope="row">Seasonal variants</th><td>A limited flavour or gift pack without leftover stock</td></tr>
+        </tbody>
+      </table>
+
+      <h2>How to keep a first run affordable</h2>
+      <ol>
+        <li><strong>Keep the shape simple.</strong> A circle or rounded rectangle avoids a custom die.</li>
+        <li><strong>Choose a standard material.</strong> Coated paper or white PP costs less than speciality stocks.</li>
+        <li><strong>Limit the number of designs.</strong> Each design adds setup, even in the same order.</li>
+        <li><strong>Skip the laminate if the product stays dry.</strong> It is a durability decision, not a default.</li>
+        <li><strong>Reuse the artwork on reorder.</strong> The approved proof carries over, so the second run is faster and cheaper.</li>
+      </ol>
+
+      <h2>What low MOQ does not mean</h2>
+      <p>
+        It does not mean a low price per unit. At 50 units, most of what you pay is setup and make-ready, so the
+        unit price is two to four times what it would be at 5,000. The honest comparison is not "labels cost $0.80 each"
+        but "the first 50 labels cost more per unit, and that is the price of not holding 5,000 in a cupboard".
+      </p>
+      <p>
+        It also does not mean every material is available. Some stocks and finishes only make sense in larger runs;
+        we will say so rather than quote something that cannot be produced properly at your quantity.
+      </p>
+
+      <h2>When to move up in quantity</h2>
+      <p>
+        Once a design is selling steadily, the per-unit price at 500 or 1,000 is materially lower and the reorder
+        skips proofing. The usual path is 50 to validate, 250–500 to cover the next few months, then 1,000+ on a
+        roll once volume is predictable.
+      </p>
+
+      <p><a class="btn btn-primary" href="/request-a-quote/">Request a quote for 50+ labels</a></p>
+    </div>
+  </section>
+  <CtaBand subject="Low MOQ label quotation" body={`Tell us the size, material, quantity and destination. Minimum ${site.moq} units.`} />
+</BaseLayout>

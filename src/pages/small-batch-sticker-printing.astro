@@ -1,0 +1,66 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import CtaBand from "../components/CtaBand.astro";
+import { site } from "../data/site";
+---
+
+<BaseLayout title="Small batch sticker printing from 50 units" description="Small batch custom stickers from 50 units: die cut or sheets, white or clear vinyl, priced for a first run rather than a pallet.">
+  <Breadcrumbs items={[{ label: "Small batch sticker printing" }]} />
+  <section class="tight">
+    <div class="wrap narrow prose">
+      <h1>Small batch sticker printing</h1>
+      <p class="lead" style="font-size:1.08rem;color:var(--ink-2)">
+        Fifty stickers is a real order, not a sample request. It covers a launch, a market stall, a
+        subscriber insert or a first packaging run — without a box of 5,000 in the spare room.
+      </p>
+
+      <h2>What small batch is for</h2>
+      <table>
+        <tbody>
+          <tr><th scope="row">Launching a brand</th><td>Logo stickers and packaging seals before volume is known</td></tr>
+          <tr><th scope="row">Testing a design</th><td>See how a shape and finish look on the actual packaging</td></tr>
+          <tr><th scope="row">Events and markets</th><td>Giveaways and price tags for a single weekend</td></tr>
+          <tr><th scope="row">Ecommerce inserts</th><td>Sticker sheets in the first hundred orders</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Choosing the format at low volume</h2>
+      <p>
+        Two formats suit a first run. Individual die cut stickers are the simplest: one design, one shape, peel and
+        apply. Sticker sheets put several designs on one backing sheet — better when a customer should receive a set,
+        or when the stickers are too small to handle individually.
+      </p>
+      <p>
+        At 50 units, a simple shape avoids a custom die and keeps the price down. Complex contours need a cutting
+        path and, above a few hundred units, a steel rule die — which is a one-off cost that rarely makes sense
+        at this quantity.
+      </p>
+
+      <h2>Material at small volume</h2>
+      <p>
+        White vinyl is the default: water-resistant, durable and available in the thickness that feeds through most
+        printers. Clear vinyl gives the no-label look but needs white ink behind the design, which adds a pass.
+        Paper is cheaper and fine for indoor, short-life use.
+      </p>
+      <p>
+        Lamination is the durability decision. On 50 stickers it is a small absolute cost and a large difference
+        in how the sticker survives a bag, a water bottle or a shop window.
+      </p>
+
+      <h2>What changes when you scale</h2>
+      <p>
+        Price per sticker falls sharply between 50 and 500 because setup is amortised; after that it declines more
+        slowly. The other change is format: above a few thousand, rolls and steel-rule dies become the sensible
+        production method, and the artwork needs to be set up for them.
+      </p>
+      <p>
+        Reordering is easier than ordering: the approved proof and specifications carry over, so the second run
+        skips the artwork review and moves straight to production.
+      </p>
+
+      <p><a class="btn btn-primary" href="/request-a-quote/">Request a quote for 50+ stickers</a></p>
+    </div>
+  </section>
+  <CtaBand subject="Small batch sticker quotation" body={`Tell us the size, quantity, material and destination. Minimum ${site.moq} units.`} />
+</BaseLayout>

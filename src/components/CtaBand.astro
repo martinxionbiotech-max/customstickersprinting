@@ -1,0 +1,29 @@
+---
+import { site, mailLink, waLink, quoteMessage } from '../data/site';
+
+interface Props {
+  heading?: string;
+  body?: string;
+  subject?: string;
+  waMessage?: string;
+}
+
+const {
+  heading = 'Get a quotation for your labels or stickers',
+  body = `Send your size, material, quantity and destination. We reply with options, pricing and a delivery estimate — usually within one working day. Minimum order: ${site.moq} units.`,
+  subject = 'Quotation request — custom labels and stickers',
+  waMessage = quoteMessage,
+} = Astro.props;
+---
+
+<section class="cta-band">
+  <div class="wrap">
+    <h2>{heading}</h2>
+    <p>{body}</p>
+    <div class="actions">
+      <a class="btn btn-primary" href={mailLink(subject)}>Email {site.email}</a>
+      <a class="btn btn-wa" href={waLink(waMessage)} rel="noopener">WhatsApp {site.whatsappDisplay}</a>
+      <a class="btn btn-secondary" href="/request-a-quote/">Quote form details</a>
+    </div>
+  </div>
+</section>

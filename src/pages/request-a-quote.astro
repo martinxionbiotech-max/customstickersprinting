@@ -1,0 +1,57 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { site, mailLink, waLink } from "../data/site";
+
+const template = `Product (label or sticker):
+Size (mm):
+Shape:
+Material (or "recommend one"):
+Quantity per design:
+Number of designs:
+Finishing (gloss / matte / none):
+Destination country and postcode:
+Artwork ready? (yes / no / need help):`;
+---
+
+<BaseLayout title="Request a quote" description={`Request a quotation for custom labels or stickers: send size, material, quantity and destination. Minimum ${site.moq} units, reply usually within one working day.`}>
+  <Breadcrumbs items={[{ label: "Request a quote" }]} />
+  <section class="tight">
+    <div class="wrap narrow prose">
+      <h1>Request a quote</h1>
+      <p>
+        There is no form here on purpose. A quotation depends on details a form rarely captures — the container
+        surface, whether the label meets condensation, how the artwork is built — so we ask you to send the
+        specification directly and answer it as a conversation.
+      </p>
+
+      <h2>Copy this template</h2>
+      <pre style="background:var(--bg-2);border:1px solid var(--line);border-radius:8px;padding:16px;overflow:auto;font-size:.9rem">{template}</pre>
+
+      <div class="grid grid-2" style="margin:24px 0">
+        <div class="card">
+          <h3>Email</h3>
+          <p>Attach artwork or a photo of the container. Best for anything you want documented.</p>
+          <p><a class="btn btn-primary" href={mailLink("Quotation request — custom labels and stickers", template)}>Open email draft</a></p>
+          <p class="small">{site.email}</p>
+        </div>
+        <div class="card">
+          <h3>WhatsApp</h3>
+          <p>Fastest for a first conversation or a photo of the bottle you need to label.</p>
+          <p><a class="btn btn-wa" href={waLink("Hello, I would like a quotation.\n\n" + template)} rel="noopener">Message on WhatsApp</a></p>
+          <p class="small">{site.whatsappDisplay}</p>
+        </div>
+      </div>
+
+      <h2>What happens next</h2>
+      <ol>
+        <li>We read the specification and ask anything missing — usually one round of questions.</li>
+        <li>You get a quotation with unit price, setup, shipping and lead time.</li>
+        <li>If it works for you, we produce a proof; a physical sample is optional.</li>
+        <li>Production starts after approval and deposit.</li>
+      </ol>
+
+      <p class="small">Minimum order {site.moq} units per design. {site.leadTime}.</p>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,28 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import CtaBand from "../../components/CtaBand.astro";
+
+const industries = (await getCollection("industries")).sort((a, b) => a.data.order - b.data.order);
+---
+
+<BaseLayout title="Industries: labels and stickers by application" description="How label and sticker requirements change by industry: beauty and skincare, candles and fragrance, food and beverage, ecommerce and small business.">
+  <Breadcrumbs items={[{ label: "Industries" }]} />
+  <section class="tight">
+    <div class="wrap">
+      <h1>Industries</h1>
+      <p style="max-width:65ch;color:var(--ink-2)">The same label behaves differently on a shampoo bottle, a candle jar and a chilled sauce. These pages describe what each category actually needs.</p>
+      <div class="grid grid-2" style="margin-top:24px">
+        {industries.map((i) => (
+          <a class="card" href={`/industries/${i.id}/`}>
+            <h3>{i.data.heading}</h3>
+            <p>{i.data.description}</p>
+            <span class="more">Read more →</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+  <CtaBand />
+</BaseLayout>

@@ -1,0 +1,45 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { site } from "../data/site";
+---
+
+<BaseLayout title="Terms of use" description="Terms for quotations, orders, artwork, payment, delivery and defects for custom labels and stickers supplied by this site.">
+  <Breadcrumbs items={[{ label: "Terms" }]} />
+  <section class="tight">
+    <div class="wrap narrow prose">
+      <h1>Terms of use</h1>
+      <p class="small">Last updated: November 2026</p>
+
+      <h2>Quotations</h2>
+      <p>Prices are quoted per project and are valid for 30 days unless stated otherwise. A quotation is not an order; production only begins after written approval of the artwork proof and receipt of the deposit stated in the quotation.</p>
+
+      <h2>Minimum order</h2>
+      <p>{site.moq} units per design. Multiple designs may be combined in one order where material, size and finishing match.</p>
+
+      <h2>Artwork and intellectual property</h2>
+      <p>You confirm that you own or are licensed to use everything you send us, including logos, fonts and images. We use your artwork only to produce your order and will not resell or reuse the design. Files we prepare (proofs, dielines) remain our working documents; the design remains yours.</p>
+
+      <h2>Proofs and approval</h2>
+      <p>You are responsible for checking the proof: spelling, size, colour, barcode data and legal text. Once approved in writing, the proof becomes the production specification. Colour may vary slightly between screens, proofing methods and production runs; where an exact match is required, it must be agreed in writing before production.</p>
+
+      <h2>Payment</h2>
+      <p>Terms are stated in the quotation. Production starts after the deposit clears; the balance is due before dispatch unless credit terms are agreed in writing. This website does not process card payments.</p>
+
+      <h2>Delivery</h2>
+      <p>Lead times are estimates made in good faith and depend on artwork approval and carrier performance. Risk passes according to the shipping terms in the quotation. Import duties and taxes are the buyer's responsibility unless the quotation states otherwise.</p>
+
+      <h2>Defects and claims</h2>
+      <p>Tell us within seven days of delivery, with photos, if goods are defective or do not match the approved proof. We will reprint, credit or refund at our option. We are not liable for defects caused by artwork we were asked to print as supplied, or by misuse after delivery.</p>
+
+      <h2>Liability</h2>
+      <p>Our liability for any order is limited to the value of that order. We are not liable for indirect or consequential loss, including lost sales or delayed launches.</p>
+
+      <h2>Governing law</h2>
+      <p>These terms are governed by the laws applicable at the seller's place of business. Disputes will first be addressed by good-faith negotiation.</p>
+
+      <h2>Contact</h2>
+      <p><a href={`mailto:${site.email}`}>{site.email}</a></p>
+    </div>
+  </section>
+</BaseLayout>

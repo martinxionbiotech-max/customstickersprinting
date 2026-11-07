@@ -1,0 +1,73 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import CtaBand from "../components/CtaBand.astro";
+import { site, mailLink } from "../data/site";
+---
+
+<BaseLayout title="Artwork guidelines for label and sticker printing" description="What to send for print: file formats, 3 mm bleed, CMYK colour, 300 dpi resolution, outlined fonts and dielines — plus what gets a file rejected.">
+  <Breadcrumbs items={[{ label: "Artwork guidelines" }]} />
+  <section class="tight">
+    <div class="wrap narrow prose">
+      <h1>Artwork guidelines</h1>
+      <p class="lead" style="color:var(--ink-2)">Most production delays come from artwork, not from printing. These are the requirements we check every file against.</p>
+
+      <h2>File formats</h2>
+      <table>
+        <tbody>
+          <tr><th scope="row">Preferred</th><td>AI, EPS, PDF (vector), SVG</td></tr>
+          <tr><th scope="row">Acceptable</th><td>High-resolution PNG or JPG (300 dpi at final size)</td></tr>
+          <tr><th scope="row">Not usable</th><td>Screenshots, Word documents, web images, flattened low-resolution mockups</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Size, bleed and safe area</h2>
+      <ul>
+        <li><strong>Final size</strong> — supply the file at the exact printed dimensions in millimetres.</li>
+        <li><strong>Bleed</strong> — 3 mm beyond the trim on every side. Backgrounds must extend into it.</li>
+        <li><strong>Safe area</strong> — keep text and logos at least 3 mm inside the trim line; on curved containers, further.</li>
+        <li><strong>Dielines</strong> — for irregular shapes, include the cut path as a separate spot-colour layer named “Die”.</li>
+      </ul>
+
+      <h2>Colour</h2>
+      <p>
+        Supply CMYK. RGB files are converted, and some bright greens, oranges and blues shift visibly when they are.
+        If colour accuracy matters — brand colours, a match to existing packaging — send a physical reference or a
+        Pantone number and we will quote a match rather than an approximation.
+      </p>
+
+      <h2>Resolution</h2>
+      <p>
+        300 dpi at final size for raster elements. A logo that looks sharp on screen at 72 dpi will look soft
+        printed at 40 mm wide; scaling a small image up does not add detail.
+      </p>
+
+      <h2>Fonts</h2>
+      <p>Outline all text, or embed the fonts. Unoutlined text gets substituted, and the substitute is never the font you chose.</p>
+
+      <h2>White ink and clear material</h2>
+      <p>
+        On clear or metallic stock, colours print translucent unless a white layer sits underneath. Mark the areas
+        that need white ink on a separate layer and expect it to be quoted as an extra pass.
+      </p>
+
+      <h2>Barcodes and variable data</h2>
+      <p>
+        Supply barcodes as vector at the required module size, with the quiet zone intact. For variable data
+        (serial numbers, batch codes, QR codes), send a CSV with one row per label and confirm the field order in writing.
+      </p>
+
+      <h2>The five things that get a file sent back</h2>
+      <ol>
+        <li>No bleed on a full-bleed design.</li>
+        <li>Text closer than 2 mm to the cut line.</li>
+        <li>RGB artwork with a brand colour that must match.</li>
+        <li>Raster logo below 300 dpi at final size.</li>
+        <li>Dieline supplied as a picture instead of a vector path.</li>
+      </ol>
+
+      <p>Not sure whether your file is usable? Send it before ordering — <a href={mailLink("Artwork check request")}>we will check it and tell you</a>, at no cost and with no obligation.</p>
+    </div>
+  </section>
+  <CtaBand />
+</BaseLayout>

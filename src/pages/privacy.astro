@@ -1,0 +1,55 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { site } from "../data/site";
+---
+
+<BaseLayout title="Privacy policy" description="What data this website collects, why, how long it is kept and how to exercise your rights. No advertising trackers are loaded on this site.">
+  <Breadcrumbs items={[{ label: "Privacy" }]} />
+  <section class="tight">
+    <div class="wrap narrow prose">
+      <h1>Privacy policy</h1>
+      <p class="small">Last updated: November 2026</p>
+
+      <h2>Who we are</h2>
+      <p>{site.brand} sells custom printed labels and stickers to business customers. Contact for any privacy question: <a href={`mailto:${site.email}`}>{site.email}</a>.</p>
+
+      <h2>What we collect</h2>
+      <p>This website is static. It does not have accounts, a cart or a login, and it does not load advertising or analytics trackers.</p>
+      <ul>
+        <li><strong>Information you send us</strong> — name, company, email, phone or WhatsApp number, shipping address, and the artwork or specifications you attach.</li>
+        <li><strong>Order information</strong> — what you ordered, quantities, prices and delivery details, kept for accounting and warranty purposes.</li>
+        <li><strong>Server logs</strong> — the hosting provider records requests (IP address, user agent, timestamp) for security and abuse prevention.</li>
+      </ul>
+
+      <h2>Why we use it</h2>
+      <ul>
+        <li>To answer enquiries and prepare quotations.</li>
+        <li>To produce and deliver an order, and to handle defects or returns.</li>
+        <li>To meet accounting and tax obligations.</li>
+        <li>To protect the site against abuse.</li>
+      </ul>
+
+      <h2>Legal bases (GDPR)</h2>
+      <p>Where the GDPR applies: performance of a contract or steps before a contract (Article 6(1)(b)), legal obligation for tax records (6(1)(c)), and legitimate interests for security and fraud prevention (6(1)(f)).</p>
+
+      <h2>Who we share it with</h2>
+      <p>Only what is necessary: the printing and finishing partners producing your order, the carrier delivering it, and our email and hosting providers. We do not sell personal data.</p>
+
+      <h2>International transfers</h2>
+      <p>Production is in China and our team is based there, so enquiries and order data are processed in China. Where the GDPR applies, transfers rely on appropriate safeguards such as standard contractual clauses with our service providers.</p>
+
+      <h2>How long we keep it</h2>
+      <p>Enquiries that do not become orders: up to 24 months. Order and invoice records: as long as accounting law requires. Artwork files: deleted on request once production is complete, unless you ask us to keep them for reorders.</p>
+
+      <h2>Your rights</h2>
+      <p>You can ask for access, correction, deletion, restriction, portability, or object to processing. Email <a href={`mailto:${site.email}`}>{site.email}</a> and we will respond within 30 days. You can also complain to your local data protection authority.</p>
+
+      <h2>Cookies</h2>
+      <p>This site sets no advertising or analytics cookies. If that changes, this page will list them and ask for consent first.</p>
+
+      <h2>Children</h2>
+      <p>The site is a business service and is not directed at children under 16.</p>
+    </div>
+  </section>
+</BaseLayout>

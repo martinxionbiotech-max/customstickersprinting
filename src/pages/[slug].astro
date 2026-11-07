@@ -1,0 +1,185 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { site, mailLink, waLink } from '../data/site';
+
+export async function getStaticPaths() {
+  const products = await getCollection('products', (p) => p.data.status === 'published');
+  return products.map((p) => ({ params: { slug: p.id }, props: { product: p } }));
+}
+
+interface Props {
+  product: CollectionEntry<'products'>;
+}
+
+const { product } = Astro.props;
+const d = product.data;
+const { Content } = await render(product);
+const all = await getCollection('products');
+const related = d.relatedProducts
+  .map((slug) => all.find((p) => p.id === slug))
+  .filter((p): p is CollectionEntry<'products'> => Boolean(p));
+
+const categoryLabel = d.category === 'labels' ? 'Labels' : 'Stickers';
+const categoryHref = d.category === 'labels' ? '/custom-labels/' : '/custom-stickers/';
+
+const productLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: d.title,
+  serviceType: d.title,
+  description: d.description,
+  provider: { '@id': `${site.url}/#organization` },
+  areaServed: site.markets,
+  url: new URL(Astro.url.pathname, Astro.site).href,
+  offers: {
+    '@type': 'Offer',
+    availability: 'https://schema.org/InStock',
+    priceSpecification: {
+      '@type': 'PriceSpecification',
+      description: `Quoted per project. Minimum order ${site.moq} units.`,
+    },
+  },
+};
+
+const faqs = [
+  {
+    q: `What is the minimum order for ${d.title.toLowerCase()}?`,
+    a: `${site.moq} units per design. Mixed designs can be combined in one order where the material and size match; ask us and we will confirm before quoting.`,
+  },
+  {
+    q: 'How long does production take?',
+    a: `${site.leadTime}. Delivery time depends on destination and shipping method, and is confirmed with the quotation.`,
+  },
+  {
+    q: 'What artwork do you need?',
+    a: 'A vector file (AI, EPS, PDF or SVG) at final size, with fonts outlined. If you only have a PNG or JPG, send the highest resolution you have and we will tell you whether it is usable before you pay anything.',
+  },
+];
+
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+---
+
+<BaseLayout title={d.title} description={d.seoDescription ?? d.description} type="article" jsonLd={[productLd, faqLd]}>
+  <Breadcrumbs items={[{ label: categoryLabel, href: categoryHref }, { label: d.title }]} />
+
+  <section class="tight">
+    <div class="wrap">
+      <div class="grid" style="grid-template-columns: minmax(0,1.6fr) minmax(280px,1fr); align-items:start;">
+        <div>
+          <p class="eyebrow">{categoryLabel}</p>
+          <h1>{d.title}</h1>
+          <p class="lead" style="font-size:1.08rem;color:var(--ink-2);max-width:60ch">{d.description}</p>
+          <div class="actions" style="display:flex;gap:12px;flex-wrap:wrap;margin-top:20px">
+            <a class="btn btn-primary" href={mailLink(`Quotation request — ${d.title}`)}>Request a quote</a>
+            <a class="btn btn-wa" href={waLink(`Hello, I am interested in ${d.title}.\n\nSize:\nMaterial:\nQuantity:\nDestination country:\n\nCould you send a quotation?`)} rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+
+        <aside class="card" style="gap:0">
+          <h3 style="margin-bottom:12px">At a glance</h3>
+          <table style="font-size:.9rem">
+            <tbody>
+              <tr><th scope="row">Minimum order</th><td>{d.moq}</td></tr>
+              <tr><th scope="row">Lead time</th><td>{d.leadTime}</td></tr>
+              <tr><th scope="row">Materials</th><td>{d.materials.slice(0, 4).join(', ')}</td></tr>
+              <tr><th scope="row">Finishes</th><td>{d.finishes.slice(0, 4).join(', ')}</td></tr>
+              <tr><th scope="row">Markets</th><td>US · UK · EU</td></tr>
+            </tbody>
+          </table>
+          <p class="small" style="margin-top:12px">Pricing is quoted per project: size, material, quantity and finishing all move the unit price.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="tight" style="background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap grid grid-3">
+      <div>
+        <h3 style="margin-top:0">Materials</h3>
+        <ul>{d.materials.map((m) => <li>{m}</li>)}</ul>
+      </div>
+      <div>
+        <h3 style="margin-top:0">Printing</h3>
+        <ul>{d.printingMethods.map((m) => <li>{m}</li>)}</ul>
+      </div>
+      <div>
+        <h3 style="margin-top:0">Finishes</h3>
+        <ul>{d.finishes.map((m) => <li>{m}</li>)}</ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap narrow prose">
+      <Content />
+    </div>
+  </section>
+
+  <section class="tight" style="background:var(--bg-2);border-top:1px solid var(--line)">
+    <div class="wrap">
+      <div class="grid grid-2">
+        <div>
+          <h2>What you can customise</h2>
+          <ul>{d.customization.map((c) => <li>{c}</li>)}</ul>
+        </div>
+        <div>
+          <h2>Typical applications</h2>
+          <ul>{d.applications.map((c) => <li>{c}</li>)}</ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Questions we get before every order</h2>
+      <div class="grid grid-3" style="margin-top:18px">
+        {faqs.map((f) => (
+          <div class="card">
+            <h3>{f.q}</h3>
+            <p>{f.a}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {related.length > 0 && (
+    <section class="tight" style="border-top:1px solid var(--line)">
+      <div class="wrap">
+        <h2>Related products</h2>
+        <div class="grid grid-3" style="margin-top:16px">
+          {related.map((r) => (
+            <a class="card" href={`/${r.id}/`}>
+              <h3>{r.data.title}</h3>
+              <p>{r.data.description.slice(0, 120)}…</p>
+              <span class="more">View product →</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {d.knowledgeLinks.length > 0 && (
+    <section class="tight">
+      <div class="wrap narrow">
+        <h2>Background reading</h2>
+        <ul>{d.knowledgeLinks.map((k) => <li><a href={k.href}>{k.label}</a></li>)}</ul>
+      </div>
+    </section>
+  )}
+
+  <CtaBand subject={`Quotation request — ${d.title}`} />
+</BaseLayout>

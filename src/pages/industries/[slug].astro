@@ -1,0 +1,50 @@
+---
+import { getCollection, render, type CollectionEntry } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import CtaBand from "../../components/CtaBand.astro";
+import { site } from "../../data/site";
+
+export async function getStaticPaths() {
+  const industries = await getCollection("industries");
+  return industries.map((i) => ({ params: { slug: i.id }, props: { industry: i } }));
+}
+
+interface Props { industry: CollectionEntry<"industries">; }
+const { industry } = Astro.props;
+const d = industry.data;
+const { Content } = await render(industry);
+const products = await getCollection("products");
+const related = d.products.map((s) => products.find((p) => p.id === s)).filter((p): p is CollectionEntry<"products"> => Boolean(p));
+---
+
+<BaseLayout title={d.heading} description={d.description} type="article">
+  <Breadcrumbs items={[{ label: "Industries", href: "/industries/" }, { label: d.heading }]} />
+  <section class="tight">
+    <div class="wrap narrow">
+      <p class="eyebrow">Industry</p>
+      <h1>{d.heading}</h1>
+      <p style="font-size:1.08rem;color:var(--ink-2)">{d.description}</p>
+      <div class="prose" style="margin-top:26px"><Content /></div>
+    </div>
+  </section>
+
+  {related.length > 0 && (
+    <section class="tight" style="background:var(--bg-2);border-top:1px solid var(--line)">
+      <div class="wrap">
+        <h2>Products used in this industry</h2>
+        <div class="grid grid-3" style="margin-top:16px">
+          {related.map((p) => (
+            <a class="card" href={`/${p.id}/`}>
+              <h3>{p.data.title}</h3>
+              <p>{p.data.description.slice(0, 110)}…</p>
+              <span class="more">View →</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <CtaBand subject={`Quotation — ${d.heading}`} body={`Tell us the container, the quantity and the destination. Minimum ${site.moq} units.`} />
+</BaseLayout>

@@ -1,0 +1,159 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { site, mailLink, waLink } from '../data/site';
+
+const categories = [
+  {
+    title: 'Custom labels',
+    href: '/custom-labels/',
+    body: 'Product, bottle, jar, cosmetic and food labels — roll or sheet, paper or synthetic, printed to your artwork.',
+    links: [
+      { label: 'Roll labels', href: '/roll-labels/' },
+      { label: 'Bottle labels', href: '/bottle-labels/' },
+      { label: 'Cosmetic labels', href: '/cosmetic-labels/' },
+      { label: 'Food labels', href: '/food-labels/' },
+    ],
+  },
+  {
+    title: 'Custom stickers',
+    href: '/custom-stickers/',
+    body: 'Vinyl, clear, die cut and logo stickers for packaging, retail and promotion — weatherproof options included.',
+    links: [
+      { label: 'Vinyl stickers', href: '/vinyl-stickers/' },
+      { label: 'Logo stickers', href: '/logo-stickers/' },
+      { label: 'Die cut stickers', href: '/die-cut-stickers/' },
+      { label: 'Sticker sheets', href: '/sticker-sheets/' },
+    ],
+  },
+];
+
+const industries = [
+  { title: 'Beauty & skincare', href: '/industries/beauty-skincare/', body: 'Bottle and jar labels that survive oil, alcohol and bathroom humidity.' },
+  { title: 'Candle & fragrance', href: '/industries/candle-fragrance/', body: 'Jar wraps and warning labels that stay flat on curved glass.' },
+  { title: 'Food & beverage', href: '/industries/food-beverage/', body: 'Labels for chilled, frozen and condensation-prone containers.' },
+  { title: 'Ecommerce & small business', href: '/industries/ecommerce/', body: 'Logo stickers, packaging seals and short runs from 50 units.' },
+];
+
+const steps = [
+  { n: '01', t: 'Send your specification', b: 'Size, shape, material, quantity and destination — by email or WhatsApp. Artwork optional at this stage.' },
+  { n: '02', t: 'Get a quotation', b: 'We confirm what is producible, flag artwork issues, and quote per project. Usually within one working day.' },
+  { n: '03', t: 'Approve artwork and sample', b: 'A digital proof is always included. Physical samples are available on request before a full run.' },
+  { n: '04', t: 'Production and delivery', b: `Production starts after approval — typically 7–12 working days — then shipped with tracking to the US, UK or EU.` },
+];
+
+const faqs = [
+  { q: 'What is the minimum order?', a: `50 units per design. That is the production minimum, not a marketing threshold — below it the setup cost dominates the unit price.` },
+  { q: 'Do you print samples before a full order?', a: 'Yes. A digital proof is standard; a physical sample can be produced before the full run so you can check material, colour and adhesion on your actual container.' },
+  { q: 'Can I order more than one design?', a: 'Yes, provided the material, size and finishing match. Mixed designs are quoted as one order with the total quantity counted toward the minimum.' },
+  { q: 'How is pricing calculated?', a: 'Size, material, number of colours or print method, finishing, and quantity. Labels are quoted per project because a 30 mm circle and a 90 × 120 mm wrap do not share a price.' },
+  { q: 'Which countries do you ship to?', a: 'United States, United Kingdom and the European Union as standard. Other destinations can be quoted — ask before ordering.' },
+];
+
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+};
+---
+
+<BaseLayout title="Labels & Stickers from 50 Units | Custom Stickers Printing" description={site.description} jsonLd={[faqLd]}>
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Small batch · Worldwide delivery</p>
+      <h1>Custom labels and stickers for growing brands</h1>
+      <p class="lead">
+        Flexible sizes, materials and finishes, produced from {site.moq} units and quoted per project.
+        Send a specification and get a real answer — including the options that will not work.
+      </p>
+      <div class="actions">
+        <a class="btn btn-primary" href="/request-a-quote/">Request a quote</a>
+        <a class="btn btn-secondary" href="/custom-stickers/">Browse stickers</a>
+      </div>
+      <p class="small" style="margin-top:18px">
+        Minimum {site.moq} units · {site.leadTime} · Email and WhatsApp, answered by a person
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Two product lines, one production standard</h2>
+      <p style="max-width:65ch;color:var(--ink-2)">Labels go on products; stickers go on packaging, laptops and shop windows. Both are printed to order, and both start at the same minimum.</p>
+      <div class="grid grid-2" style="margin-top:24px">
+        {categories.map((c) => (
+          <div class="card">
+            <h3><a href={c.href}>{c.title}</a></h3>
+            <p>{c.body}</p>
+            <ul style="font-size:.9rem;margin:8px 0 0">
+              {c.links.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+            </ul>
+            <span class="more"><a href={c.href}>All {c.title.toLowerCase()} →</a></span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <h2>Why brands order from us</h2>
+      <div class="grid grid-3" style="margin-top:22px">
+        <div class="card"><h3>From 50 units</h3><p>A real low minimum for testing a design, a market or a seasonal variant without committing to thousands.</p></div>
+        <div class="card"><h3>Quoted, not guessed</h3><p>Every price is built from your size, material and quantity. No fake “from $0.05” headline that triples at checkout.</p></div>
+        <div class="card"><h3>Artwork checked first</h3><p>We review resolution, bleed and colour before production and tell you what needs fixing — before you pay.</p></div>
+        <div class="card"><h3>Samples before the run</h3><p>Test adhesion and colour on your actual bottle, jar or pouch instead of approving on a screen.</p></div>
+        <div class="card"><h3>US, UK and EU delivery</h3><p>Shipping quoted with the order, with tracking, and duties explained up front rather than on arrival.</p></div>
+        <div class="card"><h3>One person, start to finish</h3><p>The same contact handles the quote, the proof and the production question at 11pm before your launch.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Built for these categories</h2>
+      <div class="grid grid-2" style="margin-top:20px">
+        {industries.map((i) => (
+          <a class="card" href={i.href}>
+            <h3>{i.title}</h3>
+            <p>{i.body}</p>
+            <span class="more">See requirements →</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section style="border-top:1px solid var(--line)">
+    <div class="wrap">
+      <h2>How ordering works</h2>
+      <div class="grid grid-3" style="margin-top:22px">
+        {steps.map((s) => (
+          <div class="card">
+            <span class="badge">{s.n}</span>
+            <h3>{s.t}</h3>
+            <p>{s.b}</p>
+          </div>
+        ))}
+      </div>
+      <p style="margin-top:22px"><a href="/how-to-order/">Full ordering process and what to send →</a></p>
+    </div>
+  </section>
+
+  <section style="background:var(--bg-2);border-top:1px solid var(--line)">
+    <div class="wrap">
+      <h2>Common questions</h2>
+      <div class="grid grid-2" style="margin-top:20px">
+        {faqs.map((f) => (
+          <div class="card">
+            <h3>{f.q}</h3>
+            <p>{f.a}</p>
+          </div>
+        ))}
+      </div>
+      <p style="margin-top:20px"><a href="/faq/">Read all FAQs →</a></p>
+    </div>
+  </section>
+
+  <CtaBand />
+</BaseLayout>

@@ -1,0 +1,52 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { site, mailLink, waLink, quoteMessage } from "../data/site";
+---
+
+<BaseLayout title="Contact" description={`Contact ${site.brand} by email or WhatsApp for quotations, artwork questions and order updates. Minimum order ${site.moq} units.`}>
+  <Breadcrumbs items={[{ label: "Contact" }]} />
+  <section class="tight">
+    <div class="wrap narrow prose">
+      <h1>Contact us</h1>
+      <p>Two ways to reach a person, both monitored during China business hours (GMT+8) and usually answered within one working day.</p>
+
+      <div class="grid grid-2" style="margin:24px 0">
+        <div class="card">
+          <h3>Email</h3>
+          <p><a href={mailLink("Quotation request — custom labels and stickers")}>{site.email}</a></p>
+          <p class="small">Best for artwork files, specifications and anything you want in writing.</p>
+        </div>
+        <div class="card">
+          <h3>WhatsApp</h3>
+          <p><a href={waLink(quoteMessage)} rel="noopener">{site.whatsappDisplay}</a></p>
+          <p class="small">Best for quick questions, photo references of a container, or order status.</p>
+        </div>
+      </div>
+
+      <h2>What to include in a first message</h2>
+      <table>
+        <tbody>
+          <tr><th scope="row">Product</th><td>Labels or stickers, and the container or surface they go on</td></tr>
+          <tr><th scope="row">Size</th><td>Width × height in mm, or diameter for circles</td></tr>
+          <tr><th scope="row">Quantity</th><td>Per design, and how many designs</td></tr>
+          <tr><th scope="row">Material</th><td>Paper, PP, PET or vinyl if you have a preference</td></tr>
+          <tr><th scope="row">Destination</th><td>Country and postcode for the shipping estimate</td></tr>
+          <tr><th scope="row">Artwork</th><td>Optional at first — a photo of the container is often more useful</td></tr>
+        </tbody>
+      </table>
+
+      <p>If you do not know the material yet, say so. Choosing it is part of the conversation, not a prerequisite.</p>
+
+      <h2>Response times</h2>
+      <p>
+        Quotations are usually issued within one working day. Artwork checks and sample arrangements can take
+        longer depending on complexity, and we will tell you when to expect a reply rather than leaving you to ask.
+      </p>
+
+      <p class="small">
+        {site.brand} · {site.addressRegion} · Orders to the United States, United Kingdom and European Union.
+      </p>
+    </div>
+  </section>
+</BaseLayout>

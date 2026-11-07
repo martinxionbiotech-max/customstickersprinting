@@ -1,0 +1,61 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import CtaBand from "../components/CtaBand.astro";
+import { site } from "../data/site";
+---
+
+<BaseLayout title="About us" description={`Who we are, where production happens, how quality is checked and what we will not promise — plus how labels and stickers are quoted, from ${site.moq} units.`}>
+  <Breadcrumbs items={[{ label: "About" }]} />
+  <section class="tight">
+    <div class="wrap narrow prose">
+      <h1>About {site.brand}</h1>
+      <p class="lead" style="font-size:1.08rem;color:var(--ink-2)">
+        An independent custom printing brand with China-based manufacturing and international delivery.
+        We print labels and stickers for brands that need a real minimum, a real quotation and a person who answers.
+      </p>
+
+      <h2>What we do</h2>
+      <p>
+        We produce custom labels and custom stickers: product and packaging labels, bottle and jar labels,
+        cosmetic and food labels, vinyl and die-cut stickers, logo stickers and sticker sheets. Orders start at
+        {" "}{site.moq} units per design and are quoted per project, because a 30 mm circle and a 90 × 120 mm wrap
+        do not share a unit price.
+      </p>
+
+      <h2>How we work</h2>
+      <p>
+        Manufacturing is in China; the commercial relationship is direct. You send a specification, we check what is
+        producible, quote it, and — if you want — produce a physical sample before the full run. There is no
+        distributor between you and the press, which is why we can answer a question about material or colour
+        without forwarding an email.
+      </p>
+
+      <h2>What we will not do</h2>
+      <ul>
+        <li>Quote a price before knowing the size, material and quantity — those three decide it.</li>
+        <li>Publish a "from $0.05 per label" headline that assumes the smallest size and the largest run.</li>
+        <li>Promise a certification, a test result or a delivery date we cannot evidence.</li>
+        <li>Claim a US or EU factory, warehouse or office that does not exist.</li>
+      </ul>
+
+      <h2>Quality control</h2>
+      <p>
+        Every job is checked against the approved proof before packing: print registration, colour against the
+        approved reference, die-cut alignment, and adhesion on a production sample. If something is outside
+        tolerance we tell you before shipping rather than after the parcel arrives.
+      </p>
+
+      <h2>Who we work with</h2>
+      <p>
+        Skincare and candle brands launching a first SKU, food and beverage producers testing a new container,
+        ecommerce sellers who need packaging stickers in short runs, and agencies managing several client brands
+        at once. The common thread is a quantity too small for a traditional label converter and too specific
+        for a consumer sticker site.
+      </p>
+
+      <p class="small">Last reviewed: November 2026. Questions about this page: <a href={`mailto:${site.email}`}>{site.email}</a>.</p>
+    </div>
+  </section>
+  <CtaBand />
+</BaseLayout>

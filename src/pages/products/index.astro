@@ -1,0 +1,43 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import CtaBand from "../../components/CtaBand.astro";
+
+const products = await getCollection("products", (p) => p.data.status === "published");
+const labels = products.filter((p) => p.data.category === "labels").sort((a, b) => a.data.order - b.data.order);
+const stickers = products.filter((p) => p.data.category === "stickers").sort((a, b) => a.data.order - b.data.order);
+---
+
+<BaseLayout title="Products: custom labels and stickers" description="Every product line: roll, bottle, jar, cosmetic and food labels, plus vinyl, clear, die cut and logo stickers. All from 50 units.">
+  <Breadcrumbs items={[{ label: "Products" }]} />
+  <section class="tight">
+    <div class="wrap">
+      <h1>Custom labels and stickers</h1>
+      <p style="max-width:65ch;color:var(--ink-2)">Two product families, one production standard. Every item below is quoted per project — size, material and quantity decide the price.</p>
+
+      <h2 style="margin-top:36px">Labels</h2>
+      <div class="grid grid-3" style="margin-top:16px">
+        {labels.map((p) => (
+          <a class="card" href={`/${p.id}/`}>
+            <h3>{p.data.title}</h3>
+            <p>{p.data.description.slice(0, 110)}…</p>
+            <span class="more">View →</span>
+          </a>
+        ))}
+      </div>
+
+      <h2 style="margin-top:44px">Stickers</h2>
+      <div class="grid grid-3" style="margin-top:16px">
+        {stickers.map((p) => (
+          <a class="card" href={`/${p.id}/`}>
+            <h3>{p.data.title}</h3>
+            <p>{p.data.description.slice(0, 110)}…</p>
+            <span class="more">View →</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+  <CtaBand />
+</BaseLayout>
