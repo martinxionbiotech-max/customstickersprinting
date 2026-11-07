@@ -1,0 +1,87 @@
+---
+import { getCollection, render, type CollectionEntry } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import CtaBand from "../../components/CtaBand.astro";
+import { site } from "../../data/site";
+
+export async function getStaticPaths() {
+  const articles = await getCollection("knowledge");
+  return articles.map((a) => ({ params: { slug: a.id }, props: { article: a } }));
+}
+
+interface Props { article: CollectionEntry<"knowledge">; }
+const { article } = Astro.props;
+const d = article.data;
+const { Content } = await render(article);
+
+const PILLAR_TITLES: Record<string, string> = {
+  "label-materials": "Label materials and adhesives",
+  "sticker-materials": "Sticker materials and cutting",
+  printing: "Printing and production",
+  artwork: "Artwork preparation",
+  procurement: "MOQ, pricing and ordering",
+};
+
+const all = await getCollection("knowledge");
+const siblings = all.filter((a) => a.data.pillar === d.pillar).sort((a, b) => a.data.order - b.data.order);
+const pos = siblings.findIndex((a) => a.id === article.id);
+const prev = pos > 0 ? siblings[pos - 1] : null;
+const next = pos >= 0 && pos < siblings.length - 1 ? siblings[pos + 1] : null;
+
+const products = await getCollection("products");
+const related = d.relatedProducts.map((s) => products.find((p) => p.id === s)).filter((p): p is CollectionEntry<"products"> => Boolean(p));
+
+const ld = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: d.title,
+  description: d.description,
+  datePublished: "2026-11-01",
+  dateModified: `${d.updated}-01`,
+  author: { "@type": "Organization", name: site.brand },
+  publisher: { "@id": `${site.url}/#organization` },
+  mainEntityOfPage: new URL(Astro.url.pathname, Astro.site).href,
+};
+---
+
+<BaseLayout title={d.title} description={d.description} type="article" jsonLd={[ld]}>
+  <Breadcrumbs items={[{ label: "Knowledge", href: "/knowledge/" }, { label: PILLAR_TITLES[d.pillar], href: "/knowledge/" }, { label: d.title }]} />
+  <section class="tight">
+    <div class="wrap narrow">
+      <p class="eyebrow">{PILLAR_TITLES[d.pillar]}</p>
+      <h1>{d.title}</h1>
+      <p style="font-size:1.06rem;color:var(--ink-2)">{d.description}</p>
+      <p class="small">Updated {d.updated}</p>
+      <div class="prose" style="margin-top:26px"><Content /></div>
+    </div>
+  </section>
+
+  {related.length > 0 && (
+    <section class="tight" style="background:var(--bg-2);border-top:1px solid var(--line)">
+      <div class="wrap">
+        <h2>Products this applies to</h2>
+        <div class="grid grid-3" style="margin-top:14px">
+          {related.map((p) => (
+            <a class="card" href={`/${p.id}/`}>
+              <h3>{p.data.title}</h3>
+              <p>{p.data.description.slice(0, 100)}…</p>
+              <span class="more">View product →</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {(prev || next) && (
+    <section class="tight">
+      <div class="wrap narrow" style="display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap">
+        {prev ? <a href={`/knowledge/${prev.id}/`}>← {prev.data.title}</a> : <span />}
+        {next ? <a href={`/knowledge/${next.id}/`} style="text-align:right">{next.data.title} →</a> : <span />}
+      </div>
+    </section>
+  )}
+
+  <CtaBand />
+</BaseLayout>

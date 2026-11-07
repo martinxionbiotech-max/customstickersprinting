@@ -8,18 +8,20 @@ const staticPaths = [
   "/jar-labels/", "/cosmetic-labels/", "/food-labels/", "/waterproof-labels/",
   "/clear-labels/", "/vinyl-stickers/", "/logo-stickers/", "/die-cut-stickers/",
   "/sticker-sheets/", "/clear-stickers/", "/low-moq-label-printing/",
-  "/small-batch-sticker-printing/", "/privacy/", "/terms/",
+  "/small-batch-sticker-printing/", "/privacy/", "/terms/", "/knowledge/",
 ];
 
 export const GET: APIRoute = async ({ site }) => {
   const base = (site ?? new URL("https://customstickersprinting.com")).href.replace(/\/$/, "");
   const products = await getCollection("products", (p) => p.data.status === "published");
   const industries = await getCollection("industries");
+  const knowledge = await getCollection("knowledge");
 
   const urls = [
     ...staticPaths,
     ...products.map((p) => `/${p.id}/`),
     ...industries.map((i) => `/industries/${i.id}/`),
+    ...knowledge.map((k) => `/knowledge/${k.id}/`),
   ];
   const unique = [...new Set(urls)];
   const body = `<?xml version="1.0" encoding="UTF-8"?>

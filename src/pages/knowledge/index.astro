@@ -1,0 +1,50 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import CtaBand from "../../components/CtaBand.astro";
+
+const articles = await getCollection("knowledge");
+const PILLARS: { key: string; title: string; intro: string }[] = [
+  { key: "label-materials", title: "Label materials and adhesives", intro: "Paper, PP, PET, adhesive and the conditions each one survives." },
+  { key: "sticker-materials", title: "Sticker materials and cutting", intro: "Vinyl versus paper, die cut versus kiss cut, and what a finish actually does." },
+  { key: "printing", title: "Printing and production", intro: "Digital versus flexo, how a roll is made, and where the crossover sits." },
+  { key: "artwork", title: "Artwork preparation", intro: "Colour, bleed, safe area and the files that print without surprises." },
+  { key: "procurement", title: "MOQ, pricing and ordering", intro: "What a minimum really covers and which variables move a price." },
+];
+const groups = PILLARS.map((p) => ({
+  ...p,
+  items: articles.filter((a) => a.data.pillar === p.key).sort((a, b) => a.data.order - b.data.order),
+}));
+---
+
+<BaseLayout title="Knowledge base: labels, stickers and print production" description="Technical background on label materials, sticker formats, printing methods, artwork preparation and MOQ — written for buyers rather than printers.">
+  <Breadcrumbs items={[{ label: "Knowledge" }]} />
+  <section class="tight">
+    <div class="wrap">
+      <h1>Knowledge base</h1>
+      <p style="max-width:68ch;color:var(--ink-2);font-size:1.05rem">
+        Background on the decisions behind a label order: which material survives your product,
+        which format suits your quantity, and what in the artwork causes reprints.
+        Written for buyers, not for printers.
+      </p>
+
+      {groups.map((g) => (
+        <section style="padding:34px 0 0">
+          <h2>{g.title}</h2>
+          <p style="color:var(--ink-3);max-width:60ch">{g.intro}</p>
+          <div class="grid grid-3" style="margin-top:16px">
+            {g.items.map((a) => (
+              <a class="card" href={`/knowledge/${a.id}/`}>
+                <h3>{a.data.title}</h3>
+                <p>{a.data.description}</p>
+                <span class="more">Read →</span>
+              </a>
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+  </section>
+  <CtaBand heading="Have a specification you are unsure about?" body="Send the product, the container and the storage condition. We will tell you which material and format actually fit — before you order." />
+</BaseLayout>

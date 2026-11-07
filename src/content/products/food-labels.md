@@ -15,6 +15,11 @@ relatedProducts: ["jar-labels", "bottle-labels", "custom-labels"]
 seoDescription: "Custom food labels for chilled, frozen and dry products: freezer-grade adhesives, condensation-resistant materials and space for required text."
 order: 5
 lastVerified: "2026-11"
+knowledgeLinks:
+  - label: "Waterproof label materials"
+    href: "/knowledge/waterproof-label-materials/"
+  - label: "Paper vs PP vs PET labels"
+    href: "/knowledge/paper-vs-pp-vs-pet-labels/"
 ---
 
 ## The conditions decide the label

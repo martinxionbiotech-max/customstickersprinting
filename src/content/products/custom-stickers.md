@@ -15,6 +15,11 @@ relatedProducts: ["vinyl-stickers", "logo-stickers", "die-cut-stickers", "sticke
 seoDescription: "Custom printed stickers from 50 units: white or clear vinyl, paper, die cut or kiss cut, gloss or matte, quoted per project."
 order: 1
 lastVerified: "2026-11"
+knowledgeLinks:
+  - label: "Vinyl vs paper stickers"
+    href: "/knowledge/vinyl-vs-paper-stickers/"
+  - label: "What MOQ means"
+    href: "/knowledge/what-is-moq/"
 ---
 
 ## Stickers do a different job from labels

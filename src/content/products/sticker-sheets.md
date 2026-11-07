@@ -15,6 +15,11 @@ relatedProducts: ["custom-stickers", "die-cut-stickers", "logo-stickers"]
 seoDescription: "Custom sticker sheets with several designs on one backing: kiss cut layout, sheet sizing and when sheets beat individual die cut stickers."
 order: 5
 lastVerified: "2026-11"
+knowledgeLinks:
+  - label: "Die cut vs kiss cut"
+    href: "/knowledge/die-cut-vs-kiss-cut/"
+  - label: "Vinyl vs paper stickers"
+    href: "/knowledge/vinyl-vs-paper-stickers/"
 ---
 
 ## Why sheets

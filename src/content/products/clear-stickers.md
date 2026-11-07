@@ -15,6 +15,11 @@ relatedProducts: ["custom-stickers", "vinyl-stickers", "clear-labels"]
 seoDescription: "Custom clear stickers on transparent vinyl: white ink for opaque colour, suitable surfaces, and why bubbles show more on clear film."
 order: 6
 lastVerified: "2026-11"
+knowledgeLinks:
+  - label: "CMYK vs RGB"
+    href: "/knowledge/cmyk-vs-rgb/"
+  - label: "Vinyl vs paper stickers"
+    href: "/knowledge/vinyl-vs-paper-stickers/"
 ---
 
 ## The appeal and the catch

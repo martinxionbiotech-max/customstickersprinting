@@ -15,6 +15,11 @@ relatedProducts: ["custom-stickers", "vinyl-stickers", "die-cut-stickers"]
 seoDescription: "Custom logo stickers die cut to your brand shape, from 50 units: white or clear vinyl, gloss or matte, colour matched to your artwork."
 order: 3
 lastVerified: "2026-11"
+knowledgeLinks:
+  - label: "CMYK vs RGB"
+    href: "/knowledge/cmyk-vs-rgb/"
+  - label: "Die cut vs kiss cut"
+    href: "/knowledge/die-cut-vs-kiss-cut/"
 ---
 
 ## A logo sticker is a colour-matching job

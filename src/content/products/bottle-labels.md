@@ -15,6 +15,11 @@ relatedProducts: ["custom-labels", "cosmetic-labels", "roll-labels"]
 seoDescription: "Custom bottle labels for curved containers: condensation-resistant materials, wrap sizing and adhesives that hold on glass and PET."
 order: 3
 lastVerified: "2026-11"
+knowledgeLinks:
+  - label: "Waterproof label materials"
+    href: "/knowledge/waterproof-label-materials/"
+  - label: "Permanent vs removable adhesive"
+    href: "/knowledge/permanent-vs-removable-adhesive/"
 ---
 
 ## Why bottles are harder than they look

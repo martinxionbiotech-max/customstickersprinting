@@ -15,6 +15,11 @@ relatedProducts: ["roll-labels", "bottle-labels", "cosmetic-labels", "food-label
 seoDescription: "Custom printed labels from 50 units: paper, PP, PET and clear stock, roll or sheet, quoted per project for US, UK and EU delivery."
 order: 1
 lastVerified: "2026-11"
+knowledgeLinks:
+  - label: "Paper vs PP vs PET labels"
+    href: "/knowledge/paper-vs-pp-vs-pet-labels/"
+  - label: "What affects label pricing"
+    href: "/knowledge/what-affects-label-pricing/"
 ---
 
 ## What custom labels are for

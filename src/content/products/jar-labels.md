@@ -15,6 +15,11 @@ relatedProducts: ["food-labels", "cosmetic-labels", "custom-labels"]
 seoDescription: "Custom jar labels for preserves, candles and cosmetics: wrap sizing for curved glass, condensation-resistant stock and foil or matte finishes."
 order: 6
 lastVerified: "2026-11"
+knowledgeLinks:
+  - label: "Paper vs PP vs PET labels"
+    href: "/knowledge/paper-vs-pp-vs-pet-labels/"
+  - label: "Gloss vs matte finish"
+    href: "/knowledge/gloss-vs-matte-finish/"
 ---
 
 ## Curved glass is the constraint

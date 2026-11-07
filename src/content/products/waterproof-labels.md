@@ -15,6 +15,11 @@ relatedProducts: ["bottle-labels", "food-labels", "clear-labels"]
 seoDescription: "Waterproof labels: which materials survive condensation, immersion and freezing, and how the adhesive, not the print, decides whether they hold."
 order: 7
 lastVerified: "2026-11"
+knowledgeLinks:
+  - label: "Waterproof label materials"
+    href: "/knowledge/waterproof-label-materials/"
+  - label: "Permanent vs removable adhesive"
+    href: "/knowledge/permanent-vs-removable-adhesive/"
 ---
 
 ## "Waterproof" is not one property

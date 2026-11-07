@@ -15,6 +15,11 @@ relatedProducts: ["custom-stickers", "die-cut-stickers", "clear-stickers"]
 seoDescription: "Custom vinyl stickers for outdoor and wet conditions: white or clear vinyl, gloss or matte laminate, die cut to shape from 50 units."
 order: 2
 lastVerified: "2026-11"
+knowledgeLinks:
+  - label: "Vinyl vs paper stickers"
+    href: "/knowledge/vinyl-vs-paper-stickers/"
+  - label: "Gloss vs matte finish"
+    href: "/knowledge/gloss-vs-matte-finish/"
 ---
 
 ## Why vinyl

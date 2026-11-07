@@ -15,6 +15,11 @@ relatedProducts: ["bottle-labels", "waterproof-labels", "cosmetic-labels"]
 seoDescription: "Custom clear labels and the no-label look: how white ink works on transparent film, which containers suit clear stock, and what causes visible bubbles."
 order: 8
 lastVerified: "2026-11"
+knowledgeLinks:
+  - label: "CMYK vs RGB"
+    href: "/knowledge/cmyk-vs-rgb/"
+  - label: "Paper vs PP vs PET labels"
+    href: "/knowledge/paper-vs-pp-vs-pet-labels/"
 ---
 
 ## What the no-label look actually requires

@@ -15,6 +15,11 @@ relatedProducts: ["custom-stickers", "vinyl-stickers", "sticker-sheets"]
 seoDescription: "Custom die cut stickers in any shape: contour cutting explained, artwork requirements, bleed and when a custom die pays for itself."
 order: 4
 lastVerified: "2026-11"
+knowledgeLinks:
+  - label: "Die cut vs kiss cut"
+    href: "/knowledge/die-cut-vs-kiss-cut/"
+  - label: "Bleed and safe area"
+    href: "/knowledge/bleed-and-safe-area/"
 ---
 
 ## What die cutting actually is

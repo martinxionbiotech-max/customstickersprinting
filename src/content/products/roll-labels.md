@@ -15,6 +15,11 @@ relatedProducts: ["custom-labels", "bottle-labels", "food-labels"]
 seoDescription: "Custom roll labels for applicators or hand application: consistent spacing, core and winding options, from 50 units, quoted per project."
 order: 2
 lastVerified: "2026-11"
+knowledgeLinks:
+  - label: "How roll labels are made"
+    href: "/knowledge/how-roll-labels-are-made/"
+  - label: "Digital vs flexographic"
+    href: "/knowledge/digital-vs-flexographic-printing/"
 ---
 
 ## When rolls beat sheets

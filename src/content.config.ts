@@ -37,4 +37,16 @@ const industries = defineCollection({
   }),
 });
 
-export const collections = { products, industries };
+const knowledge = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/knowledge' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    pillar: z.enum(['label-materials', 'sticker-materials', 'printing', 'artwork', 'procurement']),
+    order: z.number().default(50),
+    updated: z.string().default('2026-11'),
+    relatedProducts: z.array(z.string()).default([]),
+  }),
+});
+
+export const collections = { products, industries, knowledge };

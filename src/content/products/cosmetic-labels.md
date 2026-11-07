@@ -15,6 +15,11 @@ relatedProducts: ["bottle-labels", "custom-labels", "clear-labels"]
 seoDescription: "Custom cosmetic labels for skincare and beauty: oil-resistant materials, small-bottle adhesion, clear no-label film and durable finishes."
 order: 4
 lastVerified: "2026-11"
+knowledgeLinks:
+  - label: "Waterproof label materials"
+    href: "/knowledge/waterproof-label-materials/"
+  - label: "Gloss vs matte finish"
+    href: "/knowledge/gloss-vs-matte-finish/"
 ---
 
 ## The bathroom is a harsh environment
