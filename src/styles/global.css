@@ -179,3 +179,8 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 34px 0; }
 .pillar-toc ol { margin: 0; padding-left: 20px; line-height: 1.9; }
 .pillar-toc a { text-decoration: none; }
 .pillar-toc a:hover { text-decoration: underline; }
+
+/* Technical diagrams inside articles */
+.diagram { margin: 28px 0; }
+.diagram svg { width: 100%; height: auto; display: block; border: 1px solid var(--line, #e5e7eb); border-radius: 8px; background: #fff; }
+.diagram figcaption { margin-top: 8px; font-size: .85rem; color: var(--ink-3, #6b7280); line-height: 1.5; }

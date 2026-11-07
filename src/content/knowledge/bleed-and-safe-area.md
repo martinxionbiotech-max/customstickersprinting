@@ -21,6 +21,37 @@ Most artwork problems that reach a printer are not design problems. They are two
 
 ## Bleed
 
+<figure class="diagram">
+<svg viewBox="0 0 720 320" role="img" aria-labelledby="fig-bleed">
+  <title id="fig-bleed">Bleed, trim and safe area on a label</title>
+  <rect x="0" y="0" width="720" height="320" fill="#ffffff"/>
+  <rect x="60" y="50" width="320" height="220" fill="#fdf3ec" stroke="#c2410c" stroke-width="1.5" stroke-dasharray="7 5"/>
+  <rect x="78" y="68" width="284" height="184" fill="#ffffff" stroke="#0f3d5c" stroke-width="2.5"/>
+  <rect x="96" y="86" width="248" height="148" fill="none" stroke="#6b7280" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <rect x="118" y="110" width="170" height="34" rx="4" fill="#0f3d5c"/>
+  <rect x="118" y="158" width="110" height="10" rx="3" fill="#c2410c"/>
+  <rect x="118" y="178" width="150" height="8" rx="3" fill="#d1d5db"/>
+  <rect x="118" y="194" width="120" height="8" rx="3" fill="#d1d5db"/>
+  <text x="70" y="40" font-family="Arial, sans-serif" font-size="13" fill="#c2410c">bleed edge</text>
+  <text x="86" y="290" font-family="Arial, sans-serif" font-size="13" fill="#0f3d5c" font-weight="bold">trim / cut line</text>
+  <text x="300" y="290" font-family="Arial, sans-serif" font-size="13" fill="#6b7280">safe area</text>
+  <line x1="400" y1="60" x2="470" y2="60" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="470" y="96" width="16" height="16" fill="#fdf3ec" stroke="#c2410c" stroke-dasharray="4 3"/>
+  <text x="496" y="109" font-family="Arial, sans-serif" font-size="14" fill="#14161a">Bleed, 3 mm</text>
+  <text x="496" y="128" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">artwork extends past the cut</text>
+  <line x1="470" y1="136" x2="470" y2="166" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="470" y="166" width="16" height="16" fill="#ffffff" stroke="#0f3d5c" stroke-width="2"/>
+  <text x="496" y="179" font-family="Arial, sans-serif" font-size="14" fill="#14161a">Trim, the cut</text>
+  <text x="496" y="198" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">where the blade runs</text>
+  <line x1="470" y1="206" x2="470" y2="236" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="470" y="236" width="16" height="16" fill="none" stroke="#6b7280" stroke-dasharray="2 3"/>
+  <text x="496" y="249" font-family="Arial, sans-serif" font-size="14" fill="#14161a">Safe area, 3 mm</text>
+  <text x="496" y="268" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">keep text and logos inside</text>
+</svg>
+<figcaption>Bleed extends 3 mm beyond the cut; text stays 3 mm inside it.</figcaption>
+</figure>
+
+
 Cutting is not perfect. A guillotine or a die can drift by a millimetre across a run, and if the artwork stops exactly at the trim line, that drift shows as a white sliver along one edge.
 
 **Bleed** is extra artwork beyond the trim: typically 3 mm on every side. The background extends into it, the blade cuts inside it, and the drift lands on printed area rather than on white.

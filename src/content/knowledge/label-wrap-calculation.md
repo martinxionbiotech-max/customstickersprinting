@@ -39,6 +39,28 @@ Which one you need depends on the artwork and the application:
 - **Gap** suits a design with a defined start and end, or a container where a visible seam line is part of the look. It requires more accurate application.
 - **Butt join** is a gap wrap with almost no gap; it looks best and tolerates the least drift.
 
+
+<figure class="diagram">
+<svg viewBox="0 0 720 320" role="img" aria-labelledby="fig-wrap">
+  <title id="fig-wrap">Circumference, label width and overlap on a wrap label</title>
+  <rect x="0" y="0" width="720" height="320" fill="#ffffff"/>
+  <circle cx="170" cy="150" r="80" fill="#f7f8fa" stroke="#0f3d5c" stroke-width="2"/>
+  <line x1="90" y1="150" x2="250" y2="150" stroke="#6b7280" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="170" y="142" font-family="Arial, sans-serif" font-size="12" fill="#6b7280" text-anchor="middle">d = 73 mm</text>
+  <path d="M170 58 A 92 92 0 0 1 170 242" fill="none" stroke="#c2410c" stroke-width="2"/>
+  <text x="286" y="118" font-family="Arial, sans-serif" font-size="13" fill="#c2410c">&#960; &#215; d = 229 mm</text>
+  <text x="286" y="140" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">the circumference</text>
+  <text x="60" y="284" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">top view</text>
+  <rect x="330" y="196" width="288" height="44" fill="#dfe7ee" stroke="#0f3d5c" stroke-width="1.5"/>
+  <rect x="606" y="196" width="12" height="44" fill="#c2410c"/>
+  <text x="330" y="188" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">label, unrolled</text>
+  <text x="618" y="188" font-family="Arial, sans-serif" font-size="12" fill="#c2410c" text-anchor="end">overlap 4 mm</text>
+  <text x="330" y="262" font-family="Arial, sans-serif" font-size="13" fill="#14161a">label width = 229 + 4 = 233 mm</text>
+  <text x="330" y="282" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">a gap wrap subtracts instead: 229 &#8722; 3 = 226 mm</text>
+</svg>
+<figcaption>Width is a circumference plus an overlap, not a panel width.</figcaption>
+</figure>
+
 ## Measuring the circumference
 
 Three methods, in order of accuracy:

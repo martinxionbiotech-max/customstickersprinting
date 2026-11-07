@@ -29,6 +29,33 @@ A roll label is not a sheet label wound up. The roll format adds a set of mechan
 
 Each step can introduce a variable that matters at application: registration, die depth, matrix removal, tension and winding direction.
 
+
+<figure class="diagram">
+<svg viewBox="0 0 720 320" role="img" aria-labelledby="fig-roll">
+  <title id="fig-roll">Anatomy of a roll label: core, wound web, labels and gaps</title>
+  <rect x="0" y="0" width="720" height="320" fill="#ffffff"/>
+  <circle cx="170" cy="160" r="96" fill="#dfe7ee"/>
+  <circle cx="170" cy="160" r="86" fill="none" stroke="#c7d2dd" stroke-width="1"/>
+  <circle cx="170" cy="160" r="74" fill="none" stroke="#c7d2dd" stroke-width="1"/>
+  <circle cx="170" cy="160" r="62" fill="none" stroke="#c7d2dd" stroke-width="1"/>
+  <circle cx="170" cy="160" r="50" fill="#ffffff" stroke="#0f3d5c" stroke-width="2"/>
+  <circle cx="170" cy="160" r="30" fill="#f7f8fa" stroke="#6b7280" stroke-width="1.5"/>
+  <text x="170" y="164" font-family="Arial, sans-serif" font-size="11" fill="#6b7280" text-anchor="middle">core</text>
+  <path d="M266 160 C 320 160, 330 120, 390 120" fill="none" stroke="#0f3d5c" stroke-width="2"/>
+  <rect x="390" y="104" width="58" height="32" fill="#0f3d5c"/>
+  <rect x="456" y="104" width="58" height="32" fill="#0f3d5c"/>
+  <rect x="522" y="104" width="58" height="32" fill="#0f3d5c"/>
+  <line x1="390" y1="152" x2="580" y2="152" stroke="#0f3d5c" stroke-width="2"/>
+  <line x1="448" y1="104" x2="448" y2="152" stroke="#c2410c" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="456" y1="104" x2="456" y2="152" stroke="#c2410c" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="452" y="172" font-family="Arial, sans-serif" font-size="11" fill="#c2410c" text-anchor="middle">gap</text>
+  <text x="60" y="40" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">side view</text>
+  <text x="60" y="262" font-family="Arial, sans-serif" font-size="13" fill="#14161a">Printed web &#8594; die cut &#8594; waste stripped &#8594; rewound on a core</text>
+  <text x="60" y="284" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">Labels stay on an intact liner; the matrix between them is removed.</text>
+</svg>
+<figcaption>A roll is a printed web, die cut, stripped and rewound on a core.</figcaption>
+</figure>
+
 ## The five parameters that decide fit
 
 | Parameter | What it controls | Common values |

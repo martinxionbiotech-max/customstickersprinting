@@ -18,6 +18,39 @@ The two terms describe where the blade stops, and that single difference decides
 
 ## The mechanical difference
 
+<figure class="diagram">
+<svg viewBox="0 0 720 320" role="img" aria-labelledby="fig-cut">
+  <title id="fig-cut">Die cut through all layers versus kiss cut to the liner</title>
+  <rect x="0" y="0" width="720" height="320" fill="#ffffff"/>
+  <text x="60" y="34" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f3d5c">Die cut</text>
+  <text x="400" y="34" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f3d5c">Kiss cut</text>
+  <rect x="60" y="60" width="260" height="34" fill="#dfe7ee"/>
+  <rect x="60" y="94" width="260" height="14" fill="#f2c9ae"/>
+  <rect x="60" y="108" width="260" height="40" fill="#e5e7eb"/>
+  <rect x="60" y="60" width="120" height="88" fill="none" stroke="#c2410c" stroke-width="2.5"/>
+  <rect x="196" y="60" width="120" height="88" fill="none" stroke="#c2410c" stroke-width="2.5"/>
+  <line x1="188" y1="56" x2="188" y2="152" stroke="#ffffff" stroke-width="5"/>
+  <line x1="188" y1="56" x2="188" y2="152" stroke="#c2410c" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <rect x="400" y="60" width="260" height="34" fill="#dfe7ee"/>
+  <rect x="400" y="94" width="260" height="14" fill="#f2c9ae"/>
+  <rect x="400" y="108" width="260" height="40" fill="#e5e7eb"/>
+  <rect x="400" y="60" width="120" height="48" fill="none" stroke="#c2410c" stroke-width="2.5"/>
+  <rect x="536" y="60" width="120" height="48" fill="none" stroke="#c2410c" stroke-width="2.5"/>
+  <rect x="60" y="176" width="14" height="14" fill="#dfe7ee" stroke="#c7d2dd"/>
+  <text x="82" y="188" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">face stock</text>
+  <rect x="60" y="198" width="14" height="14" fill="#f2c9ae"/>
+  <text x="82" y="210" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">adhesive</text>
+  <rect x="60" y="220" width="14" height="14" fill="#e5e7eb" stroke="#c7d2dd"/>
+  <text x="82" y="232" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">liner</text>
+  <text x="60" y="266" font-family="Arial, sans-serif" font-size="13" fill="#14161a">Blade passes through all three layers.</text>
+  <text x="60" y="286" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">Each sticker separates, liner included.</text>
+  <text x="400" y="266" font-family="Arial, sans-serif" font-size="13" fill="#14161a">Blade stops at the liner.</text>
+  <text x="400" y="286" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">Shapes stay on one sheet, peeled by hand.</text>
+</svg>
+<figcaption>Die cutting goes through the liner; kiss cutting stops at it.</figcaption>
+</figure>
+
+
 **Die cut**: the blade cuts through the sticker, the adhesive and the backing. Each sticker comes out as an individual piece.
 
 **Kiss cut**: the blade cuts through the sticker and the adhesive but stops at the backing paper. The stickers stay on the sheet and are peeled off one at a time.
