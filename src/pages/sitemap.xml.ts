@@ -8,7 +8,8 @@ const staticPaths = [
   "/jar-labels/", "/cosmetic-labels/", "/food-labels/", "/waterproof-labels/",
   "/clear-labels/", "/vinyl-stickers/", "/logo-stickers/", "/die-cut-stickers/",
   "/sticker-sheets/", "/clear-stickers/", "/low-moq-label-printing/",
-  "/small-batch-sticker-printing/", "/privacy/", "/terms/", "/knowledge/",
+  "/small-batch-sticker-printing/", "/privacy/", "/cookies/", "/terms/", "/refund-policy/",
+  "/editorial-standards/", "/knowledge/",
 ];
 
 export const GET: APIRoute = async ({ site }) => {

@@ -1,0 +1,103 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { site } from "../data/site";
+---
+
+<BaseLayout
+  title="Returns, reprints and refunds policy"
+  description="How we handle a printing fault, wrong quantity, transit damage and cancellations on custom labels and stickers — what is covered and how to claim."
+>
+  <Breadcrumbs items={[{ label: "Returns and refunds" }]} />
+  <section class="tight">
+    <div class="wrap narrow prose">
+      <h1>Returns, reprints and refunds</h1>
+      <p class="lead" style="font-size:1.05rem;color:var(--ink-2)">
+        Custom labels and stickers are printed to your specification. That changes what can be returned,
+        so this page sets out plainly what we fix, what we reprint, what we refund and what falls outside.
+      </p>
+
+      <h2>The short version</h2>
+      <table>
+        <tbody>
+          <tr><th scope="row">Our fault</th><td>Wrong size, wrong material, wrong quantity, print or die fault — we reprint or refund.</td></tr>
+          <tr><th scope="row">Transit damage</th><td>Report within 7 days of delivery with photos; we replace or refund.</td></tr>
+          <tr><th scope="row">Approved artwork error</th><td>Reprinted at our cost price, not free — the proof was approved as supplied.</td></tr>
+          <tr><th scope="row">Change of mind</th><td>Not returnable once printed. Cancel before proof approval and you pay nothing.</td></tr>
+          <tr><th scope="row">Colour variation</th><td>Small variation between runs is normal print behaviour, not a defect.</td></tr>
+        </tbody>
+      </table>
+
+      <h2>1. If we got it wrong</h2>
+      <p>
+        Where the delivered goods differ from the approved proof or the agreed specification — size, material,
+        quantity, cut, laminate, colour within tolerance — we will reprint the affected quantity at our cost,
+        or refund it if a reprint does not solve your deadline. You choose which.
+      </p>
+      <p>
+        Tell us within 14 days of delivery, with photographs of the goods and the packaging label, and the order
+        reference. We will confirm the remedy in writing before anything is reprinted, so there is no argument later
+        about what was agreed.
+      </p>
+
+      <h2>2. If the artwork was approved as supplied</h2>
+      <p>
+        Once you approve a proof, that proof is the specification. If the delivered labels match it and the problem
+        is in the file — a typo, a missing diacritic, a colour that looked different on screen, a barcode that does
+        not scan — we will reprint at our cost price rather than at the quoted price, because the fault sits in the
+        approved file. We will say so before you commit, and we will not pretend it is a free reprint.
+      </p>
+
+      <h2>3. Colour and material tolerance</h2>
+      <p>
+        Print runs vary slightly. A colour difference within the normal commercial tolerance for the process is not
+        a defect, and neither is a small variation between two runs of the same job. If colour is critical, approve a
+        physical sample and keep it: that sample, not a screen, is what a reprint is matched against.
+      </p>
+      <p>
+        Natural materials vary too. Kraft, uncoated paper and recycled stocks differ in shade between batches, and
+        that variation is a property of the material rather than a printing fault.
+      </p>
+
+      <h2>4. Damage in transit</h2>
+      <p>
+        Report damage within 7 days of delivery, with photographs of the parcel and the contents. We will replace the
+        affected quantity or refund it, and we handle the carrier claim ourselves — you should not have to argue with
+        a courier about a job you did not pack.
+      </p>
+
+      <h2>5. Cancellation</h2>
+      <ul>
+        <li><strong>Before proof approval:</strong> cancel and pay nothing. No charge for the quotation or the artwork check.</li>
+        <li><strong>After proof approval, before printing:</strong> any die, plate or special-order material already made is charged at cost.</li>
+        <li><strong>After printing starts:</strong> the order cannot be cancelled; the goods will be completed and shipped.</li>
+      </ul>
+
+      <h2>6. What is not covered</h2>
+      <ul>
+        <li>Change of mind, over-ordering or a design that did not sell.</li>
+        <li>Damage caused after delivery, or by applying labels to a surface we were not told about.</li>
+        <li>Adhesion failure where the surface differs from the one specified — for example a recycled HDPE bottle when the order named glass.</li>
+        <li>Claims raised more than 14 days after delivery, where the defect would have been visible on inspection.</li>
+      </ul>
+
+      <h2>7. How refunds are paid</h2>
+      <p>
+        Refunds are made to the original payment method, in the original currency, within 14 days of the remedy being
+        agreed in writing. Bank charges levied by intermediary banks are outside our control and are not refunded.
+      </p>
+
+      <h2>8. How to raise a claim</h2>
+      <p>
+        Email <a href={`mailto:${site.email}`}>{site.email}</a> with the order reference, the quantity affected and
+        photographs. We answer within one working day and will tell you which remedy applies — reprint, partial
+        refund or full refund — before we ask you to return anything.
+      </p>
+
+      <p class="small">
+        These terms sit alongside our <a href="/terms/">terms of use</a>. Where the two differ on a specific point,
+        this page governs returns and refunds. Last reviewed: November 2026.
+      </p>
+    </div>
+  </section>
+</BaseLayout>

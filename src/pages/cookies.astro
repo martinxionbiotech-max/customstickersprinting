@@ -1,0 +1,72 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { site } from "../data/site";
+---
+
+<BaseLayout
+  title="Cookies and local storage"
+  description="Which cookies this site sets, why there are no advertising trackers, what the host may set for security, and how to control cookies in your browser."
+>
+  <Breadcrumbs items={[{ label: "Cookies" }]} />
+  <section class="tight">
+    <div class="wrap narrow prose">
+      <h1>Cookies and local storage</h1>
+      <p class="lead" style="font-size:1.05rem;color:var(--ink-2)">
+        This site is a set of static pages. It has no account system, no cart and no personalisation, so it has
+        very little reason to store anything in your browser — and it does not.
+      </p>
+
+      <h2>What is set today</h2>
+      <table>
+        <tbody>
+          <tr><th scope="row">Advertising cookies</th><td>None. There is no ad network, no retargeting pixel and no cross-site identifier on this site.</td></tr>
+          <tr><th scope="row">Analytics cookies</th><td>None. If aggregate analytics is added, it will be a cookieless service and this page will say so before it goes live.</td></tr>
+          <tr><th scope="row">Functional cookies</th><td>None. There is no login, no saved quote and no language preference to remember.</td></tr>
+          <tr><th scope="row">Security cookies</th><td>Possible. Our host (Cloudflare) may set a short-lived cookie to distinguish browsers from bots. It carries no marketing purpose.</td></tr>
+        </tbody>
+      </table>
+
+      <h2>What "cookie" and "local storage" mean</h2>
+      <p>
+        A cookie is a small text file a site asks your browser to keep and to send back on later requests. Local
+        storage is a similar store that stays on your device and is not transmitted automatically. Both are used by
+        most commercial sites to remember sessions, carts and preferences — none of which exist here.
+      </p>
+
+      <h2>Third parties</h2>
+      <p>
+        Two kinds of third party can see a request to this site: the hosting provider that serves the pages, and the
+        email or messaging provider you contact us through. Clicking an email link or a WhatsApp link takes you to a
+        service governed by its own privacy policy, not this one.
+      </p>
+      <p>
+        We do not embed social widgets, video players or comment systems, because each of those would introduce a
+        tracker that we would then have to disclose.
+      </p>
+
+      <h2>If this changes</h2>
+      <p>
+        If analytics, embedded media or an advertising tag is ever added, this page will list the tool, its purpose
+        and its retention period before the tag goes live. Where consent is legally required, it will be requested
+        before the tag loads rather than after.
+      </p>
+
+      <h2>Controlling cookies yourself</h2>
+      <p>
+        Every current browser lets you block or delete cookies, and to block them per site. Because this site sets no
+        functional cookies, blocking them will not break anything here. Instructions are in your browser's privacy or
+        security settings, under "cookies and site data".
+      </p>
+
+      <h2>Questions</h2>
+      <p>
+        Email <a href={`mailto:${site.email}`}>{site.email}</a> if you want to know what a request to this site
+        actually stores. The answer is in our <a href="/privacy/">privacy policy</a> as well, which covers the data
+        we hold when you send an enquiry.
+      </p>
+
+      <p class="small">Last reviewed: November 2026.</p>
+    </div>
+  </section>
+</BaseLayout>
