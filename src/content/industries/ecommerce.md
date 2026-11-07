@@ -5,6 +5,11 @@ description: "Packaging seals, logo stickers and short-run product labels for Sh
 products: ["logo-stickers", "custom-stickers", "sticker-sheets", "roll-labels"]
 painPoints: ["Minimums too high for a first run", "No budget for plates and dies", "Needing several designs at once"]
 order: 4
+faq:
+  - q: "Can I order several sticker designs in one batch?"
+    a: "Yes, where they share a material and a size, because the setup is paid once. Mixing designs is the cheapest way to reach a useful quantity. Different materials, sizes or finishes are quoted as separate jobs."
+  - q: "How fast can I get stickers for a launch?"
+    a: "Production runs 7 to 12 working days after artwork approval, plus shipping. The binding constraint is usually proof approval rather than printing, so approving within a day is the single largest time saving available."
 ---
 
 ## The first-run problem

@@ -5,14 +5,48 @@ import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import CtaBand from "../../components/CtaBand.astro";
 
 const industries = (await getCollection("industries")).sort((a, b) => a.data.order - b.data.order);
+
+const faq = [
+  {
+    q: "Do label requirements really differ by industry?",
+    a: "Yes, and mostly through the surface and the storage condition rather than the artwork. A candle jar runs warm, a sauce bottle runs cold and wet, a serum bottle is 30 mm across, and each of those changes the adhesive and the film before it changes the design.",
+  },
+  {
+    q: "What if my product is not listed here?",
+    a: "The four categories cover most of what we print, but the underlying questions are the same for anything else: what surface, what temperature, how long, and what will touch it. Send those four facts and we will specify from them.",
+  },
+  {
+    q: "Can I mix products from different categories in one order?",
+    a: "Only where the material, size and finish match, because the setup is shared. A candle jar wrap and a 30 mm serum label are separate jobs even if they are ordered on the same day and shipped together.",
+  },
+];
+
+const faqLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faq.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
 ---
 
-<BaseLayout title="Industries: labels and stickers by application" description="How label and sticker requirements change by industry: beauty and skincare, candles and fragrance, food and beverage, ecommerce and small business.">
+<BaseLayout
+  title="Industries: labels and stickers by application"
+  description="How label and sticker requirements change by industry: beauty and skincare, candles and fragrance, food and beverage, ecommerce and small business."
+  jsonLd={[faqLd]}
+>
   <Breadcrumbs items={[{ label: "Industries" }]} />
   <section class="tight">
     <div class="wrap">
       <h1>Industries</h1>
-      <p style="max-width:65ch;color:var(--ink-2)">The same label behaves differently on a shampoo bottle, a candle jar and a chilled sauce. These pages describe what each category actually needs.</p>
+      <p style="max-width:65ch;color:var(--ink-2)">
+        The same label behaves differently on a shampoo bottle, a candle jar and a chilled sauce.
+        These pages describe what each category actually needs — the surface, the temperature,
+        the failure mode — rather than listing products again.
+      </p>
+
       <div class="grid grid-2" style="margin-top:24px">
         {industries.map((i) => (
           <a class="card" href={`/industries/${i.id}/`}>
@@ -22,6 +56,26 @@ const industries = (await getCollection("industries")).sort((a, b) => a.data.ord
           </a>
         ))}
       </div>
+
+      <h2 style="margin-top:40px">How to use these pages</h2>
+      <p style="max-width:65ch;color:var(--ink-2)">
+        Each industry page answers the same three questions in a different order: what the container is made of,
+        what it is exposed to, and how long the label has to last. If your product sits between two categories —
+        a chilled cosmetic, a warm sauce — read both and take the stricter requirement.
+      </p>
+      <ul style="max-width:65ch;line-height:1.8">
+        <li><strong>Surface</strong> decides the adhesive: glass and rigid plastic are forgiving, HDPE and powder coating are not.</li>
+        <li><strong>Condition</strong> decides the film: condensation and freezing rule out paper; oil and alcohol rule out a standard laminate.</li>
+        <li><strong>Duration</strong> decides the specification: a three-week promotion and a three-year shelf life are not the same job.</li>
+      </ul>
+
+      <h2 style="margin-top:36px">Quick answers</h2>
+      {faq.map((f) => (
+        <div style="margin-top:16px">
+          <h3 style="font-size:1rem;margin:0 0 4px">{f.q}</h3>
+          <p style="margin:0;color:var(--ink-2);max-width:65ch">{f.a}</p>
+        </div>
+      ))}
     </div>
   </section>
   <CtaBand />

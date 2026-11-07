@@ -16,9 +16,20 @@ const d = industry.data;
 const { Content } = await render(industry);
 const products = await getCollection("products");
 const related = d.products.map((s) => products.find((p) => p.id === s)).filter((p): p is CollectionEntry<"products"> => Boolean(p));
+const faqLd = d.faq.length > 0
+  ? {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: d.faq.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    }
+  : null;
 ---
 
-<BaseLayout title={d.heading} description={d.description} type="article" alternateMd={`/industries/${industry.id}/index.md`}>
+<BaseLayout title={d.heading} description={d.description} type="article" jsonLd={faqLd ? [faqLd] : []} alternateMd={`/industries/${industry.id}/index.md`}>
   <Breadcrumbs items={[{ label: "Industries", href: "/industries/" }, { label: d.heading }]} />
   <section class="tight">
     <div class="wrap narrow">
@@ -26,6 +37,18 @@ const related = d.products.map((s) => products.find((p) => p.id === s)).filter((
       <h1>{d.heading}</h1>
       <p style="font-size:1.08rem;color:var(--ink-2)">{d.description}</p>
       <div class="prose" style="margin-top:26px"><Content /></div>
+
+      {d.faq.length > 0 && (
+        <section style="margin-top:36px;border-top:1px solid var(--line);padding-top:24px">
+          <h2 style="font-size:1.25rem">Quick answers</h2>
+          {d.faq.map((f) => (
+            <div style="margin-top:16px">
+              <h3 style="font-size:1rem;margin:0 0 4px">{f.q}</h3>
+              <p style="margin:0;color:var(--ink-2)">{f.a}</p>
+            </div>
+          ))}
+        </section>
+      )}
     </div>
   </section>
 

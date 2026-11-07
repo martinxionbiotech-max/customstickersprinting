@@ -1,10 +1,15 @@
 ---
 title: "Beauty and skincare labels"
 heading: "Labels for beauty and skincare brands"
-description: "Oil-resistant materials, small-diameter bottles and bathroom-proof finishes for skincare, haircare and cosmetic packaging."
+description: "Oil-resistant materials, small-diameter bottles and bathroom-proof finishes for skincare, haircare and cosmetics brands ordering from 50 units."
 products: ["cosmetic-labels", "bottle-labels", "clear-labels"]
 painPoints: ["Edge lift on small dropper bottles", "Ink rubbing off in the shower", "Clear film showing bubbles"]
 order: 1
+faq:
+  - q: "What label material works on a serum bottle?"
+    a: "A thin PP or PET film with a small-diameter adhesive. Dropper bottles are often 25 to 30 mm across, where a stiff film lifts at the edges, so a 150 micron PP conforms better than a heavier stock, and a matte laminate hides the fingerprints that gloss shows."
+  - q: "Can labels survive alcohol-based cosmetics?"
+    a: "The film usually can; the ink and the adhesive are the weak points. Products containing alcohol or essential oils need a solvent-resistant laminate and an oil-resistant adhesive, and a printed sample stored on the actual bottle is the only reliable check."
 ---
 
 ## What is different about beauty packaging

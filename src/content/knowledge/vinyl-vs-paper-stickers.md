@@ -1,6 +1,6 @@
 ---
 title: "Vinyl vs paper stickers: which one to use"
-description: "Vinyl is waterproof and tough; paper is cheaper and prints differently. Where each belongs, and the three questions that decide it."
+description: "Vinyl is waterproof and tough; paper is cheaper and prints beautifully. Where each belongs, and the three questions that decide it in ten seconds."
 pillar: sticker-materials
 order: 1
 updated: "2026-11"

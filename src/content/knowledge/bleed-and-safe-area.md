@@ -1,6 +1,6 @@
 ---
 title: "Bleed and safe area for label artwork"
-description: "Why labels need 3 mm bleed, why text needs a safe margin, and what happens on a curved bottle where the geometry is less forgiving."
+description: "Why labels need 3 mm bleed, why text needs a safe margin, and what happens to a design on a curved bottle where the geometry is less forgiving."
 pillar: artwork
 order: 2
 updated: "2026-11"

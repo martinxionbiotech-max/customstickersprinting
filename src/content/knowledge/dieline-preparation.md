@@ -1,6 +1,6 @@
 ---
 title: "Dielines: how to prepare a cut path that works"
-description: "What a dieline is, why the cut path must be separate closed vector geometry, and the four mistakes that make a die unusable at the printer."
+description: "What a dieline is, why the cut path must be separate closed vector geometry, and the four mistakes that make a die unusable before it is cut."
 pillar: artwork
 order: 5
 updated: "2026-11"

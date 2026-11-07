@@ -12,7 +12,8 @@ customization: ["Size and shape", "Material and adhesive", "Finish", "White ink 
 moq: "From 50 units"
 leadTime: "Typically 7–12 working days after artwork approval"
 relatedProducts: ["roll-labels", "bottle-labels", "cosmetic-labels", "food-labels"]
-seoDescription: "Custom printed labels from 50 units: paper, PP, PET and clear stock, roll or sheet, quoted per project for US, UK and EU delivery."
+seoTitle: "Custom Labels — Any Size, Material or Finish, 50 Min"
+seoDescription: "Custom printed labels from 50 units in paper, PP, PET or clear stock, roll or sheet, quoted per project for US, UK and EU delivery with a physical proof."
 order: 1
 lastVerified: "2026-11"
 knowledgeLinks:

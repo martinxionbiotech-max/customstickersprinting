@@ -12,7 +12,8 @@ customization: ["Small-diameter labels", "White ink on clear", "Foil accents", "
 moq: "From 50 units"
 leadTime: "Typically 7–12 working days after artwork approval"
 relatedProducts: ["bottle-labels", "custom-labels", "clear-labels"]
-seoDescription: "Custom cosmetic labels for skincare and beauty: oil-resistant materials, small-bottle adhesion, clear no-label film and durable finishes."
+seoTitle: "Cosmetic Labels for Small Bottles and Droppers"
+seoDescription: "Cosmetic labels for skincare and beauty: oil- and alcohol-resistant stock, small-diameter adhesion, clear no-label film and bathroom-proof finishes."
 order: 4
 lastVerified: "2026-11"
 knowledgeLinks:

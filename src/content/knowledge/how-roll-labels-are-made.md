@@ -1,6 +1,6 @@
 ---
 title: "How roll labels are made: the five spec details"
-description: "From printed web to wound roll: die cutting, stripping and rewinding — plus the five roll parameters an applicator needs to run."
+description: "From printed web to wound roll: die cutting, waste stripping and rewinding, plus the five roll parameters an applicator needs to run the job."
 pillar: printing
 order: 2
 updated: "2026-11"

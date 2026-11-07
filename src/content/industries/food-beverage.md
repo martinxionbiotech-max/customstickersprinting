@@ -1,10 +1,15 @@
 ---
 title: "Food and beverage labels"
 heading: "Labels for food and beverage brands"
-description: "Chilled, frozen and condensation-prone containers: freezer-grade adhesives, food-safe materials and space for mandatory labelling."
+description: "Chilled, frozen and condensation-prone containers: freezer-grade adhesives, food-contact materials and space for mandatory label information."
 products: ["food-labels", "bottle-labels", "waterproof-labels"]
 painPoints: ["Labels lifting in the fridge", "Ink running under condensation", "No room for ingredients and allergens"]
 order: 3
+faq:
+  - q: "What adhesive should frozen food labels use?"
+    a: "A freezer-grade adhesive that stays flexible at minus 18 degrees. Standard acrylic goes brittle, the label cracks or lifts at the corner, and condensation on the way out of the freezer finishes the job. The film should be PP or PET, not paper."
+  - q: "Are your labels food-safe?"
+    a: "The label sits outside the pack, so contact is usually indirect. Direct or indirect food contact still requires an adhesive and face stock intended for it, and the rules differ by market, so tell us the destination and we will state what documentation the material supplier provides."
 ---
 
 ## The storage condition decides everything

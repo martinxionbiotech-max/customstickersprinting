@@ -12,7 +12,8 @@ customization: ["Die cut shape", "Size", "White ink", "Roll or sheet", "Outdoor-
 moq: "From 50 units"
 leadTime: "Typically 7–12 working days after artwork approval"
 relatedProducts: ["custom-stickers", "die-cut-stickers", "clear-stickers"]
-seoDescription: "Custom vinyl stickers for outdoor and wet conditions: white or clear vinyl, gloss or matte laminate, die cut to shape from 50 units."
+seoTitle: "Vinyl Stickers for Outdoors, Bottles and Laptops"
+seoDescription: "Custom vinyl stickers for outdoor and wet conditions: white or clear vinyl, gloss or matte laminate, and adhesives matched to glass, plastic or metal."
 order: 2
 lastVerified: "2026-11"
 knowledgeLinks:

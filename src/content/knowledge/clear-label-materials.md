@@ -1,6 +1,6 @@
 ---
 title: "Clear label materials: the white ink decision"
-description: "Why clear labels need a white ink layer, how spot white differs from a flood, and which containers suit transparent film."
+description: "Why clear labels need a white ink layer, how spot white differs from a flood coat, and which containers make transparent film look intentional."
 pillar: label-materials
 order: 5
 updated: "2026-11"

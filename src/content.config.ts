@@ -18,6 +18,7 @@ const products = defineCollection({
     leadTime: z.string().default('Typically 7–12 working days after artwork approval'),
     relatedProducts: z.array(z.string()).default([]),
     knowledgeLinks: z.array(z.object({ label: z.string(), href: z.string() })).default([]),
+    seoTitle: z.string().optional(),
     seoDescription: z.string().optional(),
     status: z.enum(['draft', 'review', 'published']).default('published'),
     lastVerified: z.string().optional(),
@@ -33,6 +34,7 @@ const industries = defineCollection({
     description: z.string(),
     products: z.array(z.string()).default([]),
     painPoints: z.array(z.string()).default([]),
+    faq: z.array(z.object({ q: z.string(), a: z.string() })).default([]),
     order: z.number().default(50),
   }),
 });

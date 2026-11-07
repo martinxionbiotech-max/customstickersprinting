@@ -1,6 +1,6 @@
 ---
 title: "Waterproof label materials: what survives water"
-description: "Water-resistant, waterproof and immersion-grade are different things. Which films and adhesives survive condensation, soaking and freezing."
+description: "Water-resistant, waterproof and immersion-grade are three different things: which films and adhesives survive condensation, soaking and freezing."
 pillar: label-materials
 order: 3
 updated: "2026-11"

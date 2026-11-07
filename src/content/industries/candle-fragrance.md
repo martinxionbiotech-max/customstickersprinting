@@ -1,10 +1,15 @@
 ---
 title: "Candle and fragrance labels"
 heading: "Labels for candle and fragrance brands"
-description: "Heat-resistant adhesives, jar wraps and warning text that stays legible on warm glass — the specific requirements of candle labelling."
+description: "Heat-resistant adhesives, jar wraps and small warning text that stays legible on warm glass — what candle and fragrance brands need from labels."
 products: ["jar-labels", "custom-labels", "clear-labels"]
 painPoints: ["Labels sliding on warm glass", "Warning text too small", "Wrap wrinkling on tapered jars"]
 order: 2
+faq:
+  - q: "Will a label lift on a warm candle jar?"
+    a: "Standard adhesive softens as the jar warms, so a candle label needs a heat-resistant or high-tack adhesive and a film that does not shrink. Glass also holds dust and wax residue, so the surface has to be cleaned before application."
+  - q: "Can small warning text stay legible on a curved jar?"
+    a: "Yes, at 6 pt or larger in a clean sans-serif, placed on the flattest part of the wrap. Below about 5 pt on a curved surface the ink spread closes the counters and the line stops being readable, whatever the artwork preview shows."
 ---
 
 ## Heat changes the adhesive

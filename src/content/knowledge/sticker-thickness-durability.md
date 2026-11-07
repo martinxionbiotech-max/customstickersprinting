@@ -1,6 +1,6 @@
 ---
 title: "Sticker thickness and durability: what 0.1 mm changes"
-description: "How face stock thickness affects feel, conformability and tear resistance — and why a thicker sticker is not automatically a better one."
+description: "How face stock thickness affects feel, conformability and tear resistance — and why a thicker sticker is not automatically the better choice."
 pillar: sticker-materials
 order: 5
 updated: "2026-11"

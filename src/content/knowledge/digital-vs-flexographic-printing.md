@@ -1,6 +1,6 @@
 ---
 title: "Digital vs flexo: why a 50-unit label order is possible"
-description: "How the two label printing methods differ in setup cost, run length and colour — and why low-volume orders require digital."
+description: "How digital and flexographic label printing differ in setup cost, run length and colour — and why a 50-unit order is only possible on digital."
 pillar: printing
 order: 1
 updated: "2026-11"

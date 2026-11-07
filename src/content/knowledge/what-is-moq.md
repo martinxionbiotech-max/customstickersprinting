@@ -1,6 +1,6 @@
 ---
 title: "What MOQ actually means in label printing"
-description: "Why minimum order quantities exist, what 50 units really covers, and how setup cost — not material — sets the floor for a first print run."
+description: "Why minimum order quantities exist, what 50 units really covers, and how setup cost rather than material sets the floor for a first print run."
 pillar: procurement
 order: 1
 updated: "2026-11"

@@ -72,7 +72,7 @@ const faqLd = {
 };
 ---
 
-<BaseLayout title={d.title} description={d.seoDescription ?? d.description} type="article" jsonLd={[productLd, faqLd]} image={image} alternateMd={`/${product.id}/index.md`}>
+<BaseLayout title={d.seoTitle ?? d.title} description={d.seoDescription ?? d.description} type="article" jsonLd={[productLd, faqLd]} image={image} alternateMd={`/${product.id}/index.md`}>
   <Breadcrumbs items={[{ label: categoryLabel, href: categoryHref }, { label: d.title }]} />
 
   <section class="tight">

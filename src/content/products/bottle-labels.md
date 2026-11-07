@@ -12,7 +12,8 @@ customization: ["Wrap length", "Curved-surface adhesive", "Waterproof stock", "W
 moq: "From 50 units"
 leadTime: "Typically 7–12 working days after artwork approval"
 relatedProducts: ["custom-labels", "cosmetic-labels", "roll-labels"]
-seoDescription: "Custom bottle labels for curved containers: condensation-resistant materials, wrap sizing and adhesives that hold on glass and PET."
+seoTitle: "Bottle Labels That Survive Condensation and Chill"
+seoDescription: "Custom bottle labels for curved glass and plastic: condensation-resistant film, wrap sizing from 30 to 120 mm, and adhesives that hold when chilled."
 order: 3
 lastVerified: "2026-11"
 knowledgeLinks:

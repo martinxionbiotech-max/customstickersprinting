@@ -12,7 +12,8 @@ customization: ["Size and shape", "Die cut or kiss cut", "Sheet or roll", "White
 moq: "From 50 units"
 leadTime: "Typically 7–12 working days after artwork approval"
 relatedProducts: ["vinyl-stickers", "logo-stickers", "die-cut-stickers", "sticker-sheets"]
-seoDescription: "Custom printed stickers from 50 units: white or clear vinyl, paper, die cut or kiss cut, gloss or matte, quoted per project."
+seoTitle: "Custom Stickers — Vinyl, Paper or Clear, from 50 Units"
+seoDescription: "Custom stickers from 50 units in white or clear vinyl, paper, die cut or kiss cut, gloss or matte — printed to your artwork and quoted per project."
 order: 1
 lastVerified: "2026-11"
 knowledgeLinks:

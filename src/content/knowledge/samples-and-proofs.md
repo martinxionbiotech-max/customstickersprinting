@@ -1,6 +1,6 @@
 ---
 title: "Samples and proofs: what to approve before a print run"
-description: "Digital proof, physical sample and press proof compared — what each one can and cannot show, and which to insist on for a first order."
+description: "Digital proof, physical sample and press proof compared: what each one can and cannot show, and which one to insist on for a first print order."
 pillar: procurement
 order: 3
 updated: "2026-11"

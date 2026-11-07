@@ -12,6 +12,7 @@ customization: ["Freezer-grade adhesive", "Oil-resistant stock", "Variable batch
 moq: "From 50 units"
 leadTime: "Typically 7–12 working days after artwork approval"
 relatedProducts: ["jar-labels", "bottle-labels", "custom-labels"]
+seoTitle: "Food Labels for Fridge, Freezer and Greasy Kitchens"
 seoDescription: "Custom food labels for chilled, frozen and dry products: freezer-grade adhesives, condensation-resistant materials and space for required text."
 order: 5
 lastVerified: "2026-11"
