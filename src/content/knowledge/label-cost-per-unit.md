@@ -1,5 +1,5 @@
 ---
-title: "Label cost per unit and per 1,000"
+title: "Label cost per unit, and why it falls with quantity"
 description: "How to work out a true per-unit label cost, why price per 1,000 misleads below 5,000 units, and the two levers that cut unit price without ordering more."
 pillar: label-cost
 order: 5
