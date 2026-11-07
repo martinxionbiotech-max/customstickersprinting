@@ -30,7 +30,6 @@ const c = site.company;
           <tr><th scope="row">Registration no.</th><td>{c.uscc} (统一社会信用代码)</td></tr>
           <tr><th scope="row">D-U-N-S number</th><td>{c.duns}</td></tr>
           <tr><th scope="row">Registered location</th><td>{c.city}, {c.region}, {c.country}</td></tr>
-          <tr><th scope="row">Principal</th><td>{c.founder}</td></tr>
           <tr><th scope="row">Contact</th><td><a href={`mailto:${site.email}`}>{site.email}</a> · <a href={`https://wa.me/${site.whatsapp}`} rel="noopener">{site.whatsappDisplay}</a></td></tr>
         </tbody>
       </table>
@@ -55,6 +54,9 @@ const c = site.company;
           short video call to see the labels being checked. We offer both, and neither requires an order.
         </li>
       </ul>
+      <p>
+        A copy of the business licence and the D-U-N-S record can be sent on request, before any payment is due.
+      </p>
 
       <h2>What we actually do</h2>
       <p>

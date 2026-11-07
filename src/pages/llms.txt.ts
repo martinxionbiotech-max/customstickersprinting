@@ -57,7 +57,6 @@ export const GET: APIRoute = async ({ site }) => {
     `- Registration number (USCC): 92330782MA8GW3PLXB`,
     `- D-U-N-S: 585974555`,
     `- Location: Yiwu, Zhejiang, China`,
-    `- Principal: Wang Wei`,
     `- Invoices are issued by the legal entity; banking details appear only on the invoice for a confirmed order.`,
     "",
     "## Ordering",

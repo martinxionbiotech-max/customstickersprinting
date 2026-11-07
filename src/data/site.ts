@@ -26,7 +26,6 @@ export const site = {
     region: 'Zhejiang',
     country: 'China',
     countryCode: 'CN',
-    founder: 'Wang Wei',
     businessType: 'individual business (个体工商户)',
   },
 };
