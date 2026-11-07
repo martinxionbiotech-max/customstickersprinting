@@ -29,6 +29,15 @@ const pos = siblings.findIndex((a) => a.id === article.id);
 const prev = pos > 0 ? siblings[pos - 1] : null;
 const next = pos >= 0 && pos < siblings.length - 1 ? siblings[pos + 1] : null;
 
+const myTags = new Set(d.relatedProducts);
+const relatedReading = all
+  .filter((a) => a.id !== article.id && a.data.pillar !== d.pillar)
+  .map((a) => ({ a, score: a.data.relatedProducts.filter((r) => myTags.has(r)).length }))
+  .filter((x) => x.score > 0)
+  .sort((x, y) => y.score - x.score)
+  .slice(0, 3)
+  .map((x) => x.a);
+
 const products = await getCollection("products");
 const related = d.relatedProducts.map((s) => products.find((p) => p.id === s)).filter((p): p is CollectionEntry<"products"> => Boolean(p));
 
@@ -70,6 +79,19 @@ const ld = {
             </a>
           ))}
         </div>
+      </div>
+    </section>
+  )}
+
+  {relatedReading.length > 0 && (
+    <section class="tight" style="background:var(--bg-2);border-top:1px solid var(--line)">
+      <div class="wrap narrow">
+        <h2>Related reading</h2>
+        <ul style="margin-top:12px;line-height:2">
+          {relatedReading.map((r) => (
+            <li><a href={`/knowledge/${r.id}/`}>{r.data.title}</a></li>
+          ))}
+        </ul>
       </div>
     </section>
   )}
