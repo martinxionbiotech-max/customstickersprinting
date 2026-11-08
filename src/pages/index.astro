@@ -26,6 +26,16 @@ const categories = [
       { label: 'Sticker sheets', href: '/sticker-sheets/' },
     ],
   },
+  {
+    title: 'Printed hang tags',
+    href: '/hang-tags/',
+    body: '350–400 gsm card, punched, eyeleted and strung — the piece a buyer picks up before they look at the price.',
+    links: [
+      { label: 'Card and kraft stocks', href: '/hang-tags/' },
+      { label: 'Foil and emboss', href: '/hang-tags/' },
+      { label: 'Eyelets and string', href: '/hang-tags/' },
+    ],
+  },
 ];
 
 const industries = [
@@ -78,9 +88,9 @@ const faqLd = {
 
   <section>
     <div class="wrap">
-      <h2>Two product lines, one production standard</h2>
-      <p style="max-width:65ch;color:var(--ink-2)">Labels go on products; stickers go on packaging, laptops and shop windows. Both are printed to order, and both start at the same minimum.</p>
-      <div class="grid grid-2" style="margin-top:24px">
+      <h2>Three product families, one production standard</h2>
+      <p style="max-width:65ch;color:var(--ink-2)">Labels go on products, stickers go on packaging and shop windows, hang tags go in the hand. All three are printed to order and start at the same minimum.</p>
+      <div class="grid grid-3" style="margin-top:24px">
         {categories.map((c) => (
           <div class="card">
             <h3><a href={c.href}>{c.title}</a></h3>

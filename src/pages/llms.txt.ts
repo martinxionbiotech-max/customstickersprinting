@@ -11,7 +11,7 @@ const PILLARS: Record<string, string> = {
 
 export const GET: APIRoute = async ({ site }) => {
   const base = (site?.href ?? "https://customstickersprinting.com/").replace(/\/$/, "");
-  const products = (await getCollection("products")).sort((a, b) => a.data.order - b.data.order);
+  const products = (await getCollection("products", (p) => p.data.status === "published")).sort((a, b) => a.data.order - b.data.order);
   const industries = (await getCollection("industries")).sort((a, b) => a.data.order - b.data.order);
   const knowledge = (await getCollection("knowledge")).sort(
     (a, b) => a.data.pillar.localeCompare(b.data.pillar) || a.data.order - b.data.order

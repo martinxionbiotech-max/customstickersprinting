@@ -25,8 +25,8 @@ const related = d.relatedProducts
   .filter((p): p is CollectionEntry<'products'> => Boolean(p));
 
 const image = productImage(product.id);
-const categoryLabel = d.category === 'labels' ? 'Labels' : 'Stickers';
-const categoryHref = d.category === 'labels' ? '/custom-labels/' : '/custom-stickers/';
+const categoryLabel = d.category === 'labels' ? 'Labels' : d.category === 'stickers' ? 'Stickers' : 'Hang tags';
+const categoryHref = d.category === 'labels' ? '/custom-labels/' : d.category === 'stickers' ? '/custom-stickers/' : '/hang-tags/';
 
 const productLd = {
   '@context': 'https://schema.org',
