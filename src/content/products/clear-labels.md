@@ -12,6 +12,7 @@ customization: ["White ink areas", "Frosted effect", "Partial coverage", "Roll o
 moq: "From 50 units"
 leadTime: "Typically 7–12 working days after artwork approval"
 relatedProducts: ["bottle-labels", "waterproof-labels", "cosmetic-labels"]
+imageAlt: "A clear label on a glass jar, white ink area beside a transparent area"
 seoTitle: "Clear Labels with White Ink for a No-Label Look"
 seoDescription: "Custom clear labels and the no-label look: how white ink works on transparent film, which containers suit clear stock, and what causes visible bubbles."
 order: 8

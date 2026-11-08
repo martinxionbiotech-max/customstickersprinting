@@ -12,6 +12,7 @@ customization: ["Custom contour", "Kiss cut on sheet", "Bleed", "Small detail li
 moq: "From 50 units"
 leadTime: "Typically 7–12 working days after artwork approval"
 relatedProducts: ["custom-stickers", "vinyl-stickers", "sticker-sheets"]
+imageAlt: "Circle, rounded rectangle and irregular blank stickers, one being lifted"
 seoTitle: "Die Cut Stickers in Any Shape, Kiss or Full Cut"
 seoDescription: "Die cut stickers in any shape: how contour cutting works, when a steel die is worth the setup, bleed and cut-path requirements, and peeling tips."
 order: 4

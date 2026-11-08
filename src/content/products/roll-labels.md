@@ -12,6 +12,7 @@ customization: ["Roll direction", "Core size", "Labels per roll", "Gap between l
 moq: "From 50 units"
 leadTime: "Typically 7–12 working days after artwork approval"
 relatedProducts: ["custom-labels", "bottle-labels", "food-labels"]
+imageAlt: "A roll of blank white labels beside a glass jar carrying a blank label"
 seoTitle: "Roll Labels for Applicators — Cores, Winding, Spacing"
 seoDescription: "Custom roll labels for applicators or hand application: consistent spacing, core and winding options, and roll specifications that match your machine."
 order: 2

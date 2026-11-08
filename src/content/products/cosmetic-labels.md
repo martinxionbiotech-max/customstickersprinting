@@ -12,6 +12,7 @@ customization: ["Small-diameter labels", "White ink on clear", "Foil accents", "
 moq: "From 50 units"
 leadTime: "Typically 7–12 working days after artwork approval"
 relatedProducts: ["bottle-labels", "custom-labels", "clear-labels"]
+imageAlt: "A serum dropper bottle and a cream jar with small blank labels"
 seoTitle: "Cosmetic Labels for Small Bottles and Droppers"
 seoDescription: "Cosmetic labels for skincare and beauty: oil- and alcohol-resistant stock, small-diameter adhesion, clear no-label film and bathroom-proof finishes."
 order: 4

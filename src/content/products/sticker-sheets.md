@@ -12,6 +12,7 @@ customization: ["Sheet size", "Number of stickers per sheet", "Kiss cut", "Mixed
 moq: "From 50 units"
 leadTime: "Typically 7–12 working days after artwork approval"
 relatedProducts: ["custom-stickers", "die-cut-stickers", "logo-stickers"]
+imageAlt: "An A5 sheet of blank stickers, half peeled to show the kiss-cut liner"
 seoTitle: "Sticker Sheets — Multiple Designs on One Backing"
 seoDescription: "Custom sticker sheets with several designs on one backing: kiss cut layout, sheet sizing and when a sheet beats individual die cut stickers."
 order: 5

@@ -82,7 +82,7 @@ const faqLd = {
           <p class="eyebrow">{categoryLabel}</p>
           <h1>{d.title}</h1>
           <p class="lead" style="font-size:1.08rem;color:var(--ink-2);max-width:60ch">{d.description}</p>
-          <div style="margin-top:22px"><ProductMedia slug={product.id} alt={`${d.title} printed by ${site.brand}`} eager /></div>
+          <div style="margin-top:22px"><ProductMedia slug={product.id} alt={d.imageAlt ?? `${d.title} sample`} eager /></div>
           <div class="actions" style="display:flex;gap:12px;flex-wrap:wrap;margin-top:20px">
             <a class="btn btn-primary" href={mailLink(`Quotation request — ${d.title}`)}>Request a quote</a>
             <a class="btn btn-wa" href={waLink(`Hello, I am interested in ${d.title}.\n\nSize:\nMaterial:\nQuantity:\nDestination country:\n\nCould you send a quotation?`)} rel="noopener">WhatsApp</a>

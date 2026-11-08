@@ -1,0 +1,100 @@
+[
+  {
+    "filename": "custom-labels-1200x900",
+    "prompt": "Photorealistic premium commercial product photograph, shot on a full-frame camera with a 100mm macro lens, editorial styling, soft directional daylight from the left, gentle realistic shadows, shallow depth of field, clean warm colour grade, high micro-detail. Absolutely no text, no letters, no numbers, no logos, no brand marks, no watermarks anywhere in the image — all labels are completely blank. Scene: Six blank die-cut labels in different shapes and sizes laid flat on a light grey studio surface, shot at a low three-quarter angle so the die-cut edge catches a fine highlight and the matte laminate shows a soft sheen; one corner slightly lifted to reveal thickness.",
+    "seed": 8100,
+    "size": "2K",
+    "aspect_ratio": "4:3"
+  },
+  {
+    "filename": "roll-labels-1200x900",
+    "prompt": "Photorealistic premium commercial product photograph, shot on a full-frame camera with a 100mm macro lens, editorial styling, soft directional daylight from the left, gentle realistic shadows, shallow depth of field, clean warm colour grade, high micro-detail. Absolutely no text, no letters, no numbers, no logos, no brand marks, no watermarks anywhere in the image — all labels are completely blank. Scene: A roll of blank white labels standing on a pale oak table beside a clear glass jar already carrying a blank label; the unrolled liner runs toward the camera showing even label spacing and the release coating, focus on the roll edge.",
+    "seed": 8101,
+    "size": "2K",
+    "aspect_ratio": "4:3"
+  },
+  {
+    "filename": "bottle-labels-1200x900",
+    "prompt": "Photorealistic premium commercial product photograph, shot on a full-frame camera with a 100mm macro lens, editorial styling, soft directional daylight from the left, gentle realistic shadows, shallow depth of field, clean warm colour grade, high micro-detail. Absolutely no text, no letters, no numbers, no logos, no brand marks, no watermarks anywhere in the image — all labels are completely blank. Scene: A clear glass bottle with a blank matte label applied, photographed from a low angle so the label visibly wraps the curve of the glass; rim light traces the bottle shoulder and the label edge sits perfectly flat.",
+    "seed": 8102,
+    "size": "2K",
+    "aspect_ratio": "4:3"
+  },
+  {
+    "filename": "jar-labels-1200x900",
+    "prompt": "Photorealistic premium commercial product photograph, shot on a full-frame camera with a 100mm macro lens, editorial styling, soft directional daylight from the left, gentle realistic shadows, shallow depth of field, clean warm colour grade, high micro-detail. Absolutely no text, no letters, no numbers, no logos, no brand marks, no watermarks anywhere in the image — all labels are completely blank. Scene: A lidded jam jar with a blank kraft paper label applied to the curved glass; a macro angle shows the label edge lying flat with no lifting or silvering, warm daylight, shallow background.",
+    "seed": 8103,
+    "size": "2K",
+    "aspect_ratio": "4:3"
+  },
+  {
+    "filename": "cosmetic-labels-1200x900",
+    "prompt": "Photorealistic premium commercial product photograph, shot on a full-frame camera with a 100mm macro lens, editorial styling, soft directional daylight from the left, gentle realistic shadows, shallow depth of field, clean warm colour grade, high micro-detail. Absolutely no text, no letters, no numbers, no logos, no brand marks, no watermarks anywhere in the image — all labels are completely blank. Scene: A serum dropper bottle and a cream jar side by side on a pale stone slab, each with a small blank label perfectly centred; macro detail on the dropper bottle's narrow label wrapping its small diameter, clean beauty-studio lighting.",
+    "seed": 8104,
+    "size": "2K",
+    "aspect_ratio": "4:3"
+  },
+  {
+    "filename": "food-labels-1200x900",
+    "prompt": "Photorealistic premium commercial product photograph, shot on a full-frame camera with a 100mm macro lens, editorial styling, soft directional daylight from the left, gentle realistic shadows, shallow depth of field, clean warm colour grade, high micro-detail. Absolutely no text, no letters, no numbers, no logos, no brand marks, no watermarks anywhere in the image — all labels are completely blank. Scene: A sauce bottle with a blank label standing inside a refrigerator, fine condensation beads on the glass, the label edge crisp and intact with droplets stopping at the edge, cool interior light with a warm highlight.",
+    "seed": 8105,
+    "size": "2K",
+    "aspect_ratio": "4:3"
+  },
+  {
+    "filename": "waterproof-labels-1200x900",
+    "prompt": "Photorealistic premium commercial product photograph, shot on a full-frame camera with a 100mm macro lens, editorial styling, soft directional daylight from the left, gentle realistic shadows, shallow depth of field, clean warm colour grade, high micro-detail. Absolutely no text, no letters, no numbers, no logos, no brand marks, no watermarks anywhere in the image — all labels are completely blank. Scene: A hand holding a bottle covered in water droplets after immersion, the blank synthetic label intact and flat on the wet surface with water beading on the laminate, bright neutral background, sharp macro detail.",
+    "seed": 8106,
+    "size": "2K",
+    "aspect_ratio": "4:3"
+  },
+  {
+    "filename": "clear-labels-1200x900",
+    "prompt": "Photorealistic premium commercial product photograph, shot on a full-frame camera with a 100mm macro lens, editorial styling, soft directional daylight from the left, gentle realistic shadows, shallow depth of field, clean warm colour grade, high micro-detail. Absolutely no text, no letters, no numbers, no logos, no brand marks, no watermarks anywhere in the image — all labels are completely blank. Scene: A clear label applied to a glass jar on a light background, the frame split between the white-ink area and the fully transparent area so the contrast is unmistakable; soft studio light, crisp edge reflection.",
+    "seed": 8107,
+    "size": "2K",
+    "aspect_ratio": "4:3"
+  },
+  {
+    "filename": "custom-stickers-1200x900",
+    "prompt": "Photorealistic premium commercial product photograph, shot on a full-frame camera with a 100mm macro lens, editorial styling, soft directional daylight from the left, gentle realistic shadows, shallow depth of field, clean warm colour grade, high micro-detail. Absolutely no text, no letters, no numbers, no logos, no brand marks, no watermarks anywhere in the image — all labels are completely blank. Scene: A handful of blank die-cut vinyl stickers scattered on a pale oak desk, one sticker half-peeled from its glossy backing paper with the curl catching the light, visible clean die-cut edge and slight material thickness.",
+    "seed": 8108,
+    "size": "2K",
+    "aspect_ratio": "4:3"
+  },
+  {
+    "filename": "vinyl-stickers-1200x900",
+    "prompt": "Photorealistic premium commercial product photograph, shot on a full-frame camera with a 100mm macro lens, editorial styling, soft directional daylight from the left, gentle realistic shadows, shallow depth of field, clean warm colour grade, high micro-detail. Absolutely no text, no letters, no numbers, no logos, no brand marks, no watermarks anywhere in the image — all labels are completely blank. Scene: A blank vinyl sticker applied to a linen notebook and another to a matte water bottle on a desk, natural window daylight, slight low angle, the sticker edges sharply defined against both surfaces.",
+    "seed": 8109,
+    "size": "2K",
+    "aspect_ratio": "4:3"
+  },
+  {
+    "filename": "logo-stickers-1200x900",
+    "prompt": "Photorealistic premium commercial product photograph, shot on a full-frame camera with a 100mm macro lens, editorial styling, soft directional daylight from the left, gentle realistic shadows, shallow depth of field, clean warm colour grade, high micro-detail. Absolutely no text, no letters, no numbers, no logos, no brand marks, no watermarks anywhere in the image — all labels are completely blank. Scene: A kraft paper bag with several blank die-cut stickers scattered around it, one macro frame on an irregular die-cut edge showing the clean cut and the paper fibre, warm daylight, neutral surface.",
+    "seed": 8110,
+    "size": "2K",
+    "aspect_ratio": "4:3"
+  },
+  {
+    "filename": "die-cut-stickers-1200x900",
+    "prompt": "Photorealistic premium commercial product photograph, shot on a full-frame camera with a 100mm macro lens, editorial styling, soft directional daylight from the left, gentle realistic shadows, shallow depth of field, clean warm colour grade, high micro-detail. Absolutely no text, no letters, no numbers, no logos, no brand marks, no watermarks anywhere in the image — all labels are completely blank. Scene: Three blank stickers side by side — a circle, a rounded rectangle and an irregular organic shape — one being lifted from its liner, clean top-down view, the liner flexing, soft studio light.",
+    "seed": 8111,
+    "size": "2K",
+    "aspect_ratio": "4:3"
+  },
+  {
+    "filename": "sticker-sheets-1200x900",
+    "prompt": "Photorealistic premium commercial product photograph, shot on a full-frame camera with a 100mm macro lens, editorial styling, soft directional daylight from the left, gentle realistic shadows, shallow depth of field, clean warm colour grade, high micro-detail. Absolutely no text, no letters, no numbers, no logos, no brand marks, no watermarks anywhere in the image — all labels are completely blank. Scene: An A5 sheet of about ten blank stickers on a desk, half the sheet peeled back to show the kiss-cut liner holding the surrounding waste, macro detail on the cut line, soft daylight.",
+    "seed": 8112,
+    "size": "2K",
+    "aspect_ratio": "4:3"
+  },
+  {
+    "filename": "clear-stickers-1200x900",
+    "prompt": "Photorealistic premium commercial product photograph, shot on a full-frame camera with a 100mm macro lens, editorial styling, soft directional daylight from the left, gentle realistic shadows, shallow depth of field, clean warm colour grade, high micro-detail. Absolutely no text, no letters, no numbers, no logos, no brand marks, no watermarks anywhere in the image — all labels are completely blank. Scene: A transparent sticker applied to a dark matte surface creating a floating effect, a second clear sticker on glass catching a thin rim of reflected light, studio lighting, strong edge definition.",
+    "seed": 8113,
+    "size": "2K",
+    "aspect_ratio": "4:3"
+  }
+]

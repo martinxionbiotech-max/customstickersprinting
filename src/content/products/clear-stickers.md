@@ -12,6 +12,7 @@ customization: ["White ink areas", "Partial transparency", "Die cut shape", "She
 moq: "From 50 units"
 leadTime: "Typically 7–12 working days after artwork approval"
 relatedProducts: ["custom-stickers", "vinyl-stickers", "clear-labels"]
+imageAlt: "A transparent sticker on a dark matte surface, a second on glass"
 seoTitle: "Clear Stickers for Glass, Dark Bottles and Windows"
 seoDescription: "Clear stickers on transparent vinyl with a white ink layer behind the design: what stays see-through, which surfaces suit clear film, and why edges show."
 order: 6

@@ -18,6 +18,7 @@ const products = defineCollection({
     leadTime: z.string().default('Typically 7–12 working days after artwork approval'),
     relatedProducts: z.array(z.string()).default([]),
     knowledgeLinks: z.array(z.object({ label: z.string(), href: z.string() })).default([]),
+    imageAlt: z.string().optional(),
     seoTitle: z.string().optional(),
     seoDescription: z.string().optional(),
     status: z.enum(['draft', 'review', 'published']).default('published'),

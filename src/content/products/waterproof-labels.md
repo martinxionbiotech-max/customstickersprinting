@@ -12,6 +12,7 @@ customization: ["Immersion-grade stock", "Freezer adhesive", "Oil and chemical r
 moq: "From 50 units"
 leadTime: "Typically 7–12 working days after artwork approval"
 relatedProducts: ["bottle-labels", "food-labels", "clear-labels"]
+imageAlt: "A hand holding a wet bottle with an intact blank label"
 seoTitle: "Waterproof Labels for Bottles, Coolers and Ice"
 seoDescription: "Waterproof labels: which materials survive condensation, immersion and freezing, and how the adhesive, not the print, decides whether they hold."
 order: 7

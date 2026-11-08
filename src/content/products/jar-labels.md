@@ -12,6 +12,7 @@ customization: ["Wrap length", "Curved adhesive", "White ink", "Foil accents", "
 moq: "From 50 units"
 leadTime: "Typically 7–12 working days after artwork approval"
 relatedProducts: ["food-labels", "cosmetic-labels", "custom-labels"]
+imageAlt: "A lidded jam jar with a blank kraft label on the curved glass"
 seoTitle: "Jar Labels for Chilled, Dry and Gifted Products"
 seoDescription: "Custom jar labels for preserves, candles and cosmetics: wrap sizing for curved glass, condensation-resistant stock and foil or matte finishes."
 order: 6
