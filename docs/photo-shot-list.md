@@ -84,3 +84,39 @@ Until photography exists, the pages work without images. If a visual is needed s
 - A **plain typographic panel** (product name, materials, MOQ) is honest and looks intentional.
 - A **photograph of a real sample on a desk** — even a phone photo in daylight — is better than a render.
 - Never a stock image of someone else's labels.
+
+
+---
+
+# Reference pack review (Desktop.zip, 72 images)
+
+The pack contains 14 folders, 4–6 images each, plus `manifest.json` and `image-plan.md` per batch. Every entry in the manifests points at a 1688, Taobao, Alibaba or Zhihu page.
+
+## Verdict: reference only, none of it can ship
+
+Sampled two of the fourteen folders:
+
+| Sample | What it actually is |
+|---|---|
+| `custom-labels/custom-labels-03.jpg` | A supplier's machine demo: plotter in frame, hand peeling a sticker, **watermarked with a company name and a 1688 storefront URL**, and the sticker carries a 2019 anniversary emblem |
+| `bottle-labels/bottle-labels-01.jpg` | A studio shot of **Andes Gin** bottles, watermarked `知乎 @袁志勇` |
+
+Three independent reasons each one is unusable:
+
+1. **Copyright.** Supplier and third-party photography, no licence.
+2. **Watermarks.** Company names and storefront URLs burned into the image.
+3. **False provenance.** The site's product pages say the work is ours. A photo of another brand's gin bottle would be a claim about printing we did not do.
+
+The pack is still useful for one thing: **composition**. It shows which angles read well for each product type — low-angle for bottle wrap, condensation for chilled food, half-peel for stickers. That is what the shot list above already encodes.
+
+## What replaced it
+
+- `scripts/image-tasks.json` — 14 prompts, blank labels only, fixed seeds.
+- `scripts/prepare-product-images.py` — crops any aspect to 4:3, 1200 × 900, webp under 200 KB.
+- `imageAlt` on all 14 products describes the scene and never claims provenance.
+
+## An interim option that was tried and rejected
+
+A flat illustration of a labelled bottle and jar was drawn in-house as a stopgap. It looked like a developer mockup: placeholder label blocks, clipped containers, inconsistent shadows. On a site whose entire argument is craft, a bad illustration is worse than no image. Not shipped.
+
+The honest options remain: a real shoot, or generated imagery with a site-level disclosure.
