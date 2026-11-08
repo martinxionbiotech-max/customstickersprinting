@@ -35,15 +35,17 @@ Four one-off tasks, one line on the invoice. On a digital press the make-ready i
 
 The share, not the amount, is what matters:
 
-| Quantity | Setup share of order value |
-|---:|---:|
-| 50 | 70–90% |
-| 250 | 40–60% |
-| 1,000 | 15–25% |
-| 5,000 | 3–8% |
-| 20,000 | under 2% |
+| Quantity | Setup per unit, at a $190 setup | Share of a $0.041 unit cost |
+|---:|---:|---:|
+| 50 | $3.80 | 99% |
+| 250 | $0.76 | 95% |
+| 1,000 | $0.19 | 82% |
+| 5,000 | $0.04 | 48% |
+| 20,000 | $0.01 | 19% |
 
-That table is the reason a low minimum exists at all. It is also the reason a supplier quoting 50 units cannot "just sharpen the price" — there is nothing left to sharpen except the parts of the setup that were optional.
+The right-hand column is the one to read: it assumes the small label from the cost guide. A larger label with a $0.08 variable cost would show 33% at 5,000 units instead of 48% — the setup does not shrink, the label grows.
+
+That arithmetic is the reason a low minimum exists at all. It is also the reason a supplier quoting 50 units cannot "just sharpen the price" — there is nothing left to sharpen except the parts of the setup that were optional.
 
 ## What is optional inside a setup
 

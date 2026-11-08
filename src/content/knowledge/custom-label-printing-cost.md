@@ -24,14 +24,13 @@ This page breaks the price into its blocks, shows the arithmetic, and explains w
 
 A label price is four blocks added together:
 
-| Block | Behaviour | Share at 50 units | Share at 5,000 |
+| Block | Behaviour | 50 units | 5,000 units |
 |---|---|---:|---:|
-| Setup — file, die, proof, make-ready | Fixed | 70–90% | 2–5% |
-| Material and print | Per unit × area | 8–20% | 55–70% |
-| Finishing — laminate, foil, spot UV | Per unit, sometimes a pass charge | 2–8% | 10–20% |
-| Freight and duties | Per shipment | 5–15% | 5–15% |
+| Setup — file, die, proof, make-ready | Fixed | 99% | 48% |
+| Material, print and finishing | Per unit × area | 1% | 52% |
+| Freight and duties | Per shipment | quoted separately | quoted separately |
 
-The percentages are the pattern, not a rule. What matters is the shape: **one block does not move with quantity, and it is the block that decides whether a small order is viable.**
+Those shares come from the worked example further down — a small 60 × 90 mm label — and they move with label size: on a large label with ten times the material cost, setup falls to about 9% at 5,000 units. What does not change is the shape: **one block is fixed, and it is the block that decides whether a small order is viable.**
 
 ## Setup: the block that does not scale
 

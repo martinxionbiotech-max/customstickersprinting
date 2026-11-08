@@ -57,7 +57,7 @@ Coverage is a design decision with a practical consequence: the more of the bott
 | 70–90% | Information-led | Food with ingredients and nutrition |
 | Full wrap | Container becomes the label | Candles, cans, some beverages |
 
-If the label has to carry ingredients, allergens, a barcode and an address, work backwards from the text rather than forwards from the design. A 50 × 90 mm label holds roughly 250 words at 7 pt; a 65 × 120 mm holds around 450.
+If the label has to carry ingredients, allergens, a barcode and an address, work backwards from the text rather than forwards from the design. A 50 × 90 mm label holds roughly 130 words at 7 pt once margins and leading are counted; a 65 × 120 mm holds around 270. The number that surprises buyers is how fast a nutrition panel eats that space.
 
 ## Neck labels and shoulder seals
 

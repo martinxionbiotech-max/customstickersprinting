@@ -51,7 +51,7 @@ These are working ranges we quote from, in millimetres and inches. No standard g
 | Jar, 8 oz (240 ml) | 73 mm | 60 × 60 mm | 2.4 × 2.4 in |
 | Jar, 16 oz (480 ml) | 88 mm | 75 × 70 mm | 3.0 × 2.8 in |
 | Candle jar, 8 oz | 73 mm | 60 × 65 mm | 2.4 × 2.6 in |
-| Candle tin, 8 oz | 75 mm | 70 × 45 mm, or 230 × 45 mm wrap | 2.8 × 1.8 in |
+| Candle tin, 8 oz | 75 mm | 70 × 45 mm, or 240 × 45 mm wrap | 2.8 × 1.8 in |
 | Cosmetic tube, 50 ml | 35 mm | 45 × 90 mm | 1.8 × 3.5 in |
 | Lip balm tube | 16 mm | 30 × 45 mm | 1.2 × 1.8 in |
 | Stand-up pouch, 250 g | 100 mm wide | 80 × 60 mm | 3.1 × 2.4 in |

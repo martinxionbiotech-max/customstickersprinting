@@ -14,6 +14,13 @@ faq:
     a: "Three: an FNSKU on every unit so Amazon can identify your stock, a suffocation warning on any poly bag with an opening of 5 inches or more, and carton labels on the boxes. Expiration-dated products also need a date label on the unit and the carton."
   - q: "Can I use my own UPC instead of an FNSKU?"
     a: "Only if you use the manufacturer barcode option and your product is not commingled with other sellers' stock. With commingled inventory Amazon cannot tell whose unit is whose, so an FNSKU is required. Check the setting before you print anything."
+sources:
+  - label: "Amazon Seller Central — FBA product packaging requirements (seller login required)"
+    url: "https://sellercentral.amazon.com/help/hub/reference/external/200141500"
+  - label: "NIST — Packaging and Labeling Requirements FAQs (Fair Packaging and Labeling Act)"
+    url: "https://www.nist.gov/pml/owm/faqs/packaging-and-labeling-requirements-faqs"
+  - label: "Regulation (EU) No 1169/2011 — food information to consumers"
+    url: "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
 ---
 
 A marketplace shipment carries three different labels, and they are checked by three different processes: the unit label at receiving, the prep label at inspection, and the carton label at the dock. Failing any one of them stops the shipment.
