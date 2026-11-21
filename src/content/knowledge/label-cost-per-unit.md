@@ -4,6 +4,8 @@ description: "How to work out a true per-unit label cost, why price per 1,000 mi
 pillar: label-cost
 order: 5
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-07"
 relatedProducts: ["custom-labels", "custom-stickers", "roll-labels"]
 view: >-
   Price per 1,000 is a useful number at volume and a misleading one at 50 units, where it turns a $190 setup into

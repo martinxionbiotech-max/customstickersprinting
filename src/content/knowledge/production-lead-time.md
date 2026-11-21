@@ -4,6 +4,8 @@ description: "Where the days go between approval and delivery — artwork check,
 pillar: label-cost
 order: 4
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-21"
 relatedProducts: ["custom-labels", "roll-labels", "custom-stickers"]
 view: >-
   Quoted lead times are honest, and they start at approval rather than at order. The two delays we cannot recover are slow proof approval and late artwork edits, and both sit with the customer. If a launch date matters, approve within a day and freeze the file; that saves more time than any express option.
@@ -49,6 +51,25 @@ Express production exists but it buys press time, not approval time.
 ## Shipping
 
 Production lead time excludes transit. Domestic courier is typically 1–3 days; international express 3–7. If a delivery date is fixed, work backwards from it: shipping, then packing, then finishing, then print, then proof, then artwork.
+
+## A realistic schedule for a first order
+
+Work backwards from the date the labels must be in hand, not from the date you want to order. A first order has more steps than a reorder because the artwork, proof, material and die are all new.
+
+| When | What happens | What you control |
+|---|---|---|
+| Week 0 | Specification and artwork sent | File quality, size, material decision |
+| Day 1–2 | Artwork check and questions | Speed of answers |
+| Day 2–4 | Proof issued and approved | Approval speed; this is the biggest variable |
+| Day 4–7 | Print and finishing | Finish choice; foil and spot UV add passes |
+| Day 7–8 | Packing | Packing format |
+| Day 8–14 | Shipping | Destination, carrier, customs |
+
+A 7–12 working day production window is realistic only if the proof is approved promptly. If the proof sits for four days, the delivery date moves by four days; express production cannot recover that time because it buys press time, not approval time.
+
+For a launch, build in a buffer for the first order and keep the approved proof. The second order is faster because the artwork, proof and die already exist, and a reorder can often skip the proofing cycle if nothing has changed.
+
+If a date is fixed and the first order is late, the honest options are to pay for a faster shipping method, split the delivery, or move the launch. Do not assume the printer can compress artwork approval and printing into the same day; that is how mistakes get approved.
 
 ## What this means for buyers
 

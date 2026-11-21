@@ -4,6 +4,8 @@ description: "A quantity formula based on production runs, spoilage and design r
 pillar: label-cost
 order: 7
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-07"
 relatedProducts: ["custom-labels", "roll-labels", "custom-stickers"]
 view: >-
   Most buyers order either too few and reorder at a worse price, or too many and throw away a design that changed.

@@ -4,6 +4,8 @@ description: "The three label materials that cover most products, what each surv
 pillar: label-materials
 order: 1
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-07"
 relatedProducts: ["custom-labels", "waterproof-labels", "food-labels"]
 view: >-
   We would put almost every first order on PP rather than paper, even though it costs more per unit. The reason is not durability in the abstract: a paper label that fails on a chilled or handled product becomes a reprint, and the reprint costs more than the price difference. Paper still wins on dry cartons and boxed cosmetics, where nothing will ever get it wet.

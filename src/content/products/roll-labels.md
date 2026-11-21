@@ -16,7 +16,12 @@ imageAlt: "A roll of blank white labels beside a glass jar carrying a blank labe
 seoTitle: "Roll Labels for Applicators — Cores, Winding, Spacing"
 seoDescription: "Custom roll labels for applicators or hand application: consistent spacing, core and winding options, and roll specifications that match your machine."
 order: 2
-lastVerified: "2026-11"
+lastVerified: "2026-11-21"
+faq:
+  - q: "What winding direction should I specify for a roll?"
+    a: "The direction the label unwinds from the roll depends on the applicator. Send the machine make and model, or a photo of the unwind path, plus the core diameter and maximum roll diameter. If you apply by hand, a sheet may be easier than a roll."
+  - q: "Can I use roll labels without a label applicator?"
+    a: "Yes, but a roll is designed for a machine. Hand application works better with a sheet or a small roll on a dispenser. Tell us how you will apply the labels and we will recommend the format rather than defaulting to a roll."
 knowledgeLinks:
   - label: "Marketplace label requirements"
     href: "/knowledge/marketplace-label-requirements/"
@@ -65,6 +70,14 @@ Lamination is worth considering on rolls even when it is not chosen for appearan
 ## Quantity and cost
 
 Roll labels are priced on the same four variables as any label — area, material, finishing, quantity — plus one: the number of rolls. Splitting a run across many small rolls adds winding and packing time, so a 5,000-label order supplied as ten 500-label rolls costs more than the same order on two rolls.
+
+## When a sheet is the better choice
+
+A roll is designed for an applicator: the labels are spaced on a liner, wound in a specific direction and sized for the machine's core and maximum diameter. If you apply by hand, a sheet is often easier. A sheet lies flat, can be cut into rows and does not need a dispenser.
+
+A roll becomes worth it when the volume is steady, the application is on a line, or the labels need consistent spacing. At 50 units, the winding and core can add cost without a benefit. Ask for both formats at the quantity you actually need and compare the total, not the unit price.
+
+If you are moving from hand application to a semi-automatic applicator, test the roll on the machine before the full run. A roll that is correct on paper can still fail if the unwind direction or the liner is wrong.
 
 ## Ordering
 

@@ -4,6 +4,8 @@ description: "What dpi actually measures, why a 72 dpi web image cannot be scale
 pillar: artwork
 order: 4
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-21"
 relatedProducts: ["custom-labels", "custom-stickers", "logo-stickers"]
 view: >-
   Upscaling is the most common false fix we see. If the pixel count is short at final size, we would redraw the logo rather than enlarge the file: interpolation adds no detail, and a die-cut edge shows exactly how little was added. Vector artwork removes the problem entirely.
@@ -55,6 +57,16 @@ Upscaling does not fix this. Interpolation invents pixels by averaging neighbour
 ## Checking before you send
 
 In any image editor, open the file and look at pixel dimensions. Divide by 300 to get the maximum print width in inches; multiply by 25.4 for millimetres. If that number is smaller than your label, the file is short.
+
+## The 300 dpi check in practice
+
+The calculation is simple, but the units are where people trip. Take the pixel width of the image and divide by 300; the result is the maximum print width in inches. Multiply by 25.4 for millimetres.
+
+A 1,200 px image is 4 inches (about 102 mm) at 300 dpi. On a 50 mm label it is comfortably above 300 dpi; on a 150 mm label it is about 200 dpi and will look soft. A 600 px logo is 2 inches (about 51 mm) at 300 dpi; on a 75 mm label it is about 200 dpi, which is marginal for small text.
+
+For a barcode, do not rely on the overall image resolution. The symbol needs clean edges, the correct magnification and a quiet zone. A barcode embedded in a high-resolution image can still fail if it was scaled from a screenshot or if the bars are too thin for the printer. Test-scan a printed proof with the scanner used at receiving.
+
+For photographs, 300 dpi at final size is the target; 250 dpi can be acceptable on a textured stock where the texture hides softness. For line art and text, vector is the answer, and resolution stops being the question.
 
 ## What this means for buyers
 

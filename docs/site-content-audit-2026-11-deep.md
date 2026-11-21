@@ -1,5 +1,14 @@
 # Custom Stickers Printing — 全站内容深度审计
 
+> **2026-11-21 实施更新（在审计之后执行）：**
+> - P0 中文、数字、日期、产品家族、条款窗口已修复；英文站中文扫描为 **0**。
+> - 新增 **8 个知识枢纽页**（含 hang tags）、**4 篇 hang tags 文章**、**1 个 apparel 行业页**、**1 个 declarations 页**。
+> - 知识文章 40→45；产品 15；行业 4→5；页面 77→92；sidecar 59→65。
+> - 19 篇薄弱知识文章、15 个产品页、4 个行业页、Privacy/Terms/Contact/Quote 已扩写；产品 FAQ 产品化。
+> - 当前构建：**92 个可索引页，0 断链、0 孤儿、标题/描述全部合规、0 页缺 JSON-LD**。
+> - 仍阻塞：`www` DNS（无 Cloudflare 凭据）、`hello@` 邮箱别名（无邮箱后台权限）、12 张真实产品图（无实拍资产）。
+> 本报告以下数字保留审计时点（2026-11-21 早先构建）作为对比基线。
+
 - **审计日期**：2026-11-21
 - **审计对象**：`https://customstickersprinting.com`（本地构建 + 线上抓取）
 - **本地仓库**：`/home/ubuntu/work/customstickersprinting`，`main`，`eca4aeb`

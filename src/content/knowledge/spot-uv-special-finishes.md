@@ -4,6 +4,8 @@ description: "Spot UV, soft-touch, textured laminate and varnish: how each chang
 pillar: printing
 order: 4
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-21"
 relatedProducts: ["cosmetic-labels", "custom-labels", "logo-stickers"]
 view: >-
   Spot UV at 50 units is mostly a vanity purchase: the screen cost dominates and the contrast is invisible at arm's length. We would rather sell a matte laminate and a well-chosen stock than a finish nobody can see. Above a few thousand units the economics change and the effect starts to earn its setup.
@@ -52,6 +54,22 @@ Varnish is the cheapest protection and the weakest; it is not a substitute for l
 - **Soft-touch in a bathroom** — fingerprints and water marks become permanent.
 - **Textured laminate on a 30 mm label** — the grain is larger than the design detail.
 - **Varnish instead of laminate on a chilled product** — water reaches the ink and the label looks damp.
+
+## When spot UV earns its place
+
+Spot UV is a gloss highlight on a matte surface. It works when the design has a clear focal point — a logo, a pattern, a single word — and the contrast between gloss and matte is part of the look. It is a poor choice when the whole label is already glossy, when the highlight is a hairline, or when the quantity is too low to absorb the screen and pass.
+
+| Situation | Spot UV? | Why |
+|---|---|---|
+| Matte label with a bold logo | Yes | The contrast is visible and reinforces the brand |
+| Full-bleed photo with no focal point | Usually no | The highlight has nothing to sit on |
+| Very small label | Often no | The screen and registration are hard to see |
+| 50-unit test order | Usually no | The setup dominates the price |
+| Premium carton or hang tag | Yes, at volume | The tactile contrast reads as quality |
+
+Registration matters: spot UV must align with the printed area, and a small misregistration is visible on a fine logo. Ask for a physical sample on the actual stock. On uncoated or textured card, the varnish sinks in and the gloss is less pronounced; on a coated or laminated surface, it sits on top and reads more sharply.
+
+If the budget is limited, a matte laminate plus a well-printed design usually looks better than a low-quantity spot UV with a weak highlight.
 
 ## What this means for buyers
 

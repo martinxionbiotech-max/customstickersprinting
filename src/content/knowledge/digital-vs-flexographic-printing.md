@@ -4,6 +4,8 @@ description: "How digital and flexographic label printing differ in setup cost, 
 pillar: printing
 order: 1
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-21"
 relatedProducts: ["roll-labels", "custom-labels", "logo-stickers"]
 view: >-
   The 50-unit minimum exists because digital removed the plate cost, not because we are generous. Our advice is to stay digital while the design is unproven and move to flexo once volume makes the plates effectively free. The crossover is not a fixed number: fewer colours and a stable design cross earlier.
@@ -63,6 +65,12 @@ A 50-unit order exists because digital removed the plate cost. That is also why:
 Flexo prints spot colours mixed to a reference, which is how brands achieve an exact match across packaging. Digital approximates those colours with CMYK, usually closely enough for a label but not identically to a litho-printed carton.
 
 If a brand colour must match existing packaging exactly, say so before the run and expect either a spot colour job or a physical proof to approve.
+
+## A simple decision rule
+
+If the quantity is below a few hundred pieces and the artwork has more than one colour, start with digital. If the quantity is in the thousands, the design is stable and the colour is a spot reference, ask for flexo. If the job sits between those two, ask for both quotes with the same specification and compare the total, including setup and freight.
+
+Do not choose a method from a unit price alone. A digital unit price at 100 pieces and a flexo unit price at 10,000 pieces are not comparable; the setup, the plates and the run length are different. The right question is which method makes this job economic at this quantity, with the colour and finish the design needs.
 
 ## What this means for buyers
 

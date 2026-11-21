@@ -4,6 +4,8 @@ description: "Die cutting separates each sticker; kiss cutting leaves it on the 
 pillar: sticker-materials
 order: 2
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-07"
 relatedProducts: ["die-cut-stickers", "sticker-sheets", "custom-stickers"]
 view: >-
   At 50 units we steer customers towards kiss-cut sheets, because a custom die can double the price of a first order and the shape is rarely the thing being tested. Move to individual die cuts once the design is proven and the quantity justifies the tooling — which is usually somewhere around a few hundred pieces.

@@ -4,6 +4,8 @@ description: "Which sticker adhesive for glass, laptops, packaging and painted w
 pillar: sticker-materials
 order: 4
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-21"
 relatedProducts: ["vinyl-stickers", "custom-stickers", "logo-stickers"]
 view: >-
   Permanent is the honest default. We push back on removable requests unless the surface belongs to the customer, because a removable sticker on painted drywall usually takes the paint with it and the complaint lands on the printer. Outdoor is a separate specification again: film, adhesive and laminate all change.
@@ -53,6 +55,21 @@ If clean removal is the requirement, say the surface and the duration — the ad
 ## Clear film and adhesive
 
 Clear stickers show everything, including the adhesive's behaviour: a slightly uneven bond reads as a bubble. Clean the surface, apply with a squeegee, and expect clear film to be less forgiving than white.
+
+## A surface test you can run before the full order
+
+Adhesive data sheets describe a standard test surface, not your laptop, powder-coated panel or recycled bottle. A practical test takes a week and costs one sample:
+
+1. Clean the surface the way the product will be cleaned, then let it dry completely.
+2. Apply the sticker by hand, pressing from the centre out with a squeegee or a clean cloth.
+3. Leave it at room temperature for 24 hours; initial tack is not final adhesion.
+4. Check the edges at 24 hours, one week and one month.
+5. Put one sample in the conditions the product will see: a bathroom, a fridge, a car window or a wet outdoor surface.
+6. Record where it lifts, whether the adhesive transfers to the surface, and whether the print changes.
+
+A sticker that passes on a glass jar may fail on a powder-coated tin because the texture reduces contact area. A sticker that holds on a laptop may slide on a recycled HDPE bottle because the surface energy is lower. The test is not a guarantee for every batch, but it catches the obvious mismatch before a production run.
+
+If removal matters, test that too. A removable adhesive can peel cleanly from glass and leave residue on cheap paint; the surface, not the word “removable”, decides.
 
 ## What this means for buyers
 

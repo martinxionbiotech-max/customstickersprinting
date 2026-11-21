@@ -4,6 +4,8 @@ description: "The inch sizes buyers ask for by name — 2x2, 2.5x3, 3x4, 4x6 —
 pillar: label-sizing
 order: 5
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-07"
 relatedProducts: ["custom-labels", "logo-stickers", "sticker-sheets"]
 view: >-
   Standard sizes are cheaper because the die already exists and nobody has to draw a cut path. If one of these twelve

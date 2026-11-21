@@ -4,6 +4,8 @@ description: "How adhesives behave on glass, plastic and painted surfaces, when 
 pillar: label-materials
 order: 2
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-07"
 relatedProducts: ["custom-labels", "bottle-labels", "clear-labels"]
 view: >-
   Our default is permanent unless the customer owns the surface. The exception we see most is a promotional label on retail packaging, where removable is worth the extra cost because a torn label on a shelf reads as damaged stock. On glass and rigid plastic, permanent is simply the cheaper correct answer.

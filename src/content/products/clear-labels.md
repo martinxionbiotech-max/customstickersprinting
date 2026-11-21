@@ -16,7 +16,12 @@ imageAlt: "A clear label on a glass jar, white ink area beside a transparent are
 seoTitle: "Clear Labels with White Ink for a No-Label Look"
 seoDescription: "Custom clear labels and the no-label look: how white ink works on transparent film, which containers suit clear stock, and what causes visible bubbles."
 order: 8
-lastVerified: "2026-11"
+lastVerified: "2026-11-21"
+faq:
+  - q: "Why does a clear label need white ink?"
+    a: "Without a white layer, colours print directly on clear film and appear translucent; a logo can disappear against a dark bottle. White ink is a quoted extra pass, and it can be a spot layer behind the design or a flood coat."
+  - q: "Will a clear label show bubbles?"
+    a: "Clear film makes trapped air and surface contamination more visible than white stock. A smooth, clean container and a conformable film help; on a curved or textured surface, test a sample before the run."
 knowledgeLinks:
   - label: "CMYK vs RGB"
     href: "/knowledge/cmyk-vs-rgb/"
@@ -63,6 +68,14 @@ Clear PP is the standard, flexible and water-resistant. Clear PET is stiffer and
 ## Quantity and cost
 
 Clear film plus a white ink pass costs more than white paper of the same size. At 50 units, expect clear labels to be among the more expensive options per unit — the premium buys the look, and it only pays off on a container that suits it.
+
+## When white stock is the better choice
+
+A clear label is a design decision, not a default upgrade. It makes the container part of the label and can look minimal and premium, but it also exposes bubbles, dust and the adhesive. If the container is dark, textured or uneven, a white or metallised stock can be more legible and more forgiving.
+
+White stock also carries colour more predictably. On clear film, colours need a white ink layer to stay opaque; without it, a dark bottle can swallow the design. White ink adds a pass and a cost, and it must be built into the artwork.
+
+If the design has fine text, a barcode or a large solid colour, white stock is usually the safer choice. If the design is a simple logo on a glass bottle and the no-label look is the point, clear film with spot white can be the better answer.
 
 ## Ordering
 

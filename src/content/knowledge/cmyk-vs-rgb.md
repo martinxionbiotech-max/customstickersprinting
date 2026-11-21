@@ -4,6 +4,8 @@ description: "How screens and ink reproduce colour differently, which brand colo
 pillar: artwork
 order: 1
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-21"
 relatedProducts: ["custom-labels", "cosmetic-labels", "logo-stickers"]
 view: >-
   If the brand colour lives on screens and packaging, design in CMYK and proof on the real stock. We would rather tell a customer that their neon green cannot be printed than print it dull and call it a colour difference. Spot colour exists precisely for the colours CMYK cannot reach.
@@ -60,6 +62,20 @@ For large solid areas, a rich black gives a deeper result — a deliberate choic
 ## White ink
 
 White is not a CMYK colour. On clear or metallic stock, white is a separate ink layer printed behind the design. Without it, colours are translucent. This is why clear labels and clear stickers need a white-ink decision in the artwork, not just in the quote.
+
+## A conversion workflow that avoids surprises
+
+The safest colour workflow is boring: design in CMYK from the start, or convert to CMYK before you judge the colour. Do not design in RGB, approve on a bright screen, and expect the printed label to match.
+
+1. **Assign the correct profile** to the document; do not convert an untagged file blindly.
+2. **Convert to CMYK** using the profile the printer specifies, or a standard coated/uncoated profile if none is given.
+3. **Check the out-of-gamut colours.** Bright oranges, greens and blues may shift; a spot colour is the only reliable way to hold them.
+4. **Soft-proof** on a calibrated monitor, then approve a physical proof for colour-critical work.
+5. **Keep the CMYK values** in the final file; do not let the printer reconvert an RGB file without telling you.
+
+A rich black is not 100% of all four inks on small text; it can look blurry from registration shift. For small type, a single black or a controlled rich black is usually cleaner. For a large solid black area, a rich black can look deeper, but it needs the printer’s recommendation.
+
+The screen is an emissive RGB device; ink is subtractive CMYK on a substrate. They will never match exactly. The goal is a predictable, approved print, not a screen match.
 
 ## What this means for buyers
 

@@ -4,6 +4,8 @@ description: "From printed web to wound roll: die cutting, waste stripping and r
 pillar: printing
 order: 2
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-07"
 relatedProducts: ["roll-labels", "bottle-labels", "custom-labels"]
 view: >-
   Most roll-label problems we are asked to fix are specification errors, not printing errors: wrong winding, wrong core, wrong gap for the sensor. Send a photo of the spindle and the roll currently in the machine before ordering, and half the risk disappears before a quote is written.

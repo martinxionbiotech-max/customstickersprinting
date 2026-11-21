@@ -4,6 +4,8 @@ description: "How to measure a container, pick a label size from typical dimensi
 pillar: label-sizing
 order: 0
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-08"
 relatedProducts: ["bottle-labels", "jar-labels", "custom-labels", "cosmetic-labels"]
 view: >-
   Nine times out of ten, the size question is answered by one number the buyer has not measured: the circumference.

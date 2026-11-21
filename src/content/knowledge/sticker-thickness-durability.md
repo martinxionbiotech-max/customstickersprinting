@@ -4,6 +4,8 @@ description: "How face stock thickness affects feel, conformability and tear res
 pillar: sticker-materials
 order: 5
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-21"
 relatedProducts: ["vinyl-stickers", "die-cut-stickers", "custom-stickers"]
 view: >-
   We would spend the money on lamination before thickness. A 150 micron vinyl with a laminate outlasts a 250 micron vinyl without one, costs less, and conforms better to a curved surface. Thickness is worth paying for when the sticker is a product in the hand, not when it is protection you are trying to buy.
@@ -47,6 +49,21 @@ Sticker thickness is quoted in microns and felt in the hand. It affects three th
 A 150 µm vinyl with a laminate usually outperforms a 250 µm vinyl without one, for less money. The laminate protects the surface; the face stock provides body.
 
 If the goal is durability, laminate first. If the goal is feel, go thicker.
+
+## Reading a construction spec
+
+A sticker’s total thickness is not one number. It is the sum of the face stock, the adhesive and the liner, plus the laminate if there is one. A supplier who quotes “200 micron” may mean the face stock alone, or the face plus adhesive, or the finished construction. Ask which layer the number describes.
+
+| Layer | What it does | What changes with thickness |
+|---|---|---|
+| Face stock | The printable surface and the body | Stiffer, more tear-resistant, less conformable |
+| Adhesive | Bonds to the surface | Usually not the thickness variable; the chemistry matters more |
+| Liner | Carries the sticker before use | Affects dispensing and hand peeling, not the finished look |
+| Laminate | Protects the print | Adds 20–40 µm and a surface finish |
+
+For a curved bottle, the face stock’s stiffness matters more than the total. A 150 µm vinyl with a conformable adhesive can follow a 25 mm radius; a 250 µm film may lift at the edge even if the total number looks more premium. For a flat mailer or a laptop lid, a heavier film gives the sticker a substantial feel and resists tearing during peeling.
+
+If the goal is durability, specify the laminate first. If the goal is a premium hand feel, specify the face stock. Do not use one number to buy both.
 
 ## What this means for buyers
 

@@ -4,6 +4,8 @@ description: "The mandatory text on a retail label in the US and EU — identity
 pillar: marketplace-labels
 order: 4
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-07"
 relatedProducts: ["custom-labels", "food-labels", "cosmetic-labels"]
 view: >-
   A direct-to-consumer label and a retail label are different products. Retail adds mandatory text that most DTC designs

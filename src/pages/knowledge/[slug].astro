@@ -23,6 +23,7 @@ const PILLAR_TITLES: Record<string, string> = {
   "sticker-materials": "Sticker materials and cutting",
   printing: "Printing and production",
   artwork: "Artwork preparation",
+  "hang-tags": "Hang tags and printed card",
 };
 
 const all = await getCollection("knowledge");
@@ -52,11 +53,12 @@ const ld = {
   "@type": "Article",
   headline: d.title,
   description: d.description,
-  datePublished: "2026-11-01",
-  dateModified: `${d.updated}-01`,
+  datePublished: d.published ?? "2026-11-07",
+  dateModified: d.reviewed ?? d.published ?? "2026-11-07",
   author: { "@type": "Organization", name: site.brand },
   publisher: { "@id": `${site.url}/#organization` },
   mainEntityOfPage: new URL(Astro.url.pathname, Astro.site).href,
+  image: `${site.url}/images/og-default.webp`,
   ...(d.sources.length > 0 ? { citation: d.sources.map((s) => s.url) } : {}),
 };
 
@@ -74,13 +76,13 @@ const faqLd = d.faq.length > 0
 ---
 
 <BaseLayout title={d.title} description={d.description} type="article" jsonLd={faqLd ? [ld, faqLd] : [ld]} alternateMd={`/knowledge/${article.id}/index.md`}>
-  <Breadcrumbs items={[{ label: "Knowledge", href: "/knowledge/" }, { label: PILLAR_TITLES[d.pillar], href: "/knowledge/" }, { label: d.title }]} />
+  <Breadcrumbs items={[{ label: "Knowledge", href: "/knowledge/" }, { label: PILLAR_TITLES[d.pillar], href: `/knowledge/${d.pillar}/` }, { label: d.title }]} />
   <section class="tight">
     <div class="wrap narrow">
       <p class="eyebrow">{PILLAR_TITLES[d.pillar]}</p>
       <h1>{d.title}</h1>
       <p style="font-size:1.06rem;color:var(--ink-2)">{d.description}</p>
-      <p class="small">Updated {d.updated} · Written and reviewed by the {site.brand} team, operated by {site.company.legalNameEn} · <a href="/editorial-standards/">Editorial standards</a></p>
+      <p class="small">Reviewed {d.reviewed ?? d.updated} · Written and reviewed by the {site.brand} team, operated by {site.company.legalNameEn} · <a href="/editorial-standards/">Editorial standards</a></p>
 
       {d.view && (
         <aside class="our-view">

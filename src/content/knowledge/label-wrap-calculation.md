@@ -4,6 +4,8 @@ description: "The arithmetic behind a wrap label: circumference, overlap versus 
 pillar: label-sizing
 order: 4
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-07"
 relatedProducts: ["bottle-labels", "jar-labels", "roll-labels"]
 view: >-
   Two formulas cover almost every wrap, and they are not interchangeable: an overlap wrap is circumference plus a few
@@ -114,7 +116,7 @@ repeat count = round(label width ÷ repeat size)
 adjusted width = repeat count × repeat size
 ```
 
-Example: a 226 mm gap wrap with a 40 mm repeat. 226 ÷ 40 = 5.65, so five repeats need 200 mm and six need 240 mm. Neither is 226. The options are to adjust the repeat to 37.7 mm (five repeats), accept a deliberate mismatch hidden at the back, or design the seam as a feature — a vertical rule or a colour block that reads as intentional.
+Example: a 226 mm gap wrap with a 40 mm repeat. 226 ÷ 40 = 5.65, so five repeats need 200 mm and six need 240 mm. Neither is 226. The options are to adjust the repeat to 37.7 mm (six repeats), accept a deliberate mismatch hidden at the back, or design the seam as a feature — a vertical rule or a colour block that reads as intentional.
 
 This is the single most common reason a wrap design comes back from proofing.
 

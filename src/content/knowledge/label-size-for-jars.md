@@ -1,9 +1,11 @@
 ---
 title: "Label sizes for jars, by fill weight"
-description: "Label dimensions for 4 oz to 32 oz jars: jam, candle, cosmetic and candle-tin sizes, plus lid labels and why the jar shoulder changes the answer."
+description: "Label dimensions for 4 oz to 32 oz jars: jam, candle, cosmetic and tin sizes, plus lid labels and why the jar shoulder changes the sizing answer."
 pillar: label-sizing
 order: 2
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-07"
 relatedProducts: ["jar-labels", "food-labels", "cosmetic-labels"]
 view: >-
   Jars are the easiest container to label badly, because the body is short and the shoulder is close. Our rule is to

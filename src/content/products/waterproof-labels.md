@@ -16,7 +16,12 @@ imageAlt: "A hand holding a wet bottle with an intact blank label"
 seoTitle: "Waterproof Labels for Bottles, Coolers and Ice"
 seoDescription: "Waterproof labels: which materials survive condensation, immersion and freezing, and how the adhesive, not the print, decides whether they hold."
 order: 7
-lastVerified: "2026-11"
+lastVerified: "2026-11-21"
+faq:
+  - q: "What is the difference between water-resistant and waterproof?"
+    a: "Water-resistant survives splashes; waterproof survives repeated wetting; immersion-grade survives being submerged. They need different materials and adhesives. Tell us the condition and the duration rather than asking for a generic waterproof label."
+  - q: "Will a waterproof label survive a dishwasher?"
+    a: "Not automatically. Heat, detergent and mechanical action are harsher than cold water. A PP or PET film with the right adhesive and laminate can be tested, but a dishwasher cycle should be treated as a specific test, not a default claim."
 knowledgeLinks:
   - label: "Label sizes for bottles"
     href: "/knowledge/label-size-for-bottles/"
@@ -67,6 +72,14 @@ Digital printing on film with lamination gives the best water resistance at shor
 ## Quantity and cost
 
 Film stocks cost more than paper, and lamination adds a pass. At 50 units, a waterproof label may cost two to three times a paper label of the same size — which is the correct comparison, because the paper one will fail in the application.
+
+## When waterproof is over-specified
+
+A waterproof label is not automatically better. If the product stays dry — a boxed cosmetic, a pantry jar, a retail carton — a coated paper label can look better, print more sharply and cost less. The paper is not a compromise; it is the right material for a dry condition.
+
+Waterproof becomes necessary when the label sees condensation, immersion, oil, alcohol or freezer cycling. The specification should name the condition and the duration, not just the word. A label that survives a wet wipe may fail in an ice bucket; a label that survives a fridge may fail in a dishwasher.
+
+If you are unsure, order a sample on the actual container and test it in the actual condition. A waterproof claim without a test is a guess.
 
 ## Ordering
 

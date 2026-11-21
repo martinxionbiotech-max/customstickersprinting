@@ -4,6 +4,8 @@ description: "What causes colour variation between label runs, how much is norma
 pillar: printing
 order: 5
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-21"
 relatedProducts: ["custom-labels", "cosmetic-labels", "food-labels"]
 view: >-
   Buyers expect run two to match run one exactly, and print does not work that way. Our position: approve a physical sample, keep it, and compare future runs against it rather than against memory. If the colour is a brand asset, pay for a spot colour instead of hoping the CMYK conversion lands in the same place twice.
@@ -53,6 +55,16 @@ Cost: an extra plate in flexo, or a dedicated ink in digital — and a setup cha
 - **Press proof** — a short run on the production press; the most accurate, and the most expensive.
 
 For brand colours, a contract proof or a physical sample is the minimum. For everything else, approving on screen is acceptable if the design is not colour-critical.
+
+## A colour-control routine for repeat orders
+
+A repeat order is a comparison, not a fresh design. Keep the approved physical sample, write the material and print method on it, and store it away from light. When the next run arrives, compare it under the same light and at the same angle. A difference that is invisible on a screen can be obvious side by side.
+
+For a brand colour, decide the tolerance before the first run. A Delta E of about 2–3 is generally imperceptible; 4–5 becomes visible side by side. If the colour is a brand asset, a spot colour and a retained reference are more reliable than another CMYK conversion.
+
+Ask three questions before approving a repeat: is the substrate the same, is the print method the same, and is the laminate the same? A change in any of them changes the colour. A matte laminate can make the same ink look darker and flatter than a gloss laminate; a coated stock can make it look brighter than an uncoated one.
+
+If the colour is critical, budget for a contract proof or a press proof. A PDF proof is a layout tool, not a colour reference.
 
 ## What this means for buyers
 

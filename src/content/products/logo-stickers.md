@@ -16,7 +16,12 @@ imageAlt: "Round printed sticker with black line-art fruit illustrations, restin
 seoTitle: "Logo Stickers — Small Sizes, Exact Brand Colour"
 seoDescription: "Custom logo stickers die cut to your brand shape from 50 units: white or clear vinyl, gloss or matte laminate, colour matched to your artwork."
 order: 3
-lastVerified: "2026-11"
+lastVerified: "2026-11-21"
+faq:
+  - q: "What sizes work for logo stickers?"
+    a: "Small logo stickers are often 25–50 mm, but the size depends on the mark and where it goes. A detailed logo needs enough area to stay legible; a simple wordmark can work smaller. Send the vector and we will check the minimum size."
+  - q: "Can you match my brand colour exactly?"
+    a: "We print CMYK and can match a reference within normal process tolerance; an exact spot colour requires a spot ink and a physical proof. A screen preview is not a colour match. Approve a sample if the brand colour is critical."
 knowledgeLinks:
   - label: "Standard sticker and label sizes"
     href: "/knowledge/standard-label-sizes/"
@@ -62,6 +67,14 @@ Metallic vinyl is available for a premium effect and is quoted separately.
 ## Quantity and cost
 
 Small stickers are dominated by setup rather than material: at 50 units, most of the price is the plate, die and make-ready, not the vinyl. That is why the per-unit price falls sharply between 50 and 500 and flattens after that.
+
+## When a full label is the better choice
+
+A logo sticker is a brand piece: a mark on a mailer, a seal on a bag, a giveaway. A full label carries product information and often regulatory text. If the piece needs ingredients, a barcode, a batch code or a warning, it is a label, even if the design is just a logo.
+
+A logo sticker can be small, because it does not need to carry mandatory text. That makes it a good first order: a simple shape, a standard material and a low quantity. A full label needs more space, a larger size and a material matched to the product's storage condition.
+
+If you are launching a product, the logo sticker and the product label can share the artwork but not the specification. Keep them as separate line items so the material and adhesive match the surface.
 
 ## Ordering
 

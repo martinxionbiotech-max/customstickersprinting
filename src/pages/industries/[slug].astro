@@ -69,5 +69,18 @@ const faqLd = d.faq.length > 0
     </section>
   )}
 
+  {d.knowledgeLinks.length > 0 && (
+    <section class="tight" style="border-top:1px solid var(--line)">
+      <div class="wrap narrow">
+        <h2>Read before you specify</h2>
+        <ul style="margin-top:12px;line-height:2">
+          {d.knowledgeLinks.map((l) => (
+            <li><a href={l.href}>{l.label}</a></li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+
   <CtaBand subject={`Quotation — ${d.heading}`} body={`Tell us the container, the quantity and the destination. Minimum ${site.moq} units.`} />
 </BaseLayout>

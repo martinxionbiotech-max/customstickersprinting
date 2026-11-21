@@ -4,6 +4,8 @@ description: "The three labels in a marketplace shipment, what Amazon actually r
 pillar: marketplace-labels
 order: 0
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-08"
 relatedProducts: ["custom-labels", "roll-labels", "logo-stickers"]
 view: >-
   Most dock rejections are not printing failures, they are specification failures: the wrong barcode, a bag without a

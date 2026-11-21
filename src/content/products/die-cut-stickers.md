@@ -16,7 +16,12 @@ imageAlt: "Circle, rounded rectangle and irregular blank stickers, one being lif
 seoTitle: "Die Cut Stickers in Any Shape, Kiss or Full Cut"
 seoDescription: "Die cut stickers in any shape: how contour cutting works, when a steel die is worth the setup, bleed and cut-path requirements, and peeling tips."
 order: 4
-lastVerified: "2026-11"
+lastVerified: "2026-11-21"
+faq:
+  - q: "Do I need a custom die for a die-cut sticker?"
+    a: "Only if the shape is not a standard circle, square or rounded rectangle. A custom die is a one-off cost; at 50 units it can dominate the price. A standard shape or a kiss-cut sheet is often the better first order."
+  - q: "Can I supply my own dieline?"
+    a: "Yes, as a closed vector path on a separate layer, at final size. Do not send a picture of the shape. If you do not have a dieline, send the artwork and the intended outline and we will quote the die."
 knowledgeLinks:
   - label: "What a setup charge covers"
     href: "/knowledge/label-setup-costs/"
@@ -65,6 +70,14 @@ A die cut can be supplied as individual pieces or kiss cut on a sheet. Individua
 ## Quantity and cost
 
 Below roughly 300 units, digital contour cutting avoids a die cost and wins. Above that, a steel rule die usually pays for itself quickly, because the per-piece cutting cost drops.
+
+## When a kiss-cut sheet is better
+
+A die-cut sticker is separated from its backing and ready to apply. A kiss-cut sheet keeps the stickers on the sheet, which is better for a set, a hand-out or a resale pack. If the stickers are meant to be kept together, a sheet is the more useful format.
+
+A die-cut shape also needs a die if it is not a standard circle, square or rounded rectangle. At 50 units, the die can dominate the price. A kiss-cut sheet can use a plotter path and avoid the die, which makes it a cheaper first order for a custom shape.
+
+If the sticker is a single giveaway, die cut is convenient. If it is a set or a retail product, a kiss-cut sheet may be the better specification.
 
 ## Ordering
 

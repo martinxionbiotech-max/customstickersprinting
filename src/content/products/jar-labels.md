@@ -16,7 +16,12 @@ imageAlt: "A lidded jam jar with a blank kraft label on the curved glass"
 seoTitle: "Jar Labels for Chilled, Dry and Gifted Products"
 seoDescription: "Custom jar labels for preserves, candles and cosmetics: wrap sizing for curved glass, condensation-resistant stock and foil or matte finishes."
 order: 6
-lastVerified: "2026-11"
+lastVerified: "2026-11-21"
+faq:
+  - q: "What size label fits an 8 oz jar?"
+    a: "A 60 × 60 mm label on a standard 73 mm diameter jar, or 65 × 65 mm for a fuller look. Measure the straight body height, not the total jar height; the shoulder and base radius are not printable."
+  - q: "Can I put a label on the jar lid?"
+    a: "Yes, and it is common on candles and preserves. Use a circle 3–5 mm smaller than the lid so the lid edge stays visible: 55–58 mm on a 63 mm lid, 62–65 mm on a 70 mm tin lid."
 knowledgeLinks:
   - label: "Label size guide"
     href: "/knowledge/label-size-guide/"
@@ -62,6 +67,14 @@ On clear glass, white ink behind the design is what makes colours opaque. Withou
 ## Quantity and cost
 
 Jar labels are priced on printed area, material, finishing and quantity. Because the label is often large relative to the jar, material is a bigger share of the cost than on a small bottle label — a wrap uses two to three times the stock of a front panel.
+
+## When a bottle label is the better fit
+
+A jar label is usually shorter and wider than a bottle label because the jar's straight body is short. A bottle label has more vertical room and a shoulder that starts higher. If the container is tall and narrow, a bottle label can use more of the body; if it is short and wide, a jar label or a lid label is usually better.
+
+The lid is often the largest flat surface on a jar. A body label can carry the brand, and a lid label can carry the variant, the flavour or the batch. That split lets one body label serve several variants without a reprint, which is useful for small-batch food and candles.
+
+If the jar is tapered or has a pronounced shoulder, measure the straight body and subtract 6 mm before choosing the height. A label that reaches into the shoulder will lift on one side, even if the application is careful.
 
 ## Ordering
 

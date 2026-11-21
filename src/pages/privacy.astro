@@ -12,10 +12,15 @@ import { site } from "../data/site";
       <p class="small">Last updated: November 2026</p>
 
       <h2>Who we are</h2>
-      <p>{site.brand} sells custom printed labels and stickers to business customers. Contact for any privacy question: <a href={`mailto:${site.email}`}>{site.email}</a>.</p>
+      <p>
+        {site.brand} is a trading name of {site.company.legalNameEn}, registered in {site.company.city},
+        {site.company.region}, {site.company.country} (USCC {site.company.uscc}). For any privacy question,
+        including a request about your data, contact <a href={`mailto:${site.email}`}>{site.email}</a>.
+        We are the controller for the business contact and order data described on this page.
+      </p>
 
       <h2>What we collect</h2>
-      <p>This website is static. It does not have accounts, a cart or a login, and it does not load advertising or analytics trackers.</p>
+      <p>This website is static. It does not have accounts, a cart or a login, and it does not load advertising or analytics trackers. We collect only what is needed to answer an enquiry, prepare a quotation or fulfil an order; we do not ask for a date of birth, a government ID or payment-card details through the site.</p>
       <ul>
         <li><strong>Information you send us</strong> — name, company, email, phone or WhatsApp number, shipping address, and the artwork or specifications you attach.</li>
         <li><strong>Order information</strong> — what you ordered, quantities, prices and delivery details, kept for accounting and warranty purposes.</li>
@@ -44,12 +49,39 @@ import { site } from "../data/site";
 
       <h2>Your rights</h2>
       <p>You can ask for access, correction, deletion, restriction, portability, or object to processing. Email <a href={`mailto:${site.email}`}>{site.email}</a> and we will respond within 30 days. You can also complain to your local data protection authority.</p>
+      <p>
+        Where UK GDPR applies, the same rights apply and you may complain to the UK Information Commissioner’s
+        Office. Where California law applies, you may request to know, delete or correct personal information, and
+        to opt out of its sale or sharing. We do not sell personal information and we do not share it for
+        cross-context behavioural advertising; the only sharing is with the production, carrier and email providers
+        described above, for the purposes described above.
+      </p>
+
+      <h2>Security and retention</h2>
+      <p>
+        Access to enquiry and order data is limited to the people who need it to quote, produce or ship an order.
+        We use access-controlled email and hosting accounts, and we do not ask for card details through this website.
+        No system is perfectly secure; if a breach affects your rights, we will notify you and the relevant
+        authority where the law requires it.
+      </p>
+      <p>
+        We keep enquiry data for up to 24 months, order and invoice records for the period required by accounting
+        law, and artwork for the production period unless you ask us to keep it for reorders. When data is no longer
+        needed, we delete it or anonymise it.
+      </p>
 
       <h2>Cookies</h2>
-      <p>This site sets no advertising or analytics cookies. If that changes, this page will list them and ask for consent first.</p>
+      <p>This site sets no advertising or analytics cookies. If that changes, this page will list them and ask for consent first. The host may set a short-lived security cookie; see the <a href="/cookies/">cookie page</a> for the current list.</p>
 
       <h2>Children</h2>
       <p>The site is a business service and is not directed at children under 16.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>
+        If the way we handle data changes — for example, if analytics or a quote form is added — this page will be
+        updated before the change goes live, and the “last updated” date will change. The current version does not
+        load advertising, analytics or embedded media.
+      </p>
     </div>
   </section>
 </BaseLayout>

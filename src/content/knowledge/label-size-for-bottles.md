@@ -4,6 +4,8 @@ description: "Typical label dimensions for 50 ml to 1 litre bottles, how much of
 pillar: label-sizing
 order: 1
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-08"
 relatedProducts: ["bottle-labels", "cosmetic-labels", "food-labels"]
 view: >-
   The volume on a bottle tells you almost nothing about the label; the diameter does. We ask for diameter and body

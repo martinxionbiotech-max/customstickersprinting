@@ -37,27 +37,13 @@ const productLd = {
   provider: { '@id': `${site.url}/#organization` },
   areaServed: site.markets,
   url: new URL(Astro.url.pathname, Astro.site).href,
-  offers: {
-    '@type': 'Offer',
-    priceSpecification: {
-      '@type': 'PriceSpecification',
-      description: `Quoted per project. Minimum order ${site.moq} units.`,
-    },
-  },
 };
 
 const faqs = [
+  ...d.faq,
   {
     q: `What is the minimum order for ${d.title.toLowerCase()}?`,
     a: `${site.moq} units per design. Mixed designs can be combined in one order where the material and size match; ask us and we will confirm before quoting.`,
-  },
-  {
-    q: 'How long does production take?',
-    a: `${site.leadTime}. Delivery time depends on destination and shipping method, and is confirmed with the quotation.`,
-  },
-  {
-    q: 'What artwork do you need?',
-    a: 'A vector file (AI, EPS, PDF or SVG) at final size, with fonts outlined. If you only have a PNG or JPG, send the highest resolution you have and we will tell you whether it is usable before you pay anything.',
   },
 ];
 
@@ -82,7 +68,7 @@ const faqLd = {
           <p class="eyebrow">{categoryLabel}</p>
           <h1>{d.title}</h1>
           <p class="lead" style="font-size:1.08rem;color:var(--ink-2);max-width:60ch">{d.description}</p>
-          <div style="margin-top:22px"><ProductMedia slug={product.id} alt={d.imageAlt ?? `${d.title} sample`} eager /></div>
+          <div style="margin-top:22px"><ProductMedia slug={product.id} alt={d.imageAlt ?? `${d.title} sample`} label={d.title} eager /></div>
           <div class="actions" style="display:flex;gap:12px;flex-wrap:wrap;margin-top:20px">
             <a class="btn btn-primary" href={mailLink(`Quotation request — ${d.title}`)}>Request a quote</a>
             <a class="btn btn-wa" href={waLink(`Hello, I am interested in ${d.title}.\n\nSize:\nMaterial:\nQuantity:\nDestination country:\n\nCould you send a quotation?`)} rel="noopener">WhatsApp</a>
@@ -155,6 +141,11 @@ const faqLd = {
           </div>
         ))}
       </div>
+      <p class="small" style="margin-top:20px">
+        Before you order: <a href="/shipping-delivery/">shipping and delivery</a> ·
+        <a href="/refund-policy/">returns and reprints</a> ·
+        <a href="/declarations/">what we can provide</a>.
+      </p>
     </div>
   </section>
 

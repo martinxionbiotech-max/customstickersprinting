@@ -16,7 +16,12 @@ imageAlt: "Six blank die-cut labels in different shapes on a light grey surface,
 seoTitle: "Custom Labels — Any Size, Material or Finish, 50 Min"
 seoDescription: "Custom printed labels from 50 units in paper, PP, PET or clear stock, roll or sheet, quoted per project for US, UK and EU delivery with a physical proof."
 order: 1
-lastVerified: "2026-11"
+lastVerified: "2026-11-21"
+faq:
+  - q: "What is the difference between a custom label and a sticker?"
+    a: "A label is applied to a product or container and usually carries product information; a sticker is a printed piece used for packaging, promotion or decoration. The material and adhesive can be the same, but the specification and the durability requirement are usually different."
+  - q: "Can I combine several label sizes in one order?"
+    a: "Only where the material, size and finishing match. A different size needs its own setup, so it is quoted as a separate job. If the labels share a specification, several designs can be combined to reach the minimum quantity."
 knowledgeLinks:
   - label: "Marketplace label requirements"
     href: "/knowledge/marketplace-label-requirements/"
@@ -65,6 +70,12 @@ Our minimum is 50 units per design. Multiple designs can share an order when the
 Send a vector file (AI, EPS, PDF, SVG) at final size with fonts outlined, 3 mm bleed and CMYK colour. If you only have a PNG or JPG, send the highest resolution you have — we will tell you whether it prints acceptably before you commit. Our <a href="/artwork-guidelines/">artwork guidelines</a> cover the details.
 
 Every order includes a digital proof. Approve it in writing and it becomes the production specification: spelling, size, barcode data and legal text are all your responsibility at that point, which is why we ask you to read it slowly.
+
+## When a sticker is the better choice
+
+A label is the right product when the printed piece has to identify, instruct or comply — a product name, an ingredient panel, a batch code, a warning. A sticker is the better choice when the piece is promotional or decorative and does not carry regulated information: a logo on a mailer, a seal on a tissue pack, a giveaway.
+
+The material can be the same, but the specification is not. A label usually needs a permanent adhesive and a laminate that survives the product's storage condition. A sticker may be paper, removable or outdoor-grade, depending on where it goes. If the piece carries a barcode or mandatory text, treat it as a label even if it looks like a sticker.
 
 ## Ordering
 

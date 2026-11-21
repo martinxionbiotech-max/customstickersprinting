@@ -4,6 +4,8 @@ description: "The same adhesive behaves differently on glass, HDPE, PET and pain
 pillar: label-materials
 order: 4
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-21"
 relatedProducts: ["bottle-labels", "cosmetic-labels", "custom-labels"]
 view: >-
   Nine out of ten adhesion failures we are asked to look at are a standard acrylic on a low-energy plastic, not a bad film. Before changing material we would change the adhesive, and test on the production bottle rather than a stock sample, because recycled HDPE varies enough between batches to fail a test that passed last month.
@@ -51,6 +53,14 @@ Two practical responses: specify an LSE adhesive, and test on the actual bottles
 Adhesive needs contact and time. Applying below about 5 °C reduces initial tack, and a label applied cold may never reach full strength even after the product warms up.
 
 If your filling line runs in an unheated space in winter, say so — a winter-grade adhesive exists for exactly this.
+
+## What an adhesion failure looks like
+
+Not every failure is the same. An edge lift is usually a stiffness or contamination problem; the label springs away from a curved surface or a dirty edge. A slide is usually a low-surface-energy problem; the adhesive never wet out and the label moves under stress. A residue transfer is usually an adhesive-too-soft problem or a surface that was not clean.
+
+The fix follows the failure. For edge lift on a small diameter, use a thinner, more conformable film. For a slide on HDPE or recycled plastic, use an LSE adhesive and test the actual bottle. For a label that peels off in one piece, check the surface preparation and the application temperature; below about 5 °C the initial tack drops and the label may never reach full strength.
+
+Cleanliness is part of the specification. Dust, oil, mould release and condensation all sit between the adhesive and the surface. A label applied over a dirty patch can look fine for a day and fail at the edge a week later. If the filling line cannot guarantee a clean, dry surface, say so; the adhesive and the application process may need to change.
 
 ## What this means for buyers
 

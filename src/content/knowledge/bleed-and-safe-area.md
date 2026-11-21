@@ -4,6 +4,8 @@ description: "Why labels need 3 mm bleed, why text needs a safe margin, and what
 pillar: artwork
 order: 2
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-07"
 relatedProducts: ["custom-labels", "bottle-labels", "die-cut-stickers"]
 view: >-
   Bleed is the cheapest insurance in printing and the most commonly skipped. We would rather receive a file with 3 mm of extra background than a beautiful layout that trims with a white sliver on one edge. On small labels the safe area eats a larger share of the design, so the answer is simplification, not shrinkage.

@@ -4,6 +4,15 @@ heading: "Labels and stickers for ecommerce and small business"
 description: "Packaging seals, logo stickers and short-run product labels for Shopify, Etsy and independent retailers — from 50 units, without a print broker."
 products: ["logo-stickers", "custom-stickers", "sticker-sheets", "roll-labels"]
 painPoints: ["Minimums too high for a first run", "No budget for plates and dies", "Needing several designs at once"]
+knowledgeLinks:
+  - label: "What MOQ actually means"
+    href: "/knowledge/what-is-moq/"
+  - label: "FNSKU labels"
+    href: "/knowledge/fnsku-labels/"
+  - label: "Die cut vs kiss cut"
+    href: "/knowledge/die-cut-vs-kiss-cut/"
+  - label: "Label cost per unit"
+    href: "/knowledge/label-cost-per-unit/"
 order: 4
 faq:
   - q: "Can I order several sticker designs in one batch?"
@@ -54,3 +63,15 @@ Keep the approved proof. A reorder with the same artwork and specification skips
 ## What to send for a quote
 
 The product, size, quantity, material preference (or ask), destination and artwork. If you are launching several products at once, list them together — combined orders share setup where the material and size match. Minimum 50 units.
+
+## A first-SKU checklist
+
+A first order should answer four questions before it becomes a design: what the sticker or label goes on, how long it must last, how it will be applied, and how many pieces are needed for the first production run. A logo sticker on a mailer has a different specification from a product label on a bottle, even if both use the same artwork.
+
+For a first run, keep the shape simple. A circle or rounded rectangle avoids a custom die, and a standard material avoids a special-order minimum. If the design has several pieces, a kiss-cut sheet can be more useful than loose stickers because it keeps the set together and is easier to hand out or pack.
+
+## When to move from sheets to rolls
+
+Sheets are easier for hand application and small batches. Rolls become useful when the volume is steady, the application is on a line, or the labels need consistent spacing. A roll is not automatically cheaper at 50 units; the setup and winding can add cost. Ask for both formats at the quantity you actually need, then compare the total rather than the unit price.
+
+For marketplace sales, keep the FNSKU and the brand sticker as separate specifications. The FNSKU has to be readable at receiving; the brand sticker can live on the mailer or the insert. Mixing the two into one label often makes both jobs worse.

@@ -4,6 +4,8 @@ description: "Water-resistant, waterproof and immersion-grade are three differen
 pillar: label-materials
 order: 3
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-07"
 relatedProducts: ["waterproof-labels", "bottle-labels", "food-labels"]
 view: >-
   Calling a paper label waterproof is the most common exaggeration in this trade. Our position: if the product goes in a fridge, an ice bucket or a shower, specify film plus a laminate, and treat water-resistant paper as a short-life option only. The cost difference is small next to a failed batch, and the failure is always at the edge.

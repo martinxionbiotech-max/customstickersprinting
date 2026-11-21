@@ -4,6 +4,8 @@ description: "How UPC, EAN and Code 128 symbols fail: quiet zones, magnification
 pillar: marketplace-labels
 order: 3
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-07"
 relatedProducts: ["custom-labels", "roll-labels", "logo-stickers"]
 view: >-
   A barcode is a measurement, not a graphic. The moment it is scaled to fit a design without checking the quiet zone and

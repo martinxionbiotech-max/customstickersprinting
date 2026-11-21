@@ -4,6 +4,15 @@ heading: "Labels for candle and fragrance brands"
 description: "Heat-resistant adhesives, jar wraps and small warning text that stays legible on warm glass — what candle and fragrance brands need from labels."
 products: ["jar-labels", "custom-labels", "clear-labels"]
 painPoints: ["Labels sliding on warm glass", "Warning text too small", "Wrap wrinkling on tapered jars"]
+knowledgeLinks:
+  - label: "Label adhesive by surface"
+    href: "/knowledge/label-adhesive-by-surface/"
+  - label: "Label sizes for jars"
+    href: "/knowledge/label-size-for-jars/"
+  - label: "How long do labels last?"
+    href: "/knowledge/label-durability-by-material/"
+  - label: "Label rules: what the printer can decide"
+    href: "/knowledge/label-regulatory-basics/"
 order: 2
 faq:
   - q: "Will a label lift on a warm candle jar?"
@@ -49,3 +58,19 @@ Matte lamination is the usual choice: it hides fingerprints and wax smudges bett
 ## What to send for a quote
 
 The jar dimensions, whether it is tapered, the wax type and burn temperature if known, the warning text length, quantity and destination. Minimum 50 units.
+
+## Heat, wax and the warning text
+
+A candle label has two jobs that pull in different directions: it has to look good on a shelf, and it has to stay legible next to a flame. The glass warms as the candle burns, and a standard permanent adhesive can soften enough to slide or lift at the edge. A heat-resistant adhesive and a film that does not shrink are the baseline; a paper label with a standard adhesive is a risk even if it looks right in a cool room.
+
+Wax residue is the second problem. It gets on the glass during filling and on fingers during use. A matte laminate hides fingerprints and small wax smudges better than gloss, and a smooth film wipes clean more easily than an uncoated paper. If the container is frosted glass, clear film with white ink can look like a no-label print, but the white layer must be designed rather than added at the end.
+
+## A candle-label checklist
+
+- Measure the straight side wall, not the full jar height; the shoulder and base radius are not printable.
+- Decide whether the warning text sits on the body, the lid or a folded insert; do not shrink it below a readable size.
+- Leave a defined area for the batch code, even if it is overstamped later.
+- Test the adhesive on a warm jar, not a cold one. A sample that survives a shelf may fail on the third burn.
+- Check the lid fit: a thick label under the lid can stop the candle closing flush.
+
+The warning wording and symbols differ by market. The brand owns that compliance decision; the printer can leave space and flag when the layout has no room, but cannot approve the text for a market it does not know.

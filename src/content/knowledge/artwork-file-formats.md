@@ -4,6 +4,8 @@ description: "AI, EPS, PDF, SVG, PNG and JPG compared for label printing — whi
 pillar: artwork
 order: 3
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-21"
 relatedProducts: ["custom-labels", "logo-stickers", "die-cut-stickers"]
 view: >-
   The single most useful thing a customer can do is ask their designer for the vector original. Everything else — resolution, cut paths, spot white — becomes easier once the file is vector. A flattened PNG is not a design file, and the setup charge for redrawing it lands on the order.
@@ -53,6 +55,22 @@ Common with small brands whose logo was designed for a website.
 For die-cut work, the cut path must be a separate vector layer, not part of the artwork. For spot white or foil, the areas need their own layers too.
 
 A flattened JPEG has no layers, which means every special process must be redrawn — a cost that appears on the quote as artwork preparation.
+
+## A pre-flight checklist before you send
+
+A file can look correct on screen and still be unusable for print. Run this list before sending:
+
+- **Vector original:** PDF, AI, EPS or SVG; fonts outlined or embedded.
+- **Final size:** artboard equals the trimmed label size, not a scaled-up mock-up.
+- **Bleed:** usually 3 mm beyond the trim; background extends into it.
+- **Safe area:** text, barcode and logo inside the margin.
+- **Cut path:** a separate closed vector layer, named and clearly distinguished from the artwork.
+- **White ink:** a separate layer for clear film, with the areas that need opacity marked.
+- **Colour:** CMYK for process; spot colours named and confirmed with the printer.
+- **Images:** 300 dpi at final size, embedded or supplied with links.
+- **Proof:** a PDF at final size with the cut line visible.
+
+If you cannot tick every line, send the file anyway and say what is missing. A printer can fix a missing bleed or outline a font; it cannot reconstruct a vector logo from a screenshot without a redraw charge. The earlier the gap is known, the cheaper the fix.
 
 ## What this means for buyers
 

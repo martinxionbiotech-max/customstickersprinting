@@ -9,7 +9,10 @@ const staticPaths = [
   "/clear-labels/", "/vinyl-stickers/", "/logo-stickers/", "/die-cut-stickers/",
   "/sticker-sheets/", "/clear-stickers/", "/low-moq-label-printing/",
   "/small-batch-sticker-printing/", "/privacy/", "/cookies/", "/terms/", "/refund-policy/",
-  "/editorial-standards/", "/knowledge/",
+  "/editorial-standards/", "/declarations/", "/knowledge/",
+  "/knowledge/label-sizing/", "/knowledge/label-cost/", "/knowledge/marketplace-labels/",
+  "/knowledge/label-materials/", "/knowledge/sticker-materials/", "/knowledge/printing/",
+  "/knowledge/artwork/", "/knowledge/hang-tags/",
 ];
 
 export const GET: APIRoute = async ({ site }) => {
@@ -25,9 +28,14 @@ export const GET: APIRoute = async ({ site }) => {
     ...knowledge.map((k) => `/knowledge/${k.id}/`),
   ];
   const unique = [...new Set(urls)];
+  const lastmod = new Map(
+    knowledge
+      .filter((k) => k.data.reviewed)
+      .map((k) => [`/knowledge/${k.id}/`, k.data.reviewed as string])
+  );
   const body = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${unique.map((u) => `  <url><loc>${base}${u}</loc></url>`).join("\n")}
+${unique.map((u) => lastmod.has(u) ? `  <url><loc>${base}${u}</loc><lastmod>${lastmod.get(u)}</lastmod></url>` : `  <url><loc>${base}${u}</loc></url>`).join("\n")}
 </urlset>`;
   return new Response(body, { headers: { "Content-Type": "application/xml; charset=utf-8" } });
 };

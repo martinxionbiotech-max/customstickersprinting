@@ -4,6 +4,8 @@ description: "The 5 inch threshold, the standard wording, where the warning has 
 pillar: marketplace-labels
 order: 2
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-07"
 relatedProducts: ["custom-labels", "sticker-sheets", "logo-stickers"]
 view: >-
   The warning is cheap and the failure is expensive, which is why we recommend a printed label rather than trusting a

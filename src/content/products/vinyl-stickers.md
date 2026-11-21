@@ -16,7 +16,12 @@ imageAlt: "A blank vinyl sticker on a linen notebook and another on a matte wate
 seoTitle: "Vinyl Stickers for Outdoors, Bottles and Laptops"
 seoDescription: "Custom vinyl stickers for outdoor and wet conditions: white or clear vinyl, gloss or matte laminate, and adhesives matched to glass, plastic or metal."
 order: 2
-lastVerified: "2026-11"
+lastVerified: "2026-11-21"
+faq:
+  - q: "Are vinyl stickers suitable outdoors?"
+    a: "Vinyl is the usual choice for outdoor use because it resists water and UV better than paper, but the laminate and adhesive decide the life. For a long outdoor application, specify a UV-resistant laminate and test on the actual surface."
+  - q: "Do vinyl stickers leave residue when removed?"
+    a: "A permanent adhesive can leave residue, especially after heat or sunlight. A removable adhesive is designed to peel more cleanly, but it is not residue-free on every surface. Test on the actual material if removal matters."
 knowledgeLinks:
   - label: "Vinyl vs paper stickers"
     href: "/knowledge/vinyl-vs-paper-stickers/"
@@ -57,6 +62,14 @@ Kiss cut is an alternative: the sticker stays on a backing sheet and is peeled b
 ## Quantity and cost
 
 Vinyl costs more per square metre than paper, lamination adds a pass, and a custom die adds a one-off. At 50 units, simple shapes without lamination are the entry point; at 5,000, the die and the laminate barely register per unit.
+
+## When paper is enough
+
+Paper is the right material for a dry, indoor sticker that does not need to survive handling or moisture: a boxed product, a price tag, a sticker sheet for a craft market. It prints sharply, takes a matte or gloss laminate and costs less than vinyl.
+
+Vinyl is the better choice when the sticker will be handled, washed, exposed to rain or applied to a curved surface that needs a conformable film. Vinyl is not automatically outdoor-grade; the adhesive and laminate still decide the life.
+
+If the sticker is a short-lived promotion, paper may be the honest choice. If it is a product in itself or a keeper, vinyl with a laminate usually feels better and lasts longer. Match the material to the use, not to the word “premium”.
 
 ## Ordering
 

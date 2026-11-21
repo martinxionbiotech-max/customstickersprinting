@@ -4,6 +4,8 @@ description: "Digital proof, physical sample and press proof compared: what each
 pillar: label-cost
 order: 3
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-21"
 relatedProducts: ["custom-labels", "custom-stickers", "waterproof-labels"]
 view: >-
   We would not run a first order without a physical sample. It costs a little and it answers the only questions that matter — colour on this stock, adhesion on this bottle — before several thousand labels make the answer permanent. A digital proof approves the layout; it cannot approve the product.
@@ -62,6 +64,21 @@ Two practical points:
 ## Artwork changes after approval
 
 Any change after a proof — even a text edit — resets the proof. A file that was approved and then edited is a new file, and the printer is entitled to treat it as such.
+
+## A proof hierarchy
+
+“Proof” covers several different things, and they catch different mistakes.
+
+| Proof | What it shows | What it misses |
+|---|---|---|
+| PDF proof | Layout, text, cut line, colour values | Real colour, stock, finish, adhesion |
+| Contract proof | Colour on a calibrated device, often on the actual stock | The production press and the final laminate |
+| Press proof | A short run on the production press | Cost and time; still not the full run |
+| Physical sample | Stock, print, laminate, die, adhesion on your container | Volume variation and final packing |
+
+For a first order, a PDF proof plus a physical sample is usually the right combination. The PDF catches spelling, barcodes and the cut line; the sample catches the things a screen cannot show — the colour on the actual stock, the edge of the die, the way the label sits on a curved bottle.
+
+Approve the proof in writing and keep a copy. If the job is colour-critical, keep the physical sample as the reference for the next run. A proof approved only on screen is a layout approval, not a colour approval.
 
 ## What this means for buyers
 

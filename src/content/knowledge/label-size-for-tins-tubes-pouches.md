@@ -4,6 +4,8 @@ description: "Dimensions for candle tins, cosmetic tubes, lip balm and stand-up 
 pillar: label-sizing
 order: 3
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-07"
 relatedProducts: ["custom-labels", "cosmetic-labels", "sticker-sheets"]
 view: >-
   Tins and tubes are where buyers most often order a rectangle and discover it will not sit flat. A tin needs a wrap
@@ -11,7 +13,7 @@ view: >-
   the label lifts at one end within a day of application.
 faq:
   - q: "What size label fits an 8 oz candle tin?"
-    a: "A 70 by 45 mm panel label, or a 230 by 45 mm wrap on a 75 mm diameter tin. Measure the straight side wall: the rolled rim at the top and bottom takes 4 to 6 mm that a label should not cross."
+    a: "A 70 by 45 mm panel label, or a 240 by 45 mm wrap on a 75 mm diameter tin. Measure the straight side wall: the rolled rim at the top and bottom takes 4 to 6 mm that a label should not cross."
   - q: "What size label for a 50 ml cosmetic tube?"
     a: "Around 45 by 90 mm on a 35 mm diameter tube. Tubes taper towards the cap and have a crimp at the base, so keep the label at least 8 mm below the cap and 5 mm above the crimp."
 ---

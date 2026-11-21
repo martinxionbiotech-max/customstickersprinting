@@ -9,14 +9,14 @@ const c = site.company;
 
 <BaseLayout
   title="About the company behind Custom Stickers Printing"
-  description={`Label and sticker brand of ${c.legalNameZh} (${c.legalNameEn}), Yiwu, China. Registration number, D-U-N-S and how to verify us before you pay.`}
+  description={`Label and sticker brand of ${c.legalNameEn}, Yiwu, China. Registration number, D-U-N-S and how to verify us before you pay a deposit.`}
 >
   <Breadcrumbs items={[{ label: "About" }]} />
   <section class="tight">
     <div class="wrap narrow prose">
       <h1>About {site.brand}</h1>
       <p class="lead" style="font-size:1.08rem;color:var(--ink-2)">
-        {site.brand} is the label and sticker brand of {c.legalNameZh} ({c.legalNameEn}),
+        {site.brand} is the label and sticker brand of {c.legalNameEn},
         a registered business in Yiwu, Zhejiang, China. We quote, specify and quality-check custom
         labels and stickers from {site.moq} units, and ship them worldwide.
       </p>
@@ -25,9 +25,9 @@ const c = site.company;
       <table>
         <tbody>
           <tr><th scope="row">Trading name</th><td>{site.brand} — {site.domain}</td></tr>
-          <tr><th scope="row">Legal entity</th><td>{c.legalNameZh} · {c.legalNameEn}</td></tr>
+          <tr><th scope="row">Legal entity</th><td>{c.legalNameEn}</td></tr>
           <tr><th scope="row">Business type</th><td>{c.businessType}, registered in China</td></tr>
-          <tr><th scope="row">Registration no.</th><td>{c.uscc} (统一社会信用代码)</td></tr>
+          <tr><th scope="row">Registration no.</th><td>{c.uscc} (Unified Social Credit Code)</td></tr>
           <tr><th scope="row">D-U-N-S number</th><td>{c.duns}</td></tr>
           <tr><th scope="row">Registered location</th><td>{c.city}, {c.region}, {c.country}</td></tr>
           <tr><th scope="row">Contact</th><td><a href={`mailto:${site.email}`}>{site.email}</a> · <a href={`https://wa.me/${site.whatsapp}`} rel="noopener">{site.whatsappDisplay}</a></td></tr>
@@ -123,7 +123,8 @@ const c = site.company;
         that arrive in quotations. Where a claim rests on a published standard — adhesion testing, colour control,
         proofing, barcode grading — the standard is linked at the foot of the article. Where no standard applies,
         we say what the recommendation is based on rather than attaching an unrelated reference. The rules we hold
-        ourselves to are set out in our <a href="/editorial-standards/">editorial standards</a>.
+        ourselves to are set out in our <a href="/editorial-standards/">editorial standards</a>; the documents we can
+        and cannot provide are on the <a href="/declarations/">declarations page</a>.
       </p>
 
       <p class="small">

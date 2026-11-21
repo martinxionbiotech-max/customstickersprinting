@@ -4,6 +4,8 @@ description: "Five variables that move a label price — area, material, finishi
 pillar: label-cost
 order: 1
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-21"
 relatedProducts: ["custom-labels", "roll-labels", "die-cut-stickers"]
 view: >-
   The lever buyers reach for is material, and it is usually the wrong one. Reshaping the label or combining two designs into one order saves more and risks nothing about the application. Downgrading from PP to paper to save a fifth of the unit price is how a chilled product ends up with a reprint.
@@ -61,6 +63,22 @@ At 50 units, a simple shape can be half the price of a complex contour.
 - **Number of colours** in digital printing (unlike flexo, where each colour is a plate).
 - **Artwork complexity**, unless it requires manual prep.
 - **Delivery speed**, unless you pay for express production.
+
+## The five variables in one example
+
+Take a 60 × 90 mm label, 50 units, PP with a matte laminate, digital print. The exact numbers are illustrative, but the shape is real:
+
+| Variable | Change | Effect on unit price |
+|---|---|---|
+| Size | 60 × 90 to 90 × 120 | More material and ink per label; a larger die or cut path |
+| Material | Paper to PP | Higher material cost, better water resistance |
+| Finishing | None to matte laminate | An extra pass and material; better scuff protection |
+| Quantity | 50 to 5,000 | Setup spread over more pieces; unit price falls sharply |
+| Cut | Standard circle to custom contour | A die charge; at 50 units it can dominate |
+
+The mistake is to compare two quotes that differ in more than one variable. A 50-unit paper label and a 5,000-unit PP label with laminate are not the same job, and the unit prices are not comparable. Ask for the same quantity, size, material, finish and cut from each supplier, with setup shown separately.
+
+If a quote is much cheaper, find out which variable changed. It may be a smaller label, a thinner material, no laminate or a longer run. A lower price is not a problem; an unexplained lower price is.
 
 ## What this means for buyers
 

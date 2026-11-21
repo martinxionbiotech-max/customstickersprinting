@@ -16,14 +16,23 @@ imageAlt: "Two printed hang tags with a scalloped window and black cotton string
 seoTitle: "Custom Hang Tags — Printed and Punched, from 50 Units"
 seoDescription: "Custom hang tags printed on 350–400 gsm card with eyelets and string, die-cut to shape, from 50 units and quoted per project for US, UK and EU delivery."
 order: 1
-lastVerified: "2026-11"
+lastVerified: "2026-11-21"
+faq:
+  - q: "Should I choose 350 or 400 gsm card for hang tags?"
+    a: "350 gsm is the working standard for retail tags; 400 gsm feels more premium and holds emboss better, but costs more and needs a larger hole clearance. Below 300 gsm the tag flexes and the eyelet can tear out."
+  - q: "Can you print variable data on hang tags?"
+    a: "Yes, batch codes, serial numbers or QR codes can be printed as variable data. Send a CSV with one row per tag and confirm the field order in writing; a shifted column produces a whole run with the wrong codes."
 knowledgeLinks:
   - label: "Bleed and safe area for artwork"
     href: "/knowledge/bleed-and-safe-area/"
-  - label: "Die cut vs kiss cut"
-    href: "/knowledge/die-cut-vs-kiss-cut/"
-  - label: "Paper vs PP vs PET"
-    href: "/knowledge/paper-vs-pp-vs-pet-labels/"
+  - label: "Hang tag card stocks"
+    href: "/knowledge/hang-tag-card-stocks/"
+  - label: "Hang tag sizes and hole placement"
+    href: "/knowledge/hang-tag-sizes-and-hole-placement/"
+  - label: "Hang tag finishes and hardware"
+    href: "/knowledge/hang-tag-finishes-and-hardware/"
+  - label: "Hang tag artwork and dielines"
+    href: "/knowledge/hang-tag-artwork-and-dielines/"
   - label: "What drives label cost"
     href: "/knowledge/custom-label-printing-cost/"
 ---
@@ -95,6 +104,14 @@ Two ways to lower the unit price without ordering more:
 
 - **Use a standard size and rounded corners** instead of a custom die.
 - **Combine two or three designs in one order**, where the card and size match — one setup, several SKUs.
+
+## When a label is better
+
+A hang tag is a separate piece that hangs from the product; a label is applied to the product or its packaging. A hang tag is better when the information should be removable, when the product cannot take a label, or when the tag is part of the retail presentation. A label is better when the information must stay with the product through storage, shipping and use.
+
+A hang tag can carry the brand, size, price and care information without touching the product surface. A label has to survive the container, the condition and the application. If the product is a bottle or a jar, a label is usually the right choice; if it is a garment or an accessory, a hang tag is often the better retail piece.
+
+The two can be used together: a label for the product and a hang tag for the retail story. Keep the specifications separate, because the materials and the failure modes are different.
 
 ## Ordering
 

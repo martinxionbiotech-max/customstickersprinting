@@ -16,7 +16,12 @@ imageAlt: "A serum dropper bottle and a cream jar with small blank labels"
 seoTitle: "Cosmetic Labels for Small Bottles and Droppers"
 seoDescription: "Cosmetic labels for skincare and beauty: oil- and alcohol-resistant stock, small-diameter adhesion, clear no-label film and bathroom-proof finishes."
 order: 4
-lastVerified: "2026-11"
+lastVerified: "2026-11-21"
+faq:
+  - q: "Will the label survive an alcohol-based cosmetic?"
+    a: "The film usually can; the ink and adhesive are the weak points. Products containing alcohol or essential oils need a solvent-resistant laminate and an oil-resistant adhesive. A printed sample stored on the actual bottle is the only reliable check."
+  - q: "What material suits a small dropper bottle?"
+    a: "A thin PP or PET film with a small-diameter adhesive. A 25–30 mm dropper is where a stiff face stock lifts at the edge; a 150 micron PP conforms better, and a matte laminate hides fingerprints that gloss shows."
 knowledgeLinks:
   - label: "Label sizes for bottles"
     href: "/knowledge/label-size-for-bottles/"
@@ -24,6 +29,8 @@ knowledgeLinks:
     href: "/knowledge/waterproof-label-materials/"
   - label: "Gloss vs matte finish"
     href: "/knowledge/gloss-vs-matte-finish/"
+  - label: "Label rules: what the printer can decide"
+    href: "/knowledge/label-regulatory-basics/"
 ---
 
 ## The bathroom is a harsh environment
@@ -61,6 +68,12 @@ Matte lamination reads as premium and hides water spots. Soft-touch lamination f
 ## Regulatory text
 
 Ingredients, net content and batch codes usually have to appear on the label. Keep the text at a readable size and inside the safe area — a 4 pt ingredient list on a curved bottle is a common cause of a reprint. Where the regulation applies (EU cosmetics, US FDA), the responsibility for the wording is the brand's; we print what you approve.
+
+## When a food or household label is different
+
+A cosmetic label is read close-up and handled in a bathroom, but it is not automatically the same specification as a food label. Food labels often need a freezer or chill adhesive and space for ingredients, allergens and net quantity. Household labels may need chemical resistance and a solvent-resistant laminate. Cosmetic labels usually need a small-diameter adhesive, a premium finish and space for ingredients and batch codes.
+
+The overlap is the material: PP and PET appear in all three. The difference is the condition and the regulatory text. A cosmetic serum bottle may need a thin conformable film; a sauce bottle may need a chill-grade adhesive; a household cleaner may need a chemical-resistant laminate. Do not reuse a food specification for a cosmetic product without checking the surface and the contents.
 
 ## Ordering
 

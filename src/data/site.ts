@@ -19,14 +19,13 @@ export const site = {
   markets: ['United States', 'United Kingdom', 'European Union', 'Worldwide'],
   company: {
     legalNameEn: 'Yiwu Dingwei Trading Company',
-    legalNameZh: '义乌市丁威贸易商行',
     uscc: '92330782MA8GW3PLXB',
     duns: '585974555',
     city: 'Yiwu',
     region: 'Zhejiang',
     country: 'China',
     countryCode: 'CN',
-    businessType: 'individual business (个体工商户)',
+    businessType: 'individual business (sole proprietorship)',
   },
 };
 

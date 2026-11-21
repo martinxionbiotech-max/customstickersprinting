@@ -1,0 +1,138 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import CtaBand from "../components/CtaBand.astro";
+import { site } from "../data/site";
+import { PILLARS, type PillarKey } from "../data/pillars";
+
+interface Props { pillar: PillarKey; }
+const { pillar } = Astro.props;
+const p = PILLARS[pillar];
+
+const articles = (await getCollection("knowledge", (a) => a.data.pillar === pillar))
+  .sort((a, b) => a.data.order - b.data.order);
+const products = await getCollection("products");
+const related = p.products
+  .map((slug) => products.find((x) => x.id === slug))
+  .filter((x): x is NonNullable<typeof x> => Boolean(x));
+
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const collectionLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: p.title,
+  description: p.description,
+  url: canonical,
+  isPartOf: { "@id": `${site.url}/#website` },
+  mainEntity: {
+    "@type": "ItemList",
+    itemListElement: articles.map((a, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      url: `${site.url}/knowledge/${a.id}/`,
+      name: a.data.title,
+    })),
+  },
+};
+const faqLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: p.faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+---
+
+<BaseLayout title={p.title} description={p.description} type="article" jsonLd={[collectionLd, faqLd]}>
+  <Breadcrumbs items={[{ label: "Knowledge", href: "/knowledge/" }, { label: p.title }]} />
+  <section class="tight">
+    <div class="wrap narrow">
+      <p class="eyebrow">Knowledge guide · {articles.length} articles</p>
+      <h1>{p.heading}</h1>
+      <p style="font-size:1.06rem;color:var(--ink-2)">{p.description}</p>
+      <p class="small">Written and reviewed by the {site.brand} team, operated by {site.company.legalNameEn} · <a href="/editorial-standards/">Editorial standards</a></p>
+
+      <div class="prose" style="margin-top:26px">
+        <p>{p.intro}</p>
+
+        <h2>What this guide covers</h2>
+        <ul>
+          {p.covers.map((c) => <li>{c}</li>)}
+        </ul>
+
+        <h2>{p.tableTitle}</h2>
+        <table>
+          <tbody>
+            {p.tableRows.map(([k, v]) => (
+              <tr><th scope="row">{k}</th><td>{v}</td></tr>
+            ))}
+          </tbody>
+        </table>
+
+        <h2>Common mistakes</h2>
+        {p.mistakes.map((m) => (
+          <div style="margin-top:18px">
+            <h3>{m.title}</h3>
+            <p>{m.body}</p>
+          </div>
+        ))}
+
+        <aside class="our-view" style="margin-top:30px">
+          <p class="eyebrow" style="margin:0 0 6px">Our view</p>
+          <p style="margin:0">{p.view}</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="tight" style="background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <h2>Articles in this guide</h2>
+      <div class="grid grid-3" style="margin-top:16px">
+        {articles.map((a, i) => (
+          <a class="card" href={`/knowledge/${a.id}/`}>
+            <span class="badge">{String(i + 1).padStart(2, "0")}</span>
+            <h3>{a.data.title}</h3>
+            <p>{a.data.description}</p>
+            <span class="more">Read →</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {related.length > 0 && (
+    <section class="tight">
+      <div class="wrap">
+        <h2>Products this guide applies to</h2>
+        <div class="grid grid-3" style="margin-top:16px">
+          {related.map((x) => (
+            <a class="card" href={`/${x.id}/`}>
+              <h3>{x.data.title}</h3>
+              <p>{x.data.description.slice(0, 110)}…</p>
+              <span class="more">View product →</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <section class="tight" style="border-top:1px solid var(--line)">
+    <div class="wrap narrow">
+      <h2>Quick answers</h2>
+      {p.faqs.map((f) => (
+        <div style="margin-top:18px">
+          <h3 style="font-size:1rem;margin:0 0 4px">{f.q}</h3>
+          <p style="margin:0;color:var(--ink-2)">{f.a}</p>
+        </div>
+      ))}
+      <p style="margin-top:24px"><a href="/knowledge/">← All knowledge guides</a></p>
+    </div>
+  </section>
+
+  <CtaBand />
+</BaseLayout>

@@ -1,12 +1,16 @@
 import type { APIRoute } from "astro";
 import { getCollection } from "astro:content";
+import { PILLARS as PILLAR_DATA, PILLAR_ORDER } from "../data/pillars";
 
 const PILLARS: Record<string, string> = {
+  "label-sizing": "Label sizing and dimensions",
+  "label-cost": "Cost and ordering",
+  "marketplace-labels": "Marketplace and retail labels",
   "label-materials": "Label materials and adhesives",
   "sticker-materials": "Sticker materials and cutting",
   printing: "Printing and production",
   artwork: "Artwork preparation",
-  procurement: "MOQ, pricing and ordering",
+  "hang-tags": "Hang tags and printed card",
 };
 
 export const GET: APIRoute = async ({ site }) => {
@@ -31,15 +35,21 @@ export const GET: APIRoute = async ({ site }) => {
   ];
 
   for (const p of products) {
-    lines.push(`- [${p.data.title}](${base}/${p.id}/): ${p.data.description}`);
+    lines.push(`- [${p.data.title}](${base}/${p.id}/): ${p.data.description} (plain markdown: ${base}/${p.id}/index.md)`);
   }
 
   lines.push("", "## Industries", "");
   for (const i of industries) {
-    lines.push(`- [${i.data.heading}](${base}/industries/${i.id}/): ${i.data.description}`);
+    lines.push(`- [${i.data.heading}](${base}/industries/${i.id}/): ${i.data.description} (plain markdown: ${base}/industries/${i.id}/index.md)`);
   }
 
   lines.push("", "## Knowledge base", "");
+  lines.push("### Guides", "");
+  for (const key of PILLAR_ORDER) {
+    const p = PILLAR_DATA[key];
+    lines.push(`- [${p.title}](${base}/knowledge/${key}/): ${p.description}`);
+  }
+  lines.push("");
   let currentPillar = "";
   for (const k of knowledge) {
     if (k.data.pillar !== currentPillar) {
@@ -53,7 +63,7 @@ export const GET: APIRoute = async ({ site }) => {
     "",
     "## Company",
     "",
-    `- Legal name: 义乌市丁威贸易商行 (Yiwu Dingwei Trading Company), an individual business registered in China.`,
+    `- Legal name: Yiwu Dingwei Trading Company, an individual business registered in China.`,
     `- Registration number (USCC): 92330782MA8GW3PLXB`,
     `- D-U-N-S: 585974555`,
     `- Location: Yiwu, Zhejiang, China`,
@@ -67,6 +77,7 @@ export const GET: APIRoute = async ({ site }) => {
     `- [Shipping and delivery](${base}/shipping-delivery/): production window, courier options, duties.`,
     `- [About](${base}/about/): who prints the work and where.`,
     `- [Contact](${base}/contact/): email and WhatsApp.`,
+    `- [Declarations](${base}/declarations/): the documents we can provide and the claims we do not make.`,
     ""
   );
 

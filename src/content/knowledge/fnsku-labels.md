@@ -4,6 +4,8 @@ description: "What an FNSKU is, how it differs from a UPC, where to place the la
 pillar: marketplace-labels
 order: 1
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-07"
 relatedProducts: ["custom-labels", "roll-labels", "logo-stickers"]
 view: >-
   An FNSKU is not a product code, it is an ownership tag, and that is why it has to cover the UPC rather than sit

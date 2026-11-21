@@ -4,6 +4,15 @@ heading: "Labels for beauty and skincare brands"
 description: "Oil-resistant materials, small-diameter bottles and bathroom-proof finishes for skincare, haircare and cosmetics brands ordering from 50 units."
 products: ["cosmetic-labels", "bottle-labels", "clear-labels"]
 painPoints: ["Edge lift on small dropper bottles", "Ink rubbing off in the shower", "Clear film showing bubbles"]
+knowledgeLinks:
+  - label: "Clear label materials"
+    href: "/knowledge/clear-label-materials/"
+  - label: "Label adhesive by surface"
+    href: "/knowledge/label-adhesive-by-surface/"
+  - label: "Label sizes for bottles"
+    href: "/knowledge/label-size-for-bottles/"
+  - label: "Label rules: what the printer can decide"
+    href: "/knowledge/label-regulatory-basics/"
 order: 1
 faq:
   - q: "What label material works on a serum bottle?"
@@ -47,3 +56,15 @@ The wording is the brand's responsibility; we print what you approve and flag wh
 ## What to send for a quote
 
 The bottle or jar dimensions (a photo with a ruler is enough), the storage environment, the design intent (paper look, clear no-label, foil), quantity and destination. Minimum 50 units.
+
+## A pre-order checklist for a skincare label
+
+Before the artwork is finalised, write down five things: the container diameter at the label band, the straight wall height, the storage condition (bathroom, shower, travel), the ingredients that might touch the label (alcohol, oils, acids), and the smallest text that must remain legible. These five answers decide the film, the adhesive and the finish more than the design does.
+
+A serum bottle is the hardest case because the diameter is small and the label is read close-up. A 30 mm dropper leaves little room for a curved label to conform; a thin PP with a small-diameter adhesive is usually better than a stiff decorative stock. If the product contains alcohol or essential oil, test the printed label on the actual bottle rather than approving on screen.
+
+## What I would test before a full run
+
+Apply a sample to an empty bottle, leave it in the bathroom for a week, and handle it with wet hands. Look at the leading edge, the seam and the area around the cap. If the edge lifts, the face stock is too stiff or the adhesive is wrong; a laminate will not fix it. If the print dulls or the colour shifts, the laminate or ink is the problem.
+
+For a cream jar, test the lid label separately. The lid is handled more often and may sit in a steamy bathroom; a paper label that looks premium in a photo can cockle on a lid within days. The body label and the lid label do not need the same material.

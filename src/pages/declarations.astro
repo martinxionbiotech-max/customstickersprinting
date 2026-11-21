@@ -1,0 +1,80 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import CtaBand from "../components/CtaBand.astro";
+import { site } from "../data/site";
+---
+
+<BaseLayout
+  title="What we can and cannot provide"
+  description="The documents, samples and written claims we can provide before an order, and the certifications or factory audits we do not claim to hold at all."
+>
+  <Breadcrumbs items={[{ label: "Declarations" }]} />
+  <section class="tight">
+    <div class="wrap narrow prose">
+      <h1>What we can and cannot provide</h1>
+      <p class="lead" style="font-size:1.05rem;color:var(--ink-2)">
+        A supplier that cannot tell you what it does not have is difficult to verify. This page sets out the
+        documents we can send before an order, the claims we do not make, and what to do if your compliance
+        process needs something we cannot issue ourselves.
+      </p>
+
+      <h2>Documents we can provide</h2>
+      <ul>
+        <li><strong>Business licence copy</strong> — the registration record for {site.company.legalNameEn}, matching the USCC on the <a href="/about/">about page</a>. Sent on request before any payment.</li>
+        <li><strong>D-U-N-S record</strong> — the D-U-N-S number is {site.company.duns}; it can be checked through the public lookup linked on the about page.</li>
+        <li><strong>Material data sheets</strong> — face stock, adhesive and laminate data sheets from the material supplier for the grade quoted, where the supplier makes them available.</li>
+        <li><strong>Digital proof</strong> — a PDF proof at final size before production, showing the artwork, bleed and cut line.</li>
+        <li><strong>Physical sample</strong> — a sample on the actual container or material can be arranged before a full run; cost and timing are quoted with the job.</li>
+        <li><strong>Supplier test reports</strong> — if a material supplier provides a report for a specific grade, we can request it and pass it on with the supplier’s name attached. We do not rewrite it as our own.</li>
+      </ul>
+
+      <h2>What we do not claim</h2>
+      <ul>
+        <li><strong>We do not own a printing factory.</strong> The work is specified, checked and quality-controlled by us, and produced by partner presses in China. The <a href="/about/">about page</a> explains the division of labour.</li>
+        <li><strong>We do not hold an ISO 9001 certificate.</strong> We can describe our inspection process, but we will not display a certificate we do not have.</li>
+        <li><strong>We do not claim FDA approval or food-contact certification.</strong> A label material may be intended for indirect food contact, but the documentation belongs to the material supplier and the compliance decision belongs to the brand and its regulatory adviser.</li>
+        <li><strong>We do not claim a factory audit, a social-compliance audit or a sustainability certification.</strong> If your buyer requires one, tell us before the quotation and we will say whether the production partner can support it.</li>
+        <li><strong>We do not publish customer names or logos</strong> without written permission, which is why there is no logo wall or invented case study.</li>
+      </ul>
+
+      <h2>If your compliance process needs a certificate</h2>
+      <p>
+        Some buyers need a document that a trading company cannot issue: a factory audit, a product certification,
+        a declaration of conformity for a material, or a test report in the seller’s name. We will not manufacture
+        that document to win an order. Instead, we will:
+      </p>
+      <ol>
+        <li>Tell you what the material supplier can provide and in whose name it is issued.</li>
+        <li>Ask the production partner whether the specific audit or test is available, and quote the cost and lead time if it is.</li>
+        <li>Put the limitation in writing before you pay, so your compliance team can decide whether the job is viable.</li>
+      </ol>
+      <p>
+        If the answer is no, it is better to hear it before the deposit than to receive a PDF that does not survive
+        verification.
+      </p>
+
+      <h2>How to verify us before paying</h2>
+      <ul>
+        <li>Search the USCC <strong>{site.company.uscc}</strong> in China’s National Enterprise Credit Information Publicity System (<a href="https://www.gsxt.gov.cn/index.html" rel="noopener">gsxt.gov.cn</a>).</li>
+        <li>Check the D-U-N-S number <strong>{site.company.duns}</strong> through Dun &amp; Bradstreet (<a href="https://www.dnb.com/duns-number/lookup.html" rel="noopener">dnb.com</a>).</li>
+        <li>Ask for a physical sample on your own container, or a short video call to see the labels being checked.</li>
+        <li>Confirm that the invoice is issued in the name of {site.company.legalNameEn}; banking details should appear only on that invoice.</li>
+      </ul>
+
+      <h2>What this means for a first order</h2>
+      <p>
+        The honest position is narrow but clear: we can specify the material, check the artwork, place the job with
+        a production partner, inspect the output against the approved proof and arrange shipment. We cannot turn a
+        trading company into a factory, and we will not pretend that a certificate exists because a buyer asked for
+        one. If that is the level of documentation your process needs, we would rather tell you now.
+      </p>
+      <p class="small">
+        Questions about a specific document: <a href={`mailto:${site.email}`}>{site.email}</a>.
+        Company details are on the <a href="/about/">about page</a>; the editorial rules are on
+        <a href="/editorial-standards/">editorial standards</a>.
+      </p>
+    </div>
+  </section>
+  <CtaBand />
+</BaseLayout>

@@ -16,7 +16,12 @@ imageAlt: "A clear glass bottle with a blank matte label wrapping the curve"
 seoTitle: "Bottle Labels That Survive Condensation and Chill"
 seoDescription: "Custom bottle labels for curved glass and plastic: condensation-resistant film, wrap sizing from 30 to 120 mm, and adhesives that hold when chilled."
 order: 3
-lastVerified: "2026-11"
+lastVerified: "2026-11-21"
+faq:
+  - q: "Will a label lift on a narrow bottle?"
+    a: "A stiff film on a 25–30 mm bottle can lift at the leading edge. A thinner PP with a conformable adhesive is usually better, and a physical sample on the actual bottle is the only reliable test. The bottle diameter and the label length both matter."
+  - q: "Do I need a curved dieline for a bottle label?"
+    a: "If the label wraps more than about 180° or the bottle tapers, a curved dieline is usually needed to stop the top edge wrinkling. Send the bottle or a photo with a ruler and we will check the shape before quoting."
 knowledgeLinks:
   - label: "Label size guide"
     href: "/knowledge/label-size-guide/"
@@ -63,6 +68,14 @@ Digital printing for short runs, flexo for volume. Lamination protects against c
 ## Quantity and cost
 
 Bottle labels are priced on printed area, material, finishing and quantity. Long wraps use more material per label than a front panel, so a full-wrap design at 50 units is a different price from a 40 mm circle at 50 units.
+
+## When a jar label is the better fit
+
+A bottle and a jar are both cylinders, but the printable surface is different. A bottle usually has a longer straight wall and a shoulder that starts higher; a jar has a shorter body and a tighter shoulder. A label sized for a bottle can run into the jar shoulder and lift, even when the diameter is similar.
+
+If the container is short and wide, a jar label or a front panel is usually better than a tall bottle label. If the container is tall and narrow, a bottle label can use more of the body. The decision is the printable height, not the volume in millilitres.
+
+For a tapered bottle, a curved dieline or a shorter label that stops before the taper is the safer choice. A rectangular label on a taper wrinkles at the top edge; a custom curve costs more but removes the problem.
 
 ## Ordering
 

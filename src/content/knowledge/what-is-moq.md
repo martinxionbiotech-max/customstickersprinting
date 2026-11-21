@@ -4,6 +4,8 @@ description: "Why minimum order quantities exist, what 50 units really covers, a
 pillar: label-cost
 order: 2
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-21"
 relatedProducts: ["custom-labels", "custom-stickers", "roll-labels"]
 view: >-
   Fifty units is a deliberate number: low enough to validate a product in the market, high enough to keep the setup cost from making the unit price absurd. We would rather see a customer order 50 and reorder 2,000 than commit to 5,000 on a design that has not met a customer yet.
@@ -61,6 +63,20 @@ The honest comparison is between two strategies:
 | 5,000 units | Low | High — wrong design, dead stock |
 
 For a first product, the low-risk option is usually worth the higher unit cost. For a proven design, the reverse.
+
+## The true cost of a low MOQ
+
+A low minimum is not a discount; it is a way to buy a small quantity without paying for a full production run. The setup is the same whether you print 50 or 5,000, so at 50 it is spread over very few pieces.
+
+That has three consequences:
+
+1. **The unit price is high, and that is arithmetic.** A $190 setup on 50 units is $3.80 per label before material. On 5,000 it is about four cents.
+2. **Combining designs lowers the effective setup.** Three 50-unit designs that share a material and size can run as one 150-unit job with one setup, provided the artwork is approved together.
+3. **A low MOQ is for testing, not for a year of stock.** Order enough to test the design, the market and the application, then reorder when the design is proven.
+
+The minimum also has a limit: it applies per design and specification. A different size, material or finish is a different setup. If you need five sizes, the minimum is not five times 50; it is five separate setups, and the quote should show that.
+
+The honest question is not “how low can the minimum go” but “what is the smallest order that lets me test without wasting money”. For most first orders, one production cycle plus spoilage is a better answer than the absolute minimum.
 
 ## What this means for buyers
 

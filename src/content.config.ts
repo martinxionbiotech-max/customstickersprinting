@@ -23,6 +23,7 @@ const products = defineCollection({
     seoDescription: z.string().optional(),
     status: z.enum(['draft', 'review', 'published']).default('published'),
     lastVerified: z.string().optional(),
+    faq: z.array(z.object({ q: z.string(), a: z.string() })).default([]),
     order: z.number().default(50),
   }),
 });
@@ -36,6 +37,7 @@ const industries = defineCollection({
     products: z.array(z.string()).default([]),
     painPoints: z.array(z.string()).default([]),
     faq: z.array(z.object({ q: z.string(), a: z.string() })).default([]),
+    knowledgeLinks: z.array(z.object({ label: z.string(), href: z.string() })).default([]),
     order: z.number().default(50),
   }),
 });
@@ -45,9 +47,11 @@ const knowledge = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    pillar: z.enum(['label-sizing', 'label-cost', 'label-materials', 'sticker-materials', 'printing', 'artwork', 'marketplace-labels']),
+    pillar: z.enum(['label-sizing', 'label-cost', 'label-materials', 'sticker-materials', 'printing', 'artwork', 'marketplace-labels', 'hang-tags']),
     order: z.number().default(50),
     updated: z.string().default('2026-11'),
+    published: z.string().optional(),
+    reviewed: z.string().optional(),
     relatedProducts: z.array(z.string()).default([]),
     view: z.string().optional(),
     faq: z.array(z.object({ q: z.string(), a: z.string() })).default([]),

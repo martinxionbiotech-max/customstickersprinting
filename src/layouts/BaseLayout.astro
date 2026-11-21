@@ -29,9 +29,11 @@ const org = {
   '@id': `${site.url}/#organization`,
   name: site.brand,
   legalName: site.company.legalNameEn,
-  alternateName: [site.company.legalNameZh, 'Yiwu Dingwei Trading Co.'],
+  alternateName: [site.company.legalNameEn, 'Yiwu Dingwei Trading Co.'],
   url: site.url,
   email: site.email,
+  logo: `${site.url}/logo.png`,
+  image: `${site.url}/images/og-default.webp`,
   description: site.description,
   identifier: [
     { '@type': 'PropertyValue', propertyID: 'USCC', value: site.company.uscc },

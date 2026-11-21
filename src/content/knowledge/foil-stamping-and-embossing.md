@@ -4,6 +4,8 @@ description: "How metallic foil and raised embossing work on labels: the die, th
 pillar: printing
 order: 3
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-21"
 relatedProducts: ["cosmetic-labels", "logo-stickers", "jar-labels"]
 view: >-
   Foil is the finish most often requested for the wrong reason. If the brief is make it look expensive, embossing on a heavy stock usually photographs better and costs less. Foil earns its die when the metallic colour is the brand itself, not when it is decoration added at the end.
@@ -47,6 +49,16 @@ A matched die pair presses the material into relief (emboss) or into the surface
 ## Combining them
 
 Foil plus emboss ("foil emboss") is common on spirits and premium cosmetics: the foil sits inside the raised area. It needs one combined die and careful proofing.
+
+## Designing for foil and emboss
+
+Foil and emboss are physical processes, not ink settings. The artwork has to give the die something to work with.
+
+For foil, use a solid shape rather than a hairline. A 0.3 mm line can disappear or fill in; a bold mark, a border or a solid block holds the foil cleanly. Reverse-out type inside a foil block needs enough space between letters, or the foil bridges the gaps. On uncoated or textured card, the foil can look pitted; a coated or laminated surface gives a cleaner result.
+
+For emboss, the card has to be heavy enough to hold the shape. 350 gsm is a practical minimum; 400 gsm is better for a deep emboss. A emboss near the trim or the hole can distort the card, so keep it away from the edges. A combination of foil and emboss needs two dies and two passes; the registration between them has to be allowed for in the artwork.
+
+The die is a fixed cost. At 50 units it can dominate; at 1,000 it is spread across more pieces. Ask for the die cost separately, and ask whether a printed metallic effect or a deboss would achieve enough of the look without a second die.
 
 ## What this means for buyers
 

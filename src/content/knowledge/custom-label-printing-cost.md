@@ -4,6 +4,8 @@ description: "The four cost blocks behind a label quote, why setup dominates at 
 pillar: label-cost
 order: 0
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-08"
 relatedProducts: ["custom-labels", "roll-labels", "custom-stickers", "waterproof-labels"]
 view: >-
   Almost every "why is this so expensive" question is really a question about quantity. At 50 units the price is
@@ -117,7 +119,7 @@ A 60 × 90 mm PP label, white, gloss laminate, one design:
 | 50 | $3.80 | $0.041 | $3.84 | $192 |
 | 500 | $0.38 | $0.041 | $0.42 | $210 |
 | 5,000 | $0.038 | $0.041 | $0.079 | $395 |
-| 50,000 | $0.004 | $0.035 | $0.039 | $1,950 |
+| 50,000 | $0.004 | $0.035 | $0.0388 | $1,940 |
 
 Read the last column, not the unit price. Going from 500 to 5,000 multiplies the order by 1.9× and the quantity by 10×. That is the curve, and it is the only argument for ordering more than you can use.
 

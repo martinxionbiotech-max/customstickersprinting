@@ -4,6 +4,8 @@ description: "What a dieline is, why the cut path must be separate closed vector
 pillar: artwork
 order: 5
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-21"
 relatedProducts: ["die-cut-stickers", "custom-labels", "sticker-sheets"]
 view: >-
   A custom contour is often the most expensive way to look different. At low volume we would choose a rounded rectangle and put the difference into the artwork: no die cost, no tearing on peel, and a shape that still reads as deliberate. Fiddly outlines are a volume decision, not a branding one.
@@ -51,6 +53,23 @@ If the design works with a rounded rectangle, that choice can halve a small orde
 ## Multi-piece sheets
 
 For a kiss-cut sheet, each sticker needs its own closed path, with at least 3 mm between paths so the blade does not tear the liner. Sheets also need a registration mark if the cut must align with print.
+
+## A dieline checklist
+
+A dieline is a map for the cutter, not a decorative outline. Before sending it, check:
+
+- **Closed paths:** every cut line is a closed vector shape; no open ends.
+- **Separate layer:** the cut line sits on its own layer, not merged with the artwork.
+- **Final size:** the dieline is at 1:1, not scaled to fit a page.
+- **Bleed:** the artwork extends beyond the cut line, usually 3 mm.
+- **Safe area:** text and barcodes are inside the margin.
+- **Hole and fold:** holes, eyelets, scores and folds are on their own layers and labelled.
+- **No effects:** no drop shadows, strokes or transparency on the cut path.
+- **Named spot colour:** the cut line uses a clearly named spot colour or the printer’s convention.
+
+A dieline that looks right on screen can fail because the path is open, the scale is wrong or the cut line is a 0.5 pt stroke instead of a closed shape. The printer can usually fix a small issue, but a redraw is a setup charge and a delay.
+
+If you do not have a dieline, send the artwork and a dimensioned sketch. The printer can build the path, but the shape should be agreed before the quote, not after the proof.
 
 ## What this means for buyers
 

@@ -13,6 +13,7 @@ const PILLARS: { key: string; title: string; intro: string }[] = [
   { key: "sticker-materials", title: "Sticker materials and cutting", intro: "Vinyl versus paper, die cut versus kiss cut, and what a finish actually does." },
   { key: "printing", title: "Printing and production", intro: "Digital versus flexo, how a roll is made, and where the crossover sits." },
   { key: "artwork", title: "Artwork preparation", intro: "Colour, bleed, safe area and the files that print without surprises." },
+  { key: "hang-tags", title: "Hang tags and printed card", intro: "Card weight, hole placement, eyelets, string and the finishes that survive handling." },
 ];
 const groups = PILLARS.map((p) => ({
   ...p,
@@ -33,7 +34,7 @@ const groups = PILLARS.map((p) => ({
 
       {groups.map((g) => (
         <section style="padding:34px 0 0">
-          <h2>{g.title}</h2>
+          <h2><a href={`/knowledge/${g.key}/`}>{g.title}</a></h2>
           <p style="color:var(--ink-3);max-width:60ch">{g.intro}</p>
           <div class="grid grid-3" style="margin-top:16px">
             {g.items.map((a) => (

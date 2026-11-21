@@ -16,7 +16,12 @@ imageAlt: "A sauce bottle with a blank label inside a refrigerator, condensation
 seoTitle: "Food Labels for Fridge, Freezer and Greasy Kitchens"
 seoDescription: "Custom food labels for chilled, frozen and dry products: freezer-grade adhesives, condensation-resistant materials and space for required text."
 order: 5
-lastVerified: "2026-11"
+lastVerified: "2026-11-21"
+faq:
+  - q: "Which adhesive should frozen food labels use?"
+    a: "A freezer-grade adhesive that stays flexible at minus 18 °C. Standard acrylic goes brittle and the label cracks or lifts at the corner; condensation on the way out of the freezer finishes the job. Use PP or PET rather than paper."
+  - q: "Can you print batch codes and best-before dates?"
+    a: "Yes, as variable data. Send a CSV with one row per label and confirm the field order in writing; a shifted column produces a whole run with the wrong dates. Leave a defined area for the code so it is not squeezed into the design."
 knowledgeLinks:
   - label: "Label sizes for jars"
     href: "/knowledge/label-size-for-jars/"
@@ -24,6 +29,8 @@ knowledgeLinks:
     href: "/knowledge/waterproof-label-materials/"
   - label: "Paper vs PP vs PET labels"
     href: "/knowledge/paper-vs-pp-vs-pet-labels/"
+  - label: "Label rules: what the printer can decide"
+    href: "/knowledge/label-regulatory-basics/"
 ---
 
 ## The conditions decide the label
@@ -63,6 +70,14 @@ Batch codes and best-before dates can be printed as variable data, so each label
 ## Quantity and cost
 
 Food labels are priced on area, material, finishing and quantity, with freezer-grade and oil-resistant stocks costing more than standard paper. Small jar labels at 50 units are the cheapest entry point; large wrap labels on synthetic stock are the most expensive per unit at the same quantity.
+
+## When a standard label is not enough
+
+A food label is not only a brand piece. It carries the product name, net quantity, ingredients, allergens, storage instructions, best-before date, batch code and the producer or importer. The space for that text is often the constraint, not the design.
+
+If the mandatory text does not fit at a readable size, the answer is a larger label or a folded insert, not smaller type. If the product is chilled or frozen, the adhesive and film matter more than the print. If the product is hot-filled, the adhesive needs to handle the fill temperature and the steam at application.
+
+A standard label on a dry shelf is a different job from a label on a condensation-prone bottle. Treat the storage condition as part of the specification, before the artwork is finalised.
 
 ## Ordering
 

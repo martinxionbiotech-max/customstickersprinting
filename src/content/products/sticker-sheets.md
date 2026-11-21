@@ -16,7 +16,12 @@ imageAlt: "An A5 sheet of blank stickers, half peeled to show the kiss-cut liner
 seoTitle: "Sticker Sheets — Multiple Designs on One Backing"
 seoDescription: "Custom sticker sheets with several designs on one backing: kiss cut layout, sheet sizing and when a sheet beats individual die cut stickers."
 order: 5
-lastVerified: "2026-11"
+lastVerified: "2026-11-21"
+faq:
+  - q: "How many stickers fit on one sheet?"
+    a: "It depends on the sticker size and the sheet format; a small sticker may fit 12–20 per A5 sheet, while a large sticker may fit four or six. Send the sizes and we will lay out the sheet before quoting."
+  - q: "Can I mix different designs on one sheet?"
+    a: "Yes, if they share the material and laminate. Mixed designs on a sheet are common for hand-out sets or product bundles. A mix of materials or finishes needs separate sheets or separate jobs."
 knowledgeLinks:
   - label: "Standard sticker and label sizes"
     href: "/knowledge/standard-label-sizes/"
@@ -62,6 +67,14 @@ White vinyl is the default for inserts and giveaways. Paper is cheaper for indoo
 ## Quantity and cost
 
 Sheets are priced per sheet, not per sticker, so the cost per sticker falls as the number of stickers per sheet rises — up to the point where the stickers are too small to be useful. At 50 sheets, the setup dominates; at 5,000, material and cutting do.
+
+## When loose stickers are better
+
+A sticker sheet is a set: several designs on one backing, usually kiss cut so the stickers stay in place. It is good for hand-outs, resale packs and product bundles. A loose die-cut sticker is better when the buyer needs one sticker, not a set.
+
+A sheet has a fixed layout, so the number and size of the stickers are decided before the quote. If you want to mix designs, they need to share the material and laminate; a mix of materials needs separate sheets. If the stickers are different sizes, the layout may waste space, which changes the price.
+
+If the goal is a single logo sticker for a mailer, a loose sticker is simpler. If the goal is a set for a market or a retail pack, a sheet is the better format.
 
 ## Ordering
 

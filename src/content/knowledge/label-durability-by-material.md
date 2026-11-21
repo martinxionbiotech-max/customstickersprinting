@@ -4,6 +4,8 @@ description: "Expected label life by material and condition: indoor retail, chil
 pillar: label-materials
 order: 6
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-21"
 relatedProducts: ["waterproof-labels", "food-labels", "vinyl-stickers"]
 view: >-
   Buyers ask whether a label is durable and mean five different things: water, oil, sun, abrasion or time on a shelf. Our view is that the question should be a condition and a duration before it is a material, and that lamination buys more service life per pound than upgrading the film. Answer those two and the material choice stops being a debate.
@@ -56,6 +58,16 @@ A material data sheet describes a film in a lab, not your product in your condit
 4. Look at the edges, not the centre — failure starts there.
 
 A month of real testing is worth more than any datasheet, and it costs one sample run.
+
+## A one-month test protocol
+
+A datasheet describes a film in a laboratory. Your product lives in a fridge, a bathroom or a shop window. The cheapest way to close that gap is a one-month test on the actual container.
+
+Use three samples: one stored exactly like the product, one in the harshest condition the product may see, and one control kept indoors. Label them with the date and the material. Inspect at 24 hours, one week and four weeks. At each check, look at the edges first, then the print, then the adhesive.
+
+Record four things: edge lift, colour change, surface contamination and adhesive transfer. A label can look perfect in the centre while the edge has already lifted; that edge is where water and oil get under the film. Photograph the samples under the same light each time so the comparison is honest.
+
+If the label fails, change one variable at a time: adhesive first, then laminate, then face stock. Changing all three at once gives you a result but not a reason. If it passes, keep the control sample as the reference for the next run.
 
 ## What this means for buyers
 

@@ -4,6 +4,17 @@ heading: "Labels for food and beverage brands"
 description: "Chilled, frozen and condensation-prone containers: freezer-grade adhesives, food-contact materials and space for mandatory label information."
 products: ["food-labels", "bottle-labels", "waterproof-labels"]
 painPoints: ["Labels lifting in the fridge", "Ink running under condensation", "No room for ingredients and allergens"]
+knowledgeLinks:
+  - label: "Waterproof label materials"
+    href: "/knowledge/waterproof-label-materials/"
+  - label: "How long do labels last?"
+    href: "/knowledge/label-durability-by-material/"
+  - label: "Retail packaging labels"
+    href: "/knowledge/retail-packaging-labels/"
+  - label: "Marketplace label requirements"
+    href: "/knowledge/marketplace-label-requirements/"
+  - label: "Label rules: what the printer can decide"
+    href: "/knowledge/label-regulatory-basics/"
 order: 3
 faq:
   - q: "What adhesive should frozen food labels use?"
@@ -47,3 +58,15 @@ Food brands often launch with several flavours at low volume. Digital printing k
 ## What to send for a quote
 
 The product, the storage condition, the container, the label size, the mandatory text length, quantity and destination. If the recipe or ingredient list is still changing, order a plain sample first to test adhesion before committing to print. Minimum 50 units.
+
+## A cold-chain checklist
+
+For a chilled or frozen product, the label has to survive three moments: application on a dry container, storage in a wet or freezing environment, and handling by a customer with wet hands. A paper label can fail at any of them. PP or PET with a chill-grade or freezer-grade adhesive is the usual starting point, and the adhesive matters more than the film.
+
+Condensation is the test most buyers skip. A bottle taken from a fridge to a table sweats; water sits under the edge of the label and lifts it. A label that passes a dry shelf test can fail in a fridge in a few days. Apply a sample to the actual container, put it in the actual condition, and check the edge after a week.
+
+## What to send for a food label quote
+
+Send the product, the fill temperature, the storage condition (ambient, chilled, frozen), the container material and diameter, the label size, the mandatory text length, the quantity and the destination. If the ingredient list or the net weight is still changing, say so; the label size may need to change with it.
+
+For a multi-SKU launch, list the flavours together. If they share a label size and material, the setup can be paid once and the designs can run as one job. If the mandatory text differs, the artwork still needs a separate proof per SKU, even when the print specification is shared.

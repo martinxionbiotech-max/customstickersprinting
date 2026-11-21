@@ -4,6 +4,8 @@ description: "The four things inside a setup fee — file preparation, die, proo
 pillar: label-cost
 order: 6
 updated: "2026-11"
+published: "2026-11-07"
+reviewed: "2026-11-08"
 relatedProducts: ["custom-labels", "die-cut-stickers", "roll-labels"]
 view: >-
   Setup is the line buyers try to negotiate and the line that is least negotiable, because it is mostly labour that
