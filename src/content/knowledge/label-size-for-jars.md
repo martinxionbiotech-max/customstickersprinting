@@ -5,7 +5,7 @@ pillar: label-sizing
 order: 2
 updated: "2026-11"
 published: "2026-11-07"
-reviewed: "2026-11-07"
+reviewed: "2026-11-21"
 relatedProducts: ["jar-labels", "food-labels", "cosmetic-labels"]
 view: >-
   Jars are the easiest container to label badly, because the body is short and the shoulder is close. Our rule is to
@@ -74,3 +74,19 @@ A lid label is also the cheapest way to add a variant without reprinting the bod
 **Keep 3–5 mm of lid visible.** A lid label that covers the lid completely looks like a mistake and hides the closure colour.
 
 **Order the lid circles with the body labels.** A second run for a 60 mm circle costs more in setup than in labels.
+
+## The jar-shoulder measurement that prevents a lifted top edge
+
+Jar labels usually fail at the top, not at the bottom. A label sized from the jar's total height reaches into the shoulder, where the wall turns inward and the adhesive has to hold a curve. The centre may look secure while the upper edge lifts, catches dust and peels further each time the jar is handled.
+
+The usable height changes with the jar type. A preserve jar may have a short straight band above a pronounced shoulder; a candle jar can have a longer wall but see heat from the poured wax; a cosmetic jar may be handled with oily fingers. Lid labels and body labels also compete for space, so a generous body size can leave no clean area for a variant. Measure the straight band after the shoulder and base radius, not the outside silhouette.
+
+Ask the supplier to mark the shoulder line on a photo of the actual jar, then test a [jar-label](/jar-labels/) sample at the filling and storage temperature. Check the top edge after the lid is closed and again after a day, because a label that clears the shoulder when empty can move once the jar is filled. The [label-sizing hub](/knowledge/label-sizing/) and [label size calculator](/tools/label-size-calculator/) help convert the measurements into a candidate size.
+
+| Jar feature | Effect on usable height | Measurement to record |
+|---|---|---|
+| Shoulder curve | Removes the top band | Straight wall below the curve |
+| Base radius | Lifts the lower edge | Flat wall above the radius |
+| Domed lid | Changes lid-label diameter | Flat centre of the lid |
+| Wax fill line | Adds heat near the label | Label position and pour temperature |
+| Textured glass | Reduces adhesive contact | Surface finish and sample result |

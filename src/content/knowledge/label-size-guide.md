@@ -5,7 +5,7 @@ pillar: label-sizing
 order: 0
 updated: "2026-11"
 published: "2026-11-07"
-reviewed: "2026-11-08"
+reviewed: "2026-11-21"
 relatedProducts: ["bottle-labels", "jar-labels", "custom-labels", "cosmetic-labels"]
 view: >-
   Nine times out of ten, the size question is answered by one number the buyer has not measured: the circumference.
@@ -222,3 +222,19 @@ That is the whole process. It takes ten minutes with the bottle and a ruler, and
 - [Tins, tubes and pouches](/knowledge/label-size-for-tins-tubes-pouches/)
 - [Calculating a wrap label](/knowledge/label-wrap-calculation/)
 - [Standard label sizes in inches](/knowledge/standard-label-sizes/)
+
+## When two label sizes both look right on screen
+
+The usual mistake is choosing between two dimensions on a flat JPEG, where both appear to leave enough room. On the container, one may crowd the shoulder radius, force the mandatory panel into 6 pt text, or leave so little gap at the seam that application drift becomes visible. The file can look composed while the physical label is wrong.
+
+The choice changes with the container and the job. A tapered bottle rewards the shorter label because a long one has to follow a changing circumference; a broad jar can carry the larger round or panel without looking lost. If the label must hold a barcode, ingredients and an address, size the larger option from the text block first, not from the logo. On a premium product, the smaller size may be correct even when the larger one fits.
+
+Before approving, print both sizes at 100% and place them on the actual container. Mark the trim, safe area and any mandatory copy, then ask which dimension is driving the price. The [label-sizing hub](/knowledge/label-sizing/) explains the measurement sequence, while the [label size calculator](/tools/label-size-calculator/) can test a wrap before the artwork is locked. Order a [custom-label](/custom-labels/) sample in the chosen size and keep the rejected version for comparison.
+
+| Screen impression | What it can hide | What to verify |
+|---|---|---|
+| Looks balanced | Shoulder or base radius | Straight side-wall height |
+| Text fits | Safe area and minimum type size | Full content block at final size |
+| Wrap closes neatly | Application drift and overlap | Applied sample at the seam |
+| Margin looks generous | Barcode quiet zone | Scanner-ready placement |
+| Size seems premium | Loss of information space | Required copy inventory |

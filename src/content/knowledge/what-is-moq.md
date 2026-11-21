@@ -87,3 +87,19 @@ The honest question is not “how low can the minimum go” but “what is the s
 **Do not treat MOQ as a quality signal.** A low minimum usually means digital printing, which is a method, not a compromise.
 
 **Plan the second order before the first.** The reorder skips proofing and moves faster; knowing that changes how you budget the launch.
+
+## When a 50-unit minimum is not the real minimum
+
+A minimum can look like one number and behave like several. If an order contains two sizes, two materials or two finishes, each specification may need its own setup, proof and cut path. Combining designs does not erase that work; it only shares it when the production requirements genuinely match. The buyer plans for one minimum order and receives several smaller jobs inside it.
+
+The condition changes with the mix. Several colourways of one label on the same material, size and finish can often be quoted as one setup with a combined quantity. A new size or adhesive is a different job, and a material change can alter the print, cut and proof. At low volume, it is usually better to reduce the number of distinct specifications than to ask each one to meet a separate minimum.
+
+Ask what is included in the minimum, whether the quantity is per design or per order, and which elements are shared when designs are combined. Request a quote that shows setup by specification, then compare that with ordering fewer variants in a [custom-label](/custom-labels/) run. If the answer is per design, plan the order around the number of specifications, not the headline quantity. The [label-cost hub](/knowledge/label-cost/) explains the fixed block, and [how many labels to order](/knowledge/how-many-labels-to-order/) helps size the production cycle. A written quote should make the effective minimum visible.
+
+| Order structure | Effective minimum | Why |
+|---|---|---|
+| One design, one spec | One setup | File, proof and cut are shared |
+| Several colourways | One setup, more print data | Same material and size |
+| Two sizes | Two setups | Separate cut paths and proofs |
+| Two materials | Separate production runs | Print and adhesive change |
+| Several finishes | Additional passes | Finishing setup repeats |

@@ -5,7 +5,7 @@ pillar: label-sizing
 order: 1
 updated: "2026-11"
 published: "2026-11-07"
-reviewed: "2026-11-08"
+reviewed: "2026-11-21"
 relatedProducts: ["bottle-labels", "cosmetic-labels", "food-labels"]
 view: >-
   The volume on a bottle tells you almost nothing about the label; the diameter does. We ask for diameter and body
@@ -90,3 +90,20 @@ Keep the neck label at least 10 mm below the cap so the closure does not tear it
 **Add the neck label to the same order.** A separate small run for a second label often costs more than the label itself.
 
 **Test the first size on the real bottle.** A 50-unit sample order is the cheapest way to find out that a 60 mm label crowds a 65 mm body.
+
+## Why a bottle catalogue size is only the first test
+
+A bottle label can match the catalogue's recommended size and still sit badly on the bottle in hand. The usual cause is that the recommendation was built from a generic mould: the shoulder begins earlier, the base radius is deeper, or the label position falls where the wall is no longer straight. The error is invisible in a dimension list and obvious on the first applied label.
+
+The correct size changes with the bottle material and the way it is filled. A glass bottle with a long straight body can accept a taller panel than a light PET bottle with a moulded grip; a chilled product also needs clearance for condensation and a conformable film at the edges. If the bottle is recycled HDPE or a custom mould, the supplier's catalogue is only a starting point, because wall shape and surface energy can vary between batches.
+
+Send a photo of the bottle beside a ruler with the desired top and bottom label positions marked, then ask for the printable band in millimetres rather than a size name. Before the run, apply a [bottle-label](/bottle-labels/) sample to the filled bottle and check the shoulder, base and closure area. The [label-sizing hub](/knowledge/label-sizing/) explains the measurements, and the [label size calculator](/tools/label-size-calculator/) helps convert circumference into a wrap width.
+
+| Bottle trait | Visible symptom | Pre-run check |
+|---|---|---|
+| Early shoulder | Top edge creases or lifts | Mark the straight wall |
+| Tapered body | Wrinkles at one end | Measure both label edges |
+| Moulded grip | Patchy adhesion | Apply over the grip |
+| Dark or textured glass | White ink gaps | View sample on the bottle |
+| Supplier change | Previous size no longer fits | Measure the new mould |
+| Chilled fill | Edges lift as water gathers | Test after refrigeration |

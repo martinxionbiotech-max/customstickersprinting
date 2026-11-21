@@ -5,7 +5,7 @@ pillar: label-materials
 order: 1
 updated: "2026-11"
 published: "2026-11-07"
-reviewed: "2026-11-07"
+reviewed: "2026-11-21"
 relatedProducts: ["custom-labels", "waterproof-labels", "food-labels"]
 view: >-
   We would put almost every first order on PP rather than paper, even though it costs more per unit. The reason is not durability in the abstract: a paper label that fails on a chilled or handled product becomes a reprint, and the reprint costs more than the price difference. Paper still wins on dry cartons and boxed cosmetics, where nothing will ever get it wet.
@@ -72,3 +72,20 @@ Note how often the adhesive matters as much as the face stock: four of the six r
 **Test on the actual container.** A material data sheet describes a film, not your bottle. A physical sample on your product, stored the way your product is stored, is the only test that predicts the outcome.
 
 **The cheapest correct material is usually PP.** It covers water, chill and handling at a middle price, which is why it is the most common answer for consumer products.
+
+## The exposure that makes the cheaper face stock fail
+
+Paper often wins the first comparison because it prints cleanly and needs no film premium. The failure comes later, when condensation collects at the edge, oil reaches the sheet or a chilled pack moves from fridge to room. The label does not fail in the centre first; the edge absorbs, swells and lifts, taking the print with it. A material that looked adequate in the sample envelope can be wrong on the shelf.
+
+The choice changes with exposure, not with the product category. A boxed cosmetic or dry carton can keep coated paper for years; a bottle that sweats, a jar stored in a bathroom or a pouch that flexes needs film. PET may be better where oil, alcohol or abrasion is present, while PP often conforms better on a curved or squeezable container. Recycled plastic can also demand a different adhesive, so the face stock is only half the construction.
+
+Before comparing paper with film, describe the surface, moisture, oil, temperature and expected storage time. Ask for a [food-label](/food-labels/) sample in the candidate construction and keep it beside a control made from the current material. The [label-materials hub](/knowledge/label-materials/) compares the base films, while [waterproof label materials](/knowledge/waterproof-label-materials/) explains when a laminate or adhesive must change with the face stock.
+
+| Face stock | Best-fit exposure | Failure signal |
+|---|---|---|
+| Coated paper | Dry indoor packaging | Edges ripple after humidity |
+| Water-resistant paper | Brief condensation | Fibres still swell |
+| PP | Chill, handling, curves | Solvent or heat exposure |
+| PET | Oil, abrasion, clarity | Sharp fold on a small radius |
+| Vinyl | Outdoor sticker use | Thick edge on a tight curve |
+| Any film with poor adhesive | Wet or recycled plastic | Slide instead of edge lift |

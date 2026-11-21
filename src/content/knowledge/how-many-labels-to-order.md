@@ -5,7 +5,7 @@ pillar: label-cost
 order: 7
 updated: "2026-11"
 published: "2026-11-07"
-reviewed: "2026-11-07"
+reviewed: "2026-11-21"
 relatedProducts: ["custom-labels", "roll-labels", "custom-stickers"]
 view: >-
   Most buyers order either too few and reorder at a worse price, or too many and throw away a design that changed.
@@ -121,3 +121,19 @@ That formula also explains why the production lead time matters commercially, no
 **Set a reorder point.** Running out costs more than the discount you got by ordering exactly.
 
 **Keep the die alive.** Reordering the same specification is the cheapest label you will ever buy.
+
+## The stockout risk hidden in a quantity price break
+
+A price break can persuade a buyer to choose a quantity that solves the unit price and creates a different problem. Ordering too close to the break may leave no cushion for spoilage; ordering far beyond it can tie up cash and storage. The riskiest version is a first-run design bought at a volume price because the next break looked like a bargain.
+
+The right quantity depends on lead time, usage and how likely the artwork is to change. A stable product with predictable weekly use can support a larger cycle and a reorder point based on replenishment time. A new design, seasonal packaging or a label under regulatory review should stay closer to one production cycle plus a measured spoilage allowance. Shelf life and storage conditions also limit how much stock is genuinely usable.
+
+Ask for the price breaks around your real usage rather than the largest available quantity, and calculate `reorder point = weekly use × lead-time weeks + safety stock`; any numbers used in that formula are illustrative. Confirm how the stock should be stored and when the next reorder must be placed. The [label-cost hub](/knowledge/label-cost/) explains the quantity curve, and the [label-cost estimator](/tools/label-cost-estimator/) can compare order sizes. Keep the same [roll-label](/roll-labels/) specification for the reorder so the tested result carries forward.
+
+| Quantity decision | Risk created | Planning check |
+|---|---|---|
+| Buy to the next break | Extra stock ages | Usage before shelf life ends |
+| Stay below the break | Higher unit price | Reorder frequency is manageable |
+| One cycle only | Stockout before replenishment | Lead time and safety stock |
+| Several cycles | Artwork becomes obsolete | Design change likelihood |
+| Split across designs | Setup repeats | Same material and size |

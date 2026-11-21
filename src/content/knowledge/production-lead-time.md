@@ -80,3 +80,20 @@ If a date is fixed and the first order is late, the honest options are to pay fo
 **Do not compress by skipping the sample.** It is faster to sample once than to reprint once.
 
 **Build a buffer for the first order.** Second orders are faster because the proof and die already exist.
+
+## The approval delay that express production cannot recover
+
+A delivery date usually slips before the press starts. The buyer counts from the purchase order, while the supplier counts from an approved proof; the days spent answering artwork questions, waiting for a sample or changing a barcode sit between those two dates. Express production can buy press time, but it cannot approve the file for you.
+
+The advice changes with the type of order. A reorder with the same approved artwork, material and die can move faster because those checks already exist. A first order with a new dieline, white ink or special finish needs time for a proof and a physical check. A launch date that leaves no room for one approval cycle is not protected by a faster courier; it is relying on nobody finding a problem.
+
+Write the schedule backwards from the in-hand date: shipping, packing, finishing, print and proof, then assign a named approver and a response deadline. Ask what starts the lead-time clock and which changes reset it. A buffer is not padding; it is the time needed to answer a question without moving the delivery date. A [roll-label](/roll-labels/) reorder can skip stages a first order cannot, while the [samples and proofs guide](/knowledge/samples-and-proofs/) explains what must be approved. The [label-cost hub](/knowledge/label-cost/) puts production and freight costs in context.
+
+| Schedule risk | Where it enters | Buffer or proof to set |
+|---|---|---|
+| Unanswered artwork query | Pre-press check | Named contact and reply date |
+| Proof waits for approval | Customer review | Approval deadline before order |
+| Physical sample requested late | Separate sample cycle | Sample date in plan |
+| New finish or die | Production setup | Added finishing time |
+| Courier delay | Transit | Ship-by date with margin |
+| Post-approval edit | File and proof reset | Frozen artwork handoff |

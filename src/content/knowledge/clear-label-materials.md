@@ -75,3 +75,19 @@ For a first sample, apply the clear label to the actual container and look at it
 **Matte clear hides what gloss clear reveals.** On hand-applied labels, matte is usually the kinder choice.
 
 **Ask for a sample on the actual container.** Transparent film on a white desk looks perfect; on amber glass it may not.
+
+## Where clear film turns a printing choice into an application problem
+
+A clear label can be approved on a white layout and fail on the container. The white ink layer may be missing, too narrow behind thin type, or flooded in a way that removes the transparent effect the buyer wanted. Once applied, bubbles, dust and edge lift are more visible than they would be under white film. The result is blamed on the print when the cause is the construction or the application.
+
+The advice changes with the container and the viewing angle. Smooth clear glass gives the film its best chance; dark glass needs enough white ink to keep text legible; textured board and kraft make the edge stand out and rarely justify the premium. Gloss clear reveals imperfections, while matte clear softens them. Hand application needs a clean surface and a slow centre-out technique, especially on a curved bottle.
+
+Ask for the white-ink strategy as a separate artwork layer, then request a sample on the actual container viewed against both light and dark backgrounds. Inspect the edges after application and again the next day, when trapped air and poor wet-out are easier to see. The [label-materials hub](/knowledge/label-materials/) covers film selection, and an [adhesive-by-surface guide](/knowledge/label-adhesive-by-surface/) helps separate a glue failure from a print defect. Order [clear labels](/clear-labels/) only after the white layer and surface are approved together.
+
+| Clear-label symptom | Printing cause | Application cause |
+|---|---|---|
+| Text disappears on dark glass | Insufficient white ink | Wrong viewing background |
+| Design looks milky | Flood white too wide | Bubbles under the film |
+| Logo edge looks soft | White registration | Stretching on a curve |
+| Label lifts at one edge | Cut or material mismatch | Dust or incomplete pressure |
+| Surface looks uneven | Ink density variation | Textured container |

@@ -5,7 +5,7 @@ pillar: label-materials
 order: 3
 updated: "2026-11"
 published: "2026-11-07"
-reviewed: "2026-11-07"
+reviewed: "2026-11-21"
 relatedProducts: ["waterproof-labels", "bottle-labels", "food-labels"]
 view: >-
   Calling a paper label waterproof is the most common exaggeration in this trade. Our position: if the product goes in a fridge, an ice bucket or a shower, specify film plus a laminate, and treat water-resistant paper as a short-life option only. The cost difference is small next to a failed batch, and the failure is always at the edge.
@@ -79,3 +79,19 @@ We produce physical samples for exactly this test before a production run.
 **Test the adhesive, not the film.** Most waterproof failures are glue failures. If a sample lifts, changing from PP to PET will not help; changing the adhesive will.
 
 **Immersion is a different product.** If the label will be submerged, say so at the quotation stage — the material, adhesive and laminate all change.
+
+## The wet test that separates waterproof from water-resistant
+
+Waterproof is a claim that needs a condition attached. A label may survive a damp cloth and fail in a cooler, or survive condensation and fail when submerged. The first weak point is usually the edge, where water reaches the adhesive before it reaches the print. A film can look dry and intact while the edge has already lifted far enough to let moisture travel underneath.
+
+The construction changes with the wet test. Splashes and short condensation may suit a water-resistant coated stock; repeated wetting calls for PP or PET with a laminate and a chill-grade adhesive; immersion and freezing put more demand on the adhesive, the laminate and the container surface. A freezer cycle adds contraction and ice, while a dishwasher adds heat and detergent. No single waterproof specification covers all four.
+
+Write the test as a place, a duration, a temperature and any mechanical action, then apply a [waterproof-label](/waterproof-labels/) sample to the actual container and store or use it that way. Inspect the edge, print and adhesive, not just the face of the label. If the test cannot be described in those terms, the safe assumption is that the claim is still unproven. The [label-materials hub](/knowledge/label-materials/) explains the film choices, and [label durability by material](/knowledge/label-durability-by-material/) shows how to keep a control sample for comparison.
+
+| Wet-service claim | First weak point | Evidence to request |
+|---|---|---|
+| Splash resistant | Paper edge | Applied sample after wetting |
+| Condensation resistant | Adhesive on cold glass | Fridge-cycle sample |
+| Waterproof | Laminate coverage | Edge inspection after use |
+| Immersion grade | Adhesive under sustained water | Container-specific soak test |
+| Freezer grade | Brittle adhesive at low temperature | Frozen sample and control |

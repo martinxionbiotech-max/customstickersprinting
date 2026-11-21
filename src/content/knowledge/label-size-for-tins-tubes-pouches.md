@@ -5,7 +5,7 @@ pillar: label-sizing
 order: 3
 updated: "2026-11"
 published: "2026-11-07"
-reviewed: "2026-11-07"
+reviewed: "2026-11-21"
 relatedProducts: ["custom-labels", "cosmetic-labels", "sticker-sheets"]
 view: >-
   Tins and tubes are where buyers most often order a rectangle and discover it will not sit flat. A tin needs a wrap
@@ -91,3 +91,19 @@ If a design has no margin, the application method becomes part of the specificat
 **Pouches need film, not paper.** Flexibility is the whole point of the pack.
 
 **Order a sample on the empty container before filling.** A label that fits an empty tube can still wrinkle once the tube is pressurised by filling.
+
+## Where clearance beats area on tins, tubes and pouches
+
+The instinct on a small pack is to use every printable millimetre. That is also how labels cross a tin's rolled rim, a tube's cap shoulder or a pouch's heat seal. The result may look acceptable when applied empty, then lift, wrinkle or interfere with the closure after filling. The lost area is usually less important than a clean edge.
+
+The right clearance changes with the pack and the application. A tin has a rolled rim at both ends; a tube has a curved shoulder at the cap and an uneven crimp at the base; a stand-up pouch has seals and a gusset that move as the pack fills. Hand application needs more margin than a registered line. On a pouch, a smaller film label that stays inside one flat panel usually reads better than a larger label bridging a fold.
+
+Ask for a marked dieline on a photo of the empty pack and a second photo after filling or closing. Apply a [custom-label](/custom-labels/) sample on the actual tin, tube or pouch, then open and close the pack as the customer would. The [label-sizing hub](/knowledge/label-sizing/) explains the printable band, and the [label size calculator](/tools/label-size-calculator/) can test a wrap before the clearance is consumed.
+
+| Pack boundary | Why it is not printable | Approval check |
+|---|---|---|
+| Tin rim | Rolled edge cannot sit flat | Sample after lid fit |
+| Tube shoulder | Curves under the cap | Closure tightened and opened |
+| Tube crimp | Uneven surface at the base | Base clearance in hand |
+| Pouch heat seal | Adhesive can affect the seal | Filled pack at the seam |
+| Pouch gusset | Fold moves with contents | Sample across the fold |

@@ -5,7 +5,7 @@ pillar: label-sizing
 order: 5
 updated: "2026-11"
 published: "2026-11-07"
-reviewed: "2026-11-07"
+reviewed: "2026-11-21"
 relatedProducts: ["custom-labels", "logo-stickers", "sticker-sheets"]
 view: >-
   Standard sizes are cheaper because the die already exists and nobody has to draw a cut path. If one of these twelve
@@ -80,3 +80,20 @@ The reverse is also true: at 50 units, a standard size plus better artwork usual
 **Do not assume "standard" means regulated.** It means commonly stocked. Ask which die exists rather than which size is "standard".
 
 **Custom is a volume decision.** Below a few hundred units, the die is a large share of the order.
+
+## When the nearest stock size is a false economy
+
+A stock size saves a die and a cut-path setup, but the saving is only useful if the label still does its job. Buyers sometimes take the nearest common dimension after the artwork is finished, then shrink the type, move the barcode or reduce the margin to make it fit. The order looks cheaper per label while the package becomes harder to read and easier to reject.
+
+The calculation changes with volume and repetition. At low volume, a stock size that is close to the container is usually the better first order; at higher volume, or when the label carries a regulated panel, a custom size can be cheaper over the run because it removes the design compromise. A custom die also earns its cost when the same specification will be reordered. If the difference is only a fraction of a millimetre and the artwork has room, forcing a stock size is unnecessary.
+
+Ask which die or cut path the quote uses, then compare the stock dimensions with the actual printable area, not the outer label. A [sticker-sheet](/sticker-sheets/) sample is a reasonable low-volume test. The [label-sizing hub](/knowledge/label-sizing/) covers fit, and the [size calculator](/tools/label-size-calculator/) can show whether the nearest stock size leaves enough room for the required content.
+
+| Pressure to standardise | Hidden trade-off | Stop signal |
+|---|---|---|
+| Nearest size is 2 mm smaller | Type and safe area shrink | Text reaches the trim |
+| Common circle fits the lid | Lid edge loses clearance | Label bridges the rim |
+| Stock rectangle fits the front | Back copy moves elsewhere | Barcode loses quiet zone |
+| Die cost looks high | Setup is compared alone | Reorder volume is likely |
+| Artwork is nearly finished | Design follows the die | Required panel no longer fits |
+| Supplier calls a size standard | The die may not exist | No cut dimensions supplied |

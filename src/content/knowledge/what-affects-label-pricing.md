@@ -89,3 +89,20 @@ If a quote is much cheaper, find out which variable changed. It may be a smaller
 **Do not optimise the unit price on the first run.** The goal of the first order is to validate; the second order is where volume pricing applies.
 
 **Ask for the price breakdown.** A quote that separates setup, material and finishing shows which lever to pull.
+
+## The variable that quietly changed between two quotes
+
+Two quotes can look like a pricing disagreement when they are really two different jobs. One label may be a few millimetres larger, use a different adhesive grade, include a laminate, or sit inside a larger quantity band. The lower number is not evidence of efficiency until the specification and the fixed charges are aligned.
+
+The advice changes with the reason for the difference. A cheaper material can be correct for a dry carton and wrong for a chilled bottle; a simpler cut can be sensible when a custom contour was decorative, but not when it defines the fit. Quantity changes are legitimate only when the extra stock will be used. If one quote excludes setup or freight while the other includes them, the totals are not comparable at all.
+
+Ask for a line-by-line quote covering area, face stock, adhesive, laminate, cut method, setup, quantity, packing and delivery term. Then ask which line the supplier would change to reach the other price, and what that change would do to the application. The comparison is only useful when both quotes carry the same assumptions. The [label-cost hub](/knowledge/label-cost/) explains the five variables, and the [label-cost estimator](/tools/label-cost-estimator/) can show how a quote changes. Validate the result with a [custom-label](/custom-labels/) sample on the actual container.
+
+| Lower quote | Variable to inspect | Acceptable only if |
+|---|---|---|
+| Smaller label | Printed area | Required copy still fits |
+| Different film | Face stock grade | Service condition is dry |
+| No laminate | Surface protection | Handling and moisture are mild |
+| Standard cut | Die or plotter path | Shape still fits the surface |
+| Larger quantity | Setup per unit | Stock will be used |
+| Excluded freight | Delivery terms | Landed total is compared |

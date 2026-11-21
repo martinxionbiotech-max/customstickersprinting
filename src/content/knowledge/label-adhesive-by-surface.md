@@ -71,3 +71,20 @@ Cleanliness is part of the specification. Dust, oil, mould release and condensat
 **Cold application is a specification.** Winter filling lines need a different adhesive, not a warmer room.
 
 **Test on production containers.** A sample on a stock bottle proves the film; only your bottle proves the adhesive.
+
+## When the label moves but the film is not the problem
+
+A label that slides or lifts is often described as a bad material, yet the film may be doing exactly what it was asked. The adhesive has to wet the surface, resist the service condition and hold through temperature changes. On low-energy plastic, recycled resin, powder coating or a cold filling line, a standard permanent adhesive can lose contact while the print and film remain intact.
+
+The recommendation changes with the exact substrate and the application process. Glass and rigid PET are forgiving; HDPE, PP and many recycled plastics need a low-surface-energy adhesive. A textured or powder-coated surface reduces contact area, and a chilled or damp bottle changes how quickly the glue builds strength. Cleaning matters as much as chemistry: oil, dust and mould release sit between the adhesive and the container.
+
+Ask for the resin or surface finish, not only the product name, plus the application temperature and the storage condition. Apply a [bottle-label](/bottle-labels/) sample to the production container, check the edges at intervals and try a peel from the edge rather than the centre. The [label-materials hub](/knowledge/label-materials/) explains the constructions, and [permanent vs removable adhesive](/knowledge/permanent-vs-removable-adhesive/) helps define the required bond before the adhesive is chosen.
+
+| Surface | Adhesion signal | Test before run |
+|---|---|---|
+| Glass | Slow edge lift after washing | Wet and dry sample |
+| Rigid PET | Good initial tack | Peel after a day |
+| HDPE or PP | Immediate slide or corner lift | Use an LSE adhesive |
+| Recycled HDPE | Inconsistent batch behaviour | Test production bottles |
+| Powder-coated metal | Patchy contact | Apply over the texture |
+| Cold filling line | Weak initial bond | Test at line temperature |

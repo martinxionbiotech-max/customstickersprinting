@@ -78,3 +78,19 @@ If the label fails, change one variable at a time: adhesive first, then laminate
 **Paper is a short-life material outdoors, whatever the coating.** If the product travels, specify film.
 
 **Test the edges.** A label that looks perfect in the centre can be lifting at the edge, which is where it will fail.
+
+## How to tell a material failure from a service-condition mismatch
+
+A label that fails in service is not automatically the wrong film. The same paper can last years in a dry box and days in a shower; the same PP can survive a fridge and lift on a greasy bottle. Before changing material, separate what failed: the print, the face stock, the laminate, the adhesive or the application. Each points to a different correction, and changing all of them at once hides the cause.
+
+The expected life changes with the condition and the amount of handling. UV exposure, abrasion, oil, condensation and freeze-thaw cycling attack the construction in different ways. A laminate may protect ink from scuffing while doing little for a poor adhesive bond; a stronger film may resist tearing while still lifting at the edge. The useful brief names the condition and the duration, then chooses the lowest-cost construction that meets both.
+
+Run a control beside the test label, photograph both under the same light, and record edge lift, colour change, surface contamination and adhesive transfer at fixed intervals. Change one variable at a time and keep the passing sample as a reference. The [label-materials hub](/knowledge/label-materials/) explains the construction choices, and [paper, PP and PET labels](/knowledge/paper-vs-pp-vs-pet-labels/) gives the base-material comparison. A [waterproof-label](/waterproof-labels/) sample is useful only when the test matches the real service condition.
+
+| Failure observation | Likely layer | Next check |
+|---|---|---|
+| Print fades before the edge lifts | Ink or laminate | UV and abrasion exposure |
+| Edge lifts while centre is intact | Adhesive or application | Surface and pressure |
+| Face stock cockles | Paper or humidity | Moisture and storage |
+| Label cracks when cold | Adhesive flexibility | Freezer test |
+| Residue remains after removal | Adhesive softness | Removal surface and time |

@@ -5,7 +5,7 @@ pillar: label-cost
 order: 5
 updated: "2026-11"
 published: "2026-11-07"
-reviewed: "2026-11-07"
+reviewed: "2026-11-21"
 relatedProducts: ["custom-labels", "custom-stickers", "roll-labels"]
 view: >-
   Price per 1,000 is a useful number at volume and a misleading one at 50 units, where it turns a $190 setup into
@@ -108,3 +108,19 @@ If one quote will not separate setup from unit price, treat its unit price as un
 **Use the two low-volume levers before adding quantity.** Combining designs and dropping a custom die usually beats ordering stock you cannot sell.
 
 **Treat the variable cost as the floor.** If a quote is below it, something has been removed — laminate, proof, or grade.
+
+## When lowering the unit price raises the order cost
+
+The unit price is a useful measure only after the order is tied to demand. A buyer can lower it by moving to a larger quantity, then spend more overall on labels that sit in storage, lose adhesion or become obsolete when the design changes. The quote improved; the cost of supplying the product did not.
+
+The decision changes with design risk and the storage life of the stock. A proven label with stable copy and predictable usage can justify the next quantity break. A first-run design, a seasonal variant or a product under regulatory review is better bought in a smaller cycle, even when the per-label figure looks poor. The relevant comparison is cost per usable label, not cost per label in the box: `cost per usable label = total order cost ÷ (labels ordered − spoilage − unused stock)`, with any numbers in that formula treated as illustrative.
+
+Before increasing quantity, ask how many labels the next production cycle will actually consume, how long the stock can be stored and whether the artwork is likely to change. Ask the supplier where the price breaks sit and whether combining designs shares a setup. Use the [label-cost estimator](/tools/label-cost-estimator/) with your own quantities, and check the [label-cost hub](/knowledge/label-cost/) before treating a lower unit price as a saving. A [roll-label](/roll-labels/) reorder at the same specification is the cleanest test of whether the price is repeatable.
+
+| Unit-price move | What it can add | Better comparison |
+|---|---|---|
+| Larger quantity | Dead stock and storage | Cost per label used |
+| Cheaper face stock | Shorter service life | Cost per surviving pack |
+| Fewer proof stages | Rework after print | Cost of one prevented error |
+| Dropped die charge | New tooling next run | Total across reorders |
+| Combined designs | Larger minimum commitment | Setup per approved design |

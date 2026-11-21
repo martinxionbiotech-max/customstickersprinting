@@ -5,7 +5,7 @@ pillar: label-materials
 order: 2
 updated: "2026-11"
 published: "2026-11-07"
-reviewed: "2026-11-07"
+reviewed: "2026-11-21"
 relatedProducts: ["custom-labels", "bottle-labels", "clear-labels"]
 view: >-
   Our default is permanent unless the customer owns the surface. The exception we see most is a promotional label on retail packaging, where removable is worth the extra cost because a torn label on a shelf reads as damaged stock. On glass and rigid plastic, permanent is simply the cheaper correct answer.
@@ -79,3 +79,19 @@ Freezer applications need a freezer-grade adhesive that stays flexible at −18 
 **Removable is a specification, not a feature.** If clean removal matters, say how long the label will stay on and what surface it is on; the answer changes the adhesive.
 
 **If a sample lifts, the film is rarely the cause.** Before switching from PP to PET, check whether the adhesive was specified for that plastic — it usually was not.
+
+## The removal promise a permanent label cannot keep
+
+A permanent label is designed to stay, so asking it to come off cleanly later is a different specification. The adhesive continues to build a bond after application and can pull paint, fibre or laminate when removed. The same mistake appears in reverse when a buyer expects a removable label to be reusable; most removable grades release cleanly once but lose tack after being lifted.
+
+The choice changes with who owns the surface and how long the label must remain. A product label on a bottle is usually permanent; a promotional sticker on a retailer's packaging may need to leave no residue; a returnable crate may need repeated removal, which is a harder requirement than a single clean peel. Glass, painted metal and recycled plastic each respond differently, and heat or sunlight can turn a removable grade into a residue problem.
+
+Define the surface, the intended removal window and the acceptable residue before choosing the adhesive, then test a [custom-label](/custom-labels/) sample that has aged in the real condition. Ask whether the label must be repositionable, removable or tamper-evident, because those are different products. The [label-materials hub](/knowledge/label-materials/) covers face stocks, and [label adhesive by surface](/knowledge/label-adhesive-by-surface/) explains why the same adhesive can behave differently on glass, paint and plastic.
+
+| Removal requirement | Wrong adhesive assumption | Approval question |
+|---|---|---|
+| Must stay on the product | Removable will hold like permanent | What bond is required? |
+| Must peel after weeks | Permanent will release cleanly | What is the removal window? |
+| Must not damage paint | Standard permanent is safe | Which surface is underneath? |
+| Must be repositioned | Removable is reusable | Is repeated tack needed? |
+| Must show tampering | Removable is the same as destructible | Which failure should be visible? |

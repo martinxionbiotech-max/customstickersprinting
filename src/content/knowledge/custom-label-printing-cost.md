@@ -5,7 +5,7 @@ pillar: label-cost
 order: 0
 updated: "2026-11"
 published: "2026-11-07"
-reviewed: "2026-11-08"
+reviewed: "2026-11-21"
 relatedProducts: ["custom-labels", "roll-labels", "custom-stickers", "waterproof-labels"]
 view: >-
   Almost every "why is this so expensive" question is really a question about quantity. At 50 units the price is
@@ -233,3 +233,20 @@ Buyer A paid the least per label and the most in total, because 2,100 labels are
 - [Cost per unit and per 1,000](/knowledge/label-cost-per-unit/)
 - [Setup charges explained](/knowledge/label-setup-costs/)
 - [How many labels to order](/knowledge/how-many-labels-to-order/)
+
+## The quote that looks cheaper until the second run
+
+A lower headline unit price can disappear when the second order arrives. The first quote may omit a physical proof, use a lighter face stock, leave out lamination or treat freight as a separate surprise. Another may include a die that the supplier keeps, while the cheaper one expects a new die on every run. The difference is not margin; it is what the first order bought.
+
+The comparison changes with how stable the product is. A one-off promotional label can reasonably skip a proof and a custom die if the artwork is simple and the surface is known. A label that will be reordered for a year should be priced with proof, retained tooling, packing and freight included. For a chilled or handled product, a cheaper face stock is not equivalent if it removes the laminate or changes the adhesive.
+
+Ask each supplier to quote the same size, material, adhesive, finish, cut, quantity, packing and delivery term, then separate setup, tooling and freight. Ask in writing how long the die is retained and what a reorder of the identical specification includes. Use the [label-cost estimator](/tools/label-cost-estimator/) to compare the stated line items, and request a [custom-label](/custom-labels/) sample before accepting a lower price. The [label-cost hub](/knowledge/label-cost/) explains which block dominates at each quantity.
+
+| Quote gap | Where it hides | Reorder question |
+|---|---|---|
+| Lower unit price | Smaller area or lighter stock | Which specification changed? |
+| No proof charge | Approval moved to you | What is checked before print? |
+| No die charge | Standard shape or new die later | Is tooling retained? |
+| Cheaper finishing | Laminate or varnish removed | Does the sample match? |
+| Low delivered total | Freight or duty excluded | Which destination term applies? |
+| Faster lead time | Proof compressed or skipped | What approval remains? |

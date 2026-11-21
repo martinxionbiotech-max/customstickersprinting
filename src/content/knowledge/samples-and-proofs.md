@@ -89,3 +89,19 @@ Approve the proof in writing and keep a copy. If the job is colour-critical, kee
 **Keep the approved sample.** It is the reference for the reorder and for any dispute.
 
 **Freeze the artwork before the run.** Post-approval edits are the most common cause of a mismatch nobody can explain.
+
+## The proof detail that survives a colour approval
+
+An approval can be complete for layout and incomplete for the product. A screen PDF cannot show colour on the chosen stock, the edge of a die or the way an adhesive behaves on a curved bottle. When buyers describe a job as approved, ask which of those the proof actually covered. A silent gap between layout approval and physical approval is where disputes begin.
+
+The proof needed changes with the risk. Text, barcodes and safe areas can be checked on a digital proof; colour and finish need a physical sample on the production stock, and a colour-critical brand may justify a press proof. Adhesion needs the actual container and the intended storage condition. A reorder can reference the retained sample only if the material, print method and laminate have not changed.
+
+Record the proof type, version, date, stock, laminate, container and application method, then approve layout and physical characteristics separately. Keep a sealed sample with the signed approval. A sample without a record is evidence that cannot be reused; a record without the sample is only a description. A [custom-label](/custom-labels/) sample is a practical reference for the next run, and the [label-cost hub](/knowledge/label-cost/) explains where proofing sits in the quote. The [production lead-time guide](/knowledge/production-lead-time/) shows why a late physical check moves the whole schedule.
+
+| Approval gap | Proof that closes it | Record to keep |
+|---|---|---|
+| Spelling or barcode error | Digital PDF | Version and approval date |
+| Colour on the final stock | Physical sample | Stock and laminate reference |
+| Adhesion on the container | Applied sample | Surface and storage condition |
+| Die edge and shape | Cut sample | Supplier and die identifier |
+| Reorder consistency | Retained reference | Signed standard sample |

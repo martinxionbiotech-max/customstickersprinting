@@ -5,7 +5,7 @@ pillar: label-sizing
 order: 4
 updated: "2026-11"
 published: "2026-11-07"
-reviewed: "2026-11-07"
+reviewed: "2026-11-21"
 relatedProducts: ["bottle-labels", "jar-labels", "roll-labels"]
 view: >-
   Two formulas cover almost every wrap, and they are not interchangeable: an overlap wrap is circumference plus a few
@@ -141,3 +141,19 @@ Worst case on a hand-applied wrap: about 5 mm. That is why an overlap of 3–5 m
 **Round numbers are suspicious.** A 240 mm wrap on a 75 mm bottle is a deliberate overlap, not a measurement.
 
 **For anything tapered or oval, send a photo with a tape around it.** It removes an entire round of proofing.
+
+## The wrap dimension that passes proof but fails at the seam
+
+A wrap can survive every check in the flat artwork and still fail when the ends meet. The common miss is treating the printed width as the only dimension that matters while leaving the seam style, pattern repeat and application drift unresolved. The proof looks continuous because the two ends are shown side by side, not wrapped into a visible join.
+
+The advice changes with the container and the application. A hand-applied overlap needs enough extra width to absorb placement drift, while a butt join needs a narrower tolerance and a machine that can hold it. Oval and tapered containers also change the width along the label's height, so a single circumference is not a complete brief. If the artwork repeats, the repeat has to divide the final width or the join becomes the design.
+
+Ask for the measured circumference at the top and bottom of the label band, the intended seam style and the application method in one written specification. Then request a sample applied at the seam and check it from the back of the container, where the join will be seen. The [label-sizing hub](/knowledge/label-sizing/) covers the wider measurement method; [roll labels](/roll-labels/) are the practical format for a long wrap, and the [size calculator](/tools/label-size-calculator/) can compare overlap and gap widths before ordering.
+
+| Seam concern | Hidden input | Acceptance evidence |
+|---|---|---|
+| Pattern breaks at the join | Final label width | Applied sample showing the repeat |
+| Ends gap after application | Hand or machine placement | Seam photo from two angles |
+| Top edge wrinkles | Container taper | Widths at both label edges |
+| Overlap shows through clear film | Seam allowance | Sample on the actual container |
+| Artwork has no start or end | Reading direction | Approved seam position |

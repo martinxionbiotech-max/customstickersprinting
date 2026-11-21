@@ -5,7 +5,7 @@ pillar: label-cost
 order: 6
 updated: "2026-11"
 published: "2026-11-07"
-reviewed: "2026-11-08"
+reviewed: "2026-11-21"
 relatedProducts: ["custom-labels", "die-cut-stickers", "roll-labels"]
 view: >-
   Setup is the line buyers try to negotiate and the line that is least negotiable, because it is mostly labour that
@@ -101,3 +101,19 @@ A reorder should therefore be cheaper **per unit at the same quantity**, not jus
 **Ask how long the die is kept.** It determines whether your second order pays it again.
 
 **Prefer standard shapes at low volume.** It is the only way to remove a setup without removing quality.
+
+## What should not be charged again on an identical reorder
+
+A reorder can quietly repeat work that was already completed. File preparation, a proof and a custom die may appear on the second invoice even though the artwork and specification have not changed. Sometimes the die was discarded, or the supplier changed; sometimes the charge is simply a repeat of the first setup. The buyer sees a familiar fee and assumes it is unavoidable.
+
+The answer changes with what is actually identical. If the supplier still holds the die, the file matches the approved version and no copy has moved, file preparation, die and proof should not be charged again; press make-ready still applies. A new material, finish, size or supplier resets part of the setup, and a post-approval artwork edit resets the proof. A die that has worn out may also need remaking, but that should be explained rather than buried.
+
+Ask for the die-retention period in writing and keep the approved proof alongside the purchase order. On the reorder, request the setup broken into file, die, proof and make-ready, then compare it with the first invoice. A written breakdown also gives the next supplier a clean specification to quote. Use the [label-cost hub](/knowledge/label-cost/) to see how each block behaves, and test the process with a small [custom-label](/custom-labels/) reorder before committing a year of stock. The [label-cost estimator](/tools/label-cost-estimator/) can help frame the comparison.
+
+| Setup element | Reorder status to expect | Evidence to keep |
+|---|---|---|
+| File preparation | No charge if unchanged | Approved print-ready file |
+| Custom die | No charge while retained | Die-retention note |
+| Proof | Optional digital check | Signed proof reference |
+| Make-ready | Charge on every run | Press scheduling line |
+| Artwork revision | New proof and setup | Change order record |
