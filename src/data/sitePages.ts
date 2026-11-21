@@ -76,7 +76,7 @@ export const sitePages: SitePage[] = [
     path: "/industries/",
     title: "Industries: labels and stickers by application",
     description:
-      "How label and sticker requirements change by industry: beauty and skincare, candles and fragrance, food and beverage, ecommerce and small business.",
+      "How label and sticker requirements change by industry: beauty and skincare, candles and fragrance, food and beverage, household chemicals, wine and spirits, ecommerce and apparel.",
     group: "catalogue",
   },
   {

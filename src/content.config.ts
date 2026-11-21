@@ -47,7 +47,7 @@ const knowledge = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    pillar: z.enum(['label-sizing', 'label-cost', 'label-materials', 'sticker-materials', 'printing', 'artwork', 'marketplace-labels', 'hang-tags', 'label-compliance']),
+    pillar: z.enum(['label-sizing', 'label-cost', 'label-materials', 'sticker-materials', 'printing', 'artwork', 'marketplace-labels', 'hang-tags', 'label-compliance', 'specialty-labels']),
     order: z.number().default(50),
     updated: z.string().default('2026-11'),
     published: z.string().optional(),

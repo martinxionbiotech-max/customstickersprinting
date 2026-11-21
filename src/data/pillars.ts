@@ -7,7 +7,8 @@ export type PillarKey =
   | 'printing'
   | 'artwork'
   | 'hang-tags'
-  | 'label-compliance';
+  | 'label-compliance'
+  | 'specialty-labels';
 
 export interface Pillar {
   key: PillarKey;
@@ -1045,6 +1046,125 @@ export const PILLARS: Record<PillarKey, Pillar> = {
     ],
     products: ['custom-labels', 'roll-labels', 'waterproof-labels'],
   },
+
+  'specialty-labels': {
+    key: 'specialty-labels',
+    title: 'Specialty labels: data, security and harsh service',
+    heading: 'Specialty labels: test the construction, not the name on the data sheet',
+    description:
+      'How to specify QR codes, variable data, tamper evidence, sustainable stock, freezer labels and dishwasher-resistant labels, with tests before production.',
+    intro:
+      'Specialty label work is usually a system problem wearing the clothes of a material problem. A QR code fails because the module is too small or the destination changed. A freezer label lifts because condensation reached the adhesive before the film did. A tamper-evident label gives ambiguous evidence because the substrate was never matched to the closure. This guide separates the identifier, data, security, material and service-condition decisions, then asks for a sample test on the actual container. The printer can reproduce the specification; the buyer owns whether it proves what it should and survives the real cycle.',
+    covers: [
+      'How to size a QR code from its module count, quiet zone and expected scan distance.',
+      'When variable data needs a controlled data file, sequence check and printed verification.',
+      'How void, destructible and slit constructions create different kinds of tamper evidence.',
+      'How to evaluate recycled, FSC-certified, linerless and thinner-film options without repeating vague green claims.',
+      'How to test freezer, condensation, dishwasher and microwave performance on the actual container.',
+    ],
+    tableTitle: 'The specialty-label decision stack',
+    tableRows: [
+      ['Identifier', 'The GTIN, serial, lot, expiry, URL or GS1 Digital Link that the symbol must carry, and the resolver behind it.'],
+      ['Print method', 'Digital, flexo or a hybrid route; the method sets the practical resolution, ink laydown and variable-data workflow.'],
+      ['Symbol geometry', 'Module size, encoded data length, error-correction level and the quiet zone around a two-dimensional code.'],
+      ['Evidence', 'What a void message, destructible face or security slit is meant to show, and who examines it at which point.'],
+      ['Face and adhesive', 'The material system, not the film alone; the adhesive must suit the container and the application temperature.'],
+      ['Service condition', 'Condensation, freezing, dishwasher cycles, microwave exposure, solvent contact or repeated handling.'],
+      ['Claim support', 'The document or test behind “FSC-certified”, “recycled”, “compostable”, “dishwasher safe” or “tamper evident”.'],
+    ],
+    decisionTitle: 'Decision table: choose the first constraint before the material',
+    decisionRows: [
+      ['A QR code must scan from a shelf or table', 'Size from the final module count and test at the intended distance', 'A logo-sized code can look crisp on screen and still be too dense at 30–40 cm.'],
+      ['Every unit needs unique text or a unique code', 'Define a row-per-unit data file and a verification step before choosing a press', 'Variable printing without sequence control turns a production job into a recall risk.'],
+      ['The buyer needs evidence that a package was opened', 'Match the construction to the closure and define who inspects the seal', 'A tamper-evident label documents interference; it does not authenticate the product.'],
+      ['“Sustainable” is part of the brief', 'Name the exact claim and the evidence that supports it', 'FSC, recycled content, linerless and compostable answer different questions.'],
+      ['The label will meet condensation or freezing', 'Start with a film and cold-condition adhesive, then test the applied sample', 'A material data sheet cannot reproduce the container surface and the thaw cycle.'],
+    ],
+    workedTitle: 'Illustrative worked example: sizing a QR block',
+    worked: [
+      'A version 3 QR symbol is 29 modules square. With the four-module quiet zone on every side, the printed block is 29 + 4 + 4 = 37 modules across. At a 0.5 mm module, that is 37 × 0.5 = 18.5 mm; at 0.4 mm, it is 14.8 mm. The calculation covers the symbol and quiet zone, not the caption or label edge.',
+      'A longer URL can move the encoder to a higher version. A version 4 symbol is 33 modules square, so the quiet-zone block is 41 modules: 20.5 mm at 0.5 mm or 16.4 mm at 0.4 mm. “Make the QR 15 mm” is therefore not a complete specification. Start with the destination and generated symbol, then size the label around it.',
+      'For a 25 mm label, the 18.5 mm version 3 block leaves 3.25 mm on each side if centred exactly. That may cover the quiet zone but not an outer clear border, caption or die-cut tolerance. Scan the real-size proof at the intended distance before approving the run.',
+    ],
+    mistakes: [
+      {
+        title: 'Treating a QR code as decoration',
+        body: 'A QR code is a data container. Its version, error correction, quiet zone and destination all affect readability. Size it after the content is fixed, not before, and keep the resolver under the brand’s control.',
+      },
+      {
+        title: 'Buying “tamper proof” when the job needs evidence',
+        body: 'A void label can show that a seal was opened. It cannot make a package impossible to open, identify a counterfeit or replace a controlled closure. State the evidence you need and who will inspect it.',
+      },
+      {
+        title: 'Accepting a sustainability word without a definition',
+        body: 'FSC-certified, recycled, recyclable, compostable and linerless describe different attributes. Ask which component the claim covers, what standard or programme supports it, and what the buyer must verify.',
+      },
+    ],
+    limits: [
+      'This guide does not certify a label for a regulated product, market, transport mode or retail programme.',
+      'It does not guarantee that a particular phone, scanner, verifier or resolver will read a code in every environment.',
+      'It does not provide a legal opinion on environmental marketing claims, tamper-evident requirements or data-protection obligations.',
+      'It does not replace a material supplier’s technical data sheet or a buyer’s own validation on the filled package.',
+    ],
+    checks: [
+      'Apply a sample to the actual container after the same cleaning step the production line will use.',
+      'Run the real service cycle: condensation, freezer and thaw, dishwasher or microwave, as applicable.',
+      'Verify the complete variable-data sequence and a sample of printed codes against the approved data file.',
+      'Record the accepted construction, cycle, scan distance and inspection criteria on the signed specification.',
+    ],
+    checksTitle: 'Test first: the pre-production protocol',
+    glossary: [
+      { term: 'Module', definition: 'One square cell in a two-dimensional symbol; the printed module size determines the symbol’s physical dimensions.' },
+      { term: 'Quiet zone', definition: 'The clear margin around a symbol that lets a reader locate it without adjacent print interfering.' },
+      { term: 'GS1 Digital Link', definition: 'A standards-based way to resolve a web address that contains GS1 identifiers such as a GTIN.' },
+      { term: 'Variable data', definition: 'Content that changes between printed units, such as a serial, lot, expiry date or unique QR code.' },
+    ],
+    deepLinks: [
+      { lead: 'Start with symbol geometry and scanning distance in', label: 'QR codes on labels', href: '/knowledge/qr-codes-on-labels/' },
+      { lead: 'For void, destructible and security-slit constructions, read', label: 'tamper-evident labels', href: '/knowledge/tamper-evident-labels/' },
+      { lead: 'For cold-chain adhesion and condensation, read', label: 'freezer and condensation labels', href: '/knowledge/freezer-and-condensation-labels/' },
+      { lead: 'For repeated washing and heating, read', label: 'dishwasher and microwave labels', href: '/knowledge/dishwasher-and-microwave-labels/' },
+      { lead: 'Use the', label: 'label size calculator', href: '/tools/label-size-calculator/' },
+      { lead: 'This guide is production information, not legal advice. Read', label: 'the disclaimer', href: '/disclaimer/' },
+    ],
+    sources: [
+      { label: 'Denso Wave — QR Code error correction', url: 'https://www.qrcode.com/en/about/error_correction.html' },
+      { label: 'GS1 — GS1 Digital Link', url: 'https://www.gs1.org/standards/gs1-digital-link' },
+      { label: 'FSC — Chain of custody certification', url: 'https://fsc.org/en/chain-of-custody-certification' },
+      { label: 'eCFR — 21 CFR 211.132, tamper-evident packaging', url: 'https://www.ecfr.gov/current/title-21/chapter-I/subchapter-C/part-211/subpart-G/section-211.132' },
+      { label: 'ASTM D3330/D3330M — Peel adhesion of pressure-sensitive tape', url: 'https://store.astm.org/d3330_d3330m-04r18.html' },
+      { label: 'FDA — Microwave oven radiation', url: 'https://www.fda.gov/radiation-emitting-products/resources-you-radiation-emitting-products/microwave-oven-radiation' },
+    ],
+    view:
+      'In our view, specialty work should begin with an exit test, not a catalogue page. Decide what the code must resolve to, what evidence the seal must leave, or which wash cycle the label must survive, then choose the construction that has a chance of passing it. The test is cheap compared with a reprint. A supplier that cannot say how the sample will be evaluated is asking the buyer to discover the failure after the run.',
+    faqs: [
+      {
+        q: 'What makes a label “specialty” rather than standard?',
+        a: 'The label carries a function beyond decoration: a machine-readable identifier, unique variable data, security evidence, a specific environmental claim or survival in an unusual service condition. That extra function usually changes the artwork, material, data workflow or test plan.',
+      },
+      {
+        q: 'Can one label cover QR, tamper evidence and freezer performance?',
+        a: 'It can, but each function adds a constraint. The symbol needs space and contrast, the tamper construction needs the right face and adhesive, and the freezer condition needs a compatible material system. Build the exit tests together and do not assume that a strong face stock solves the data or security requirements.',
+      },
+      {
+        q: 'Why not skip sample testing and rely on the data sheet?',
+        a: 'A data sheet describes a material under defined conditions. It does not know your container, cleaning process, filling temperature, condensation cycle, microwave or handling. A sample applied to the actual container and put through the real condition is the only practical way to catch a system failure before production.',
+      },
+      {
+        q: 'Does a more expensive material guarantee better performance?',
+        a: 'No. Performance depends on the face, adhesive, liner, laminate, application method and surface. A premium film with the wrong adhesive can fail sooner than a modest construction chosen for the same container and condition. Match the components and test the assembly.',
+      },
+      {
+        q: 'Which internal page links should support a specialty brief?',
+        a: 'Link the brief to the label-size calculator when geometry is open, the relevant specialty article when a function is defined, and the product page for the proposed format. Keep the approved sample and test record with the artwork so the next order references a real construction.',
+      },
+      {
+        q: 'What should be signed off before a specialty label run?',
+        a: 'Approve the exact artwork, data format, encoded destination or numbering rule, material construction, finish, application method, sample test and acceptance criteria. Confirm the market and party responsible for any regulatory, environmental or security claim. A press approval without that record reopens the same decisions on every reorder.',
+      },
+    ],
+    products: ['custom-labels', 'roll-labels', 'waterproof-labels', 'food-labels'],
+  },
 };
 
 export const PILLAR_ORDER: PillarKey[] = [
@@ -1057,4 +1177,5 @@ export const PILLAR_ORDER: PillarKey[] = [
   'artwork',
   'hang-tags',
   'label-compliance',
+  'specialty-labels',
 ];

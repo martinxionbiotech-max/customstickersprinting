@@ -13,6 +13,7 @@ const PILLARS: Record<string, string> = {
   artwork: "Artwork preparation",
   "hang-tags": "Hang tags and printed card",
   "label-compliance": "Label compliance by market and product",
+  "specialty-labels": "Specialty label formats and performance",
 };
 
 export const GET: APIRoute = async ({ site }) => {

@@ -1,6 +1,6 @@
 ---
 title: "Wine and spirits label requirements: US and EU"
-description: "TTB COLA fields, the US government warning, EU wine labelling basics, 750 ml label geometry, condensation and export SKU planning."
+description: "A buyer's guide to TTB COLA fields, the US government warning, EU wine rules, 750 ml geometry, condensation and export SKU planning for producers."
 pillar: label-compliance
 order: 6
 updated: "2026-11"

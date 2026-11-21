@@ -1,6 +1,6 @@
 ---
 title: "Supplement label requirements in the US and EU"
-description: "Supplement Facts, other ingredients, firm details and structure/function disclaimers in the US, compared with EU food-supplement labelling and national rules."
+description: "Supplement Facts, ingredients, firm details and structure/function disclaimers in the US, compared with EU supplement labelling and national rules."
 pillar: label-compliance
 order: 3
 updated: "2026-11"

@@ -1,6 +1,6 @@
 ---
 title: "Proposition 65 warning labels: format, space and evidence"
-description: "How California Proposition 65 warnings work on consumer labels, how short and long forms differ, and why a warning is not a substitute for testing or reformulation."
+description: "How California Proposition 65 warnings work on labels, how short and long forms differ, and why a warning is not a substitute for product testing."
 pillar: label-compliance
 order: 4
 updated: "2026-11"
