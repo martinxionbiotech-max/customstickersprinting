@@ -1,0 +1,184 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { site } from "../data/site";
+import { getSitePage, REVIEWED_DATE, REVIEWED_ISO } from "../data/sitePages";
+
+const page = getSitePage("/methodology/");
+
+const faqs = [
+  {
+    q: "Does this knowledge base certify a material for food contact?",
+    a: "No. We can explain the documentation a producer supplies and how to request it, but we do not certify a material, a finished label or a food-contact use. The compliance decision belongs to the brand, importer and its regulatory adviser.",
+  },
+  {
+    q: "Are the calculations on this site exact quotations?",
+    a: "No. A calculation is a reproducible method with stated assumptions. A price becomes an offer only when we issue a written quotation for your final size, material, quantity, finishing and destination.",
+  },
+  {
+    q: "Who reviews an article before it is published?",
+    a: "A member of the quotation and quality-control team reviews the scope, sources, calculations and wording. That person checks that supplier documents are labelled as supplier data and that no number has drifted beyond the source.",
+  },
+  {
+    q: "Do you run your own laboratory tests?",
+    a: "No. We are a printer and trading company, not a testing laboratory. We use published methods and official sources, supplier data sheets, and observations from production and quality control, and we label which one supports a statement.",
+  },
+  {
+    q: "How often are the technical pages reviewed?",
+    a: "Pages are reviewed every six months and sooner when a standard, material, production method or shipping rule changes. The review date is shown on the page so a reader can judge whether it is current for their decision.",
+  },
+  {
+    q: "Can you provide a certificate or test report for my order?",
+    a: "We can request a producer-supplied test report or material data sheet where one exists, and pass it on with the producer named. We do not issue our own certificate, invent a result or present a supplier document as if we held it.",
+  },
+];
+
+const faqLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+};
+---
+
+<BaseLayout
+  title={page.title}
+  description={page.description}
+  alternateMd="/methodology/index.md"
+  pageType="TechArticle"
+  dateModified={REVIEWED_ISO}
+  jsonLd={[faqLd]}
+>
+  <Breadcrumbs items={[{ label: "Methodology" }]} />
+  <section class="tight">
+    <div class="wrap narrow prose">
+      <h1>Methodology and evidence</h1>
+      <p class="small">Last reviewed: {REVIEWED_DATE}</p>
+      <p class="lead" style="font-size:1.05rem;color:var(--ink-2)">
+        This page explains how the knowledge base is built: how evidence is graded, how numbers are used, how an
+        article is checked and how a reader can reproduce or challenge a claim. It is written for buyers who need to
+        know whether a statement is a standard, a supplier document or a production observation.
+      </p>
+
+      <h2>What this knowledge base is for</h2>
+      <p>
+        The articles support buying decisions: choosing a label format, judging an adhesive, preparing artwork,
+        comparing print methods, estimating a cost input or asking a better question before a first run. They are not
+        laboratory certification, legal advice, regulatory approval or a substitute for a written quotation. We are a
+        printer and trading company. We specify and quality-check work, but we do not run a testing laboratory and we
+        do not issue product certifications.
+      </p>
+
+      <h2>Three kinds of numbers</h2>
+      <p>
+        Every number should have a visible origin. The table below is an explanation of those origins, not a
+        production measurement; when a page includes a table, the surrounding text or caption says which evidence
+        type it contains.
+      </p>
+      <table>
+        <thead>
+          <tr><th scope="col">Number type</th><th scope="col">Where it comes from</th><th scope="col">How we label it</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Published standard or official source</td><td>A named standard, regulation, registry, regulator or official guidance page</td><td>Published source, with the issuing body and a link or citation</td></tr>
+          <tr><td>Supplier data sheet</td><td>A material, adhesive or laminate data sheet supplied by the producer for a named grade</td><td>Supplier data sheet, with the supplier named and the document identified</td></tr>
+          <tr><td>Production observation or working range</td><td>What we see while specifying, checking or troubleshooting work with production partners</td><td>Production observation or working range, not a test result</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Evidence hierarchy</h2>
+      <p>
+        We prefer the most specific primary source available. The order is: a current standard or official legal
+        requirement for the relevant market; the authority's own guidance or database; a producer's data sheet for
+        the exact grade; our production observations; and finally secondary explanations that help a buyer
+        understand the primary material. A lower tier can explain a higher one, but it cannot replace it when the
+        question turns on a requirement.
+      </p>
+
+      <h2>What we never use as a sole source</h2>
+      <ul>
+        <li>A marketplace blog post or seller forum, because it often repeats a rule without its scope or date.</li>
+        <li>Competitor marketing or a “best product” comparison, because the commercial incentive is not disclosed and the method is usually absent.</li>
+        <li>A social post, influencer video or unattributed screenshot, because it may be edited, out of context or impossible to verify.</li>
+        <li>An AI answer, because it may be fluent without a source and cannot be treated as evidence.</li>
+      </ul>
+      <p>
+        A secondary source can point us toward a primary document. It does not become the primary document.
+      </p>
+
+      <h2>How an article is produced</h2>
+      <ol>
+        <li><strong>Scope.</strong> We define the buyer question, market, label format and what the page will not cover.</li>
+        <li><strong>Source collection.</strong> We gather the relevant standard, official guidance, supplier data or production records.</li>
+        <li><strong>Cross-check.</strong> We compare the source with another source or with a production observation and note any conflict.</li>
+        <li><strong>Drafting.</strong> We write in buyer terms, label the evidence type and keep assumptions visible.</li>
+        <li><strong>Technical review.</strong> A quotation and quality-control team member checks the scope, calculations, links and claims.</li>
+        <li><strong>Publication and review.</strong> We publish with a review date, then revisit the page when a material or standard changes or after six months.</li>
+      </ol>
+
+      <h2>How calculations are made</h2>
+      <p>
+        A wrap calculation uses the container circumference plus an overlap, with allowances for curvature and the
+        printable area. A cost-per-unit calculation divides the relevant job costs by the sellable units after an
+        assumed waste rate. A capacity estimate depends on the press, material, layout and run length. The inputs are
+        assumptions: diameter, overlap, waste, setup allocation, finishing and freight. We show the method so you can
+        replace our assumptions with your measurements. None of those inputs creates a binding price.
+      </p>
+
+      <h2>What the numbers cannot tell you</h2>
+      <p>
+        A general number cannot know your specific container, its surface energy or its curve. It cannot predict the
+        batch of ink or stock used on the day, or how a carrier will handle a parcel in a particular climate. It
+        cannot decide a regulatory class for your product or replace a regulator's reading of a rule. Those are
+        reasons to test on your container, ask for the grade-specific document and get written confirmation for your
+        SKU and market.
+      </p>
+
+      <h2>How to reproduce or challenge a number</h2>
+      <ol>
+        <li>Identify the number's evidence type: published source, supplier data sheet or production working range.</li>
+        <li>Collect the same inputs and units, then repeat the calculation or read the cited edition.</li>
+        <li>Compare your result with the page and note any difference in container, material, market or quantity.</li>
+        <li>Send the evidence to <a href="/corrections/">corrections</a> if the page is wrong, incomplete or unclear.</li>
+      </ol>
+
+      <h2>How AI is used</h2>
+      <p>
+        AI tools may assist with research retrieval, outlining and drafting. A human reviews every page before
+        publication. Pages are not auto-published, and we do not use AI to invent a number, source, test result,
+        customer or product photograph. Product visuals are industrial schematics, not AI-generated photographs;
+        the <a href="/declarations/#photography">photography policy</a> explains why. The <a href="/editorial-standards/">editorial
+        standards</a> page sets out the publication rules in more detail.
+      </p>
+
+      <h2>Review cadence and boundary</h2>
+      <p>
+        Every technical page is reviewed every six months and sooner when a standard, material, print method or
+        shipping rule changes. The date at the top records the last review. We are a printer and trading company,
+        not a testing laboratory or law firm. We can explain what we do, what a document says and what we can
+        request from a producer; we cannot certify your product, give legal advice or guarantee a third party's
+        acceptance.
+      </p>
+
+      <h2>Common questions about our method</h2>
+      {faqs.map((item) => (
+        <div style="margin-top:18px">
+          <h3>{item.q}</h3>
+          <p>{item.a}</p>
+        </div>
+      ))}
+
+      <p class="small">
+        Related policies: <a href="/privacy/">Privacy</a> · <a href="/cookies/">Cookies</a> ·
+        <a href="/terms/">Terms</a> · <a href="/refund-policy/">Returns</a> ·
+        <a href="/shipping-delivery/">Shipping</a> · <a href="/declarations/">Declarations</a> ·
+        <a href="/editorial-standards/">Editorial standards</a> · <a href="/corrections/">Corrections</a> ·
+        <a href="/disclaimer/">Disclaimer</a> · <a href="/accessibility/">Accessibility</a> ·
+        <a href="/contact/">Contact</a>
+      </p>
+    </div>
+  </section>
+</BaseLayout>

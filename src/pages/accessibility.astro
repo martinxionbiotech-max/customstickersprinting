@@ -1,0 +1,99 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { site } from "../data/site";
+import { getSitePage, REVIEWED_DATE, REVIEWED_ISO } from "../data/sitePages";
+
+const page = getSitePage("/accessibility/");
+---
+
+<BaseLayout
+  title={page.title}
+  description={page.description}
+  alternateMd="/accessibility/index.md"
+  pageType="WebPage"
+  dateModified={REVIEWED_ISO}
+>
+  <Breadcrumbs items={[{ label: "Accessibility" }]} />
+  <section class="tight">
+    <div class="wrap narrow prose">
+      <h1>Accessibility statement</h1>
+      <p class="small">Last reviewed: {REVIEWED_DATE}</p>
+      <p class="lead" style="font-size:1.05rem;color:var(--ink-2)">
+        This statement describes the accessibility work done on this site, the barriers we know remain, and how to
+        tell us when a page or document does not work for you. It is written for people using keyboards, screen
+        readers, zoom, voice control and other forms of assistive technology.
+      </p>
+
+      <h2>Our target is WCAG 2.2 AA</h2>
+      <p>
+        We target the Web Content Accessibility Guidelines (WCAG) 2.2 at Level AA. That is a target, not a certified
+        audit. We have not commissioned an independent conformance audit and we do not claim full conformance or a
+        VPAT. The <a href="https://www.w3.org/TR/WCAG22/" rel="noopener">W3C WCAG 2.2 specification</a> is the
+        reference we use when deciding whether a change improves or weakens access.
+      </p>
+
+      <h2>What has been implemented</h2>
+      <ul>
+        <li>One descriptive H1 on each page and a logical heading order for screen-reader navigation.</li>
+        <li>Semantic landmarks, lists, tables and form-free links rather than image-based navigation.</li>
+        <li>Keyboard-operable links and controls, with a visible focus indicator.</li>
+        <li>Text and interface colours chosen for contrast against their backgrounds.</li>
+        <li>Layouts that reflow at 200% browser zoom without two-dimensional page scrolling.</li>
+        <li>No autoplay, no background video and no decorative motion that starts without the visitor.</li>
+        <li>Alt text on informative images and text descriptions for the industrial schematics that replace product photographs.</li>
+        <li>Tables with header cells and captions or explanatory text where a table needs context.</li>
+      </ul>
+
+      <h2>Schematic drawings and text alternatives</h2>
+      <p>
+        Product visuals on this site are industrial schematics, not photographs. Each drawing is accompanied by a
+        description of the format, construction or print sequence it represents. The description is intended to
+        carry the same buying information as the drawing; it does not pretend that an abstract line drawing is a
+        photograph of a delivered job. If a schematic is the only way a page explains a point and its description is
+        not enough, tell us and we will add a plain-text explanation.
+      </p>
+
+      <h2>Known limitations</h2>
+      <ul>
+        <li><strong>Wide tables.</strong> Some comparison tables need more width than a phone screen provides and scroll horizontally on small screens. The headings remain visible, but horizontal scrolling may be awkward with some assistive technology.</li>
+        <li><strong>Technical drawings.</strong> The SVGs are drawings, not photographs. Their line weight and labels can be less useful than a photograph when someone needs to inspect a real surface or finish.</li>
+        <li><strong>External sites.</strong> A link to a registry, standards body, carrier or authority takes you to a site we do not control and cannot audit.</li>
+        <li><strong>Email and messaging clients.</strong> Quotations, proofs and replies sent by email or WhatsApp are outside this website and may have accessibility limitations in your client.</li>
+        <li><strong>PDF and supplier documents.</strong> If we send a PDF, it may not be tagged or structured for screen readers, especially when it comes from a material supplier or carrier. Ask for the information in another format if needed.</li>
+      </ul>
+
+      <h2>How to report an accessibility barrier</h2>
+      <p>
+        Email <a href={`mailto:${site.email}?subject=Accessibility`}>{site.email}</a> with the subject
+        <strong>Accessibility</strong>. Please include the page URL or document name, what you were trying to do,
+        what went wrong, and the browser, device or assistive technology you used if you are willing to share it.
+        A screenshot or the exact wording that failed helps us reproduce the issue. Tell us if you need the
+        information in a different format, such as plain text or larger type.
+      </p>
+
+      <h2>Response and remediation</h2>
+      <p>
+        We aim to acknowledge an accessibility report within 10 business days. The acknowledgement will say whether
+        we can reproduce the issue, what we propose to change and when we expect to update the page. If a fix needs
+        a design change, we will give you the interim alternative we can provide. These times are targets for a
+        small team, not a promise that every technical fix can be completed in the same period.
+      </p>
+
+      <h2>Review cadence</h2>
+      <p>
+        This statement and the page templates are reviewed annually and after a substantial redesign. We also review
+        them when a reported barrier shows a pattern rather than a one-page mistake. The review date at the top of
+        the page changes whenever this statement is substantively updated.
+      </p>
+      <p class="small">
+        Related policies: <a href="/privacy/">Privacy</a> · <a href="/cookies/">Cookies</a> ·
+        <a href="/terms/">Terms</a> · <a href="/refund-policy/">Returns</a> ·
+        <a href="/shipping-delivery/">Shipping</a> · <a href="/declarations/">Declarations</a> ·
+        <a href="/editorial-standards/">Editorial standards</a> · <a href="/methodology/">Methodology</a> ·
+        <a href="/corrections/">Corrections</a> · <a href="/disclaimer/">Disclaimer</a> ·
+        <a href="/contact/">Contact</a>
+      </p>
+    </div>
+  </section>
+</BaseLayout>

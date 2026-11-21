@@ -1,0 +1,123 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { site } from "../data/site";
+import { getSitePage, REVIEWED_DATE, REVIEWED_ISO } from "../data/sitePages";
+
+const page = getSitePage("/corrections/");
+---
+
+<BaseLayout
+  title={page.title}
+  description={page.description}
+  alternateMd="/corrections/index.md"
+  pageType="WebPage"
+  dateModified={REVIEWED_ISO}
+>
+  <Breadcrumbs items={[{ label: "Corrections" }]} />
+  <section class="tight">
+    <div class="wrap narrow prose">
+      <h1>Corrections and updates</h1>
+      <p class="small">Last reviewed: {REVIEWED_DATE}</p>
+      <p class="lead" style="font-size:1.05rem;color:var(--ink-2)">
+        A technical site changes when a material, standard, carrier rule or page design changes. This page explains
+        what we treat as a correction, how quickly we respond, how the change is recorded, and where to disagree
+        with our decision.
+      </p>
+
+      <h2>What is in scope</h2>
+      <p>
+        We want reports about factual errors, broken links, references to outdated regulations or standards, and
+        wording that is unclear enough to mislead a buyer. A disagreement about style, a request to rank a product
+        higher, or a complaint about a quotation is handled through <a href="/contact/">contact</a> rather than the
+        correction log. A legal interpretation should come from your adviser; if our page implies that we can give
+        one, that is itself an error we need to fix.
+      </p>
+
+      <h2>Types of change</h2>
+      <table>
+        <thead>
+          <tr><th scope="col">Type</th><th scope="col">What it means</th><th scope="col">What appears on the page</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Correction</td><td>A factual statement was wrong: a dimension, standard, process or claim.</td><td>A dated correction note at the foot and an entry in the log below.</td></tr>
+          <tr><td>Clarification</td><td>The facts were right but the wording could reasonably be misunderstood.</td><td>A dated clarification note when the meaning has changed materially.</td></tr>
+          <tr><td>Update</td><td>A material, standard, service or page policy changed after publication.</td><td>A revised review date, a note when the change is substantive, and a log entry.</td></tr>
+          <tr><td>Withdrawal</td><td>A page or claim should no longer be relied on and has been removed from publication.</td><td>A replacement notice or redirect where appropriate, plus a log entry.</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Response times</h2>
+      <p>
+        These are working-day targets for a small team in China Standard Time. A request that needs a supplier,
+        carrier or authority to reply may take longer; we will say so in the acknowledgement rather than leave the
+        request open without an explanation.
+      </p>
+      <table>
+        <thead>
+          <tr><th scope="col">Request</th><th scope="col">Target</th><th scope="col">What happens</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Acknowledgement of any correction report</td><td>5 business days</td><td>We confirm receipt and whether we have enough information to investigate.</td></tr>
+          <tr><td>Substantive factual correction</td><td>10 business days</td><td>We verify the point with a source and update or explain why the page stands.</td></tr>
+          <tr><td>Broken internal or external link</td><td>30 days</td><td>We repair the link, replace it with a stable source or remove the reference.</td></tr>
+          <tr><td>Correction on a legal or trust page</td><td>5 business days</td><td>We prioritise the affected statement and publish a dated note when changed.</td></tr>
+        </tbody>
+      </table>
+
+      <h2>How a correction is recorded</h2>
+      <p>
+        A substantive correction gets a short note at the foot of the affected page: the date and a plain
+        description of what changed. Examples are “Corrected 21 November 2026: removed an incorrect transit
+        estimate” or “Clarified 21 November 2026: the document is requested from the producer, not held by us.”
+        The same change is entered in the central log below. The “Last reviewed” date changes whenever the page is
+        reviewed, even if no factual statement needed correction.
+      </p>
+
+      <h2>Correction log</h2>
+      <table>
+        <thead>
+          <tr><th scope="col">Date</th><th scope="col">Type</th><th scope="col">Page or area</th><th scope="col">What changed</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>2026-11-21</td><td>Update</td><td>Product visuals and photography policy</td><td>Photographs of printed work were removed; industrial schematics were introduced where a product visual appears.</td></tr>
+          <tr><td>2026-11-21</td><td>Update</td><td>Trust pages</td><td>Compliance and trust pages were expanded, including new methodology, corrections, disclaimer and accessibility pages.</td></tr>
+          <tr><td>2026-11-08</td><td>Update</td><td>Product photography</td><td>Product photography was reviewed against the customer-privacy policy; no customer photographs were published.</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Substantive claims and silent edits</h2>
+      <p>
+        We do not make silent edits to substantive claims. Fixing a typo, changing a link label or adjusting page
+        formatting does not require a log entry. Changing a dimension, a claim about what a document proves, a
+        retention period, a response target or a material recommendation does. If a correction changes a page's
+        advice, a reader who cited an earlier version should be able to see that the basis changed.
+      </p>
+
+      <h2>Appeal or dissent</h2>
+      <p>
+        If you think our decision on a correction is wrong, reply to the acknowledgement with the subject
+        <strong>Correction appeal</strong> and include any evidence or official source we may have missed. A second
+        review is made by someone other than the person who gave the first answer where possible. If the
+        disagreement remains unresolved, we will record that the point is disputed rather than pretend the matter
+        is settled. We aim to respond to an appeal within 10 business days.
+      </p>
+
+      <h2>How to report a correction</h2>
+      <p>
+        Email <a href={`mailto:${site.email}?subject=Correction`}>{site.email}</a> with the subject
+        <strong>Correction</strong>, the page URL, the exact passage, what you believe is wrong and a source we can
+        check. For a broken link, send the page and the link target. For privacy, accessibility or an order problem,
+        use the route on the relevant policy page so it reaches the right process.
+      </p>
+      <p class="small">
+        Related policies: <a href="/privacy/">Privacy</a> · <a href="/cookies/">Cookies</a> ·
+        <a href="/terms/">Terms</a> · <a href="/refund-policy/">Returns</a> ·
+        <a href="/shipping-delivery/">Shipping</a> · <a href="/declarations/">Declarations</a> ·
+        <a href="/editorial-standards/">Editorial standards</a> · <a href="/methodology/">Methodology</a> ·
+        <a href="/disclaimer/">Disclaimer</a> · <a href="/accessibility/">Accessibility</a> ·
+        <a href="/contact/">Contact</a>
+      </p>
+    </div>
+  </section>
+</BaseLayout>

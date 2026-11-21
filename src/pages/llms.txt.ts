@@ -1,6 +1,7 @@
 import type { APIRoute } from "astro";
 import { getCollection } from "astro:content";
 import { PILLARS as PILLAR_DATA, PILLAR_ORDER } from "../data/pillars";
+import { sitePages } from "../data/sitePages";
 
 const PILLARS: Record<string, string> = {
   "label-sizing": "Label sizing and dimensions",
@@ -30,9 +31,41 @@ export const GET: APIRoute = async ({ site }) => {
     "Key facts: minimum order 50 units per design; production 7-12 working days after artwork approval; " +
       "no self-serve checkout, orders are quoted by email or WhatsApp.",
     "",
-    "## Products",
+    "## Site pages",
     "",
   ];
+
+  for (const page of sitePages) {
+    const url = `${base}${page.path}`;
+    const markdownUrl = page.path === "/" ? `${base}/index.md` : `${base}${page.path}index.md`;
+    lines.push(`- [${page.title}](${url}): ${page.description} (plain markdown: ${markdownUrl})`);
+  }
+
+  lines.push(
+    "",
+    "## Answers",
+    "",
+    "### Who writes the site",
+    "",
+    "The quotation and quality-control team at Yiwu Dingwei Trading Company writes and reviews the technical pages. The work is not outsourced to freelance writers, and each page carries a review date. The editorial rules are published at " +
+      `${base}/editorial-standards/.`,
+    "",
+    "### How evidence is graded",
+    "",
+    "Pages distinguish published standards and official sources, supplier data sheets, and production observations or working ranges. A supplier document is identified as such and is not presented as our test. The full hierarchy is at " +
+      `${base}/methodology/.`,
+    "",
+    "### What the site does not do",
+    "",
+    "The site does not provide legal advice, customs classification rulings, regulatory approval for a product or market, or a guarantee that a retailer, marketplace or authority will accept a label. It also does not publish photographs of customer work, customer names or customer artwork without written permission. Product visuals are industrial schematics, not photographs.",
+    "",
+    "### How to request documents",
+    "",
+    `Email martin@customstickersprinting.com with the order or quotation reference and the document you need. Business licence, material data sheets, batch record extracts and producer-supplied test reports are handled under the document process at ${base}/declarations/. We acknowledge document requests within two business days.`,
+    "",
+    "## Products",
+    "",
+  );
 
   for (const p of products) {
     lines.push(`- [${p.data.title}](${base}/${p.id}/): ${p.data.description} (plain markdown: ${base}/${p.id}/index.md)`);
@@ -72,7 +105,7 @@ export const GET: APIRoute = async ({ site }) => {
     "## Ordering",
     "",
     `- [How to order](${base}/how-to-order/): the four steps from artwork to delivery.`,
-    `- [Request a quote](${base}/request-a-quote/): what to send for a same-day quotation.`,
+    `- [Request a quote](${base}/request-a-quote/): what to send for a quotation, usually answered within one business day.`,
     `- [Artwork guidelines](${base}/artwork-guidelines/): file requirements, bleed, fonts and colour.`,
     `- [Shipping and delivery](${base}/shipping-delivery/): production window, courier options, duties.`,
     `- [About](${base}/about/): who prints the work and where.`,

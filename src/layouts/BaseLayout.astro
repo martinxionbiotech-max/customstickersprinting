@@ -12,9 +12,21 @@ interface Props {
   jsonLd?: Record<string, unknown>[];
   image?: string | null;
   alternateMd?: string | null;
+  pageType?: 'WebPage' | 'TechArticle';
+  dateModified?: string;
 }
 
-const { title, description, type = 'website', noindex = false, jsonLd = [], image = null, alternateMd = null } = Astro.props;
+const {
+  title,
+  description,
+  type = 'website',
+  noindex = false,
+  jsonLd = [],
+  image = null,
+  alternateMd = null,
+  pageType,
+  dateModified,
+} = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const withBrand = `${title} | ${site.brand}`;
 const fullTitle = title.includes(site.brand)
@@ -46,6 +58,14 @@ const org = {
     addressCountry: site.company.countryCode,
   },
   areaServed: site.markets,
+  knowsAbout: [
+    'Pressure-sensitive labels',
+    'Sticker converting',
+    'Packaging artwork',
+    'Label adhesives',
+    'Hang tags',
+    'Short-run digital printing',
+  ],
   contactPoint: {
     '@type': 'ContactPoint',
     contactType: 'sales',
@@ -62,6 +82,21 @@ const website = {
   name: site.brand,
   publisher: { '@id': `${site.url}/#organization` },
 };
+const pageSchema = pageType
+  ? {
+      '@context': 'https://schema.org',
+      '@type': pageType,
+      '@id': `${canonical}#webpage`,
+      url: canonical,
+      name: fullTitle,
+      description,
+      inLanguage: 'en',
+      ...(dateModified ? { dateModified } : {}),
+      isPartOf: { '@id': `${site.url}/#website` },
+      about: { '@id': `${site.url}/#organization` },
+      publisher: { '@id': `${site.url}/#organization` },
+    }
+  : null;
 ---
 
 <!doctype html>
@@ -87,6 +122,7 @@ const website = {
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <script type="application/ld+json" set:html={JSON.stringify(org)} />
     <script type="application/ld+json" set:html={JSON.stringify(website)} />
+    {pageSchema && <script type="application/ld+json" set:html={JSON.stringify(pageSchema)} />}
     {jsonLd.map((ld) => <script type="application/ld+json" set:html={JSON.stringify(ld)} />)}
   </head>
   <body>

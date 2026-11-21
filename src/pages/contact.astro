@@ -2,77 +2,107 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { site, mailLink, waLink, quoteMessage } from "../data/site";
+import { getSitePage, REVIEWED_DATE, REVIEWED_ISO } from "../data/sitePages";
+
+const page = getSitePage("/contact/");
 ---
 
-<BaseLayout title="Contact" description="Contact us by email or WhatsApp for quotations, artwork checks and order updates. Company details, response times and what to include in a first message.">
+<BaseLayout
+  title={page.title}
+  description={page.description}
+  alternateMd="/contact/index.md"
+  pageType="WebPage"
+  dateModified={REVIEWED_ISO}
+>
   <Breadcrumbs items={[{ label: "Contact" }]} />
   <section class="tight">
     <div class="wrap narrow prose">
       <h1>Contact us</h1>
-      <p>Two ways to reach a person, both monitored during China business hours (GMT+8) and usually answered within one working day.</p>
+      <p class="small">Last reviewed: {REVIEWED_DATE}</p>
+      <p class="lead" style="font-size:1.05rem;color:var(--ink-2)">
+        Talk to the quotation and quality-control team by email or WhatsApp. We answer questions about labels,
+        materials, artwork and shipping; we do not act as your lawyer, customs broker or regulatory adviser.
+      </p>
 
       <div class="grid grid-2" style="margin:24px 0">
         <div class="card">
           <h3>Email</h3>
           <p><a href={mailLink("Quotation request — custom labels and stickers")}>{site.email}</a></p>
-          <p class="small">Best for artwork files, specifications and anything you want in writing.</p>
+          <p class="small">Best for specifications, artwork files, document requests and anything you need in writing.</p>
         </div>
         <div class="card">
           <h3>WhatsApp</h3>
           <p><a href={waLink(quoteMessage)} rel="noopener">{site.whatsappDisplay}</a></p>
-          <p class="small">Best for quick questions, photo references of a container, or order status.</p>
+          <p class="small">Best for a quick question, a container photo or an order-status check.</p>
         </div>
       </div>
 
+      <h2>What we can answer</h2>
+      <ul>
+        <li>Whether a label size, shape or material is practical for your container and quantity.</li>
+        <li>How artwork, bleed, colour, proofs and samples work before production.</li>
+        <li>What changes a price, what the minimum order covers and what information the quotation needs.</li>
+        <li>Production, packing, shipping, tracking and the documents we can request from a producer.</li>
+      </ul>
+
+      <h2>What we cannot answer</h2>
+      <p>
+        We cannot provide legal advice, a binding customs classification ruling, regulatory approval for a product
+        or market, or a guarantee that a retailer or marketplace will accept a label. We can explain what we print
+        and what documentation can be requested, but your importer, regulatory adviser and customs broker must make
+        those decisions. A question outside our competence gets an honest “we do not know” rather than a confident
+        guess.
+      </p>
+
       <h2>What to include in a first message</h2>
       <table>
+        <thead>
+          <tr><th scope="col">Input</th><th scope="col">What helps us answer</th></tr>
+        </thead>
         <tbody>
-          <tr><th scope="row">Product</th><td>Labels or stickers, and the container or surface they go on</td></tr>
-          <tr><th scope="row">Size</th><td>Width × height in mm, or diameter for circles</td></tr>
-          <tr><th scope="row">Quantity</th><td>Per design, and how many designs</td></tr>
-          <tr><th scope="row">Material</th><td>Paper, PP, PET or vinyl if you have a preference</td></tr>
-          <tr><th scope="row">Destination</th><td>Country and postcode for the shipping estimate</td></tr>
-          <tr><th scope="row">Artwork</th><td>Optional at first — a photo of the container is often more useful</td></tr>
+          <tr><td>Product and use</td><td>Label, sticker or hang tag; the container, surface or packaging it goes on</td></tr>
+          <tr><td>Size and quantity</td><td>Width and height in mm, or diameter, plus quantity per design and the number of designs</td></tr>
+          <tr><td>Material and finish</td><td>Paper, PP, PET, vinyl or “recommend one”; gloss, matte, foil or another finish if required</td></tr>
+          <tr><td>Destination</td><td>Country and postcode, so the quote can state a realistic shipping option</td></tr>
+          <tr><td>Artwork and timing</td><td>Whether the file is ready, what it needs to meet, and the date you need the goods</td></tr>
         </tbody>
       </table>
-
-      <p>If you do not know the material yet, say so. Choosing it is part of the conversation, not a prerequisite.</p>
-
-      <h2>What happens after you send</h2>
       <p>
-        A person reads the specification, checks what is producible at your quantity, and asks only the questions
-        that change the quote. You will get a written quotation with the unit price, setup, shipping and lead time.
-        Nothing is charged before you approve the artwork and the order in writing. If a detail is missing, we will
-        tell you what it changes rather than guess.
+        A photo of the container is often more useful than a finished design. If you do not know the material, say so:
+        choosing it is part of the conversation, not a prerequisite for asking.
       </p>
 
-      <h2>Response times</h2>
+      <h2>Response times and languages</h2>
       <p>
-        Quotations are usually issued within one working day. Artwork checks and sample arrangements can take
-        longer depending on complexity, and we will tell you when to expect a reply rather than leaving you to ask.
-        Our working hours are China Standard Time (GMT+8), Monday to Friday; messages sent at the weekend are read
-        on the next working day. We reply in English; if you write in another language, we will use a translation
-        tool and confirm the specification in English before quoting.
+        We aim to acknowledge an enquiry within <strong>1 business day</strong>, Monday to Friday, China Standard Time
+        (GMT+8). Artwork checks, producer documents and samples can need a second reply; we will give you the next
+        expected date rather than leave the request open. We answer in English. If you send another language, we may
+        use a translation tool and will confirm the specification in English before quoting.
       </p>
 
-      <h2>Who you are dealing with</h2>
-      <table>
-        <tbody>
-          <tr><th scope="row">Legal entity</th><td>{site.company.legalNameEn}</td></tr>
-          <tr><th scope="row">Location</th><td>{site.company.city}, {site.company.region}, {site.company.country}</td></tr>
-          <tr><th scope="row">Registration no.</th><td>{site.company.uscc}</td></tr>
-          <tr><th scope="row">D-U-N-S</th><td>{site.company.duns}</td></tr>
-        </tbody>
-      </table>
-      <p class="small">
-        Invoices are issued in the name of {site.company.legalNameEn}. Banking details appear only on the invoice
-        for a confirmed order — if payment instructions arrive by email or chat and do not match the invoice,
-        verify with <a href={`mailto:${site.email}`}>{site.email}</a> before sending funds.
+      <h2>Samples, documents and verification</h2>
+      <p>
+        Physical samples can be requested before a full run; cost and timing are quoted with the job. Document
+        requests are acknowledged within 2 business days under the <a href="/declarations/">declarations process</a>.
+        Before paying, you can verify the legal entity through China's public registry and Dun &amp; Bradstreet using
+        the links on the <a href="/about/">about page</a>, and check the invoice name. Banking details appear only on
+        the invoice for a confirmed order.
       </p>
 
+      <h2>Before you send</h2>
+      <p>
+        Do not send card numbers, online-banking passwords or government identity documents. Tell us before sharing
+        a confidential artwork pack if you need an NDA; we will confirm whether we can accept its terms before you
+        upload the files. If payment instructions in an email differ from the invoice, stop and call the number on
+        the invoice before paying.
+      </p>
       <p class="small">
-        {site.brand} · {site.company.city}, {site.company.region} · Orders shipped worldwide.
-        Full company details on the <a href="/about/">about page</a>.
+        Read <a href="/request-a-quote/">how to request a quote</a>, <a href="/shipping-delivery/">shipping</a>,
+        <a href="/terms/">terms</a> and <a href="/privacy/">privacy</a>. Related policies:
+        <a href="/cookies/">Cookies</a> · <a href="/refund-policy/">Returns</a> ·
+        <a href="/declarations/">Declarations</a> · <a href="/editorial-standards/">Editorial standards</a> ·
+        <a href="/methodology/">Methodology</a> · <a href="/corrections/">Corrections</a> ·
+        <a href="/disclaimer/">Disclaimer</a> · <a href="/accessibility/">Accessibility</a>.
       </p>
     </div>
   </section>

@@ -2,101 +2,122 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { site } from "../data/site";
+import { getSitePage, REVIEWED_DATE, REVIEWED_ISO } from "../data/sitePages";
+
+const page = getSitePage("/editorial-standards/");
 ---
 
 <BaseLayout
-  title="Editorial standards: how this site is written"
-  description="Who writes the technical content, what it is based on, how sources are used, how often it is reviewed, and the commercial interest we disclose."
+  title={page.title}
+  description={page.description}
+  alternateMd="/editorial-standards/index.md"
+  pageType="WebPage"
+  dateModified={REVIEWED_ISO}
 >
   <Breadcrumbs items={[{ label: "Editorial standards" }]} />
   <section class="tight">
     <div class="wrap narrow prose">
       <h1>Editorial standards</h1>
+      <p class="small">Last reviewed: {REVIEWED_DATE}</p>
       <p class="lead" style="font-size:1.05rem;color:var(--ink-2)">
-        This page exists because we sell the thing we write about. Everything below is what we hold ourselves to,
-        and what you can hold us to if a page falls short.
+        This page sets out who writes the site, which evidence we accept, how numbers and AI are handled, when pages
+        are reviewed and what we will not publish. It is the counterpart to the <a href="/methodology/">methodology</a>,
+        which explains how a claim is graded.
       </p>
 
-      <h2>Who writes it</h2>
+      <h2>1. Who writes and reviews it</h2>
       <p>
-        The technical articles are written by the team that produces quotations, checks artwork and handles reprints.
-        They are not commissioned from freelance writers, and they are not assembled from competitor pages. Most start
-        as a question that arrived in an email — why a label lifted off a recycled bottle, why a colour drifted between
-        runs, why a 50-unit order costs more per piece than a 5,000-unit one.
+        The technical pages are written and reviewed by the quotation and quality-control team that answers
+        enquiries, checks artwork and handles reprints. The work is not outsourced to freelance writers and is not
+        assembled from competitor pages. Most articles begin with a question from a buyer: why a label lifted from a
+        recycled bottle, why a colour drifted between runs, or why a short run costs more per unit than a long one.
       </p>
 
-      <h2>What the content is based on</h2>
+      <h2>2. Source tiers</h2>
+      <ol>
+        <li><strong>Tier 1: current standards, law and official guidance.</strong> A named issuing body, regulator, registry or standards document, read in its current scope and edition.</li>
+        <li><strong>Tier 2: producer documents.</strong> A material, adhesive or laminate data sheet for the exact grade, labelled with the producer's name and never rewritten as our test.</li>
+        <li><strong>Tier 3: production observation.</strong> A working range or failure pattern seen in specification, press checks or quality control, labelled as an observation rather than a certified result.</li>
+        <li><strong>Tier 4: secondary explanation.</strong> A trade article, textbook or explainer that helps interpret a higher tier but is never the sole basis for a requirement.</li>
+      </ol>
+      <p>
+        A marketplace blog, competitor marketing page or social post is not accepted as a sole source. It can lead us
+        to a primary document, but the primary document still has to be read.
+      </p>
+
+      <h2>3. How numbers are used</h2>
+      <p>
+        A number carries its origin. We distinguish a published figure, a supplier data-sheet figure and a production
+        working range, and we state which one a table or sentence uses. If we cannot support a figure with one of
+        those, we use a range and explain the assumptions or omit the figure. A calculation shows its inputs so a
+        reader can replace them. We do not turn a test method into a certification, and we do not reuse a number from
+        another product or market as if it were universal.
+      </p>
+
+      <h2>4. How AI is used</h2>
+      <p>
+        AI tools may assist with research retrieval, outlining and drafting. A person reviews every page before it is
+        published. We do not auto-publish AI output, invent a source, test result or statistic, or use AI to create
+        product photographs. The <a href="/declarations/#photography">photography policy</a> explains why product
+        visuals are industrial schematics. AI is a drafting aid, not evidence and not an author.
+      </p>
+
+      <h2>5. Review cadence</h2>
+      <p>
+        Technical pages are reviewed every six months and sooner when a standard, material, press or shipping rule
+        changes. The review date appears on the page. A review is not a stamp applied without reading: we check the
+        cited sources, the calculations and the distinction between what we do and what a supplier or authority
+        does.
+      </p>
+
+      <h2>6. Corrections and response times</h2>
+      <p>
+        We acknowledge a correction report within 5 business days and target a substantive factual correction within
+        10 business days. A broken link is handled within 30 days, and a correction on a legal or trust page within 5
+        business days. The <a href="/corrections/">corrections policy</a> records the change at the foot of the page
+        and in a central log. We describe the correction rather than silently changing a substantive claim.
+      </p>
+
+      <h2>7. Commercial interest, disclosed</h2>
+      <p>
+        We sell what we write about; we say when a request is outside what we do well. Our recommendations can favour
+        materials and methods we can supply, so a page should identify the trade-off rather than pretend to be
+        neutral. If the right answer is a specialist security label, a metallic effect we cannot run or a quantity
+        far beyond our production range, we say so and point you elsewhere rather than quote for work we would do
+        badly. We do not publish "best printer" rankings, sponsored technical articles or affiliate links.
+      </p>
+
+      <h2>8. What we will not publish</h2>
       <ul>
-        <li><strong>Production experience</strong> — what actually failed, on which material, in which condition.</li>
-        <li><strong>Material and supplier documentation</strong> — film, adhesive and laminate data sheets.</li>
-        <li><strong>Published standards</strong> — where a claim rests on one, it is cited at the foot of the article.</li>
-      </ul>
-      <p>
-        Where none of those three supports a specific number, the number is not published. You will find ranges and
-        mechanisms rather than invented benchmarks, and where a figure depends on a supplier's test we say so rather
-        than presenting it as ours.
-      </p>
-
-      <h2>How sources are used</h2>
-      <p>
-        A citation means we read the standard or the document and it supports the sentence it sits under. We do not
-        attach references for appearance, and we do not cite a standard that merely sounds relevant. Where no standard
-        governs a topic — minimum order quantities, lead-time composition, how a quotation is built — the article says
-        what the recommendation is based on instead of borrowing authority it does not have.
-      </p>
-
-      <h2>Review and correction</h2>
-      <p>
-        Each article carries the month of its last review. Articles are re-read when a material, a press or a shipping
-        route changes, and at least once a year otherwise. If a sentence turns out to be wrong, it is corrected rather
-        than quietly deleted, and the review date changes.
-      </p>
-      <p>
-        We distinguish a correction from a change of opinion. A factual error — a wrong dimension, a standard cited
-        incorrectly, a price arithmetic mistake — is corrected and dated. A recommendation that changes because a
-        material or a supplier changed is treated as a new review, not a silent edit. If you are citing a page,
-        include the review month so the reader knows which version you used.
-      </p>
-      <p>
-        If you find an error, email <a href={`mailto:${site.email}`}>{site.email}</a> with the page and the sentence.
-        Corrections that hold up are made within a week, and we will tell you what changed.
-      </p>
-
-      <h2>Commercial interest, disclosed</h2>
-      <p>
-        We sell label and sticker printing. That is a bias, and pretending otherwise would be dishonest. Two
-        consequences you should know about:
-      </p>
-      <ul>
-        <li>
-          Our recommendations favour materials we can supply. Where the right answer is outside our range — a
-          specialist security label, a metallic effect we do not run, a quantity far above our sweet spot — we say so
-          and point you elsewhere rather than quoting for work we would do badly.
-        </li>
-        <li>
-          We do not publish "best label printer" listicles, rankings or comparisons designed to place ourselves first.
-          If a page compares methods, it compares the methods, not the vendors.
-        </li>
+        <li>Customer names, logos, artwork or case studies without written permission.</li>
+        <li>A certification, audit result, factory photograph or test report we cannot produce on request.</li>
+        <li>A rendered mock-up presented as a photograph of real delivered work.</li>
+        <li>A price presented as a universal “from” figure that assumes an unrealistic size or quantity.</li>
+        <li>A review or testimonial written by us and attributed to a customer.</li>
+        <li>A regulatory conclusion, legal interpretation or guarantee that a marketplace will accept a label.</li>
       </ul>
 
-      <h2>What we will not publish</h2>
-      <ul>
-        <li>Customer names, logos or case studies without written permission — which is why there is no logo wall.</li>
-        <li>Certifications, audit results or factory photographs we cannot produce on request — the <a href="/declarations/">declarations page</a> sets out what we can and cannot provide.</li>
-        <li>Rendered mock-ups presented as photographs of real delivered work.</li>
-        <li>Prices presented as a "from" figure that assumes the smallest size and the largest run.</li>
-        <li>Reviews or testimonials we wrote ourselves.</li>
-      </ul>
-
-      <h2>Advertising and sponsorship</h2>
+      <h2>9. How to cite this site</h2>
       <p>
-        There is no advertising on this site, no sponsored content and no affiliate links. If that changes, sponsored
-        material will be labelled at the top of the page and kept out of the technical articles.
+        Use the page title, publisher, URL and review date, for example: “Custom Stickers Printing, ‘Label sizing and
+        dimensions’, https://customstickersprinting.com/knowledge/label-sizing/, last reviewed 21 November 2026.”
+        Include the section heading when quoting a specific claim. Do not cite a page as a standard, certificate or
+        authority. If the claim depends on a source we cite, cite that source as well.
       </p>
 
+      <h2>10. Contact and questions</h2>
+      <p>
+        Questions about how a page was produced: <a href={`mailto:${site.email}`}>{site.email}</a>. Use the subject
+        “Editorial”. For a factual error, use the <a href="/corrections/">corrections route</a> so the request enters
+        the log. Company details and verification links are on the <a href="/about/">about page</a>.
+      </p>
       <p class="small">
-        Questions about how a page was produced: <a href={`mailto:${site.email}`}>{site.email}</a>.
-        Company details are on the <a href="/about/">about page</a>. Last reviewed: November 2026.
+        Related policies: <a href="/privacy/">Privacy</a> · <a href="/cookies/">Cookies</a> ·
+        <a href="/terms/">Terms</a> · <a href="/refund-policy/">Returns</a> ·
+        <a href="/shipping-delivery/">Shipping</a> · <a href="/declarations/">Declarations</a> ·
+        <a href="/methodology/">Methodology</a> · <a href="/corrections/">Corrections</a> ·
+        <a href="/disclaimer/">Disclaimer</a> · <a href="/accessibility/">Accessibility</a> ·
+        <a href="/contact/">Contact</a>
       </p>
     </div>
   </section>

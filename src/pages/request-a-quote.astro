@@ -2,68 +2,101 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { site, mailLink, waLink } from "../data/site";
+import { getSitePage, REVIEWED_DATE, REVIEWED_ISO } from "../data/sitePages";
 
-const template = `Product (label or sticker):
-Size (mm):
-Shape:
-Material (or "recommend one"):
-Quantity per design:
-Number of designs:
-Finishing (gloss / matte / none):
-Destination country and postcode:
-Artwork ready? (yes / no / need help):`;
+const page = getSitePage("/request-a-quote/");
+const template = `Product and use (label, sticker or hang tag; what it goes on):
+Size and shape (mm, or diameter):
+Quantity (per design, and number of designs):
+Material and finish (or "recommend one"):
+Destination (country and postcode):
+Artwork status (ready / needs work / not started; attach only if ready):`;
 ---
 
-<BaseLayout title="Request a quote" description={`Request a quotation for custom labels or stickers: send size, material, quantity and destination. Minimum ${site.moq} units, reply usually within one working day.`}>
+<BaseLayout
+  title={page.title}
+  description={page.description}
+  alternateMd="/request-a-quote/index.md"
+  pageType="WebPage"
+  dateModified={REVIEWED_ISO}
+>
   <Breadcrumbs items={[{ label: "Request a quote" }]} />
   <section class="tight">
     <div class="wrap narrow prose">
-      <h1>Request a quote</h1>
-      <p>
-        There is no form here on purpose. A quotation depends on details a form rarely captures — the container
-        surface, whether the label meets condensation, how the artwork is built — so we ask you to send the
-        specification directly and answer it as a conversation.
+      <h1>Request a label or sticker quote</h1>
+      <p class="small">Last reviewed: {REVIEWED_DATE}</p>
+      <p class="lead" style="font-size:1.05rem;color:var(--ink-2)">
+        There is no order form or checkout here. A useful quotation starts with the five inputs below, and a person
+        can then ask the one or two questions that actually change the price.
       </p>
-
-      <h2>Copy this template</h2>
-      <pre style="background:var(--bg-2);border:1px solid var(--line);border-radius:8px;padding:16px;overflow:auto;font-size:.9rem">{template}</pre>
 
       <div class="grid grid-2" style="margin:24px 0">
         <div class="card">
-          <h3>Email</h3>
-          <p>Attach artwork or a photo of the container. Best for anything you want documented.</p>
-          <p><a class="btn btn-primary" href={mailLink("Quotation request — custom labels and stickers", template)}>Open email draft</a></p>
-          <p class="small">{site.email}</p>
+          <h3>Email the brief</h3>
+          <p><a class="btn btn-primary" href={mailLink("Quotation request", template)}>Open email draft</a></p>
+          <p class="small"><a href={`mailto:${site.email}`}>{site.email}</a> · attach artwork only after an NDA is agreed, if you need one.</p>
         </div>
         <div class="card">
-          <h3>WhatsApp</h3>
-          <p>Fastest for a first conversation or a photo of the bottle you need to label.</p>
+          <h3>Or send it on WhatsApp</h3>
           <p><a class="btn btn-wa" href={waLink("Hello, I would like a quotation.\n\n" + template)} rel="noopener">Message on WhatsApp</a></p>
-          <p class="small">{site.whatsappDisplay}</p>
+          <p class="small">{site.whatsappDisplay} · a container photo is often more useful than a finished design.</p>
         </div>
       </div>
 
-      <h2>What not to send</h2>
+      <h2>The five inputs we need</h2>
+      <ol>
+        <li><strong>Product and use.</strong> Label, sticker or hang tag, and the container, surface or packaging it belongs on.</li>
+        <li><strong>Size and shape.</strong> Width and height in mm, or diameter for a circle, plus any curve or recess.</li>
+        <li><strong>Quantity.</strong> Units per design and the number of designs; the minimum is {site.moq} per design.</li>
+        <li><strong>Material and finish.</strong> Paper, PP, PET, vinyl or “recommend one”; gloss, matte or another finish.</li>
+        <li><strong>Destination.</strong> Country and postcode, so freight and any delivery restriction can be priced.</li>
+      </ol>
+      <pre style="background:var(--bg-2);border:1px solid var(--line);border-radius:8px;padding:16px;overflow:auto;font-size:.9rem">{template}</pre>
+
+      <h2>What changes the price</h2>
+      <table>
+        <thead>
+          <tr><th scope="col">Input</th><th scope="col">Why it matters</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Size and shape</td><td>A larger label uses more material and may reduce the number across a roll or sheet; a new die adds setup.</td></tr>
+          <tr><td>Material and adhesive</td><td>Paper, PP, PET, vinyl, permanent or removable adhesive and laminate have different costs and production behaviour.</td></tr>
+          <tr><td>Quantity</td><td>Setup and make-ready are spread across the run; very short runs have a higher cost per unit, and volume can change the print method.</td></tr>
+          <tr><td>Finishing</td><td>Gloss or matte laminate, foil, spot varnish, special cuts and individual packing add steps.</td></tr>
+          <tr><td>Artwork and proofing</td><td>File repair, a new dieline, a physical sample or an extra proof round is work before production.</td></tr>
+          <tr><td>Freight and destination</td><td>Weight, carton size, mode, duties and the destination postcode change the delivered cost.</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Artwork, confidentiality and NDAs</h2>
       <p>
-        Do not send card numbers, bank passwords or identity documents through the form or chat. We do not need
-        them for a quotation. If you send a link to a large artwork folder, check that it is accessible without a
-        login; a locked link is the most common reason a quote waits. For a first enquiry, a photo of the container
-        and the label size in millimetres are more useful than a finished design.
+        Do not send a confidential artwork pack before confidentiality is agreed. If you need an NDA, send the draft
+        first and wait for written confirmation that we can accept it. A photo of the container, a rough sketch or a
+        size drawing is enough for a first quote and does not reveal your finished brand design. Once the brief is
+        quoted, we can review the artwork under the process in the <a href="/artwork-guidelines/">artwork guidelines</a>.
       </p>
 
-      <h2>What happens next</h2>
+      <h2>What happens after you send</h2>
       <ol>
-        <li>We read the specification and ask anything missing — usually one round of questions.</li>
-        <li>You get a quotation with unit price, setup, shipping and lead time.</li>
-        <li>If it works for you, we produce a proof; a physical sample is optional.</li>
-        <li>Production starts after approval and deposit.</li>
+        <li>A person reads the brief and asks only the missing questions that affect price or production.</li>
+        <li>You receive a written quotation with unit price, setup, shipping basis and estimated lead time.</li>
+        <li>If it works for you, we check the artwork and issue a proof; a physical sample can be quoted.</li>
+        <li>Production starts only after written proof approval and the agreed deposit.</li>
       </ol>
 
+      <h2>No payment is required to ask</h2>
+      <p>
+        A quotation, an artwork check and a first proof are not charged before you approve the job. A physical sample
+        or special die can be quoted separately. We aim to reply within 1 business day, and we will say when a
+        supplier or freight answer needs longer. Read the <a href="/shipping-delivery/">shipping page</a> before you
+        compare delivered prices, and the <a href="/terms/">terms</a> for payment, claims and risk.
+      </p>
       <p class="small">
-        No payment is due before the proof is approved. A digital proof is included; a physical sample can be
-        quoted if you need to test the material on your container. Minimum order {site.moq} units per design.
-        {site.leadTime}. Read <a href="/shipping-delivery/">shipping</a>,
-        <a href="/refund-policy/">returns</a> and <a href="/declarations/">what we can provide</a>.
+        Related policies: <a href="/privacy/">Privacy</a> · <a href="/cookies/">Cookies</a> ·
+        <a href="/refund-policy/">Returns</a> · <a href="/declarations/">Declarations</a> ·
+        <a href="/editorial-standards/">Editorial standards</a> · <a href="/methodology/">Methodology</a> ·
+        <a href="/corrections/">Corrections</a> · <a href="/disclaimer/">Disclaimer</a> ·
+        <a href="/accessibility/">Accessibility</a> · <a href="/contact/">Contact</a>
       </p>
     </div>
   </section>

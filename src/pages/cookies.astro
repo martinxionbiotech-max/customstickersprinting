@@ -2,77 +2,100 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { site } from "../data/site";
+import { getSitePage, REVIEWED_DATE, REVIEWED_ISO } from "../data/sitePages";
+
+const page = getSitePage("/cookies/");
 ---
 
 <BaseLayout
-  title="Cookies and local storage"
-  description="Which cookies this site sets, why there are no advertising trackers, what the host may set for security, and how to control cookies in your browser."
+  title={page.title}
+  description={page.description}
+  alternateMd="/cookies/index.md"
+  pageType="WebPage"
+  dateModified={REVIEWED_ISO}
 >
   <Breadcrumbs items={[{ label: "Cookies" }]} />
   <section class="tight">
     <div class="wrap narrow prose">
       <h1>Cookies and local storage</h1>
+      <p class="small">Last reviewed: {REVIEWED_DATE}</p>
       <p class="lead" style="font-size:1.05rem;color:var(--ink-2)">
-        This site is a set of static pages. It has no account system, no cart and no personalisation, so it has
-        very little reason to store anything in your browser — and it does not.
+        This site is static and has no account, cart, language preference or saved quotation. It therefore sets no
+        functional or advertising storage of its own. The only cookies that may appear are security cookies from the
+        hosting and content-delivery layer.
       </p>
 
-      <h2>What is set today</h2>
+      <h2>1. What this page covers</h2>
+      <p>
+        This page lists the cookies that may be set when you request a page, explains why a consent banner is not
+        shown, and tells you how to block or delete cookies. It covers this website only. Email, WhatsApp, a carrier's
+        tracking page and any other site you reach by a link have their own policies.
+      </p>
+
+      <h2>2. Cookies that may be set</h2>
       <table>
+        <thead>
+          <tr><th scope="col">Cookie name</th><th scope="col">Set by</th><th scope="col">Purpose</th><th scope="col">Duration</th><th scope="col">Type</th></tr>
+        </thead>
         <tbody>
-          <tr><th scope="row">Advertising cookies</th><td>None. There is no ad network, no retargeting pixel and no cross-site identifier on this site.</td></tr>
-          <tr><th scope="row">Analytics cookies</th><td>None. If aggregate analytics is added, it will be a cookieless service and this page will say so before it goes live.</td></tr>
-          <tr><th scope="row">Functional cookies</th><td>None. There is no login, no saved quote and no language preference to remember.</td></tr>
-          <tr><th scope="row">Security cookies</th><td>Possible. Our host (Cloudflare) may set a short-lived cookie to distinguish browsers from bots. It carries no marketing purpose.</td></tr>
+          <tr><td><code>__cf_bm</code></td><td>Cloudflare</td><td>Bot management: distinguishes a browser from automated traffic and helps block abuse</td><td>30 minutes</td><td>Strictly necessary</td></tr>
+          <tr><td><code>cf_clearance</code></td><td>Cloudflare</td><td>May be set by the CDN when a security challenge is required, so a cleared browser can continue</td><td>Session</td><td>Strictly necessary</td></tr>
         </tbody>
       </table>
-
-      <h2>What "cookie" and "local storage" mean</h2>
       <p>
-        A cookie is a small text file a site asks your browser to keep and to send back on later requests. Local
-        storage is a similar store that stays on your device and is not transmitted automatically. Both are used by
-        most commercial sites to remember sessions, carts and preferences — none of which exist here.
+        Cloudflare may not set both cookies on every request. A challenge and its clearance cookie appear only when
+        the network decides that a request needs one. The cookies carry no advertising identifier and are not used
+        to build a profile of your interests.
       </p>
 
-      <h2>Third parties</h2>
+      <h2>3. What we do not use</h2>
       <p>
-        Two kinds of third party can see a request to this site: the hosting provider that serves the pages, and the
-        email or messaging provider you contact us through. Clicking an email link or a WhatsApp link takes you to a
-        service governed by its own privacy policy, not this one.
-      </p>
-      <p>
-        We do not embed social widgets, video players or comment systems, because each of those would introduce a
-        tracker that we would then have to disclose.
+        There are no analytics cookies, advertising cookies, retargeting pixels, social-media embeds, video players,
+        heatmaps, session replays or A/B testing tools on this site. There is no Google Analytics tag, no advertising
+        conversion tag and no newsletter script. We do not embed a third-party map, review widget or customer-chat
+        service that would load a tracker.
       </p>
 
-      <h2>If this changes</h2>
+      <h2>4. Local and session storage</h2>
       <p>
-        If analytics, embedded media or an advertising tag is ever added, this page will list the tool, its purpose
-        and its retention period before the tag goes live. Where consent is legally required, it will be requested
-        before the tag loads rather than after.
+        Our site code does not write to <code>localStorage</code> or <code>sessionStorage</code>. The site has no
+        saved quote, dark-mode switch, currency selector or account state to remember. We checked the site source at
+        this review; a future change that introduces browser storage will be added to this page before it is
+        released. A browser or extension you installed may store its own data, but that is outside this site's code.
       </p>
 
-      <h2>Controlling cookies yourself</h2>
+      <h2>5. Why there is no consent banner</h2>
       <p>
-        Your browser can block or delete cookies. Because this site does not use advertising or analytics cookies,
-        blocking them will not change the content you see. If a future version adds a tool that needs consent, it
-        will be listed here and will not load until you agree. We do not respond to “Do Not Track” signals
-        differently, because there is no cross-site tracking to turn off.
-      </p>
-      <p>
-        Every current browser lets you block or delete cookies, and to block them per site. Because this site sets no
-        functional cookies, blocking them will not break anything here. Instructions are in your browser's privacy or
-        security settings, under "cookies and site data".
+        Consent is not required for a cookie that is strictly necessary to provide a service you requested, such as
+        a security cookie used to deliver the page and protect it from abuse. We use only that category. If we add
+        analytics, advertising or any non-essential tool, this page will name it and a consent mechanism will be
+        added before the tool goes live. The site will not load a non-essential tracker first and ask later.
       </p>
 
-      <h2>Questions</h2>
+      <h2>6. How to block or delete cookies</h2>
       <p>
-        Email <a href={`mailto:${site.email}`}>{site.email}</a> if you want to know what a request to this site
-        actually stores. The answer is in our <a href="/privacy/">privacy policy</a> as well, which covers the data
-        we hold when you send an enquiry.
+        Every current browser lets you view, block and delete cookies in its privacy or site-data settings. Because
+        the only cookies here are security-related, blocking them may cause a challenge loop or stop a protected
+        request from loading; the content itself has no login or cart to break. Deleting cookies after a visit
+        removes the browser copy. For a site-specific choice, use the browser's exception list rather than blocking
+        all cookies.
       </p>
 
-      <p class="small">Last reviewed: November 2026.</p>
+      <h2>7. Contact</h2>
+      <p>
+        If you want to know what a specific request stored, email
+        <a href={`mailto:${site.email}?subject=Cookies`}>{site.email}</a> with the subject “Cookies” and the page
+        URL. Our <a href="/privacy/">privacy policy</a> covers the data we hold when you send an enquiry or place an
+        order.
+      </p>
+      <p class="small">
+        Related policies: <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> ·
+        <a href="/refund-policy/">Returns</a> · <a href="/shipping-delivery/">Shipping</a> ·
+        <a href="/declarations/">Declarations</a> · <a href="/editorial-standards/">Editorial standards</a> ·
+        <a href="/methodology/">Methodology</a> · <a href="/corrections/">Corrections</a> ·
+        <a href="/disclaimer/">Disclaimer</a> · <a href="/accessibility/">Accessibility</a> ·
+        <a href="/contact/">Contact</a>
+      </p>
     </div>
   </section>
 </BaseLayout>

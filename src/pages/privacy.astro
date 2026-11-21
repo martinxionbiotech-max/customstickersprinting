@@ -2,85 +2,179 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { site } from "../data/site";
+import { getSitePage, REVIEWED_DATE, REVIEWED_ISO } from "../data/sitePages";
+
+const page = getSitePage("/privacy/");
+const c = site.company;
 ---
 
-<BaseLayout title="Privacy policy" description="What data this website collects, why, how long it is kept and how to exercise your rights. No advertising cookies and no third-party ad tracking.">
+<BaseLayout
+  title={page.title}
+  description={page.description}
+  alternateMd="/privacy/index.md"
+  pageType="WebPage"
+  dateModified={REVIEWED_ISO}
+>
   <Breadcrumbs items={[{ label: "Privacy" }]} />
   <section class="tight">
     <div class="wrap narrow prose">
       <h1>Privacy policy</h1>
-      <p class="small">Last updated: November 2026</p>
-
-      <h2>Who we are</h2>
-      <p>
-        {site.brand} is a trading name of {site.company.legalNameEn}, registered in {site.company.city},
-        {site.company.region}, {site.company.country} (USCC {site.company.uscc}). For any privacy question,
-        including a request about your data, contact <a href={`mailto:${site.email}`}>{site.email}</a>.
-        We are the controller for the business contact and order data described on this page.
+      <p class="small">Last reviewed: {REVIEWED_DATE}</p>
+      <p class="lead" style="font-size:1.05rem;color:var(--ink-2)">
+        This policy explains what personal data we receive for a quotation or order, where it is processed, how long
+        it is kept and how to exercise your rights. It also states what this website does not collect.
       </p>
 
-      <h2>What we collect</h2>
-      <p>This website is static. It does not have accounts, a cart or a login, and it does not load advertising or analytics trackers. We collect only what is needed to answer an enquiry, prepare a quotation or fulfil an order; we do not ask for a date of birth, a government ID or payment-card details through the site.</p>
+      <h2>1. Who controls your data</h2>
+      <p>
+        {site.brand} is a trading name of {c.legalNameEn}, an individual business registered in {c.city},
+        {c.region}, {c.country} under USCC {c.uscc}. That legal entity is the controller. Privacy contact:
+        <a href={`mailto:${site.email}?subject=Privacy`}>{site.email}</a>.
+      </p>
+
+      <h2>2. The honest limits of this site</h2>
+      <p>
+        This is a static site with no account, cart, login, analytics, advertising tag, social embed, heatmap or A/B
+        testing script. Personal data reaches us only when you send an enquiry, provide artwork or place an order. The
+        only browser storage we know of is the necessary Cloudflare security cookie on the <a href="/cookies/">cookies
+        page</a>.
+      </p>
+
+      <h2>3. Data we collect</h2>
+      <table>
+        <thead>
+          <tr><th scope="col">Category</th><th scope="col">Examples</th><th scope="col">When collected</th><th scope="col">Purpose</th><th scope="col">Legal basis (GDPR)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Enquiry and quotation</td><td>Name, company, email, phone or WhatsApp, destination and specification</td><td>When you ask for a quote</td><td>To answer and prepare the quotation</td><td>Steps before a contract; legitimate interests in correspondence</td></tr>
+          <tr><td>Order and delivery</td><td>Billing and delivery address, quantity, price, shipping reference and carrier updates</td><td>When an order is confirmed</td><td>To produce, invoice and ship it</td><td>Contract; legal obligation for records</td></tr>
+          <tr><td>Artwork and proofs</td><td>Design files, fonts, images, dielines, approvals and technical notes</td><td>When you send artwork</td><td>To check and print the order</td><td>Contract or pre-contract steps; consent where a file identifies a person</td></tr>
+          <tr><td>Payment records</td><td>Invoice reference, amount, currency, transfer date and remittance confirmation; no card data through this site</td><td>When payment is made</td><td>To receive payment and meet accounting duties</td><td>Contract; legal obligation; legitimate interests in fraud prevention</td></tr>
+          <tr><td>Security logs</td><td>IP address, requested URL, user agent, timestamp and challenge result</td><td>Automatically with a request</td><td>To serve the site and detect abuse</td><td>Legitimate interests in security; legal obligation where required</td></tr>
+        </tbody>
+      </table>
+
+      <h2>4. What we do not collect</h2>
       <ul>
-        <li><strong>Information you send us</strong> — name, company, email, phone or WhatsApp number, shipping address, and the artwork or specifications you attach.</li>
-        <li><strong>Order information</strong> — what you ordered, quantities, prices and delivery details, kept for accounting and warranty purposes.</li>
-        <li><strong>Server logs</strong> — the hosting provider records requests (IP address, user agent, timestamp) for security and abuse prevention.</li>
+        <li>Payment-card numbers, security codes or online-banking passwords through this website.</li>
+        <li>Government identity documents or tax identifiers unless an invoice field requires one and you choose to send it.</li>
+        <li>Date of birth, family or health information.</li>
+        <li>Precise location, location history or a behavioural advertising profile.</li>
+        <li>Account credentials, saved baskets or quote history, because none exist.</li>
       </ul>
 
-      <h2>Why we use it</h2>
-      <ul>
-        <li>To answer enquiries and prepare quotations.</li>
-        <li>To produce and deliver an order, and to handle defects or returns.</li>
-        <li>To meet accounting and tax obligations.</li>
-        <li>To protect the site against abuse.</li>
-      </ul>
-
-      <h2>Legal bases (GDPR)</h2>
-      <p>Where the GDPR applies: performance of a contract or steps before a contract (Article 6(1)(b)), legal obligation for tax records (6(1)(c)), and legitimate interests for security and fraud prevention (6(1)(f)).</p>
-
-      <h2>Who we share it with</h2>
-      <p>Only what is necessary: the printing and finishing partners producing your order, the carrier delivering it, and our email and hosting providers. We do not sell personal data.</p>
-
-      <h2>International transfers</h2>
-      <p>Production is in China and our team is based there, so enquiries and order data are processed in China. Where the GDPR applies, transfers rely on appropriate safeguards such as standard contractual clauses with our service providers.</p>
-
-      <h2>How long we keep it</h2>
-      <p>Enquiries that do not become orders: up to 24 months. Order and invoice records: as long as accounting law requires. Artwork files: deleted on request once production is complete, unless you ask us to keep them for reorders.</p>
-
-      <h2>Your rights</h2>
-      <p>You can ask for access, correction, deletion, restriction, portability, or object to processing. Email <a href={`mailto:${site.email}`}>{site.email}</a> and we will respond within 30 days. You can also complain to your local data protection authority.</p>
+      <h2>5. Legal bases and consent</h2>
       <p>
-        Where UK GDPR applies, the same rights apply and you may complain to the UK Information Commissioner’s
-        Office. Where California law applies, you may request to know, delete or correct personal information, and
-        to opt out of its sale or sharing. We do not sell personal information and we do not share it for
-        cross-context behavioural advertising; the only sharing is with the production, carrier and email providers
-        described above, for the purposes described above.
+        We rely on contract or pre-contract steps, legal obligations for accounting records, and legitimate interests
+        in correspondence, security and fraud prevention. Consent is used only for a genuinely optional permission,
+        such as publishing a photograph or case study. You can withdraw consent at any time without affecting earlier
+        processing.
       </p>
 
-      <h2>Security and retention</h2>
+      <h2>6. Processors and other recipients</h2>
       <p>
-        Access to enquiry and order data is limited to the people who need it to quote, produce or ship an order.
-        We use access-controlled email and hosting accounts, and we do not ask for card details through this website.
-        No system is perfectly secure; if a breach affects your rights, we will notify you and the relevant
-        authority where the law requires it.
+        We share only what is needed. Cloudflare is named because it is the confirmed hosting and CDN provider; for
+        other providers we give the category and can confirm the current name in a processing agreement.
       </p>
+      <table>
+        <thead>
+          <tr><th scope="col">Recipient</th><th scope="col">Role</th><th scope="col">Data</th><th scope="col">Location</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Cloudflare</td><td>Hosting, CDN and bot management</td><td>Request metadata, IP and security cookie data</td><td>Global network</td></tr>
+          <tr><td>Email provider</td><td>Business email and file transfer</td><td>Enquiry, order and artwork communications</td><td>Provider region and China</td></tr>
+          <tr><td>Production and finishing partners</td><td>Print, die cut, laminate and pack a confirmed order</td><td>Order specification and artwork</td><td>China</td></tr>
+          <tr><td>Freight forwarder and carrier</td><td>Transport, customs handover and delivery updates</td><td>Contact, address, parcel and invoice data</td><td>Origin, transit and destination</td></tr>
+          <tr><td>Customs broker</td><td>Clearance administration</td><td>Commercial invoice, origin, value and consignee data</td><td>Destination country</td></tr>
+          <tr><td>Accountant</td><td>Invoicing, tax and audit support</td><td>Invoice, payment and business identifier data</td><td>China or provider location</td></tr>
+        </tbody>
+      </table>
+      <p>We do not sell personal data; an adviser, insurer or authority may receive limited data where the law requires it.</p>
+
+      <h2>7. International transfers</h2>
       <p>
-        We keep enquiry data for up to 24 months, order and invoice records for the period required by accounting
-        law, and artwork for the production period unless you ask us to keep it for reorders. When data is no longer
-        needed, we delete it or anonymise it.
+        Our team and production partners are in China, so data must be processed there to quote, print and ship. Where
+        the GDPR or UK GDPR applies, we use Standard Contractual Clauses and, for the UK, the International Data
+        Transfer Addendum, supported by a transfer risk assessment and access controls. The transfer is necessary to
+        take pre-contract steps at your request and to perform a confirmed order; without it we could not quote or
+        produce the work.
       </p>
 
-      <h2>Cookies</h2>
-      <p>This site sets no advertising or analytics cookies. If that changes, this page will list them and ask for consent first. The host may set a short-lived security cookie; see the <a href="/cookies/">cookie page</a> for the current list.</p>
+      <h2>8. How long we keep data</h2>
+      <table>
+        <thead>
+          <tr><th scope="col">Data</th><th scope="col">Retention</th><th scope="col">Why</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Enquiries without an order</td><td>24 months</td><td>Follow-up and quotation history</td></tr>
+          <tr><td>Orders and invoices</td><td>For the period required by applicable accounting and tax law</td><td>Record-keeping and audit</td></tr>
+          <tr><td>Artwork and proofs</td><td>Production plus 24 months, unless you request earlier deletion</td><td>Reorder support without repeated setup</td></tr>
+          <tr><td>Server and security logs</td><td>30 days</td><td>Abuse and incident investigation</td></tr>
+          <tr><td>Consent records</td><td>24 months after the permission ends</td><td>To show the scope and duration of consent</td></tr>
+        </tbody>
+      </table>
+      <p>At the end of a period we delete or anonymise data unless a legal hold, dispute or mandatory rule requires a longer record.</p>
 
-      <h2>Children</h2>
-      <p>The site is a business service and is not directed at children under 16.</p>
-
-      <h2>Changes to this policy</h2>
+      <h2>9. Your privacy rights</h2>
       <p>
-        If the way we handle data changes — for example, if analytics or a quote form is added — this page will be
-        updated before the change goes live, and the “last updated” date will change. The current version does not
-        load advertising, analytics or embedded media.
+        Subject to local law, you may request access, rectification, erasure, restriction, portability or objection,
+        withdraw consent and complain to a supervisory authority. Email
+        <a href={`mailto:${site.email}?subject=Privacy request`}>{site.email}</a> with enough information to identify
+        the records. We respond within 30 days and will explain any lawful extension.
+      </p>
+
+      <h2>10. UK and California rights</h2>
+      <p>
+        Under the UK GDPR you may complain to the <a href="https://ico.org.uk/make-a-complaint/" rel="noopener">UK
+        Information Commissioner's Office</a>; we would prefer the chance to resolve the issue first. Where the CPRA
+        applies, you may request to know, delete or correct personal information without discriminatory treatment. We
+        do not sell personal information, do not share it for cross-context behavioural advertising and do not
+        intentionally collect sensitive personal information for a business purpose.
+      </p>
+
+      <h2>11. Security and breach notification</h2>
+      <p>
+        Access is limited to the team and processors who need it, through access-controlled email and hosting
+        accounts, and we do not collect card details through the site. No system is perfectly secure. If a breach
+        creates a risk to your rights, we will investigate, contain it and notify affected people and the competent
+        authority where required. Where the GDPR applies, we aim to notify the authority without undue delay and
+        within 72 hours of becoming aware of a notifiable breach.
+      </p>
+
+      <h2>12. Children and automated decisions</h2>
+      <p>
+        This business service is not directed at children under 16, and we do not knowingly collect their data. We do
+        not make automated decisions with legal or similarly significant effects and do not create behavioural or
+        advertising profiles; a person reviews each quotation.
+      </p>
+
+      <h2>13. Cookies and local storage</h2>
+      <p>
+        Only strictly necessary Cloudflare security cookies may be set. There are no analytics, advertising or
+        personalisation cookies, and our site code does not write to localStorage or sessionStorage. See the
+        <a href="/cookies/">cookies page</a>.
+      </p>
+
+      <h2>14. Changes to this policy</h2>
+      <p>
+        If a practice, processor category or retention period changes, we update this page before the change goes live
+        and revise the review date. A material change affecting an existing order will be communicated where the law
+        requires it.
+      </p>
+
+      <h2>15. Contact and complaints</h2>
+      <p>
+        Email <a href={`mailto:${site.email}?subject=Privacy`}>{site.email}</a> with the subject “Privacy” for any
+        access, correction, deletion, objection or policy question. You may also complain to your local data
+        protection authority.
+      </p>
+      <p class="small">
+        Related policies: <a href="/cookies/">Cookies</a> · <a href="/terms/">Terms</a> ·
+        <a href="/refund-policy/">Returns</a> · <a href="/shipping-delivery/">Shipping</a> ·
+        <a href="/declarations/">Declarations</a> · <a href="/editorial-standards/">Editorial standards</a> ·
+        <a href="/methodology/">Methodology</a> · <a href="/corrections/">Corrections</a> ·
+        <a href="/disclaimer/">Disclaimer</a> · <a href="/accessibility/">Accessibility</a> ·
+        <a href="/contact/">Contact</a>
       </p>
     </div>
   </section>

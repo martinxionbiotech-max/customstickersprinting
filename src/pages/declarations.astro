@@ -1,93 +1,122 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
-import CtaBand from "../components/CtaBand.astro";
 import { site } from "../data/site";
+import { getSitePage, REVIEWED_DATE, REVIEWED_ISO } from "../data/sitePages";
+
+const page = getSitePage("/declarations/");
 ---
 
 <BaseLayout
-  title="What we can and cannot provide"
-  description="The documents, samples and written claims we can provide before an order, and the certifications or factory audits we do not claim to hold at all."
+  title={page.title}
+  description={page.description}
+  alternateMd="/declarations/index.md"
+  pageType="WebPage"
+  dateModified={REVIEWED_ISO}
 >
   <Breadcrumbs items={[{ label: "Declarations" }]} />
   <section class="tight">
     <div class="wrap narrow prose">
-      <h1>What we can and cannot provide</h1>
+      <h1>Documents and declarations</h1>
+      <p class="small">Last reviewed: {REVIEWED_DATE}</p>
       <p class="lead" style="font-size:1.05rem;color:var(--ink-2)">
-        A supplier that cannot tell you what it does not have is difficult to verify. This page sets out the
-        documents we can send before an order, the claims we do not make, and what to do if your compliance
-        process needs something we cannot issue ourselves.
+        A supplier that cannot say what it does not hold is difficult to verify. This page lists the documents we can
+        request or provide, what each document proves, what it does not prove, and the claims we do not make.
       </p>
 
-      <h2>Documents we can provide</h2>
-      <ul>
-        <li><strong>Business licence copy</strong> — the registration record for {site.company.legalNameEn}, matching the USCC on the <a href="/about/">about page</a>. Sent on request before any payment.</li>
-        <li><strong>D-U-N-S record</strong> — the D-U-N-S number is {site.company.duns}; it can be checked through the public lookup linked on the about page.</li>
-        <li><strong>Material data sheets</strong> — face stock, adhesive and laminate data sheets from the material supplier for the grade quoted, where the supplier makes them available.</li>
-        <li><strong>Digital proof</strong> — a PDF proof at final size before production, showing the artwork, bleed and cut line.</li>
-        <li><strong>Physical sample</strong> — a sample on the actual container or material can be arranged before a full run; cost and timing are quoted with the job.</li>
-        <li><strong>Supplier test reports</strong> — if a material supplier provides a report for a specific grade, we can request it and pass it on with the supplier’s name attached. We do not rewrite it as our own.</li>
-      </ul>
-
-      <h2>What we do not claim</h2>
-      <ul>
-        <li><strong>We do not own a printing factory.</strong> The work is specified, checked and quality-controlled by us, and produced by partner presses in China. The <a href="/about/">about page</a> explains the division of labour.</li>
-        <li><strong>We do not hold an ISO 9001 certificate.</strong> We can describe our inspection process, but we will not display a certificate we do not have.</li>
-        <li><strong>We do not claim FDA approval or food-contact certification.</strong> A label material may be intended for indirect food contact, but the documentation belongs to the material supplier and the compliance decision belongs to the brand and its regulatory adviser.</li>
-        <li><strong>We do not claim a factory audit, a social-compliance audit or a sustainability certification.</strong> If your buyer requires one, tell us before the quotation and we will say whether the production partner can support it.</li>
-        <li><strong>We do not publish customer names or logos</strong> without written permission, which is why there is no logo wall or invented case study.</li>
-      </ul>
-
-      <h2>If your compliance process needs a certificate</h2>
+      <h2>1. What this page covers</h2>
       <p>
-        Some buyers need a document that a trading company cannot issue: a factory audit, a product certification,
-        a declaration of conformity for a material, or a test report in the seller’s name. We will not manufacture
-        that document to win an order. Instead, we will:
-      </p>
-      <ol>
-        <li>Tell you what the material supplier can provide and in whose name it is issued.</li>
-        <li>Ask the production partner whether the specific audit or test is available, and quote the cost and lead time if it is.</li>
-        <li>Put the limitation in writing before you pay, so your compliance team can decide whether the job is viable.</li>
-      </ol>
-      <p>
-        If the answer is no, it is better to hear it before the deposit than to receive a PDF that does not survive
-        verification.
+        The table is a guide to documents for a quotation, a first order or a compliance file. Availability depends
+        on the material, the producer and the shipment. We will tell you before payment if a document cannot be
+        obtained, whose name is on it and whether it applies to the exact grade or batch you are buying.
       </p>
 
-      <h2 id="photography">Photography and customer privacy</h2>
+      <h2>2. Documents you can request</h2>
+      <table>
+        <thead>
+          <tr><th scope="col">Document</th><th scope="col">What it proves</th><th scope="col">What it does not prove</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Business licence copy</td><td>The registered name, USCC and status of {site.company.legalNameEn}</td><td>That we own a factory, hold a certification or have capacity for a particular order</td></tr>
+          <tr><td>Material data sheet</td><td>The producer's stated construction, properties and recommended use for a named grade</td><td>That the finished label on your container will perform in your conditions, or that a food-contact use is approved</td></tr>
+          <tr><td>Batch record extract</td><td>The material grade, lot or batch, quantity and production or inspection fields the producer records</td><td>A full factory audit, an independent test or a guarantee that every carton behaves identically</td></tr>
+          <tr><td>Test report, if the producer supplies one</td><td>That a sample was tested to a named method under the conditions stated in that report</td><td>A product certification, a certificate in our name or proof that every production batch meets the same result</td></tr>
+          <tr><td>Safety data sheet (SDS), where applicable</td><td>The producer's hazard, handling and transport information for a chemical product</td><td>Food-contact approval, regulatory clearance for your label or a statement that a material is suitable for every use</td></tr>
+          <tr><td>Origin and shipment information</td><td>The origin and commercial-invoice data stated for a particular shipment, including the HS code used</td><td>A binding customs classification ruling, a change of origin or a guarantee of duty treatment in the destination country</td></tr>
+        </tbody>
+      </table>
+
+      <h2>3. Tested to a method is not certified</h2>
+      <p>
+        A report may say that a material was tested to a named method, for example an ISO or ASTM method. That is a
+        statement about the sample and test conditions; it is not a product certification and it is not our test. We
+        do not hold an ISO 9001 certificate, a CE mark for a label, an FSC chain-of-custody certificate, a GS1
+        certification, a factory audit or a food-contact certification. If your file needs one of those, tell us
+        before the quotation so we can say whether the producer can provide a document in its own name. We will not
+        manufacture a certificate to win an order.
+      </p>
+
+      <h2>4. Batch traceability fields</h2>
+      <p>
+        Where the producer records them, a batch or lot reference can connect your order to a material grade,
+        production date, quantity and inspection result. Useful fields include the order or quotation number, the
+        material and adhesive grade, the producer's lot number, the production or inspection date, the packed quantity
+        and any result recorded for that run. Availability differs by material and producer, so we do not claim that
+        every field exists for every job. If traceability is a condition of your purchase, put the required fields in
+        the quotation before the order is confirmed.
+      </p>
+
+      <h2 id="photography">5. Photography and customer privacy</h2>
       <p>
         We do not publish photographs of printed work, customer artwork or finished packaging without written
-        permission. That is a privacy commitment, not a claim that the work does not exist. The product visuals on
-        this site are <strong>industrial schematics</strong> — vector drawings of formats and construction, not
-        photographs of customer jobs. They are labelled “not a photograph” wherever they appear.
-      </p>
-      <p>
-        If a customer gives written permission, we may show a photograph as a disclosed case study. Without that
-        permission, the illustration is the honest alternative: it explains the format without exposing a brand,
-        artwork or product that belongs to someone else. The same rule applies to factory visits and press checks.
+        permission. That is a privacy rule, not a claim that the work does not exist. Product visuals on this site are
+        <strong>industrial schematics</strong>, not photographs of customer jobs, and they are not AI-generated
+        product photographs. They are drawings of formats and construction, labelled as such wherever they appear.
+        Written permission can support a disclosed case study; without it, the illustration is the honest
+        alternative.
       </p>
 
-      <h2>How to verify us before paying</h2>
-      <ul>
-        <li>Search the USCC <strong>{site.company.uscc}</strong> in China’s National Enterprise Credit Information Publicity System (<a href="https://www.gsxt.gov.cn/index.html" rel="noopener">gsxt.gov.cn</a>).</li>
+      <h2>6. Document request process and timing</h2>
+      <p>
+        Email <a href={`mailto:${site.email}?subject=Document request`}>{site.email}</a> with the subject
+        <strong>Document request</strong>, the quotation or order reference, the document you need, the market and
+        the intended use. We acknowledge a document request within 2 business days and tell you whether it is held by
+        us, must be requested from the producer, or is not available. A producer or laboratory reply can take longer,
+        and we will not promise a date that depends on a third party without saying so.
+      </p>
+
+      <h2>7. How to verify us</h2>
+      <ol>
+        <li>Search the USCC <strong>{site.company.uscc}</strong> in China's National Enterprise Credit Information Publicity System (<a href="https://www.gsxt.gov.cn/index.html" rel="noopener">gsxt.gov.cn</a>).</li>
         <li>Check the D-U-N-S number <strong>{site.company.duns}</strong> through Dun &amp; Bradstreet (<a href="https://www.dnb.com/duns-number/lookup.html" rel="noopener">dnb.com</a>).</li>
-        <li>Ask for a physical sample on your own container, or a short video call to see the labels being checked.</li>
-        <li>Confirm that the invoice is issued in the name of {site.company.legalNameEn}; banking details should appear only on that invoice.</li>
+        <li>Confirm that the invoice is issued in the name of {site.company.legalNameEn} and that banking details appear only on that invoice.</li>
+        <li>Compare the document's company name, grade and batch reference with the quotation and the goods.</li>
+      </ol>
+
+      <h2>8. What we do not claim</h2>
+      <ul>
+        <li>We do not own a printing factory. We specify, coordinate and quality-check work produced by partner presses in China.</li>
+        <li>We do not hold ISO 9001, CE, FSC, GS1, food-contact or social-compliance certifications for the labels we sell.</li>
+        <li>We do not claim FDA approval, a factory audit or a test result that we cannot produce on request.</li>
+        <li>We do not publish customer names, logos or photographs without written permission.</li>
+        <li>We do not provide legal advice, a customs classification ruling or a guarantee that a marketplace or authority will accept a label.</li>
       </ul>
 
-      <h2>What this means for a first order</h2>
+      <h2>9. What this means for a first order</h2>
       <p>
-        The honest position is narrow but clear: we can specify the material, check the artwork, place the job with
-        a production partner, inspect the output against the approved proof and arrange shipment. We cannot turn a
-        trading company into a factory, and we will not pretend that a certificate exists because a buyer asked for
-        one. If that is the level of documentation your process needs, we would rather tell you now.
+        We can specify a material, check artwork, request producer documents, place the job, inspect output against
+        the approved proof and arrange shipment. We cannot turn a trading company into a testing laboratory or a law
+        firm. If your compliance process needs a document that does not exist, the honest answer is “not available”,
+        and it is better to hear that before the deposit than to receive a PDF that does not survive verification.
       </p>
       <p class="small">
-        Questions about a specific document: <a href={`mailto:${site.email}`}>{site.email}</a>.
-        Company details are on the <a href="/about/">about page</a>; the editorial rules are on
-        <a href="/editorial-standards/">editorial standards</a>.
+        Related policies: <a href="/privacy/">Privacy</a> · <a href="/cookies/">Cookies</a> ·
+        <a href="/terms/">Terms</a> · <a href="/refund-policy/">Returns</a> ·
+        <a href="/shipping-delivery/">Shipping</a> · <a href="/editorial-standards/">Editorial standards</a> ·
+        <a href="/methodology/">Methodology</a> · <a href="/corrections/">Corrections</a> ·
+        <a href="/disclaimer/">Disclaimer</a> · <a href="/accessibility/">Accessibility</a> ·
+        <a href="/contact/">Contact</a>
       </p>
     </div>
   </section>
-  <CtaBand />
 </BaseLayout>

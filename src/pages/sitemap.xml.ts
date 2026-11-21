@@ -1,19 +1,8 @@
 import type { APIRoute } from "astro";
 import { getCollection } from "astro:content";
+import { sitePages } from "../data/sitePages";
 
-const staticPaths = [
-  "/", "/about/", "/contact/", "/how-to-order/", "/request-a-quote/", "/faq/",
-  "/artwork-guidelines/", "/shipping-delivery/", "/products/", "/industries/",
-  "/custom-labels/", "/custom-stickers/", "/roll-labels/", "/bottle-labels/",
-  "/jar-labels/", "/cosmetic-labels/", "/food-labels/", "/waterproof-labels/",
-  "/clear-labels/", "/vinyl-stickers/", "/logo-stickers/", "/die-cut-stickers/",
-  "/sticker-sheets/", "/clear-stickers/", "/low-moq-label-printing/",
-  "/small-batch-sticker-printing/", "/privacy/", "/cookies/", "/terms/", "/refund-policy/",
-  "/editorial-standards/", "/declarations/", "/knowledge/",
-  "/knowledge/label-sizing/", "/knowledge/label-cost/", "/knowledge/marketplace-labels/",
-  "/knowledge/label-materials/", "/knowledge/sticker-materials/", "/knowledge/printing/",
-  "/knowledge/artwork/", "/knowledge/hang-tags/",
-];
+const staticPaths = sitePages.map((page) => page.path);
 
 export const GET: APIRoute = async ({ site }) => {
   const base = (site ?? new URL("https://customstickersprinting.com")).href.replace(/\/$/, "");

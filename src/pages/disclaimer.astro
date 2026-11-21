@@ -1,0 +1,145 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { site } from "../data/site";
+import { getSitePage, REVIEWED_DATE, REVIEWED_ISO } from "../data/sitePages";
+
+const page = getSitePage("/disclaimer/");
+---
+
+<BaseLayout
+  title={page.title}
+  description={page.description}
+  alternateMd="/disclaimer/index.md"
+  pageType="WebPage"
+  dateModified={REVIEWED_ISO}
+>
+  <Breadcrumbs items={[{ label: "Disclaimer" }]} />
+  <section class="tight">
+    <div class="wrap narrow prose">
+      <h1>Printing information disclaimer</h1>
+      <p class="small">Last reviewed: {REVIEWED_DATE}</p>
+      <p class="lead" style="font-size:1.05rem;color:var(--ink-2)">
+        This site explains how labels and stickers are specified, printed and shipped. It is a buying aid, not a
+        substitute for advice from your lawyer, regulatory consultant, customs broker, testing laboratory or market
+        authority. The limits below apply to every article, example and calculation on the site.
+      </p>
+
+      <h2>1. Information, not professional advice</h2>
+      <p>
+        Nothing here is legal, regulatory, food-contact, customs, medical or other professional advice. We describe
+        common printing questions and the decisions a buyer usually needs to make. We do not tell you whether a
+        particular label is lawful in your market, whether a claim about a product is permitted, or whether a
+        substance may contact food. Those questions depend on your product, formulation, market, intended use and
+        current rules, and they belong with a qualified adviser.
+      </p>
+      <table>
+        <thead>
+          <tr><th scope="col">What this page does</th><th scope="col">What this page does not do</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Explains printing, material and artwork choices</td><td>Approve a label, product or SKU for a market</td></tr>
+          <tr><td>Links or names standards and official sources where relevant</td><td>Interpret a regulation for your product or provide legal advice</td></tr>
+          <tr><td>Shows the inputs that affect a quotation and lead time</td><td>Create a binding price or delivery commitment</td></tr>
+          <tr><td>Helps you ask better questions of producers and authorities</td><td>Replace confirmation from a regulator, retailer, marketplace or laboratory</td></tr>
+        </tbody>
+      </table>
+
+      <h2>2. Artwork and regulatory responsibility sit with the buyer</h2>
+      <p>
+        The buyer or importer of record is responsible for the content of the artwork: product name, ingredients,
+        warnings, net quantity, origin, barcode data, claims, symbols and any language requirements. We print the
+        artwork you approve. We can check whether a file is mechanically printable and can flag an obvious missing
+        bleed, an unreadable barcode or artwork placed outside a die line. That is a pre-press check, not a legal or
+        regulatory review. Approval of a proof confirms that you accept the wording, layout, dimensions and colour
+        shown in it.
+      </p>
+
+      <h2>3. Regulatory approval is market-specific</h2>
+      <p>
+        The United States, European Union, United Kingdom, Canada, Australia and every other destination have their
+        own rules, and a retailer or marketplace may impose requirements beyond them. A statement that is acceptable
+        for one product in one country can be wrong for the same product elsewhere. We do not guarantee that a
+        label, package or claim will be accepted by a retailer, marketplace, customs authority or regulator, and
+        nothing on this site should be read as that guarantee.
+      </p>
+
+      <h2>4. Calculations and examples are illustrative, not a quotation</h2>
+      <p>
+        Any wrap length, label count, capacity or cost-per-unit figure is an example of the method, not a price for
+        your job. A real price depends on final size, shape, material, adhesive, quantity, print method, finishing,
+        proofing, packing and freight at the time of quoting. Small changes to a die line, a laminate or a delivery
+        postcode can change the result. Only a written quotation issued for your specification is an offer.
+      </p>
+
+      <h2>5. Materials, colour and lead times can vary</h2>
+      <p>
+        Paper, film, adhesive and laminate batches differ. Colour can shift between screen, digital proof, press
+        proof and production run, and a screen is never a colour reference. Lead time is counted from approval of
+        the final artwork, not from first enquiry, and it can change if material has to be ordered or freight is
+        disrupted. The approved proof defines the job; a photograph on a monitor does not. If a particular colour,
+        substrate batch or delivery date is essential, ask for it to be agreed in writing and, where appropriate,
+        approve a physical sample.
+      </p>
+
+      <h2>6. Standards and third-party sources can be revised</h2>
+      <p>
+        A standard, official guidance page or supplier data sheet may be replaced after we cite it. We link to the
+        source we read where a page relies on one, but a citation is not an endorsement of every statement on that
+        site and does not freeze the source at the version we used. Before relying on a requirement, open the
+        current edition and check its scope. Where a number comes from a supplier data sheet, we identify it as
+        supplier data rather than presenting it as our own test.
+      </p>
+
+      <h2>7. External links and third-party sites</h2>
+      <p>
+        Links to registries, standards bodies, carriers, authorities and other third parties are provided for
+        verification and context. We do not control those sites, their availability, their security or their
+        accuracy, and a link does not create a partnership or approval. If an external page conflicts with this
+        site, the official source and your written contract should take priority.
+      </p>
+
+      <h2>8. No guarantee of commercial outcome</h2>
+      <p>
+        We do not promise sales, search rankings, marketplace approval, retailer acceptance, customer conversion or
+        any other commercial result. A well-printed label cannot make a product compliant or successful, and a
+        technically correct proof cannot guarantee that a third party will interpret it as you intend. Those
+        outcomes depend on factors outside the print job.
+      </p>
+
+      <h2>9. Limitation of liability</h2>
+      <p>
+        To the extent permitted by law, we are not liable for decisions made solely on the basis of general
+        information on this website. Liability for an order is governed by our <a href="/terms/">terms of sale</a>,
+        which limit it to the value of the affected order and exclude indirect or consequential loss. Nothing in
+        those terms or this page excludes a right or liability that cannot lawfully be excluded, including
+        mandatory consumer rights where they apply.
+      </p>
+
+      <h2>10. Five checks before you rely on a page</h2>
+      <ol>
+        <li><strong>Check the date.</strong> Read the “Last reviewed” line and ask whether rules or materials may have changed since then.</li>
+        <li><strong>Open the cited source.</strong> Read the current version, not only the sentence that quotes it.</li>
+        <li><strong>Confirm with the authority or marketplace.</strong> Check the requirement with the body that will enforce it, in the market where your product will be sold.</li>
+        <li><strong>Get written confirmation for your SKU and market.</strong> A generic answer is not approval of your product, artwork or container.</li>
+        <li><strong>Tell us if something is wrong.</strong> Send the page, the sentence and your evidence so we can review it.</li>
+      </ol>
+
+      <h2>11. How to report an error</h2>
+      <p>
+        Email <a href={`mailto:${site.email}`}>{site.email}</a> with the subject “Correction” and include the page
+        URL, the passage, what you believe is wrong and a source we can check. Our <a href="/corrections/">corrections
+        policy</a> explains the response times and how a change is recorded. A disagreement with a recommendation is
+        also useful: it tells us where a page needs to be clearer.
+      </p>
+      <p class="small">
+        Related policies: <a href="/privacy/">Privacy</a> · <a href="/cookies/">Cookies</a> ·
+        <a href="/terms/">Terms</a> · <a href="/refund-policy/">Returns</a> ·
+        <a href="/shipping-delivery/">Shipping</a> · <a href="/declarations/">Declarations</a> ·
+        <a href="/editorial-standards/">Editorial standards</a> · <a href="/methodology/">Methodology</a> ·
+        <a href="/corrections/">Corrections</a> · <a href="/accessibility/">Accessibility</a> ·
+        <a href="/contact/">Contact</a>
+      </p>
+    </div>
+  </section>
+</BaseLayout>

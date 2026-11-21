@@ -1,64 +1,109 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
-import CtaBand from "../components/CtaBand.astro";
 import { site } from "../data/site";
+import { getSitePage, REVIEWED_DATE, REVIEWED_ISO } from "../data/sitePages";
+
+const page = getSitePage("/shipping-delivery/");
 ---
 
-<BaseLayout title="Shipping and delivery" description="How custom labels and stickers are shipped to the US, UK and EU: production lead time, courier and freight options, tracking, duties and packaging.">
+<BaseLayout
+  title={page.title}
+  description={page.description}
+  alternateMd="/shipping-delivery/index.md"
+  pageType="WebPage"
+  dateModified={REVIEWED_ISO}
+>
   <Breadcrumbs items={[{ label: "Shipping & delivery" }]} />
   <section class="tight">
     <div class="wrap narrow prose">
       <h1>Shipping and delivery</h1>
-      <p>Production and delivery are two separate clocks. Production is ours; transit is the carrier's. Both are stated in the quotation. If something arrives damaged or short, the <a href="/refund-policy/">returns and reprints policy</a> explains the 7-day transit window; production defects have a 14-day window under the <a href="/terms/">terms</a>.</p>
+      <p class="small">Last reviewed: {REVIEWED_DATE}</p>
+      <p class="lead" style="font-size:1.05rem;color:var(--ink-2)">
+        Production and transit are separate clocks. We control the production plan until the goods are handed to the
+        carrier; after that, the route and the customs process determine the rest. The quotation states which clock
+        and which shipping term it is pricing.
+      </p>
 
-      <h2>Production</h2>
+      <h2>1. Production and transit are separate</h2>
+      <p>
+        A label order cannot ship before the proof is approved and the deposit is received. The production estimate
+        starts from approval, not from the first email. Transit starts from collection, and customs can add time that
+        neither we nor the carrier controls. If a date is essential, tell us before the quote so the production and
+        freight options can be planned together.
+      </p>
+
+      <h2>2. Production versus transit</h2>
       <table>
+        <thead>
+          <tr><th scope="col">Stage</th><th scope="col">Estimated time</th><th scope="col">Starts when</th><th scope="col">What affects it</th></tr>
+        </thead>
         <tbody>
-          <tr><th scope="row">Standard</th><td>7–12 working days after artwork approval</td></tr>
-          <tr><th scope="row">Samples</th><td>Quoted separately; usually 5–8 working days plus transit</td></tr>
-          <tr><th scope="row">Peak periods</th><td>Longer around public holidays in China; we flag it when you order</td></tr>
+          <tr><td>Print production</td><td>7–12 working days</td><td>Artwork approval, deposit and material availability</td><td>Quantity, finishing, material, colour proof and press scheduling</td></tr>
+          <tr><td>Sample production</td><td>5–8 working days plus transit</td><td>Sample specification, artwork approval and sample payment</td><td>Material, handwork, die and courier route</td></tr>
+          <tr><td>Express transit</td><td>Typically 3–7 working days to the US, UK or EU</td><td>Carrier collection</td><td>Destination, service, customs clearance and peak season</td></tr>
+          <tr><td>Air or sea freight</td><td>Quoted per shipment</td><td>Carrier booking and export clearance</td><td>Weight, volume, route, port congestion and import clearance</td></tr>
         </tbody>
       </table>
-
-      <h2>Transit</h2>
       <p>
-        Small and medium runs ship by express courier (typically 3–7 working days to the US, UK or EU). Larger runs
-        can go by air or sea freight, which is cheaper per kilogram and slower. The quotation states which option is
-        being priced.
+        These are planning ranges, not guaranteed dates. A carrier or customs authority can change the estimate after
+        collection. We will tell you when we know of a delay rather than let a tracking page be the only source.
       </p>
 
-      <h2>Duties and taxes</h2>
+      <h2>3. Incoterms® 2020 in a quotation</h2>
       <p>
-        Import duties and VAT are set by the destination country and are not included unless the quotation says
-        delivered duty paid. We state the shipping terms explicitly so there is no surprise at customs. If you have
-        a tax number for the EU or UK, send it with the order.
+        The quotation must state one shipping term. EXW means the buyer collects at the named seller location; FOB
+        means the seller delivers to the named port and clears export, with the main carriage and import arranged by
+        the buyer; DAP means we deliver to the named destination but the buyer remains responsible for import duty
+        and clearance; DDP means we arrange delivery with duty paid, subject to the destination and the quote. These
+        are options that can be priced, not promises that every route is available. The named place is part of the
+        term, and any insurance, unloading or clearance cost not included remains the buyer's.
       </p>
 
-      <h2>Packaging</h2>
+      <h2>4. Duties, taxes and HS codes</h2>
       <p>
-        Labels ship on rolls or flat sheets, boxed and wrapped against moisture. Stickers ship flat or on rolls
-        depending on the die and quantity. If you need retail-ready packaging or individual poly bags, say so before
-        the quote — it changes both packing time and cost.
+        Import duty and VAT are set by the destination country. They are not included unless the quotation says DDP.
+        We provide commercial-invoice information and the HS code used for the shipment; we do not issue a binding
+        classification ruling. Your customs broker or importer remains responsible for classification, licensing and
+        duty. If you have a tax number for the UK or EU, send it with the order so the invoice can show the correct
+        details.
       </p>
 
-      <h2>Tracking and issues</h2>
+      <h2>5. Packaging and split shipments</h2>
       <p>
-        Every shipment gets a tracking number. If a parcel is delayed, damaged or short, tell us within seven days
-        of delivery with photos of the carton and the contents; we will raise it with the carrier and replace
-        defective stock.
+        Labels usually travel on rolls or flat sheets, boxed and wrapped against moisture. Stickers may be flat or on
+        rolls depending on the die and quantity. Retail-ready packing, individual poly bags and special carton marks
+        can be quoted, but they change packing time and freight. If one order goes to several addresses, each is a
+        separate shipment with its own cost and delivery estimate; tell us before the quote if the order needs to be
+        split.
       </p>
 
-      <h2>Packaging and split shipments</h2>
+      <h2>6. Tracking and delivery problems</h2>
       <p>
-        Labels ship on rolls or flat sheets, boxed and wrapped against moisture. If one order goes to several
-        addresses, each destination is a separate shipment and is quoted separately. A split shipment can be
-        cheaper than forwarding one parcel, but it may change the total freight and the delivery dates. Tell us
-        before the quote if the order needs to be split.
+        We provide the tracking reference supplied by the carrier. Tracking can pause while a parcel is in customs or
+        moving between carrier networks; a scan gap is not proof of loss. If tracking has not updated for an
+        unreasonable period, send us the order reference and we will ask the carrier to investigate. If an address
+        is incomplete or the consignee refuses the parcel, return or re-delivery costs are quoted before the
+        replacement is sent.
       </p>
 
-      <p class="small">Destinations: United States, United Kingdom, European Union. Other countries on request.</p>
+      <h2>7. Damage and short delivery claims</h2>
+      <p>
+        Report transit damage or a short delivery within 7 days of delivery. Photograph the outer carton, the
+        packaging label and the affected goods, then email <a href={`mailto:${site.email}`}>{site.email}</a> with the
+        order reference, quantity affected and the batch or lot reference. We will raise the carrier claim and
+        confirm the remedy in writing. Production defects have a 30-day inspection period under the
+        <a href="/terms/">terms</a>; read the <a href="/refund-policy/">returns policy</a> for how reprints and
+        refunds are handled.
+      </p>
+      <p class="small">
+        Related policies: <a href="/privacy/">Privacy</a> · <a href="/cookies/">Cookies</a> ·
+        <a href="/terms/">Terms</a> · <a href="/refund-policy/">Returns</a> ·
+        <a href="/declarations/">Declarations</a> · <a href="/editorial-standards/">Editorial standards</a> ·
+        <a href="/methodology/">Methodology</a> · <a href="/corrections/">Corrections</a> ·
+        <a href="/disclaimer/">Disclaimer</a> · <a href="/accessibility/">Accessibility</a> ·
+        <a href="/contact/">Contact</a>
+      </p>
     </div>
   </section>
-  <CtaBand />
 </BaseLayout>
