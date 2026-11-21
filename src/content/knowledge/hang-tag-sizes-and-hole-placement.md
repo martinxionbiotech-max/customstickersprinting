@@ -75,3 +75,19 @@ For retail, the barcode needs a quiet zone and enough magnification. A small tag
 **Add an eyelet if the tag will be handled.** It is a small cost against a torn hole and a lost tag.
 
 **Keep the barcode at a readable size.** If it does not fit, change the tag format rather than shrinking the symbol below the scanner’s comfort zone.
+
+## The centred hole that still hangs the tag crooked
+
+A hole can be centred in the file and still make the tag hang crooked. The eyelet may sit off-centre inside the hole, the string may enter from one side, or the knot may pull against the top edge. An asymmetric dieline can make the visual mass sit left or right even when the measured hole is centred. On the rail, gravity finds the error immediately.
+
+The cut shape, eyelet and attachment define the true centre. Centre should be measured from the finished outline, not the rectangular artboard around it. A large eyelet needs more clearance, a thick string changes the pivot point, and a heavy product magnifies a small offset. Front and back artwork can also create an optical lean even when the geometry is correct. The proof needs to show the assembled object, not only the flat card.
+
+Use the final dieline and a 1:1 proof, then hang a physical sample from the intended string with the product attached. Let it settle and photograph it against a vertical line. Measure the hole from both sides of the cut and confirm the eyelet position before approving the run. The [hang-tags hub](/knowledge/hang-tags/) covers the guide, [hang tags](/hang-tags/) shows the product, and [hang tag artwork and dielines](/knowledge/hang-tag-artwork-and-dielines/) explains the layer setup.
+
+| How the tag hangs | Placement cause | Measurement to make |
+|---|---|---|
+| Leans to one side | Hole or eyelet is off the cut centre | Compare distances from both edges |
+| Tips forward | String pulls against a high hole | Check the top-edge offset |
+| Sits lower than intended | Knot allowance was omitted | Measure the finished drop |
+| Rotates on the rail | Hole is too large for the attachment | Match hole to string or eyelet |
+| Hole stretches open | Clearance is too tight for the eyelet | Inspect the cut around the barrel |

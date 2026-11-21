@@ -74,3 +74,19 @@ If the goal is durability, specify the laminate first. If the goal is a premium 
 **Match thickness to the surface.** Flat packaging can take heavy stock; small-radius bottles cannot.
 
 **Ask what the total construction is.** Face stock, adhesive and laminate together — a single "microns" number usually means only the face.
+
+## Why a stiffer sticker curls on the bottle but not the laptop
+
+A thick sticker can feel premium on a flat laptop lid and behave badly on a narrow bottle. The face stock has a natural memory, so bending it around a tight radius stores tension at the edges. The sticker may look flat when applied, then lift as the film tries to return to its original shape. A heavy liner and a thick laminate add to that resistance. The failure looks like weak adhesive, but the construction is fighting the surface.
+
+Radius, not product width, is the useful way to read the thickness. A broad jar front behaves like a flat panel; the shoulder of the same jar does not. A thin vinyl with a flexible laminate is usually easier to conform around a small tube, while a heavier face can be appropriate for a rigid, flat item that is peeled by hand. Temperature, the adhesive and the application pressure still matter, so thickness alone cannot predict success.
+
+Test the full construction on the exact curve, then leave it in the expected temperature before judging it. Write the face, adhesive, liner and laminate into the quote, and check the edge rather than the centre after handling. The [sticker-materials hub](/knowledge/sticker-materials/) compares the film families, and the [vinyl sticker](/vinyl-stickers/) page explains the stock choices. [Label durability by material](/knowledge/label-durability-by-material/) helps separate stiffness from protection.
+
+| Applied surface | Stiffness effect | Sample test |
+|---|---|---|
+| Flat laptop lid | Holds shape and resists peeling | Peel from one corner by hand |
+| Narrow bottle shoulder | Edge tension compounds on the curve | Watch the perimeter for a day |
+| Flat jar front panel | Behaves like a broad label | Check for trapped air only |
+| Insulated tumbler curve | Rigid film may bridge the taper | Press around the full edge |
+| Die-cut sticker sheet | Body can help flat handling | Check that the liner still releases |

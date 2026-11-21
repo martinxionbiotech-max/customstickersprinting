@@ -5,7 +5,7 @@ pillar: marketplace-labels
 order: 2
 updated: "2026-11"
 published: "2026-11-07"
-reviewed: "2026-11-07"
+reviewed: "2026-11-21"
 relatedProducts: ["custom-labels", "sticker-sheets", "logo-stickers"]
 view: >-
   The warning is cheap and the failure is expensive, which is why we recommend a printed label rather than trusting a
@@ -96,3 +96,19 @@ For a first shipment, warning labels are the pragmatic choice: they work on what
 **Use the current wording.** Marketplace requirements change; a label printed from a 2019 template may not match.
 
 **Order warning labels with the unit labels.** One print run, one shipment, one application step.
+
+## A warning that is present, legible, and still rejected
+
+A warning can be printed correctly and still be invisible in the packed bag. The product pushes the label into a fold, the FNSKU is applied over the wording, or the warning faces the inside of a doubled bag. A pale ink on a coloured bag may look legible on screen and disappear under warehouse lighting. The artwork passes a flat inspection while the finished package hides the required message.
+
+How the bag is filled and closed changes what remains visible. A large bag that is only partly filled can move the warning away from the visible face; a tightly filled bag can wrinkle it against the product. A multipack may have more than one bag, and each outer surface needs review. A warning sticker has to hold on polyethylene and on curves, especially if the packed unit moves through a cold chain. The current wording and threshold still need confirmation for the destination programme.
+
+One bag should be filled exactly as production will, sealed and inspected from outside without turning the product. Confirm that the warning is visible alongside the unit label, not beneath it, and test the sticker's edge where it curves. Ask for the current marketplace wording and measure the opening rather than the flat bag width. The [marketplace-labels hub](/knowledge/marketplace-labels/) covers shipment labels, [custom labels](/custom-labels/) makes the warning part, and [label regulatory basics](/knowledge/label-regulatory-basics/) explains the brand's text ownership.
+
+| Packed-bag condition | Why the warning disappears | Final-state inspection |
+|---|---|---|
+| Product presses against the film | Wording wrinkles or faces inward | View the sealed bag from outside |
+| Warning sits on the bottom fold | The product hides it after filling | Check every visible face |
+| FNSKU covers the warning block | Two required messages compete for space | Map both labels before application |
+| Pale print on a coloured bag | Contrast drops under warehouse light | Read it at arm's length |
+| Sticker lifts in a cold room | Adhesive loses contact on the curve | Press and inspect the edge |

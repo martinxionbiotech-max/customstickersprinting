@@ -80,3 +80,19 @@ If removal matters, test that too. A removable adhesive can peel cleanly from gl
 **Outdoor is a separate specification.** UV-stable film plus laminate plus outdoor adhesive; one of the three missing shortens life dramatically.
 
 **Ask for a sample on the actual surface.** A sticker that holds on a desk may slide on a powder-coated panel.
+
+## The edge lift that starts before the customer applies the sticker
+
+A sticker can feel securely bonded in the hand and still lift at one edge a day later. The adhesive needs time to wet the surface, and that contact is easily interrupted by dust, oil, a release liner that has curled in storage, or pressure applied only to the centre. On a textured coating, the glue may touch the peaks while leaving air in the valleys. The print can be perfect while the bond is only partial.
+
+The correct adhesive depends on the surface and the application routine. Glass is forgiving; HDPE, recycled plastic and powder-coated metal are less so. A cold label or cold container slows the initial bond, and a curved sticker needs pressure carried around the full perimeter rather than across the middle. Removable adhesive behaves differently again: it may hold in a showroom and release in a warm car. Storage instructions are part of the specification, not an afterthought.
+
+Application guidance belongs with the [custom stickers](/custom-stickers/) order: cleaning method, surface temperature, pressure and how long to leave the sticker before handling. Apply a sample to the production surface, burnish the edges and inspect again after normal handling. The [sticker-materials hub](/knowledge/sticker-materials/) explains the film choices, while [label adhesive by surface](/knowledge/label-adhesive-by-surface/) sets out the surface-adhesive match in more detail.
+
+| First sign of trouble | What it suggests | Practical pre-order question |
+|---|---|---|
+| Corner lifts within a day | Surface contamination or low tack | Which cleaner is compatible with the surface? |
+| Whole sticker slides | Adhesive too soft for a low-energy surface | Is a low-surface-energy grade available? |
+| Bubbles across a textured coating | Air trapped in valleys | Will extra pressure help, or is the film too stiff? |
+| Edge curls before application | Liner or storage problem | How should sheets and rolls be stored? |
+| Clean peel from painted wall | Removable adhesive meets weak paint | Has removal been tested on the coating? |

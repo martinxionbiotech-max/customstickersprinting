@@ -88,3 +88,19 @@ Those decisions belong to the brand, its regulatory adviser or the destination r
 **Check the current version.** Rules and retailer specifications change; a label approved last year may not be current this year.
 
 **Use official sources.** The NIST FPLA page and the EUR-Lex texts linked below are starting points; the destination retailer’s packaging manual is often stricter than the law.
+
+## The legal line the printer can set but cannot verify
+
+A label can contain a legally required sentence, set cleanly and placed inside the safe area, and still be wrong. The copy may come from an old pack, another market or a formula that has since changed. A printer can confirm that the words fit and remain legible; it cannot know whether the claim is permitted, the ingredient name is current or the product has crossed into a different category. The gap is ownership, not typography.
+
+Destination, sales channel and product classification all shift the copy. A phrase accepted in a DTC listing may be insufficient for retail, and a translation can expand far beyond the space reserved for the English version. A new claim can change whether the product is treated as a cosmetic, a drug or a food. If no one on the brand side can name the source and version of the copy, the label is not ready for a production proof, however complete it looks.
+
+An approved copy manifest should carry the exact wording, market, language, source and responsible reviewer. Place that copy before the design is final, then ask the printer only to flag fit, contrast and version mismatches in the file. Keep the signed proof and manifest with the order. The [marketplace-labels hub](/knowledge/marketplace-labels/) explains channel requirements, [custom labels](/custom-labels/) shows the print route, and the [label-compliance hub](/knowledge/label-compliance/) covers market-specific guidance.
+
+| Compliance handoff gap | What print can still show | Brand-side verification |
+|---|---|---|
+| Copy reused from an old package | A polished, legible sentence | Compare against the current source |
+| Text intended for another market | Correct language, wrong required content | Name the destination market |
+| Translation expands in layout | No clipping if the designer resizes it | Approve the longest language first |
+| Claim changes product category | The same label with a new line | Reassess the applicable regime |
+| Formula changes after approval | The previous proof still looks complete | Re-approve affected declarations |

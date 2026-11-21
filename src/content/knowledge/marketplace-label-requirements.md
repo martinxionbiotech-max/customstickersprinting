@@ -5,7 +5,7 @@ pillar: marketplace-labels
 order: 0
 updated: "2026-11"
 published: "2026-11-07"
-reviewed: "2026-11-08"
+reviewed: "2026-11-21"
 relatedProducts: ["custom-labels", "roll-labels", "logo-stickers"]
 view: >-
   Most dock rejections are not printing failures, they are specification failures: the wrong barcode, a bag without a
@@ -213,3 +213,19 @@ Every one of these is a specification error, not a printing error. All five are 
 - [Suffocation warning labels](/knowledge/suffocation-warning-labels/)
 - [Barcode label printing](/knowledge/barcode-label-printing/)
 - [Retail packaging labels](/knowledge/retail-packaging-labels/)
+
+## The shipment label that passes one check and fails the next
+
+Each label in a marketplace shipment can pass its own inspection and still fail beside the others. An FNSKU may be perfectly scannable until it is applied over the suffocation warning. A warning may be present until the product pushes it into the bag's fold. A carton label may contain every field but be placed across a seam that tears during handling. The checks are sequential, while the labels share one physical surface.
+
+SKU, channel and packing method determine where labels share space. A commingled unit with an FNSKU overlay has a different visible area from one using the manufacturer barcode. A multipack has several surfaces where a unit label, bag warning and set label can collide. Expiration dates add another field on both the unit and carton. Retail onboarding may impose placement rules that the marketplace itself does not, so one packed prototype is not evidence for every channel.
+
+A fully packed unit and carton should be built before printing volume, then labelled in the order the packer will use. Scan the result and inspect it without moving the bag or smoothing a wrinkle. Ask for a per-SKU label map that names each part and its face. The [marketplace-labels hub](/knowledge/marketplace-labels/) covers the guide, [custom labels](/custom-labels/) provides the printed parts, and [FNSKU labels](/knowledge/fnsku-labels/) explains the unit identifier.
+
+| Receiving checkpoint | Passes in isolation | Fails when combined |
+|---|---|---|
+| Unit barcode scan | Symbol is crisp and centred | The overlay covers the bag warning |
+| Bag warning check | Wording is present and legible | Product hides it against the bag wall |
+| Carton routing | All required fields are printed | Label crosses a seam and tears |
+| Expiration-date review | Unit and carton each carry a date | The two dates disagree by lot |
+| Retailer onboarding | Legal text meets the baseline | Vendor placement rules differ |

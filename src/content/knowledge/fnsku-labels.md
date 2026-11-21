@@ -5,7 +5,7 @@ pillar: marketplace-labels
 order: 1
 updated: "2026-11"
 published: "2026-11-07"
-reviewed: "2026-11-07"
+reviewed: "2026-11-21"
 relatedProducts: ["custom-labels", "roll-labels", "logo-stickers"]
 view: >-
   An FNSKU is not a product code, it is an ownership tag, and that is why it has to cover the UPC rather than sit
@@ -92,3 +92,19 @@ A practical rule is **105% of planned units, plus one roll**.
 **Test one unit with a real scanner** before labelling a whole carton. A phone camera is more forgiving than a receiving station.
 
 **Keep the label flat.** A curved or wrinkled FNSKU is a rejected unit.
+
+## When a perfectly scannable FNSKU belongs to the wrong unit
+
+An FNSKU can scan cleanly and still identify the wrong product. Similar size variants share a packing bench, two rolls sit side by side, or a reworked return receives a label from the previous production run. A shared carton can also be split between SKUs with nearly identical packaging. The barcode is correct, the print is sharp and the unit passes a scan, yet the code belongs to another listing. The failure starts as a changeover mistake and appears later as mismatched inventory.
+
+Active listings, packaging similarity and packing sequence set the risk. A single-SKU run gives the operator little opportunity to choose the wrong roll; a mixed run of colours or sizes creates many. Partial rolls left from an earlier listing are easy to reuse without checking. A packaging revision can also move the UPC while the old FNSKU placement template remains in circulation.
+
+Labels should be ordered against a named listing, with both the FNSKU and a plain-language product description on the roll. At each changeover, scan the first and last unit against the expected listing and quarantine old or returned stock separately. Keep the roll's outer label and packing slip tied to that same listing so a later carton check can uncover a swap. The [marketplace-labels hub](/knowledge/marketplace-labels/) explains the wider shipment, [roll labels](/roll-labels/) covers the format, and [barcode label printing](/knowledge/barcode-label-printing/) describes the symbol checks.
+
+| Packing-floor moment | Wrong-unit risk | Changeover control |
+|---|---|---|
+| Two similar size variants | Operator selects the neighbouring roll | Keep only the active roll at the bench |
+| Partial roll from a previous run | Old labels return without review | Seal and label the remainder |
+| Reworked return | Old FNSKU remains under a new one | Remove or fully obscure the old code |
+| Kit assembly | One unit receives a sibling's label | Scan against the bill of materials |
+| Packaging redesign | Placement template no longer matches | Re-approve the overlay position |

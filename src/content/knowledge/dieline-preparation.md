@@ -80,3 +80,19 @@ If you do not have a dieline, send the artwork and a dimensioned sketch. The pri
 **Consider a standard shape at low volume.** A die is a one-off cost that never goes away.
 
 **Ask for a cut proof on the real material.** Paper and vinyl behave differently at the same path.
+
+## A closed outline that still cannot be cut cleanly
+
+A closed outline can still be hostile to a cutter. Overlapping nodes, a path that crosses itself, two shapes touching at one point, or a letter-shaped cut-out with a narrow bridge all pass a quick zoom test. A blade cannot turn that geometry cleanly: it tears the material, leaves a hanging fragment, or forces an operator to repair the path. The shape is not technically open, but it is not production-ready.
+
+Material and cutting method decide what a clean path can tolerate. Paper and soft film respond differently to a fine neck, a steel die has different clearance requirements from a plotter, and a small internal window needs more support than a broad outer curve. Multi-piece sheets add spacing between paths so one cut does not weaken its neighbour. Simplifying an auto-traced logo may look less literal on screen while producing a cleaner and more consistent edge.
+
+An outline-only preview should show a single, intentional shape with no crossings or stray segments. Confirm the smallest bridge and the spacing to neighbouring pieces. Supply the vector source or ask the printer to create the dieline before artwork is finalised. The [artwork hub](/knowledge/artwork/) covers preparation, [die-cut stickers](/die-cut-stickers/) shows the finished format, and [die cut versus kiss cut](/knowledge/die-cut-vs-kiss-cut/) explains the blade behaviour.
+
+| Outline looks closed | Hidden cutting problem | Preflight action |
+|---|---|---|
+| Path crosses itself | The blade doubles back through the material | Simplify to one clean contour |
+| Two shapes touch at a point | The join tears during peeling | Separate the paths by a safe gap |
+| Tiny internal window remains | The centre piece drops or the edge crumbles | Widen the window or remove it |
+| Auto-trace leaves a jagged edge | Excess nodes slow and roughen the cut | Redraw the contour as a smooth curve |
+| Path reaches the artboard edge | The export clips part of the shape | Pull the complete path inside the page |

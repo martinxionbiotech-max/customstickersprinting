@@ -88,3 +88,19 @@ If the sticker is a keeper, a gift or a product in itself, the feel of the mater
 **Laminate is not cosmetic on vinyl.** It is the durability layer, and its absence is the most common reason a "vinyl sticker" fails in a month.
 
 **Ask for a sample on the actual surface.** Vinyl on glass, kraft board and powder-coated metal behaves differently, and the adhesive matters as much as the film.
+
+## When a paper sticker fails in a place that looked dry
+
+Paper stickers usually fail at an edge, not across the printed face. Moisture from condensation, a cold van, a damp storeroom or a wet hand can travel under the film and into the paper, even when the label has a laminate. The sheet cockles, the adhesive releases at one corner, or the laminate lifts with fibres attached. On a retail carton the damage can appear after packing, when the box moves between climates and nobody is watching.
+
+The material choice changes with the full journey, not the shelf condition. A coated paper sticker under a tight laminate can be sound on a dry gift box, while an unlaminated paper sticker on a chilled bottle is the wrong construction however good the artwork looks. A cold surface can also stop the adhesive building a bond before the paper has a chance to absorb anything. If the parcel will be handled roughly or stored in humid air, vinyl is the simpler specification; if it will stay dry and short-lived, paper remains sensible.
+
+Before approving, put the exact sample on the actual substrate and leave it through the conditions you expect, including a move from cold to warm if that is part of the route. Check the edges after handling rather than judging the centre. Ask for the [vinyl sticker](/vinyl-stickers/) construction and laminate to be written into the quote, not implied by a material name. The [sticker-materials hub](/knowledge/sticker-materials/) explains the alternatives, and [waterproof label materials](/knowledge/waterproof-label-materials/) covers the wet-service decision.
+
+| Journey or surface | Paper warning to inspect | Construction question |
+|---|---|---|
+| Cold van into a warm stockroom | Curled edge or cloudy laminate | Is the adhesive rated for condensation? |
+| Dry gift box kept indoors | Scuff on a corner only | Is paper still the cheaper, sensible choice? |
+| Parcel rubbed in transit | Worn printed edge | Does the laminate cover the whole face? |
+| Chilled bottle or jar | Soft face or lifted edge | Would film and a wet-surface adhesive be safer? |
+| Short-lived event tag | Slight cockling after handling | Is the sticker needed for more than one day? |

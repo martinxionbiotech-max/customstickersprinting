@@ -81,3 +81,19 @@ If you cannot tick every line, send the file anyway and say what is missing. A p
 **Keep cut paths and white-ink areas on separate layers.** It removes an entire class of setup charges.
 
 **Screenshots are not artwork.** A 72 dpi image from a website will not print at 60 mm.
+
+## The file that opens on screen but cannot reach the cutter
+
+A file can open on the recipient's screen, preview correctly and still lose the information production needs. A PDF exported with layers flattened may show the cut line visually but no longer contain editable vector geometry. An embedded logo may be a screenshot inside a polished layout, and a renamed spot colour may arrive as ordinary process ink. Nothing looks broken until prepress tries to separate the job.
+
+Output decides how strict the delivery package must be. A rectangular label with no special finish may tolerate a high-resolution flattened PDF; a die-cut sticker, clear label or foil job cannot. White ink needs its own layer, and a hang tag may need cut, hole and score separated. Fonts need outlining or embedding, but outlining too early can make small corrections harder. The printer's workflow should decide the delivery package, not personal export habits.
+
+Before handoff, open the exported file on another machine and inspect layers, links and colour names. Send the source file, linked images and a final-size proof together; do not let a flattened preview stand in for the working file. Ask the printer to confirm receipt of the layers. The [artwork hub](/knowledge/artwork/) explains file preparation, [custom labels](/custom-labels/) shows the production route, and [dieline preparation](/knowledge/dieline-preparation/) covers cut geometry.
+
+| The file appears usable | What production cannot recover | Sending correction |
+|---|---|---|
+| Flattened PDF shows a cut line | Separate vector cut geometry | Include a layered source file |
+| Screenshot sits inside the layout | Original logo resolution and edge detail | Supply the vector logo |
+| Linked photo is missing | The image data itself | Embed images or send the links |
+| Spot areas are named generically | The intended white, foil or varnish separation | Use the printer's named layers |
+| Artboard was scaled after export | Final dimensions and bleed | Export again at 1:1 |

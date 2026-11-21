@@ -5,7 +5,7 @@ pillar: marketplace-labels
 order: 4
 updated: "2026-11"
 published: "2026-11-07"
-reviewed: "2026-11-07"
+reviewed: "2026-11-21"
 relatedProducts: ["custom-labels", "food-labels", "cosmetic-labels"]
 view: >-
   A direct-to-consumer label and a retail label are different products. Retail adds mandatory text that most DTC designs
@@ -109,3 +109,19 @@ None of these are negotiable, and none are in the law. They live in the vendor g
 **Keep the address and origin on every version.** They are the items most often dropped when a label is adapted.
 
 **Check the barcode after lamination.** Gloss film changes reflection, and a grade measured before lamination is not the grade at the till.
+
+## The mandatory line that arrives after the label size is locked
+
+The label is often designed around the brand before it is measured around the mandatory copy. Legal review then adds a physical business address, country of origin, dual net quantity or a retailer item number. The layout has no room, so the type shrinks, a logo moves or the text crosses into the safe area. The print can be technically excellent while the label is wrong for the channel.
+
+Market, product and retailer decide how much mandatory copy must fit. A direct-to-consumer label may omit several items that a retail master must carry, and food or cosmetics can add declarations that a general product does not. A retailer's vendor guide may be stricter than the legal baseline. A second language can expand the text again. Designing the retail version first and adapting simpler versions from it is more reliable than enlarging a DTC label after a listing is approved.
+
+A mandatory-copy manifest comes before the label size, so the text and barcode can enter the layout at the intended type size. Ask the retailer for its current vendor guide and check the fit on a final-size proof. Keep the address and origin on every adaptation. Record who owns each line and when it was last reviewed, so a late change cannot overwrite an approved version. The [marketplace-labels hub](/knowledge/marketplace-labels/) covers the wider requirements, [custom labels](/custom-labels/) provides the format, and [label regulatory basics](/knowledge/label-regulatory-basics/) explains the copy-ownership split.
+
+| Late-arriving line | Space it claims | Release action |
+|---|---|---|
+| Physical business address | Several lines in the information panel | Reflow the panel before reducing type |
+| Country of origin | A separate qualifying statement | Reserve a defined field |
+| Net quantity in two systems | A line beside the product identity | Check both units together |
+| Allergen emphasis | Existing ingredients need stronger treatment | Rebuild the ingredient block |
+| Retailer item number | Space beside the GTIN | Confirm the vendor's exact layout |

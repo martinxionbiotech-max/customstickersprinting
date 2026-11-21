@@ -69,3 +69,19 @@ The die is a fixed cost. At 50 units it can dominate; at 1,000 it is spread acro
 **Stock matters.** Foil on uncoated paper looks distressed; emboss on thin film does not hold.
 
 **Proof physically, not on screen.** Neither effect can be judged from a PDF; ask for a sample before the run.
+
+## The die detail that fills in before the foil can transfer
+
+Foil and emboss fail first at the smallest detail. A hairline stroke can fill in, reverse-out letters can bridge, and a deep emboss can crack the surface near a tight curve. On textured stock, foil may look pitted because the die cannot press the film into every valley. The artwork appears crisp on screen while the physical die cannot reproduce that edge at production pressure.
+
+Stock, die construction and quantity determine how much detail survives. Smooth coated stock holds fine foil better than uncoated board; a deeper emboss needs enough card thickness; combined foil and emboss adds registration between two surfaces. At low volume a printed metallic effect may be the more sensible first step. A die that works on a large label may crowd the trim or hole on a small one, so scale is part of the design review.
+
+Die-ready artwork should separate solid foil areas, emboss relief and normal print. Request a physical sample on the production stock under direct and angled light, then inspect reverse counters and the space around the logo. Confirm the die charge and who keeps the tool. The [printing hub](/knowledge/printing/) covers the processes, [cosmetic labels](/cosmetic-labels/) show a typical use, and [artwork file formats](/knowledge/artwork-file-formats/) explains the layer handoff.
+
+| Design detail | Physical risk at the die | Proof under angled light |
+|---|---|---|
+| Hairline foil stroke | The foil tears or fills the fine gap | Inspect the thinnest line on the sample |
+| Reverse letters inside foil | Counters bridge and become solid | Read the smallest word at final size |
+| Foil over a heavy ink layer | The metallic colour reads muddy | Compare foil on ink and bare stock |
+| Deep emboss beside the trim | The edge distorts or cracks | Measure relief near the cut line |
+| Combined foil and emboss | The two impressions lose registration | Check for a visible shadow at the edge |

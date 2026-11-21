@@ -80,3 +80,19 @@ If the budget is limited, a matte laminate plus a well-printed design usually lo
 **Ask what the finish sits on.** A laminate under spot UV is part of the specification, not an optional extra.
 
 **Request a physical proof.** Finish is the one property a PDF cannot show at all.
+
+## When the spot gloss disappears into the label beneath it
+
+Spot UV can be present exactly where the file asks and still be invisible in the hand. On an already glossy laminate there is little contrast to reveal; on uncoated board the varnish sinks into the fibres. A one-millimetre logo is too small to catch the eye, and a low-build screen may read as a faint sheen rather than a distinct highlight. The buyer sees a missing effect where the supplier sees a completed pass.
+
+Base surface, highlight shape and quantity all affect whether the effect reads. A matte laminate under a broad logo is the clearest use; a textured or dark design may swallow the contrast. Registration becomes more visible on fine type, and the cost logic changes when a screen has to be made for a short run. If the goal is protection rather than a visible gloss, a laminate is the simpler specification.
+
+A physical sample on the exact stock and laminate should be viewed both straight on and at a low angle. Confirm the highlight layer, the base finish and the registration allowance in the file. Rub and flex the sample because a finish that looks right can crack or scuff. The [printing hub](/knowledge/printing/) covers finishing passes, [cosmetic labels](/cosmetic-labels/) show a common application, and [foil stamping and embossing](/knowledge/foil-stamping-and-embossing/) explains the neighbouring relief effects.
+
+| Why the highlight is weak | Physical cause | Sample observation |
+|---|---|---|
+| The base is already glossy | No matte-to-gloss contrast exists | Tilt the sheet toward a light |
+| Uncoated board absorbs the coating | Varnish sinks into the fibres | Compare coated and uncoated strips |
+| The logo is a hairline | Too little area catches the light | View at normal reading distance |
+| A dark full bleed surrounds the mark | The highlight has no clean edge | Check the boundary under raking light |
+| The screen deposit is low | The finish reads as overall sheen | Ask for a heavier build on the sample |

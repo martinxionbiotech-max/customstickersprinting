@@ -79,3 +79,19 @@ The practical sequence for a first order is:
 **Choose the attachment with the product.** A string, elastic or pin changes how the tag hangs and how the product is handled. Decide it before the hole is placed.
 
 **Keep the hardware consistent.** Eyelet colour, string colour and card finish should read as one object. A silver eyelet with a gold foil logo looks like two decisions made separately.
+
+## The premium finish that loses its buyer at the eyelet
+
+A tag can carry an expensive finish and still feel unfinished when the hardware is picked up. Foil near the hole can crack as the eyelet is set, a stiff laminate can make the card curl, a bright silver eyelet can fight a warm foil, and a thin string can fray or pull through. The buyer handles the attachment before reading the brand, so an assembly failure outweighs the surface beauty.
+
+Card weight, hardware size and carrying method alter the assembly. A soft-touch laminate changes the feel and shows oil, while an uncoated kraft tag accepts a stamp but marks easily. A large eyelet spreads the load but needs more clearance. Elastic can pull the tag against the product, and a long string changes the angle at the hole. The finish, card and attachment have to be tested as one object.
+
+The assembled sample should use the production card, finish, eyelet and string. Pull, twist and hang it, then inspect the finish immediately around the hole as well as the printed face. Confirm the eyelet barrel diameter, colour reference and string construction in writing. The [hang-tags hub](/knowledge/hang-tags/) covers the category, [hang tags](/hang-tags/) shows the product, and [hang tag card stocks](/knowledge/hang-tag-card-stocks/) explains the material choice.
+
+| Assembly failure | Finish or hardware cause | Pre-run handling test |
+|---|---|---|
+| Eyelet pulls through | Hole or barrel is mismatched to the card | Hang with the intended load |
+| Foil cracks around the hole | The finish is brittle where the metal is set | Inspect after eyelet insertion |
+| Tag curls away from the product | A stiff laminate fights the card grain | Leave the assembled sample hanging |
+| String frays at the hole | An unprotected cut edge rubs the cord | Pull the string repeatedly |
+| Metal colour looks separate | Eyelet and foil have different undertones | View both in one light |

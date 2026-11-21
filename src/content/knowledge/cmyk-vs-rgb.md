@@ -86,3 +86,19 @@ The screen is an emissive RGB device; ink is subtractive CMYK on a substrate. Th
 **Ask for a proof on the actual stock** when colour matters. It is the only test that includes ink, material and finish.
 
 **Spot colour is a budget decision.** Exact match is possible; it costs a plate and a separate pass, and it is usually worth it only on high-volume brand packaging.
+
+## The approved screen colour that has no printable ink recipe
+
+A colour can be approved on a bright monitor and still have no reliable ink recipe. An untagged RGB file leaves the conversion choice to someone else, a linked photograph may stay in RGB while the layout is CMYK, and a brand spot may be converted to process when the file is flattened. The preview looks like the intended colour because the screen is emitting light; the press has to build that appearance from inks and a substrate.
+
+Each colour and process combination carries its own conversion risk. A deep blue or vivid green may sit outside what process inks can reach, while a neutral grey may be reproducible but sensitive to small changes. Digital and flexo build colour differently, and white ink on clear film adds another layer behind the artwork. If the brand colour is a fixed asset, ask for a spot ink and a physical reference rather than trusting a conversion from RGB.
+
+The printer's output profile and proofing method should be captured before the working file and its linked images are converted. Preserve spot-colour names and separate white-ink areas. Approve a proof on the actual stock, not a monitor, before releasing the run. The [artwork hub](/knowledge/artwork/) covers colour setup, [cosmetic labels](/cosmetic-labels/) shows a colour-critical application, and [print colour consistency](/knowledge/print-colour-consistency/) explains repeat-run control.
+
+| Colour object in the file | Conversion hidden by the preview | Approval route |
+|---|---|---|
+| Untagged RGB artwork | The output profile decides the ink build | Assign and convert deliberately |
+| Linked RGB photograph | The layout looks CMYK but the image is not | Check every linked image |
+| Brand green set as a spot | Conversion may replace the named ink | Confirm the spot survives output |
+| Small text built as rich black | Four inks may misregister | Use a controlled black build |
+| White behind artwork on clear film | Transparency shows the product through | Approve a white-ink layer proof |

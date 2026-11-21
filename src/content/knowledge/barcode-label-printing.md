@@ -5,7 +5,7 @@ pillar: marketplace-labels
 order: 3
 updated: "2026-11"
 published: "2026-11-07"
-reviewed: "2026-11-07"
+reviewed: "2026-11-21"
 relatedProducts: ["custom-labels", "roll-labels", "logo-stickers"]
 view: >-
   A barcode is a measurement, not a graphic. The moment it is scaled to fit a design without checking the quiet zone and
@@ -119,3 +119,19 @@ For anything that will be scanned at a till, thermal transfer or a professional 
 **Verify on the real stock.** The same file prints differently on paper, PP and metallised film.
 
 **Keep the verification report.** Retailers increasingly ask for it, and it is the only defence if a scanner disputes the symbol.
+
+## The barcode that decodes on a phone but stalls at the till
+
+A phone camera is built to decode imperfect symbols. It can read a barcode from a screen, tolerate a soft edge and fill in a quiet zone that a fixed retail scanner needs. A symbol that works on a phone can therefore fail after lamination, shrink wrapping or application to a curved product. The phone confirms that the data is present; it does not confirm that the printed symbol will meet the scanner's measurement.
+
+Printing is only the first half; finishing and application change the symbol. Gloss film reflects light into the scanner, a shrink-wrap seam crosses the bars, and a label applied around a bottle distorts spacing near the edges. A coloured background or varnish can reduce contrast, while a symbol enlarged to fill more space may no longer fit the placement rules. The verification should happen on the finished label in the condition the checkout will see, not only on a flat digital proof.
+
+The scan test belongs on production stock after the final finish is applied. Use the type of scanner or verifier the channel requires, and keep a printed record rather than a screenshot. Mark varnish-free and quiet-zone areas in the artwork so a finishing pass does not cover them. The [marketplace-labels hub](/knowledge/marketplace-labels/) sets the context, [roll labels](/roll-labels/) covers application format, and [retail packaging labels](/knowledge/retail-packaging-labels/) explains retailer placement demands.
+
+| Condition after printing | Why phone decode can mislead | Release check |
+|---|---|---|
+| Gloss laminate over the bars | Reflection hides low contrast from a camera | Scan under a direct light |
+| Tight shrink wrap | A seam distorts bars on one side | Test the wrapped unit |
+| Curved bottle placement | The symbol bends across the scan path | Scan on the filled container |
+| Dark brand background | The camera boosts contrast in software | Measure bars against the stock |
+| Symbol shrunk to fit | Decoding tolerates a narrow quiet zone | Check at final distribution size |

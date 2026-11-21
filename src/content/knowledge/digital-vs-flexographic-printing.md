@@ -81,3 +81,19 @@ Do not choose a method from a unit price alone. A digital unit price at 100 piec
 **Reorder at the crossover.** Once a design sells steadily, moving from 50 to 2,000 changes the unit price materially and often moves the job to flexo.
 
 **Ask which method is being quoted.** A price without a method is a number without a reason.
+
+## The reprint that moves methods without changing the artwork
+
+A reorder can leave the same PDF in place while the production method changes underneath it. Digital may have carried the first run; a larger quantity can make flexo the better route. The next order may also use different stock, finishing or colour separation. The buyer receives a new quote, not necessarily a new artwork review, and an image that printed acceptably before can expose plate, gradient, spot-colour or variable-data compromises now.
+
+What is actually being repeated decides how much proofing the reorder needs. If the artwork, stock and finish are unchanged and only quantity moves, compare methods against the same specification before plates are made. If a spot colour appears or a variable field is added, treat it as a new production brief even when the design looks familiar. A digital proof may be suitable for layout, but it cannot approve the way a plate will hold the detail.
+
+Have the quote name the method and list any changes from the previous run. Compare the crossover using identical stock and finishing, then request a fresh physical proof when the method or colour changes. The [printing hub](/knowledge/printing/) explains the processes, [roll labels](/roll-labels/) shows the production format, and [print colour consistency](/knowledge/print-colour-consistency/) sets out the repeat-run questions.
+
+| Reorder variation | Production consequence | Re-approval evidence |
+|---|---|---|
+| Quantity crosses from digital to flexo | Plates and make-ready enter the job | A flexo proof on the quoted stock |
+| A spot colour replaces process build | An additional plate and ink mix are required | Named ink reference and drawdown |
+| Face stock changes | Ink lay and colour can shift together | Proof on the new substrate |
+| Variable data is added | Static artwork becomes a data workflow | First and last records tested together |
+| Finish changes from matte to gloss | Reflection alters the perceived colour | Finished sample, not a print-only proof |

@@ -75,3 +75,19 @@ If the tag will carry a heavy product or a long string, the hole and eyelet are 
 **Do not use weight as a proxy for quality.** A clean cut, a centred hole and a tag that hangs straight matter more than 50 gsm.
 
 **Test the finish on the stock.** Foil, emboss and white ink behave differently on coated, kraft and recycled board. A proof on the actual material is cheaper than a reprint.
+
+## The card weight that tears at the hole before it looks worn
+
+A heavy card can feel premium at the counter and fail at a small hole. The eyelet, string and product weight concentrate force at one point; if the hole clearance is too small or the card is brittle, the surface cracks or the eyelet pulls through. A lighter card may flex and ovalise instead. The failure begins at the attachment while the printed face still looks new.
+
+Grain, coating and hardware alter how a given weight behaves. A heavy coated board can be less forgiving at a tight radius, while a lighter kraft sheet may need an eyelet simply to survive handling. Grain direction affects curl and stiffness along the hang. A folded header adds another stress line, and humid storage can soften the sheet before it reaches the rail. Weight alone does not tell you which construction will hold.
+
+Use a hanging sample made from the actual stock, cut with the intended grain and hole. Hang it from the intended string with a representative product load, then inspect the hole, eyelet and curl rather than only the printed face. Request caliper and grain direction alongside the gsm figure. The [hang-tags hub](/knowledge/hang-tags/) covers the format, [hang tags](/hang-tags/) shows the product, and [hang tag sizes and hole placement](/knowledge/hang-tag-sizes-and-hole-placement/) explains the attachment geometry.
+
+| Handling demand | Card property under stress | Sample to hang |
+|---|---|---|
+| Retail rail display | Stiffness along the hanging direction | Hang it from the production string |
+| Heavy product or bundle | Tear resistance around the eyelet | Add the intended load |
+| Small eyelet on a compact tag | Local clearance and brittleness | Check the card around the barrel |
+| Folded or reinforced header | Crease strength at the score | Open and close the fold |
+| Humid shop or stockroom | Curl and softening over time | Leave the sample in the environment |

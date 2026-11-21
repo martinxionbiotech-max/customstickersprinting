@@ -84,3 +84,19 @@ A physical proof costs a little and catches the mistakes that a screen cannot: a
 **Check the physical sample.** A digital proof cannot show whether the tag hangs straight or the eyelet fits.
 
 **Send the variable data with the artwork.** A last-minute CSV is a common cause of a delayed or wrong run.
+
+## The dieline layer that survives design and fails production
+
+Layers can be correctly separated in the design file and lost during export. A print dialog scales the page to fit, a PDF flattens the hole layer, the cut line leaves as a hairline stroke, or the fold line disappears. The layout looks unchanged while production receives different geometry. Hang tags are vulnerable because trim, hole, eyelet, fold and variable data all share one small page.
+
+Tag construction determines which layers must survive export. A folded header adds a score that must align with the hole and back artwork; an eyelet needs a finished cut diameter rather than a printed circle; a multi-up sheet needs each cut separated. Variable data and the barcode require their own safe zones. A one-sided flat tag is simpler, but it still depends on a 1:1 artboard and a closed outline. Export settings must preserve every production layer, not only the visible design.
+
+The handoff package needs the layered source and a flattened proof, both opened at 100% and measured against the trim, hole and fold dimensions. Print the proof and place a physical cut sample over it. If variable data is used, send the CSV with the artwork and test the first and last records. The [hang-tags hub](/knowledge/hang-tags/) covers the category, [hang tags](/hang-tags/) shows the product, and [dieline preparation](/knowledge/dieline-preparation/) explains the vector requirements.
+
+| Export or setup slip | What changes on the card | Prepress artifact |
+|---|---|---|
+| Page scaled to fit the printer | Every dimension shrinks together | A measured 1:1 PDF |
+| Hole drawn as a hairline circle | The cut size follows the stroke | Circle at the finished diameter |
+| Cut layer flattened into the art | The blade path is no longer separate | Named vector cut layer |
+| Fold or score omitted | The header cannot be formed | A distinct dashed score line |
+| Variable field shifts during layout | Codes move after the first record | Position map for every field |

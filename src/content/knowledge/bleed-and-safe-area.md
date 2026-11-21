@@ -5,7 +5,7 @@ pillar: artwork
 order: 2
 updated: "2026-11"
 published: "2026-11-07"
-reviewed: "2026-11-07"
+reviewed: "2026-11-21"
 relatedProducts: ["custom-labels", "bottle-labels", "die-cut-stickers"]
 view: >-
   Bleed is the cheapest insurance in printing and the most commonly skipped. We would rather receive a file with 3 mm of extra background than a beautiful layout that trims with a white sliver on one edge. On small labels the safe area eats a larger share of the design, so the answer is simplification, not shrinkage.
@@ -109,3 +109,19 @@ Supply the path as a single closed vector shape on its own named layer.
 **Curved containers deserve a dieline and a sample.** A flat proof cannot show how a wrap sits on a tapered jar.
 
 **Ask for the artwork check before paying.** A printer who reviews your file before the order is cheaper than one who reprints after it.
+
+## The white sliver that appears only after the label is cut
+
+The white sliver after trimming is usually not a press fault. A background that stops at the trim line leaves the blade with no printed material to cut into, so normal drift exposes the stock. The same geometry can clip a border unevenly, cut through a descender, or leave a barcode too near the edge. On a bottle, hand application adds another shift after the file has left the printer.
+
+The design and production route determine the useful margin. A design with a deliberate white margin must protect that margin rather than adding arbitrary bleed. A full-bleed die cut needs artwork beyond every cut path; a wrap needs enough extra image to meet at the seam without exposing a gap. Small labels consume a larger share of their area in safe margin, so shrinking the type is not a real fix. Ask how the piece will be cut and applied before deciding the margin.
+
+The PDF should be checked at trim size with the bleed visible, then measured from text and barcode to the cut. Ask for a cut proof or physical sample and place a bottle label on the actual container. Confirm the bleed value and any extra margin on curves in writing. The [artwork hub](/knowledge/artwork/) covers the file setup, [custom labels](/custom-labels/) shows the production options, and [dieline preparation](/knowledge/dieline-preparation/) explains the cut path.
+
+| Visible defect after finishing | Setup mistake to look for | File evidence |
+|---|---|---|
+| Thin white hairline on one edge | Background stops at the trim | Extend the image into the bleed |
+| Border looks thicker on one side | Border follows the trim unevenly | Inspect the border in the bleed |
+| Descender or letter is clipped | Text entered the safe margin | Measure the lowest text |
+| Barcode sits close to the cut | Quiet zone omitted from layout | Show the full symbol and margins |
+| Wrap image is short at the seam | Artwork did not allow for the join | Mark the seam on the dieline |

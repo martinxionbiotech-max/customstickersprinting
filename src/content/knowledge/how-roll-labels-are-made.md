@@ -5,7 +5,7 @@ pillar: printing
 order: 2
 updated: "2026-11"
 published: "2026-11-07"
-reviewed: "2026-11-07"
+reviewed: "2026-11-21"
 relatedProducts: ["roll-labels", "bottle-labels", "custom-labels"]
 view: >-
   Most roll-label problems we are asked to fix are specification errors, not printing errors: wrong winding, wrong core, wrong gap for the sensor. Send a photo of the spindle and the roll currently in the machine before ordering, and half the risk disappears before a quote is written.
@@ -93,3 +93,19 @@ Winding, cores and packing add handling that flat sheets do not need. At 5,000 l
 **Ask for the same roll parameters on reorder.** A supplier change with different winding will stop your line.
 
 **Sheets for validation, rolls for production.** Test the design on a sheet, then move to rolls when volume justifies it.
+
+## A roll that prints perfectly and still stops the applicator
+
+A roll can pass every visual check and fail in the first metre of the labelling line. The labels may lead from the wrong side, the core may not seat, the gap sensor may see a clear liner as one continuous web, or the web may wander because the slit width is wrong. A splice or a tight final wrap can interrupt the run. The print looks correct because the failure belongs to the roll geometry, not the image.
+
+The applicator and the label together set the requirement. A hand dispenser asks less than an automatic line, a small label gives the sensor less gap to find, and a clear liner changes detection. Core diameter, winding side, direction, labels per roll and maximum roll size all need to match the machine. A material change can also require different tension and a new die depth, so an old roll specification is not automatically valid.
+
+The applicator make and model should be captured, alongside a diagram or photograph of the spindle and current roll. Run a sample roll on the line before the full order and keep the agreed parameters with the reorder. The [printing hub](/knowledge/printing/) explains the production sequence, [roll labels](/roll-labels/) covers the format, and [barcode label printing](/knowledge/barcode-label-printing/) explains the gap-sensor side of the problem.
+
+| Line symptom | Roll parameter to inspect | Shop-floor evidence |
+|---|---|---|
+| Labels emerge upside down | Winding side or unwind direction | Photo of the threaded web |
+| Machine stops between every label | Gap width or sensor contrast | Sample under the actual sensor |
+| Web drifts toward one edge | Slit width and roll alignment | Measure the wound roll ends |
+| Label releases late and jams | Adhesive, die depth or peel angle | Test strip from the same roll |
+| Roll binds near its centre | Core fit, tension or final wrap | Spindle diameter and roll weight |

@@ -83,3 +83,19 @@ If the design depends on a deep black or a vivid brand colour, ask for a proof o
 **Finish does not fix a bad material choice.** A matte laminate on paper will still fail in a fridge; the film decides that, not the finish.
 
 **Ask for a proof on the real substrate.** Gloss on white vinyl and gloss on clear film look like different products.
+
+## The finish that looked right in a photo and wrong in a hand
+
+A finish chosen from a photograph often fails at the first touch. Gloss can read crisp online and turn into a sheet of fingerprints under shop lighting; soft-touch can look luxurious in a studio and hold every mark from an oily hand. Matte can make a rich colour look flatter than the screen, while a clear film shows the surface underneath. The finish has not changed; the viewing condition has.
+
+Handling, lighting and moisture should decide the finish before brand taste does. A label that is wiped clean in a bathroom needs a different surface from a boxed candle that is admired but rarely touched. A freezer door adds condensation, a shop spotlight exaggerates glare, and a pocket abrades edges. Ink coverage also matters: a pale design hides scuffs that a deep solid reveals. Choose the laminate for the real environment before choosing its sheen.
+
+Approve a physical proof that combines the final ink, stock and laminate, then handle it as a customer would. Look at it under both daylight and shop lighting, rub a corner and try the cleaning method you expect. Record the finish on the approval so a reorder does not silently move between matte and soft-touch. The [sticker-materials hub](/knowledge/sticker-materials/) compares finishes, [custom stickers](/custom-stickers/) shows the available constructions, and [samples and proofs](/knowledge/samples-and-proofs/) explains what to approve.
+
+| Real-world view | Surface problem exposed | Proof step |
+|---|---|---|
+| Shop spotlights | Gloss glare and visible fingerprints | Tilt the sample under a directional lamp |
+| Bathroom counter | Water spots and smudging | Wipe the surface as the customer would |
+| Freezer door | Condensation and a stiff laminate | Test after a cold-to-warm cycle |
+| Customer pocket | Edge scuffs and dulling | Rub the corner against fabric |
+| Outdoor window | Sunlight and cleaning abrasion | Keep a sample in the intended exposure |

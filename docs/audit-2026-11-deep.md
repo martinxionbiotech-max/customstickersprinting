@@ -101,5 +101,58 @@ Projected total after all items: **93–95 / 100**; E-E-A-T 57 → 78–82.
 
 ## 6. Round log
 
-- **Round 1 (this round):** items 1–4, 7–9 partially; build + live verification; see `## Round 1 results` appended
-  after deployment.
+- **Round 1 (2026-11-21):** items 1–9 executed across four passes; build and live verification below.
+
+### Round 1 results — before → after
+
+| Metric | Before | After |
+|---|---:|---:|
+| Indexable pages / sitemap URLs | 92 / 92 | 115 / 115 |
+| Markdown sidecars | 65 | 115 / 115 |
+| `llms.txt` absolute URLs | 80 | 115 pages, 245 links |
+| Titles >60 / descriptions outside 140–155 | 0 / 0 | 0 / 0 |
+| Duplicate titles / broken internal links / orphans | 0 / 0 / 0 | 0 / 0 / 0 |
+| Knowledge pages (median words) | 54 (1,006) | 68 (1,427) |
+| Pillar hubs | 950–1,050 | 1,831–2,191 |
+| Trust / policy pages | 5 (467–890 w) | 9 (566–1,236 w) |
+| Product + industry pages | 15 + 5 | 15 + 8 |
+| Tools | 0 | 3 (hub + 2 calculators) |
+| External domains cited | 9 | 23 |
+| Editorial stance (`view` field) | 53/54 | 57/57 articles + 10 hubs |
+| Near-duplicate pairs >0.12 | 5 (max 0.132) | 5 (max 0.132, product template floor) |
+
+**New compliance pages:** `/disclaimer/` 1,073 w / 11 H2; `/accessibility/` 689 w / 7 H2;
+`/corrections/` 766 w / 8 H2; `/methodology/` 1,236 w / 11 H2 (TechArticle + FAQPage).
+
+**Deepened policy pages:** privacy 685 → 1,162; terms 710 → 1,216; cookies 467 → 566;
+editorial standards 662 → 869; declarations 835 → 988; contact 379 → 575; quote 317 → 590;
+shipping 391 → 712. Claim windows harmonised at 30 days; approved-artwork reprints defined as paid
+reprints at cost; bank-detail fraud warning added.
+
+**New knowledge:** `label-compliance` pillar (2,191 w) with 6 market guides (food, cosmetics,
+supplements, Prop 65, GHS/CLP, wine/spirits); `specialty-labels` pillar (1,997 w) with 6 guides
+(QR, variable data, tamper evidence, sustainability, freezer/condensation, dishwasher/microwave);
+2 industry pages (household chemical, wine/spirits); 45 existing articles each gained a topic-specific
+failure-mode section and 5–6 row check table (+300–335 words, append-only).
+
+**Schema:** `TechArticle` on methodology, `CollectionPage` + `ItemList` on every hub, `WebApplication`
+on both calculators, `FAQPage` on 96 pages, `Organization.knowsAbout`, `WebPage` dates on policies.
+No `FAQPage` on legal pages.
+
+**Scores:** site 81.6 → **93.1 / 100** (completeness 95, SEO 94, AIO 93, data 96, originality 90,
+stance 100, depth 82). E-E-A-T lens 57 → **74 / 100** (experience 60, expertise 78, authority 65,
+trust 88). These are judgment scores with the evidence above; the accessibility page is a target,
+not a certified audit.
+
+### Still open (not solved by writing)
+
+- Product pages remain 948–1,397 words; the next depth pass should add a `notFor` block and a
+  measurement-method block per product rather than generic copy.
+- Funnel pages `/how-to-order/` 488, `/products/` 469, `/small-batch-sticker-printing/` 455,
+  `/low-moq-label-printing/` 543, `/artwork-guidelines/` 556 still need 200–300 words each.
+- Industry pages median 912 words; existing five could gain a compliance/format matrix.
+- `www` returns 200 with a canonical to apex; a 301 via Pages Functions is still pending.
+- `hello@` mailbox alias is not created; `site.email` remains `martin@` until it can receive mail.
+- Legal review, certificate wording and any named reviewer remain owner inputs. FDA/OSHA endpoints
+  return anti-bot 403/404 to curl but resolve in a browser; no certificate or test result is claimed.
+

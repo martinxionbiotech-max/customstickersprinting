@@ -75,3 +75,19 @@ If the colour is critical, budget for a contract proof or a press proof. A PDF p
 **Spot colour is a budget decision.** Exact brand matching costs a plate; decide whether the match matters enough.
 
 **Ask what proof you are approving.** "Proof" covers three very different things.
+
+## Separating an acceptable ink drift from a changed specification
+
+A colour complaint often begins with a comparison that is not controlled. The previous label may have been kept on a sunny desk, while the new one is viewed under an office lamp. One may be glossy and the other matte, or the two runs may use different stock. Memory and screens widen the apparent gap. The run may be within normal variation while the reference has changed, or the supplier may have changed a specification without saying so.
+
+A fair comparison depends on the standard and the evidence behind it. A spot brand colour deserves a retained physical reference and an agreed tolerance; a photographic label may need only approval on a contract proof. If the substrate, print method or laminate changes, an exact match is not the right demand. Lighting should stay constant, and a sample stored away from daylight is more useful than one displayed as a showpiece.
+
+The comparison should record what was printed on, how it was finished, and which sample is the master. Keep that reference protected and mark it with the full specification. Compare a new run under the same lamp and look at both copies directly rather than one after the other. The [printing hub](/knowledge/printing/) explains the process variables, [custom labels](/custom-labels/) covers the production options, and [samples and proofs](/knowledge/samples-and-proofs/) defines what a useful approval contains.
+
+| Bench comparison | Hidden variable | More defensible test |
+|---|---|---|
+| New label against memory | Time and viewing conditions have changed | Use a labelled physical master |
+| New label against a screen | Emitted light exaggerates saturation | Compare two printed copies |
+| Matte sample against gloss sample | The laminate changes perceived colour | Hold sheen constant first |
+| Old master kept on a shelf | Light may have faded the reference | Store the approved copy dark |
+| Two stocks, same ink recipe | Ink sits differently on each surface | Match stock before judging colour |

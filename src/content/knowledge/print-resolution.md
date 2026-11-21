@@ -77,3 +77,19 @@ For photographs, 300 dpi at final size is the target; 250 dpi can be acceptable 
 **Do not upscale and hope.** It is visible on the shelf and obvious at a cut edge.
 
 **Barcodes deserve their own check.** Test-scan a printed proof before a production run.
+
+## The sharp-looking file that softens at final label size
+
+A file described as 300 dpi can still be soft at final size. The number may describe an image before it was enlarged, a placed logo may come from a web download, or a crisp vector title may sit beside a raster photograph that dominates the label. On screen the preview is resampled to the window; the press sees the actual pixels and prints them at the physical dimension. The result looks acceptable in the design file and unfinished on the product.
+
+Label content determines where softness becomes a defect. A photograph can survive on textured stock where the surface hides slight softness, while small text, fine rules and a barcode need much cleaner edges. Vector artwork removes the resolution question for logos and type, but not for linked photographs. Upscaling can make a sample look smoother without adding detail, and compression artefacts can become more visible at a die-cut edge.
+
+Every image belongs at final size, viewed at 100% and compared with the printed dimensions. Check the smallest text and symbols on a proof rather than judging the whole layout zoomed out. Ask the printer to preflight placed images and flag effective resolution at output size. The [artwork hub](/knowledge/artwork/) explains final-size files, [custom labels](/custom-labels/) shows the production formats, and [barcode label printing](/knowledge/barcode-label-printing/) covers symbols that need their own edge check.
+
+| Element on the label | What resolution metadata can hide | Final-size inspection |
+|---|---|---|
+| Hero photograph | It was enlarged after saving | View at 100% at printed width |
+| Logo downloaded from a website | It is a small raster inside a vector frame | Request the original vector |
+| Small serif type | It was rasterised by the export | Zoom to the printed letter height |
+| Barcode placed as an image | Its bars were resampled with the picture | Measure and test-scan the symbol |
+| Fine rule or icon | It carries compression artefacts | Check straight edges on the proof |

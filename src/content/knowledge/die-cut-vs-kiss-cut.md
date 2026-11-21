@@ -5,7 +5,7 @@ pillar: sticker-materials
 order: 2
 updated: "2026-11"
 published: "2026-11-07"
-reviewed: "2026-11-07"
+reviewed: "2026-11-21"
 relatedProducts: ["die-cut-stickers", "sticker-sheets", "custom-stickers"]
 view: >-
   At 50 units we steer customers towards kiss-cut sheets, because a custom die can double the price of a first order and the shape is rarely the thing being tested. Move to individual die cuts once the design is proven and the quantity justifies the tooling — which is usually somewhere around a few hundred pieces.
@@ -104,3 +104,19 @@ Both methods need a **closed vector cut path** on a separate layer. Differences:
 **Complex outlines cost more than they look.** Thin spikes and letter-shaped cut-outs tear when peeled; simplify the path.
 
 **Both need a vector cut path.** If you only have a flat image, expect a small setup charge for someone to draw the path.
+
+## When one bad cut path wastes an otherwise sound sheet
+
+A cut path can look aligned with the artwork and still be wrong for the blade. An open path draws a line across the sheet, two overlapping outlines double-cut the liner, and a narrow neck can tear while the rest of the shape is sound. In a kiss-cut sheet, paths placed too close together give the blade nowhere to turn without damaging a neighbouring sticker. The print is clean, but the sheet is scrap.
+
+Material, liner and quantity all move the answer. Paper tolerates less flex than vinyl, a thin liner can tear more easily during kiss cutting, and a steel die needs different clearances from a digital cutter. A shape that survives one hundred hand-cut samples may not survive a long production run. Multi-piece sheets also need consistent spacing so that every sticker releases without pulling the next one.
+
+The production file needs a separate closed vector cut layer, and approval needs a cut sample on the same face stock and liner as the run. Inspect the smallest neck and the spacing between adjacent paths, not only the outer silhouette. The [sticker-materials hub](/knowledge/sticker-materials/) covers material behaviour, and [die-cut stickers](/die-cut-stickers/) shows the finished format. Use the [label cost estimator](/tools/label-cost-estimator/) to compare quantity options before committing to a custom die.
+
+| Cut-path defect | What the blade may do | Acceptance check |
+|---|---|---|
+| Path does not close | Slice across the printed design | Trace every outline in outline view |
+| Outline is duplicated | Cut the liner twice in one pass | Remove stacked strokes before export |
+| Neighbouring paths touch | Tear one sticker while peeling another | Measure the gap on a cut sheet |
+| Feature is thinner than the stock can hold | Snap or ragged edge on peel | Peel the smallest detail by hand |
+| Cut line sits on the artboard edge | Clip the path during export | Confirm the full path is inside the page |
