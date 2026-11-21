@@ -1,0 +1,78 @@
+type,url,title,h1,desc_len,rendered_words,source_words,sources,faq,images,h1_count
+core,/,Labels & Stickers from 50 Units | Custom Stickers Printing,Custom labels and stickers for growing brands,151,707,,,,,1
+core,/about/,About the company behind Custom Stickers Printing,About Custom Stickers Printing,147,838,,,,,1
+core,/artwork-guidelines/,Artwork guidelines for label and sticker printing,Artwork guidelines,144,423,,,,,1
+core,/contact/,Contact | Custom Stickers Printing,Contact us,153,260,,,,,1
+core,/cookies/,Cookies and local storage | Custom Stickers Printing,Cookies and local storage,148,398,,,,,1
+core,/editorial-standards/,Editorial standards: how this site is written,Editorial standards,143,573,,,,,1
+core,/faq/,FAQ: custom labels and stickers | Custom Stickers Printing,Frequently asked questions,145,557,,,,,1
+core,/how-to-order/,How to order custom labels and stickers,How to order,140,403,,,,,1
+core,/industries/,Industries: labels and stickers by application,Industries,147,453,,,,,1
+core,/knowledge/,"Knowledge base: labels, stickers and print production",Knowledge base,146,1537,,,,,1
+core,/low-moq-label-printing/,Low MOQ label printing from 50 units,Low MOQ label printing,152,470,,,,,1
+core,/privacy/,Privacy policy | Custom Stickers Printing,Privacy policy,145,371,,,,,1
+core,/products/,Products: custom labels and stickers,Custom labels and stickers,150,402,,,,,1
+core,/refund-policy/,"Returns, reprints and refunds policy","Returns, reprints and refunds",146,669,,,,,1
+core,/request-a-quote/,Request a quote | Custom Stickers Printing,Request a quote,153,191,,,,,1
+core,/shipping-delivery/,Shipping and delivery | Custom Stickers Printing,Shipping and delivery,147,301,,,,,1
+core,/small-batch-sticker-printing/,Small batch sticker printing from 50 units,Small batch sticker printing,140,384,,,,,1
+core,/terms/,Terms of use | Custom Stickers Printing,Terms of use,144,358,,,,,1
+industries,/industries/beauty-skincare/,Labels for beauty and skincare brands,Labels for beauty and skincare brands,143,630,403,0,2,,1
+industries,/industries/candle-fragrance/,Labels for candle and fragrance brands,Labels for candle and fragrance brands,144,592,355,0,2,,1
+industries,/industries/ecommerce/,Labels and stickers for ecommerce and small business,Labels and stickers for ecommerce and small business,144,630,383,0,2,,1
+industries,/industries/food-beverage/,Labels for food and beverage brands,Labels for food and beverage brands,141,558,336,0,2,,1
+knowledge,/knowledge/artwork-file-formats/,Artwork file formats: what printers can actually use,Artwork file formats: what printers can actually use,149,778,380,1,2,,1
+knowledge,/knowledge/barcode-label-printing/,"Barcode label printing: quiet zones, grades and failures","Barcode label printing: quiet zones, grades and failures",152,1196,810,2,2,,1
+knowledge,/knowledge/bleed-and-safe-area/,Bleed and safe area for label artwork,Bleed and safe area for label artwork,143,985,933,1,2,,1
+knowledge,/knowledge/clear-label-materials/,Clear label materials: the white ink decision,Clear label materials: the white ink decision,143,785,405,0,2,,1
+knowledge,/knowledge/cmyk-vs-rgb/,CMYK vs RGB for print: why colour shifts,CMYK vs RGB for print: why colour shifts,145,849,471,2,2,,1
+knowledge,/knowledge/custom-label-printing-cost/,Custom label printing cost: how the price is built,Custom label printing cost: how the price is built,144,2557,2138,0,2,,1
+knowledge,/knowledge/die-cut-vs-kiss-cut/,"Die cut vs kiss cut: what changes, and the cost","Die cut vs kiss cut: what changes, and the cost",150,901,856,0,2,,1
+knowledge,/knowledge/dieline-preparation/,Dielines: how to prepare a cut path that works,Dielines: how to prepare a cut path that works,141,787,414,0,2,,1
+knowledge,/knowledge/digital-vs-flexographic-printing/,Digital vs flexo: why a 50-unit label order is possible,Digital vs flexo: why a 50-unit label order is possible,142,864,486,1,2,,1
+knowledge,/knowledge/fnsku-labels/,FNSKU labels: specification and scan failures,FNSKU labels: specification and scan failures,149,1026,634,2,2,,1
+knowledge,/knowledge/foil-stamping-and-embossing/,Foil stamping and embossing on labels and stickers,Foil stamping and embossing on labels and stickers,140,769,399,0,2,,1
+knowledge,/knowledge/gloss-vs-matte-finish/,Gloss vs matte: choosing a sticker and label finish,Gloss vs matte: choosing a sticker and label finish,148,777,409,0,2,,1
+knowledge,/knowledge/how-many-labels-to-order/,How many labels should I order? | Custom Stickers Printing,How many labels should I order?,150,1074,714,0,2,,1
+knowledge,/knowledge/how-roll-labels-are-made/,How roll labels are made: the five spec details,How roll labels are made: the five spec details,141,892,786,1,2,,1
+knowledge,/knowledge/label-adhesive-by-surface/,"Label adhesive by surface: glass, plastic and metal","Label adhesive by surface: glass, plastic and metal",150,780,378,2,2,,1
+knowledge,/knowledge/label-cost-per-unit/,"Label cost per unit, and why it falls with quantity","Label cost per unit, and why it falls with quantity",153,1129,747,0,2,,1
+knowledge,/knowledge/label-durability-by-material/,How long do labels last? Material by environment,How long do labels last? Material by environment,155,755,376,1,2,,1
+knowledge,/knowledge/label-setup-costs/,What a label setup charge covers | Custom Stickers Printing,What a label setup charge covers,154,1126,744,0,2,,1
+knowledge,/knowledge/label-size-for-bottles/,"Label sizes for bottles, by volume","Label sizes for bottles, by volume",147,1117,739,0,2,,1
+knowledge,/knowledge/label-size-for-jars/,"Label sizes for jars, by fill weight","Label sizes for jars, by fill weight",145,984,611,0,2,,1
+knowledge,/knowledge/label-size-for-tins-tubes-pouches/,"Label sizes for tins, tubes and pouches","Label sizes for tins, tubes and pouches",153,1005,631,0,2,,1
+knowledge,/knowledge/label-size-guide/,Label size guide: how to measure and choose,Label size guide: how to measure and choose,150,2794,2321,0,3,,1
+knowledge,/knowledge/label-wrap-calculation/,How to calculate a wrap label size,How to calculate a wrap label size,146,1241,1103,0,2,,1
+knowledge,/knowledge/marketplace-label-requirements/,"Marketplace label requirements: FBA, retail and DTC","Marketplace label requirements: FBA, retail and DTC",145,2345,1941,3,2,,1
+knowledge,/knowledge/paper-vs-pp-vs-pet-labels/,Paper vs PP vs PET labels: which material for which product,Paper vs PP vs PET labels: which material for which product,148,1002,612,0,2,,1
+knowledge,/knowledge/permanent-vs-removable-adhesive/,Permanent vs removable label adhesive,Permanent vs removable label adhesive,144,905,529,2,2,,1
+knowledge,/knowledge/print-colour-consistency/,Print colour consistency: why run two never matches run one,Print colour consistency: why run two never matches run one,143,784,379,2,2,,1
+knowledge,/knowledge/print-resolution/,Print resolution: why 300 dpi is the number,Print resolution: why 300 dpi is the number,149,777,384,1,2,,1
+knowledge,/knowledge/production-lead-time/,Production lead time: what actually takes the time,Production lead time: what actually takes the time,143,699,333,0,2,,1
+knowledge,/knowledge/retail-packaging-labels/,Retail packaging labels: what has to be on them,Retail packaging labels: what has to be on them,143,1076,704,2,2,,1
+knowledge,/knowledge/samples-and-proofs/,Samples and proofs: what to approve before a print run,Samples and proofs: what to approve before a print run,143,809,404,1,2,,1
+knowledge,/knowledge/spot-uv-special-finishes/,Spot UV and special finishes: what they add and cost,Spot UV and special finishes: what they add and cost,148,771,394,0,2,,1
+knowledge,/knowledge/standard-label-sizes/,Standard label sizes in inches | Custom Stickers Printing,Standard label sizes in inches,146,1038,685,0,2,,1
+knowledge,/knowledge/sticker-adhesive-guide/,"Sticker adhesive guide: permanent, removable and outdoor","Sticker adhesive guide: permanent, removable and outdoor",146,716,332,2,2,,1
+knowledge,/knowledge/sticker-thickness-durability/,Sticker thickness and durability: what 0.1 mm changes,Sticker thickness and durability: what 0.1 mm changes,141,706,341,0,2,,1
+knowledge,/knowledge/suffocation-warning-labels/,Suffocation warning labels for poly bags,Suffocation warning labels for poly bags,141,1012,635,2,2,,1
+knowledge,/knowledge/vinyl-vs-paper-stickers/,Vinyl vs paper stickers: which one to use,Vinyl vs paper stickers: which one to use,146,817,435,1,2,,1
+knowledge,/knowledge/waterproof-label-materials/,Waterproof label materials: what survives water,Waterproof label materials: what survives water,145,901,535,1,2,,1
+knowledge,/knowledge/what-affects-label-pricing/,What actually affects custom label pricing,What actually affects custom label pricing,155,865,482,0,2,,1
+knowledge,/knowledge/what-is-moq/,What MOQ actually means in label printing,What MOQ actually means in label printing,142,818,446,0,2,,1
+products,/bottle-labels/,Bottle Labels That Survive Condensation and Chill,Bottle Labels,148,809,445,0,0,,1
+products,/clear-labels/,Clear Labels with White Ink for a No-Label Look,Clear Labels,151,792,433,0,0,,1
+products,/clear-stickers/,"Clear Stickers for Glass, Dark Bottles and Windows",Clear Stickers,153,787,424,0,0,,1
+products,/cosmetic-labels/,Cosmetic Labels for Small Bottles and Droppers,Cosmetic Labels,148,818,440,0,0,,1
+products,/custom-labels/,"Custom Labels — Any Size, Material or Finish, 50 Min",Custom Labels,153,887,473,0,0,,1
+products,/custom-stickers/,"Custom Stickers — Vinyl, Paper or Clear, from 50 Units",Custom Stickers,147,806,400,0,0,/images/products/custom-stickers.webp,1
+products,/die-cut-stickers/,"Die Cut Stickers in Any Shape, Kiss or Full Cut",Die Cut Stickers,145,788,417,0,0,,1
+products,/food-labels/,"Food Labels for Fridge, Freezer and Greasy Kitchens",Food Labels,143,827,456,0,0,,1
+products,/hang-tags/,"Custom Hang Tags — Printed and Punched, from 50 Units",Hang Tags,152,1153,739,0,0,/images/products/hang-tags.webp,1
+products,/jar-labels/,"Jar Labels for Chilled, Dry and Gifted Products",Jar Labels,142,778,406,0,0,,1
+products,/logo-stickers/,"Logo Stickers — Small Sizes, Exact Brand Colour",Logo Stickers,142,778,400,0,0,/images/products/logo-stickers.webp,1
+products,/roll-labels/,"Roll Labels for Applicators — Cores, Winding, Spacing",Roll Labels,150,819,442,0,0,,1
+products,/sticker-sheets/,Sticker Sheets — Multiple Designs on One Backing,Sticker Sheets,140,798,426,0,0,,1
+products,/vinyl-stickers/,"Vinyl Stickers for Outdoors, Bottles and Laptops",Vinyl Stickers,150,760,386,0,0,,1
+products,/waterproof-labels/,"Waterproof Labels for Bottles, Coolers and Ice",Waterproof Labels,144,781,420,0,0,,1
