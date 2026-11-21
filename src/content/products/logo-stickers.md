@@ -12,7 +12,7 @@ customization: ["Die cut to logo shape", "Small sizes", "Brand colour matching",
 moq: "From 50 units"
 leadTime: "Typically 7–12 working days after artwork approval"
 relatedProducts: ["custom-stickers", "vinyl-stickers", "die-cut-stickers"]
-imageAlt: "Round printed sticker with black line-art fruit illustrations, resting on kraft paper"
+imageAlt: "Industrial schematic of Logo Stickers, not a photograph."
 seoTitle: "Logo Stickers — Small Sizes, Exact Brand Colour"
 seoDescription: "Custom logo stickers die cut to your brand shape from 50 units: white or clear vinyl, gloss or matte laminate, colour matched to your artwork."
 order: 3

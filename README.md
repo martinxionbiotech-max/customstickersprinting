@@ -71,17 +71,19 @@ npm run dev
 
 ## Images
 
-Product photos live in `public/images/products/<slug>.webp` (1200 × 900, under 200 KB). The build checks for
-the file and renders it on the product page and in the Open Graph tags. When a photo is missing, the page
-renders an honest "Photograph pending" panel — no AI mock-up and no broken image.
+All product visuals are generated **industrial SVG schematics** in `public/images/products/<slug>.svg`.
+They are line drawings, not photographs, and are labelled “schematic — not a photograph” on the page.
+The generator is `scripts/generate-schematics.py`; re-running it overwrites the 15 product files and the
+press schematic.
 
-Current photo coverage: 3/15 (custom-stickers, logo-stickers, hang-tags). The remaining 12 need real
-sample photography; the brief is in `docs/photo-shot-list.md`.
+No customer print photography is published. Customer artwork and printed work are shown only with written
+permission; see `/declarations/#photography`. The old product photographs have been removed from `public/`.
 
 ## Status
 
 - 92 indexable pages, 65 markdown sidecars, 0 broken internal links, 0 orphan pages.
 - 15 products, 45 articles, 8 guides, 5 industries.
+- All product images are SVG schematics; no raster product photos remain in `public/`.
 - Live on Cloudflare Pages (apex 200). `www` is not yet resolving; add the DNS record/redirect.
 - Email alias `hello@` / `sales@` is still pending. Do not change `site.email` until the alias is created and
   tested; changing it without a mailbox would silently lose inquiries.

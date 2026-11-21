@@ -12,7 +12,7 @@ customization: ["Size and shape", "Hole position", "Eyelet colour", "String or e
 moq: "From 50 units"
 leadTime: "Typically 7–12 working days after artwork approval"
 relatedProducts: ["custom-labels", "logo-stickers", "die-cut-stickers"]
-imageAlt: "Two printed hang tags with a scalloped window and black cotton string, on a grey surface"
+imageAlt: "Industrial schematic of Hang Tags, not a photograph."
 seoTitle: "Custom Hang Tags — Printed and Punched, from 50 Units"
 seoDescription: "Custom hang tags printed on 350–400 gsm card with eyelets and string, die-cut to shape, from 50 units and quoted per project for US, UK and EU delivery."
 order: 1

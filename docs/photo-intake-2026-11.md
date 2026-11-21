@@ -1,7 +1,11 @@
-# Photo intake — 2026-11-21
+# Photo intake — 2026-11-21 (archived)
+
+> **Superseded:** the site now uses industrial SVG schematics for every product and the press process.
+> No photograph of customer print work is published without written permission. This file records why the
+> supplied photos were not used; it is not a photo request anymore.
 
 Source: 7 images supplied in chat. Checked with a perceptual dHash (9×8) against each other and against the
-three existing product photos.
+three product photos that were then in `public/`.
 
 ## Deduplication
 
@@ -22,31 +26,17 @@ three existing product photos.
 | CAMATEL / Pink rose label rolls | Real | **Reference only** | `ppzhan.com` watermark and third-party marks; crops still contain brands/Chinese or production marks |
 | DIYTrade label/sticker sheets | Real | **Reference only** | `Powered by DIYTrade.com` watermark; remaining crops contain third-party product art/text or are too low-resolution |
 
-## Used asset
+## Previously used asset (now retired)
 
-- `public/images/production/partner-press.webp` — 1200 × 900, WebP, 86.9 KB, EXIF stripped by re-encode.
-- Used on `/about/` only, with caption: “A partner press in China during a production check. This is not our
-  own factory.”
-- This is a process photograph, **not** a product hero and not evidence that the pictured labels are our work.
+- `public/images/production/partner-press.webp` was briefly used on `/about/`, then removed when the site
+  moved to vector schematics. It is no longer in `public/`.
+- Its replacement is `public/images/production/roll-press-schematic.svg`, an industrial SVG drawing.
+- The current caption is: “Roll-fed press — industrial schematic, not a photograph. Customer print work is not
+  shown without written permission.”
 
-## Still needed: 12 product photos
+## Current visual policy
 
-Place in `public/images/products/` as 1200 × 900 WebP under 200 KB:
-
-```
-custom-labels.webp
-roll-labels.webp
-bottle-labels.webp
-cosmetic-labels.webp
-food-labels.webp
-jar-labels.webp
-waterproof-labels.webp
-clear-labels.webp
-vinyl-stickers.webp
-die-cut-stickers.webp
-sticker-sheets.webp
-clear-stickers.webp
-```
-
-Rules: real sample, no AI, no third-party brand, no watermark, no text overlay. If a photo shows a client’s
-brand, use it only with written permission; otherwise crop to an unbranded area or reshoot.
+- Every product visual is an SVG schematic in `public/images/products/`.
+- No customer print photography is published without written permission.
+- The policy is stated on every product page, in the footer, and on `/declarations/#photography`.
+- The generator is `scripts/generate-schematics.py`.

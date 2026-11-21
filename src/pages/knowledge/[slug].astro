@@ -58,7 +58,7 @@ const ld = {
   author: { "@type": "Organization", name: site.brand },
   publisher: { "@id": `${site.url}/#organization` },
   mainEntityOfPage: new URL(Astro.url.pathname, Astro.site).href,
-  image: `${site.url}/images/og-default.webp`,
+  image: `${site.url}/images/og-default.png`,
   ...(d.sources.length > 0 ? { citation: d.sources.map((s) => s.url) } : {}),
 };
 
