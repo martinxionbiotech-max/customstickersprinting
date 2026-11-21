@@ -1,8 +1,10 @@
 import type { APIRoute } from "astro";
 import { getCollection } from "astro:content";
 import { sitePages } from "../data/sitePages";
+import { PILLAR_ORDER } from "../data/pillars";
 
 const staticPaths = sitePages.map((page) => page.path);
+const pillarPaths = PILLAR_ORDER.map((key) => `/knowledge/${key}/`);
 const toolPaths = ["/tools/", "/tools/label-size-calculator/", "/tools/label-cost-estimator/"];
 
 export const GET: APIRoute = async ({ site }) => {
@@ -13,6 +15,7 @@ export const GET: APIRoute = async ({ site }) => {
 
   const urls = [
     ...staticPaths,
+    ...pillarPaths,
     ...toolPaths,
     ...products.map((p) => `/${p.id}/`),
     ...industries.map((i) => `/industries/${i.id}/`),

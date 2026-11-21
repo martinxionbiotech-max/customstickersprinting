@@ -112,12 +112,12 @@ const faqLd = {
           <p style="margin:0">{p.view}</p>
         </aside>
 
-        <h2>What this guide does not cover</h2>
+        <h2>{p.limitsTitle ?? 'What this guide does not cover'}</h2>
         <ul>
           {p.limits.map((limit) => <li>{limit}</li>)}
         </ul>
 
-        <h2>What to check on a quote or proof</h2>
+        <h2>{p.checksTitle ?? 'What to check on a quote or proof'}</h2>
         <ul>
           {p.checks.map((check) => <li>{check}</li>)}
         </ul>
@@ -136,6 +136,18 @@ const faqLd = {
         {p.deepLinks.map((link) => (
           <p>{link.lead} <a href={link.href}>{link.label}</a>.</p>
         ))}
+
+        {p.sources && p.sources.length > 0 && (
+          <>
+            <h2>Official sources</h2>
+            <ul>
+              {p.sources.map((source) => (
+                <li><a href={source.url} rel="noopener">{source.label}</a></li>
+              ))}
+            </ul>
+            <p class="small">This guide is general production information, not legal advice. <a href="/disclaimer/">Read the disclaimer</a>.</p>
+          </>
+        )}
       </div>
     </div>
   </section>

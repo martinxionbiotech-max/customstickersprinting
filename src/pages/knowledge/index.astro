@@ -3,21 +3,36 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import CtaBand from "../../components/CtaBand.astro";
+import { PILLARS as PILLAR_DATA, PILLAR_ORDER } from "../../data/pillars";
 
 const articles = await getCollection("knowledge");
-const PILLARS: { key: string; title: string; intro: string }[] = [
-  { key: "label-sizing", title: "Label sizing and dimensions", intro: "How to measure a container, choose a size, and calculate a wrap." },
-  { key: "label-cost", title: "Cost and ordering", intro: "What drives a label price, what the setup covers, and how many to order." },
-  { key: "marketplace-labels", title: "Marketplace and retail labels", intro: "FNSKU, suffocation warnings, barcodes and what retail actually requires." },
-  { key: "label-materials", title: "Label materials and adhesives", intro: "Paper, PP, PET, adhesive and the conditions each one survives." },
-  { key: "sticker-materials", title: "Sticker materials and cutting", intro: "Vinyl versus paper, die cut versus kiss cut, and what a finish actually does." },
-  { key: "printing", title: "Printing and production", intro: "Digital versus flexo, how a roll is made, and where the crossover sits." },
-  { key: "artwork", title: "Artwork preparation", intro: "Colour, bleed, safe area and the files that print without surprises." },
-  { key: "hang-tags", title: "Hang tags and printed card", intro: "Card weight, hole placement, eyelets, string and the finishes that survive handling." },
-];
-const groups = PILLARS.map((p) => ({
-  ...p,
-  items: articles.filter((a) => a.data.pillar === p.key).sort((a, b) => a.data.order - b.data.order),
+const INTROS: Record<string, string> = {
+  "label-sizing": "How to measure a container, choose a size, and calculate a wrap.",
+  "label-cost": "What drives a label price, what the setup covers, and how many to order.",
+  "marketplace-labels": "FNSKU, suffocation warnings, barcodes and what retail actually requires.",
+  "label-materials": "Paper, PP, PET, adhesive and the conditions each one survives.",
+  "sticker-materials": "Vinyl versus paper, die cut versus kiss cut, and what a finish actually does.",
+  printing: "Digital versus flexo, how a roll is made, and where the crossover sits.",
+  artwork: "Colour, bleed, safe area and the files that print without surprises.",
+  "hang-tags": "Card weight, hole placement, eyelets, string and the finishes that survive handling.",
+  "label-compliance": "Mandatory fields, market differences and the limits of a print supplier's review.",
+};
+const TITLES: Record<string, string> = {
+  "label-sizing": "Label sizing and dimensions",
+  "label-cost": "Cost and ordering",
+  "marketplace-labels": "Marketplace and retail labels",
+  "label-materials": "Label materials and adhesives",
+  "sticker-materials": "Sticker materials and cutting",
+  printing: "Printing and production",
+  artwork: "Artwork preparation",
+  "hang-tags": "Hang tags and printed card",
+  "label-compliance": "Label compliance",
+};
+const groups = PILLAR_ORDER.map((key) => ({
+  key,
+  title: TITLES[key] ?? PILLAR_DATA[key].title,
+  intro: INTROS[key] ?? PILLAR_DATA[key].description,
+  items: articles.filter((a) => a.data.pillar === key).sort((a, b) => a.data.order - b.data.order),
 }));
 ---
 

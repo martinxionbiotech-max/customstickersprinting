@@ -6,7 +6,8 @@ export type PillarKey =
   | 'sticker-materials'
   | 'printing'
   | 'artwork'
-  | 'hang-tags';
+  | 'hang-tags'
+  | 'label-compliance';
 
 export interface Pillar {
   key: PillarKey;
@@ -23,9 +24,12 @@ export interface Pillar {
   worked: string[];
   mistakes: Array<{ title: string; body: string }>;
   limits: string[];
+  limitsTitle?: string;
   checks: string[];
+  checksTitle?: string;
   glossary: Array<{ term: string; definition: string }>;
   deepLinks: Array<{ lead: string; label: string; href: string }>;
+  sources?: Array<{ label: string; url: string }>;
   tool?: { title: string; label: string; href: string; description: string };
   view: string;
   faqs: Array<{ q: string; a: string }>;
@@ -906,6 +910,141 @@ export const PILLARS: Record<PillarKey, Pillar> = {
     ],
     products: ['hang-tags', 'logo-stickers', 'custom-stickers'],
   },
+
+  'label-compliance': {
+    key: 'label-compliance',
+    title: 'Label compliance by market and product',
+    heading: 'Label compliance: mandatory fields, market differences and print limits',
+    description:
+      'How food, cosmetic, supplement, chemical, alcohol and Prop 65 labels differ by market, what the printer verifies, and what the brand must decide.',
+    intro:
+      'Compliance label work fails in two ways: a team designs first and finds the mandatory fields after approval, or treats every sentence as a legal question and never gives the printer a stable block. The workable middle is a field list: destination, category and channel, an official source for every required particular, then a test of the area. The printer contributes measurement and production judgement; the brand or importer owns the legal interpretation. Six articles set out that division.',
+    covers: [
+      'The mandatory food, cosmetic, supplement, chemical and alcohol fields that commonly differ between the US and EU.',
+      'How to turn a market rule into a field list, a label area and a proof check.',
+      'Where Proposition 65, GHS and wine labelling need specialist review.',
+      'What a printer can verify and what stays with the brand, importer or representative.',
+    ],
+    tableTitle: 'The layers that determine a compliance label',
+    tableRows: [
+      ['Market', 'United States, European Union, another destination or several markets sharing one pack; each route can change the required fields and the language.'],
+      ['Product category', 'Food, cosmetic, dietary supplement, chemical mixture, wine or spirits; the category determines which specialist rule set applies.'],
+      ['Channel', 'Retail, direct-to-consumer, marketplace, professional use or export; channel rules can sit on top of the legal minimum.'],
+      ['Responsible party', 'The firm name and address, food business operator, EU responsible person, supplier or importer whose details the label must carry.'],
+      ['Mandatory text block', 'Identity, quantity, ingredients, allergens, warnings, dates, batch or lot, storage conditions and market-specific statements.'],
+      ['Warning regime', 'Proposition 65, GHS/CLP hazard communication, the alcohol government warning or another dedicated warning system.'],
+      ['Language and units', 'The language of the destination market and the permitted or required units, including dual metric and US customary quantity where applicable.'],
+    ],
+    decisionTitle: 'Decision table: which market, which fields',
+    decisionRows: [
+      ['Food sold in the US', 'Use the FDA and 21 CFR 101 field set: identity, net quantity, ingredients, allergens and Nutrition Facts where applicable', 'US allergen and ingredient presentation differs from the EU, and sesame needs explicit attention.'],
+      ['Food sold in the EU', 'Use Regulation 1169/2011: food name, emphasised allergens, quantity, dates, operator, origin where required and nutrition', 'The EU also sets x-height and language rules; confirm product-specific details with the importer.'],
+      ['A cosmetic product', 'Separate the US identity, quantity, ingredient and warning fields from the EU responsible person, INCI, dates and batch fields', 'Responsible-party and date requirements can make one market’s accepted label fail in the other.'],
+      ['A dietary supplement', 'Start with Supplement Facts in the US; use Directive 2002/46/EC and the national list in the EU', 'Claims can change the disclaimer or the product’s regulatory status.'],
+      ['A chemical mixture', 'Apply OSHA HazCom in the US or CLP in the EU, plus any transport or workplace marking', 'A GHS-style square alone does not make the label complete.'],
+      ['A product with a Proposition 65 chemical exposure', 'Treat the California warning as a separate decision and record the basis for it', 'A warning is not a substitute for testing, reformulation or good manufacturing practice.'],
+      ['Wine or spirits', 'Start with TTB COLA fields for the US and EU wine rules, then add destination-specific details', 'Alcohol labels combine composition rules with trade approvals; confirm the route before printing.'],
+      ['One SKU for several markets', 'Build a master field list, mark market-only fields and prove every language version', 'A common pack can save setup but creates version-control risk at application.'],
+    ],
+    workedTitle: 'Illustrative example: converting a rule list into label area',
+    worked: [
+      'Take a hypothetical 80 × 100 mm label with a 3 mm margin. The safe area is 74 × 94 = 6,956 mm². If the text, warnings, address and barcode occupy 5,600 mm², 1,356 mm² remains. That looks comfortable until a second market adds a longer address, an extra warning or a translation.',
+      'Add a 30 × 25 mm barcode and 900 mm² of market text. Occupied area becomes 5,600 + 750 + 900 = 7,250 mm², or 294 mm² over the safe area. The answer is not to shrink every font. Use a larger or folded label, a separate market label, or move a non-mandatory design element.',
+      'This is an illustrative layout budget, not a font-size rule. Use your actual dimensions, language and current sources, then give the printer a fixed text block and a list of fields that may change by destination.',
+    ],
+    mistakes: [
+      {
+        title: 'Asking the printer to “check compliance” after layout',
+        body: 'A printer can check fit, legibility, quiet zones and proof matching. It cannot decide whether a claim, ingredient, warning exemption or responsible-party statement is valid for the destination. That approval belongs upstream.',
+      },
+      {
+        title: 'Using one market’s artwork as a template for every market',
+        body: 'A US label may lack the EU responsible person and x-height discipline; an EU label may have the wrong nutrition or warning construction for the US. Build each version from a field matrix, not the most convenient artwork.',
+      },
+      {
+        title: 'Treating a warning as a replacement for a control',
+        body: 'For Proposition 65, GHS or an alcohol warning, the warning is one communication layer. It does not prove exposure was assessed, a mixture classified correctly or other safety rules met. Keep the decision record separate.',
+      },
+    ],
+    limitsTitle: 'When to get legal review, and what the printer cannot decide',
+    limits: [
+      'Get legal review before printing when the ingredient declaration, claim, warning, symbol, responsible party or market route is unresolved, or when the brand relies on an exemption.',
+      'Review is also warranted when a product crosses categories or the same pack enters a market the team has not printed before.',
+      'A printer can check fit, legibility, colour, barcode reproduction and material handling. It cannot approve the legal wording or decide whether the content satisfies the destination rule.',
+      'A printer cannot verify supplier documentation, ingredient-list completeness or a Proposition 65 exposure conclusion.',
+      'A proof check is not a regulatory review. The brand, importer, responsible person or representative remains responsible for final content.',
+    ],
+    checksTitle: 'How to build a label-compliance checklist',
+    checks: [
+      'List each destination market, product category and sales channel before the first draft.',
+      'Name the responsible party and confirm the exact legal name and address for each market.',
+      'Attach an official source and check date to every required field.',
+      'Mark fields as fixed, market-specific or optional, with translations in approved files.',
+      'Measure the safe area after every translation and check final-proof legibility.',
+      'Ask the printer to flag overflow, small type, lost barcode quiet zones and low contrast.',
+      'Record who approved the content, the date, the market and the printed version.',
+    ],
+    glossary: [
+      { term: 'Mandatory particular', definition: 'A piece of information that the destination rule requires on the label or in the labelling.' },
+      { term: 'Responsible person', definition: 'The entity named by the cosmetics rule for the market, which must be identifiable on the label and able to answer for the product.' },
+      { term: 'Statement of identity', definition: 'The name of the food or product in terms a buyer will understand, as required by the applicable market rule.' },
+      { term: 'x-height', definition: 'The height of a lowercase letter such as x, used in EU food labelling as one way to measure minimum text size.' },
+      { term: 'GHS', definition: 'The Globally Harmonized System for classifying chemicals and communicating hazards through labels and safety data sheets.' },
+      { term: 'COLA', definition: 'The TTB certificate of label approval process used for certain alcohol beverage labels in the United States.' },
+    ],
+    deepLinks: [
+      { lead: 'For the US and EU food field comparison, read', label: 'food label requirements in the US and EU', href: '/knowledge/food-label-requirements-us-eu/' },
+      { lead: 'For INCI, responsible-person and small-pack issues, read', label: 'cosmetic label requirements in the US and EU', href: '/knowledge/cosmetic-label-requirements-us-eu/' },
+      { lead: 'For Supplement Facts and structure/function disclaimers, read', label: 'supplement label requirements in the US and EU', href: '/knowledge/supplement-label-requirements-us-eu/' },
+      { lead: 'For short-form warnings and exposure decisions, read', label: 'Proposition 65 warning labels', href: '/knowledge/prop-65-warning-labels/' },
+      { lead: 'For pictograms, UFI and chemical-container durability, read', label: 'GHS and CLP chemical labels', href: '/knowledge/ghs-chemical-labels/' },
+      { lead: 'For COLA fields, 750 ml geometry and condensation, read', label: 'wine and spirits label requirements', href: '/knowledge/wine-spirits-label-requirements/' },
+      { lead: 'Use the', label: 'label size calculator', href: '/tools/label-size-calculator/' },
+      { lead: 'This guide is not legal advice. Read', label: 'the disclaimer', href: '/disclaimer/' },
+    ],
+    sources: [
+      { label: 'FDA — Food labeling and nutrition', url: 'https://www.fda.gov/food/food-labeling-nutrition' },
+      { label: 'EUR-Lex — Regulation (EU) No 1169/2011, food information to consumers', url: 'https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng' },
+      { label: 'FDA — Cosmetics labeling regulations', url: 'https://www.fda.gov/cosmetics/cosmetics-labeling/cosmetics-labeling-regulations' },
+      { label: 'EUR-Lex — Regulation (EC) No 1223/2009, cosmetic products', url: 'https://eur-lex.europa.eu/eli/reg/2009/1223/oj/eng' },
+      { label: 'FDA — Dietary supplements', url: 'https://www.fda.gov/food/dietary-supplements' },
+      { label: 'EUR-Lex — Directive 2002/46/EC, food supplements', url: 'https://eur-lex.europa.eu/eli/dir/2002/46/oj/eng' },
+      { label: 'OEHHA — Proposition 65', url: 'https://oehha.ca.gov/proposition-65' },
+      { label: 'OSHA — Hazard Communication', url: 'https://www.osha.gov/hazcom' },
+      { label: 'EUR-Lex — Regulation (EC) No 1272/2008, CLP', url: 'https://eur-lex.europa.eu/eli/reg/2008/1272/oj/eng' },
+      { label: 'TTB — Wine labeling', url: 'https://www.ttb.gov/labeling/wine-labeling' },
+      { label: 'EUR-Lex — Regulation (EU) No 1308/2013, agricultural products', url: 'https://eur-lex.europa.eu/eli/reg/2013/1308/oj/eng' },
+    ],
+    view:
+      'In our view, compliance should reach the printer as a locked field list, not a request for reassurance. The printer can show physical consequences: this paragraph will not fit, this symbol is too dense at 12 mm, this background will swallow the allergen emphasis. Those findings are useful, not a legal opinion. A printer offering one without the source and responsible party adds risk.',
+    faqs: [
+      {
+        q: 'Does a printer check whether my label is compliant?',
+        a: 'A printer can check fit, legibility and barcode reproduction. It cannot approve the legal wording, claim, warning or market classification. The brand, importer or responsible person must confirm those against official sources and the destination authority.',
+      },
+      {
+        q: 'Can one label serve the US, EU and other markets?',
+        a: 'Sometimes, but a shared label is a constraint, not a default. Build a field matrix for every destination and test whether all required fields fit legibly. A market-specific label or separate SKU is often safer than hiding a required statement under a fold.',
+      },
+      {
+        q: 'Which markets are covered by this guide?',
+        a: 'The six articles cover the US and EU for food, cosmetics, dietary supplements, GHS/CLP chemicals and wine or spirits, plus California Proposition 65. Other destinations, categories and retailer programmes need their own field list and official sources.',
+      },
+      {
+        q: 'Where should the legal review happen in the process?',
+        a: 'Before the final artwork is locked. Agree the destination, category, responsible party, claims and warning strategy first, then approve the exact text, language and version to be printed. Review after prepress creates avoidable rework and version risk.',
+      },
+      {
+        q: 'What records should a brand keep for a compliance label?',
+        a: 'Keep approved text and artwork, official sources and check dates, market, channel, responsible party, reviewer, approval date, print version and barcode verification. Keep warning or classification decisions separately. These records answer retailer, importer or authority questions.',
+      },
+      {
+        q: 'Can a label be printed before the compliance text is final?',
+        a: 'Only as a pre-production proof, not a saleable run. A speculative text block can lock in the wrong fields, language or responsible party. If a press proof is essential, isolate uncertain fields and keep final quantity subject to written approval.',
+      },
+    ],
+    products: ['custom-labels', 'roll-labels', 'waterproof-labels'],
+  },
 };
 
 export const PILLAR_ORDER: PillarKey[] = [
@@ -917,4 +1056,5 @@ export const PILLAR_ORDER: PillarKey[] = [
   'printing',
   'artwork',
   'hang-tags',
+  'label-compliance',
 ];

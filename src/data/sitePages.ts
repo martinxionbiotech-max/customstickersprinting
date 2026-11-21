@@ -226,6 +226,13 @@ export const sitePages: SitePage[] = [
       "Hang tag card stocks, sizes, hole placement, finishes, hardware and artwork requirements for apparel and retail packaging.",
     group: "knowledge",
   },
+  {
+    path: "/knowledge/label-compliance/",
+    title: "Label compliance by market and product",
+    description:
+      "How food, cosmetic, supplement, chemical, alcohol and Proposition 65 labels differ by market, what the printer can verify, and what the brand or importer must decide.",
+    group: "knowledge",
+  },
 ];
 
 const pageIndex = new Map(sitePages.map((page) => [page.path, page]));
