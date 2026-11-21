@@ -58,19 +58,46 @@ const faqLd = {
       <div class="prose" style="margin-top:26px">
         <p>{p.intro}</p>
 
+        <h2>How to use this guide</h2>
+        <p>
+          Work through the decision table before the worked example, then check the limits and quote checks before you
+          accept a price or a proof. The arithmetic is shown so you can replace the example inputs with your own.
+          {p.tool && <> If you already have measurements or quote figures, open the <a href={p.tool.href}>{p.tool.label.toLowerCase()}</a> after reading the method here.</>}
+        </p>
+
         <h2>What this guide covers</h2>
         <ul>
           {p.covers.map((c) => <li>{c}</li>)}
         </ul>
 
         <h2>{p.tableTitle}</h2>
-        <table>
-          <tbody>
-            {p.tableRows.map(([k, v]) => (
-              <tr><th scope="row">{k}</th><td>{v}</td></tr>
-            ))}
-          </tbody>
-        </table>
+        <div class="table-wrap">
+          <table>
+            <tbody>
+              {p.tableRows.map(([k, v]) => (
+                <tr><th scope="row">{k}</th><td>{v}</td></tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <h2>{p.decisionTitle}</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th scope="col">Situation</th><th scope="col">Decision rule</th><th scope="col">Why it matters</th></tr>
+            </thead>
+            <tbody>
+              {p.decisionRows.map(([situation, rule, reason]) => (
+                <tr><td>{situation}</td><td>{rule}</td><td>{reason}</td></tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <h2>{p.workedTitle}</h2>
+        <p class="small"><strong>Illustrative only.</strong> The figures below demonstrate the method; they are not a quotation, a current price or a guarantee for your specification.</p>
+        {p.worked.map((paragraph) => <p>{paragraph}</p>)}
 
         <h2>Common mistakes</h2>
         {p.mistakes.map((m) => (
@@ -84,6 +111,31 @@ const faqLd = {
           <p class="eyebrow" style="margin:0 0 6px">Our view</p>
           <p style="margin:0">{p.view}</p>
         </aside>
+
+        <h2>What this guide does not cover</h2>
+        <ul>
+          {p.limits.map((limit) => <li>{limit}</li>)}
+        </ul>
+
+        <h2>What to check on a quote or proof</h2>
+        <ul>
+          {p.checks.map((check) => <li>{check}</li>)}
+        </ul>
+
+        <h2>Glossary</h2>
+        <dl class="glossary">
+          {p.glossary.map((entry) => (
+            <>
+              <dt>{entry.term}</dt>
+              <dd>{entry.definition}</dd>
+            </>
+          ))}
+        </dl>
+
+        <h2>Where to go deeper</h2>
+        {p.deepLinks.map((link) => (
+          <p>{link.lead} <a href={link.href}>{link.label}</a>.</p>
+        ))}
       </div>
     </div>
   </section>
@@ -134,5 +186,36 @@ const faqLd = {
     </div>
   </section>
 
+  {p.tool && (
+    <section class="tight" style="border-top:1px solid var(--line)">
+      <div class="wrap narrow tool-block">
+        <h2>{p.tool.title}</h2>
+        <p>{p.tool.description}</p>
+        <p><a class="btn btn-primary" href={p.tool.href}>{p.tool.label}</a></p>
+        <p class="small">The tool explains its formula, assumptions and limits. Calculations are illustrative; read the <a href="/disclaimer/">disclaimer</a> before relying on a result.</p>
+      </div>
+    </section>
+  )}
+
   <CtaBand />
 </BaseLayout>
+
+<style>
+  .glossary {
+    margin: 0;
+  }
+
+  .glossary dt {
+    font-weight: 700;
+    margin: 16px 0 4px;
+  }
+
+  .glossary dd {
+    margin: 0;
+    color: var(--ink-2);
+  }
+
+  .tool-block .btn {
+    display: inline-block;
+  }
+</style>

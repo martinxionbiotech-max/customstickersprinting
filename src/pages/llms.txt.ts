@@ -94,6 +94,12 @@ export const GET: APIRoute = async ({ site }) => {
 
   lines.push(
     "",
+    "## Tools",
+    "",
+    `- [Label tools](${base}/tools/): two browser-based calculators for flat label sizing and comparing label quotations.`,
+    `- [Label size calculator](${base}/tools/label-size-calculator/): calculate flat wrap width, height and area in cm², with a taper warning and stated assumptions.`,
+    `- [Label cost estimator](${base}/tools/label-cost-estimator/): compare two quotations by total, cost per unit and setup share. No prices are pre-filled.`,
+    "",
     "## Company",
     "",
     `- Legal name: Yiwu Dingwei Trading Company, an individual business registered in China.`,

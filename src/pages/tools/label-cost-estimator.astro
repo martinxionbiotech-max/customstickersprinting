@@ -1,0 +1,508 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+
+const faqs = [
+  {
+    q: "Does the estimator include tax, duty or currency conversion?",
+    a: "No. Enter every amount in one currency and add tax or duty separately. The tool does not convert currencies, apply an exchange rate, estimate customs charges or decide which Incoterm applies to a delivery.",
+  },
+  {
+    q: "Why does the 5,000-unit example show $780 rather than $840?",
+    a: "The $840 figure is the linear result at the same $0.12 combined per-unit rate. The $780 example explicitly assumes a 10% volume-break reduction to $0.108 per unit, giving $540 of variable cost. That is an illustration of a quantity break, not a predicted price.",
+  },
+  {
+    q: "Can I compare quotes in different currencies?",
+    a: "Not directly. Convert both quotes to the same currency at a rate you record, then enter the converted amounts. The output has no currency symbol because it inherits whatever currency you used, and it does not account for payment fees or later exchange-rate movement.",
+  },
+  {
+    q: "Should setup be included in the cost per unit?",
+    a: "Include it when you are comparing the total cost of one order. Exclude it only if you are examining the variable production cost or if setup is genuinely waived. The tool shows setup as a separate line and as a share of total so the fixed block stays visible.",
+  },
+];
+
+const webAppLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "Label cost estimator and quote comparison",
+  description:
+    "Compare two label quotations using user-entered quantity, setup, material, print, finishing and freight costs. Show total, cost per unit and setup share.",
+  applicationCategory: "UtilityApplication",
+  operatingSystem: "Any",
+  browserRequirements: "JavaScript enables live calculation; the formula and worked examples are visible without it.",
+  isAccessibleForFree: true,
+  url: "https://customstickersprinting.com/tools/label-cost-estimator/",
+  featureList: [
+    "Two quote scenarios",
+    "Total and cost per unit",
+    "Setup share of total",
+    "Scenario difference",
+  ],
+};
+
+const faqLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: { "@type": "Answer", text: faq.a },
+  })),
+};
+
+const fields = [
+  { key: "quantity", label: "Quantity", hint: "Finished units in the scenario." },
+  { key: "setup", label: "Setup / plate / die cost", hint: "One-off charges for the specification." },
+  { key: "material", label: "Material cost per unit", hint: "Face stock, adhesive, liner and laminate material." },
+  { key: "print", label: "Print cost per unit", hint: "Press charge per label at the quoted quantity." },
+  { key: "finish", label: "Finishing cost per unit", hint: "Cutting, special finish or other per-unit work." },
+  { key: "freight", label: "Fixed freight", hint: "One total for the scenario; exclude tax and duty." },
+];
+---
+
+<BaseLayout
+  title="Label cost estimator: compare two quotes"
+  description="Compare two label quotations with your own quantity, setup, material, print and freight. See total, unit cost, setup share, formula and limits."
+  pageType="WebPage"
+  jsonLd={[webAppLd, faqLd]}
+>
+  <Breadcrumbs items={[{ label: "Tools", href: "/tools/" }, { label: "Label cost estimator" }]} />
+  <section class="tight">
+    <div class="wrap narrow prose">
+      <p class="eyebrow">Buyer tool · quotes</p>
+      <h1>Label cost estimator and quote comparison</h1>
+      <p style="font-size:1.05rem;color:var(--ink-2)">
+        Enter the six figures from one quote in Scenario A and another in Scenario B. The tool shows each total,
+        cost per unit and the share taken by setup, then the difference between the scenarios. It uses no
+        pre-filled rates and makes no currency conversion.
+      </p>
+
+      <h2>Compare two quote scenarios</h2>
+      <noscript>
+        <p class="note">JavaScript is off. Use the formula and the worked examples below, or enable JavaScript to calculate with your own quote figures.</p>
+      </noscript>
+      <form id="cost-form" class="cost-form" action="#worked-example">
+        <p class="form-note">Use one currency for both scenarios. Leave a scenario blank if you do not have it; enter 0 where a quoted charge does not apply. No values are pre-filled.</p>
+        <div class="scenario-grid">
+          {["a", "b"].map((suffix) => (
+            <fieldset class="scenario">
+              <legend>Scenario {suffix.toUpperCase()}</legend>
+              {fields.map((field) => (
+                <div class="field">
+                  <label for={`${field.key}-${suffix}`}>Scenario {suffix.toUpperCase()} {field.label.toLowerCase()}</label>
+                  <input
+                    id={`${field.key}-${suffix}`}
+                    name={`${field.key}-${suffix}`}
+                    type="number"
+                    min="0"
+                    step="any"
+                    inputmode="decimal"
+                    data-scenario={suffix}
+                    data-field={field.key}
+                  />
+                  <span class="help">{field.hint}</span>
+                </div>
+              ))}
+            </fieldset>
+          ))}
+        </div>
+        <button class="btn btn-primary" type="submit">Compare scenarios</button>
+      </form>
+
+      <div id="cost-results" class="results" aria-live="polite" aria-atomic="true">
+        <p id="result-placeholder" class="result-placeholder">Complete one or both scenarios, using the same currency, then compare.</p>
+        <div id="output-wrap" hidden>
+          <div class="table-wrap">
+            <table class="comparison-table">
+              <thead>
+                <tr><th scope="col">Result</th><th scope="col">Scenario A</th><th scope="col">Scenario B</th><th scope="col">B − A</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Total</th><td id="total-a">—</td><td id="total-b">—</td><td id="total-diff">—</td></tr>
+                <tr><th scope="row">Cost per unit</th><td id="unit-a">—</td><td id="unit-b">—</td><td id="unit-diff">—</td></tr>
+                <tr><th scope="row">Setup share of total</th><td id="share-a">—</td><td id="share-b">—</td><td id="share-diff">—</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p id="result-note" class="calculation-note"></p>
+          <p class="help">The figures are illustrative, not our prices. Totals are in the same currency you entered. The tool does not add tax, duty, waste, reprints, storage or currency conversion.</p>
+        </div>
+      </div>
+
+      <h2>The formula</h2>
+      <div class="formula">
+        <p>total = setup + (material + print + finish) × quantity + freight</p>
+        <p>cost per unit = total ÷ quantity</p>
+        <p>setup share = setup ÷ total</p>
+      </div>
+      <p>
+        The calculator applies those three formulas separately to each scenario, then subtracts Scenario A from
+        Scenario B for the comparison column. The calculation note repeats the arithmetic with your entered values.
+      </p>
+
+      <h2 id="worked-example">Illustrative worked examples</h2>
+      <p class="small"><strong>Illustrative currency and figures.</strong> The examples use $ only as a neutral illustration and are not our prices. The amounts are not a quotation.</p>
+      <h3>500 units</h3>
+      <p>
+        Take 500 units, $180 setup, $0.06 material per unit, $0.04 print per unit, $0.02 finishing per unit and $60
+        freight. Variable = ($0.06 + $0.04 + $0.02) × 500 = $0.12 × 500 = $60. Total = $180 + $60 + $60 =
+        <strong>$300</strong>. Cost per unit = $300 ÷ 500 = <strong>$0.60</strong>. Setup share = $180 ÷ $300 =
+        <strong>60.0%</strong>.
+      </p>
+      <h3>5,000 units with an illustrative volume break</h3>
+      <p>
+        At unchanged rates, 5,000 units would give variable cost $0.12 × 5,000 = $600, total $180 + $600 + $60 =
+        $840, and a unit cost of $0.168. That is the linear result, not a quantity break.
+      </p>
+      <p>
+        To illustrate a break, suppose the combined material, print and finishing rate falls by 10% from $0.12 to
+        $0.108. This reduction is an assumption, not a predicted discount. Variable = $0.108 × 5,000 = $540. Total =
+        $180 + $540 + $60 = <strong>$780</strong>. Cost per unit = $780 ÷ 5,000 = <strong>$0.156</strong>. Setup
+        share = $180 ÷ $780 = <strong>23.1%</strong>.
+      </p>
+      <p>
+        The calculator itself does not assume a volume break. It applies the per-unit values you enter, which is why
+        separate quote scenarios are more reliable than extending a small-order rate to a larger quantity.
+      </p>
+
+      <h2>Assumptions and limits</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th scope="col">Boundary</th><th scope="col">What it means</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Tax and duty are excluded</td><td>Add VAT, sales tax, customs duty, brokerage or other charges separately; they depend on the destination and terms.</td></tr>
+            <tr><td>One currency only</td><td>The output inherits the currency you type. No exchange rate or payment fee is applied.</td></tr>
+            <tr><td>Waste is excluded</td><td>Ask whether the quoted quantity is sellable labels or press output and whether spoilage is included.</td></tr>
+            <tr><td>Reprints and storage are excluded</td><td>A failed approval, a design change, long storage or dead stock can outweigh a lower unit price.</td></tr>
+            <tr><td>Setup is not always fixed</td><td>A supplier may waive, combine, amortise or separately itemise setup. Enter the figure that applies to each scenario.</td></tr>
+            <tr><td>Quantity breaks are not linear</td><td>A larger run can use a different press, plate set, material purchase or finishing route. Do not infer a break from one per-unit rate.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Questions about the cost estimator</h2>
+      {faqs.map((faq) => (
+        <div style="margin-top:18px">
+          <h3 style="font-size:1rem;margin:0 0 4px">{faq.q}</h3>
+          <p style="margin:0;color:var(--ink-2)">{faq.a}</p>
+        </div>
+      ))}
+      <p class="small" style="margin-top:24px">
+        Background: <a href="/knowledge/label-cost/">label printing cost and ordering</a> ·
+        <a href="/knowledge/custom-label-printing-cost/">custom label printing cost</a>. To price a real job, send the
+        specification through <a href="/request-a-quote/">request a quote</a>. The
+        <a href="/disclaimer/">disclaimer</a> explains the limits of every calculation on this site.
+      </p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .cost-form {
+    margin: 22px 0;
+    border: 1px solid var(--line);
+    background: #fffdf8;
+    padding: 20px;
+  }
+
+  .form-note {
+    font-size: 0.86rem;
+    color: var(--ink-2);
+    max-width: 74ch;
+  }
+
+  .scenario-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin: 10px 0 20px;
+  }
+
+  .scenario {
+    border: 1px solid var(--line);
+    padding: 14px 16px 16px;
+    margin: 0;
+  }
+
+  .scenario legend {
+    font-weight: 700;
+    padding: 0 6px;
+  }
+
+  .field {
+    display: grid;
+    gap: 6px;
+    margin: 0 0 15px;
+  }
+
+  .field label {
+    font-weight: 700;
+  }
+
+  .field input {
+    width: 100%;
+    padding: 10px 11px;
+    border: 1px solid var(--line);
+    border-radius: 0;
+    background: #fff;
+    color: var(--ink);
+    font: inherit;
+  }
+
+  .help {
+    font-size: 0.8rem;
+    line-height: 1.45;
+    color: var(--ink-3);
+  }
+
+  .results {
+    border: 1px solid var(--line);
+    background: var(--bg-2);
+    padding: 20px;
+    margin: 22px 0;
+  }
+
+  .result-placeholder {
+    margin: 0;
+    color: var(--ink-2);
+  }
+
+  .comparison-table {
+    background: #fffdf8;
+  }
+
+  .comparison-table th[scope="row"] {
+    width: 25%;
+  }
+
+  .calculation-note {
+    margin: 14px 0 8px;
+    padding-top: 12px;
+    border-top: 1px solid var(--line);
+    font-family: var(--mono);
+    font-size: 0.83rem;
+    line-height: 1.55;
+    white-space: pre-line;
+  }
+
+  .formula {
+    border: 1px solid var(--line);
+    background: var(--bg-2);
+    padding: 14px 16px;
+    font-family: var(--mono);
+    font-size: 0.9rem;
+  }
+
+  .formula p {
+    margin: 0 0 6px;
+  }
+
+  .formula p:last-child {
+    margin-bottom: 0;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+
+  @media (max-width: 760px) {
+    .scenario-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<script is:inline>
+  (() => {
+    const form = document.getElementById("cost-form");
+    if (!form) return;
+
+    const placeholder = document.getElementById("result-placeholder");
+    const outputWrap = document.getElementById("output-wrap");
+    const resultNote = document.getElementById("result-note");
+    const keys = ["quantity", "setup", "material", "print", "finish", "freight"];
+    const labels = {
+      quantity: "Quantity",
+      setup: "Setup / plate / die",
+      material: "Material per unit",
+      print: "Print per unit",
+      finish: "Finishing per unit",
+      freight: "Freight",
+    };
+
+    const amountFormat = new Intl.NumberFormat("en", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 4,
+    });
+    const differenceFormat = new Intl.NumberFormat("en", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 4,
+      signDisplay: "always",
+    });
+    const percentFormat = new Intl.NumberFormat("en", {
+      minimumFractionDigits: 1,
+      maximumFractionDigits: 1,
+    });
+    const percentDifferenceFormat = new Intl.NumberFormat("en", {
+      minimumFractionDigits: 1,
+      maximumFractionDigits: 1,
+      signDisplay: "always",
+    });
+
+    const resultIds = {
+      a: { total: "total-a", unit: "unit-a", share: "share-a" },
+      b: { total: "total-b", unit: "unit-b", share: "share-b" },
+      diff: { total: "total-diff", unit: "unit-diff", share: "share-diff" },
+    };
+
+    function field(suffix, key) {
+      return document.getElementById(key + "-" + suffix);
+    }
+
+    function readScenario(suffix) {
+      const raw = {};
+      const present = [];
+      keys.forEach((key) => {
+        const input = field(suffix, key);
+        raw[key] = input.value.trim();
+        if (raw[key] !== "") present.push(key);
+      });
+
+      if (present.length === 0) return { status: "empty" };
+      if (present.length !== keys.length) {
+        return {
+          status: "partial",
+          suffix: suffix.toUpperCase(),
+          missing: keys.filter((key) => raw[key] === "").map((key) => labels[key]),
+        };
+      }
+
+      const values = {};
+      for (const key of keys) {
+        const parsed = Number.parseFloat(raw[key]);
+        if (!Number.isFinite(parsed) || parsed < 0) {
+          return {
+            status: "invalid",
+            message: "Scenario " + suffix.toUpperCase() + " " + labels[key].toLowerCase() + " must be zero or more.",
+          };
+        }
+        values[key] = parsed;
+      }
+
+      if (values.quantity <= 0) {
+        return {
+          status: "invalid",
+          message: "Scenario " + suffix.toUpperCase() + " quantity must be greater than zero.",
+        };
+      }
+
+      const total = values.setup + (values.material + values.print + values.finish) * values.quantity + values.freight;
+      const unit = total / values.quantity;
+      const share = total > 0 ? (values.setup / total) * 100 : null;
+      return { status: "ok", values, total, unit, share };
+    }
+
+    function clearOutput(message) {
+      placeholder.textContent = message;
+      placeholder.hidden = false;
+      outputWrap.hidden = true;
+      resultNote.textContent = "";
+    }
+
+    function formulaFor(label, result) {
+      const v = result.values;
+      const parts =
+        label +
+        ": " +
+        amountFormat.format(v.setup) +
+        " + (" +
+        amountFormat.format(v.material) +
+        " + " +
+        amountFormat.format(v.print) +
+        " + " +
+        amountFormat.format(v.finish) +
+        ") × " +
+        amountFormat.format(v.quantity) +
+        " + " +
+        amountFormat.format(v.freight) +
+        " = " +
+        amountFormat.format(result.total) +
+        "; " +
+        amountFormat.format(result.total) +
+        " ÷ " +
+        amountFormat.format(v.quantity) +
+        " = " +
+        amountFormat.format(result.unit) +
+        " per unit; " +
+        amountFormat.format(v.setup) +
+        " ÷ " +
+        amountFormat.format(result.total) +
+        " = " +
+        (result.share === null ? "not defined (total is zero)" : percentFormat.format(result.share) + "%") +
+        ".";
+      return parts;
+    }
+
+    function setScenarioCells(suffix, result) {
+      const ids = resultIds[suffix];
+      document.getElementById(ids.total).textContent = result ? amountFormat.format(result.total) : "Not entered";
+      document.getElementById(ids.unit).textContent = result ? amountFormat.format(result.unit) : "Not entered";
+      document.getElementById(ids.share).textContent = result
+        ? result.share === null
+          ? "n/a (total zero)"
+          : percentFormat.format(result.share) + "%"
+        : "Not entered";
+    }
+
+    function calculate() {
+      const a = readScenario("a");
+      const b = readScenario("b");
+
+      if (a.status === "invalid") return clearOutput(a.message);
+      if (b.status === "invalid") return clearOutput(b.message);
+      if (a.status === "partial") {
+        return clearOutput("Complete all six Scenario A fields or clear the partial entry. Missing: " + a.missing.join(", ") + ".");
+      }
+      if (b.status === "partial") {
+        return clearOutput("Complete all six Scenario B fields or clear the partial entry. Missing: " + b.missing.join(", ") + ".");
+      }
+      if (a.status === "empty" && b.status === "empty") {
+        return clearOutput("Complete one or both scenarios, using the same currency, then compare.");
+      }
+
+      const aResult = a.status === "ok" ? a : null;
+      const bResult = b.status === "ok" ? b : null;
+      setScenarioCells("a", aResult);
+      setScenarioCells("b", bResult);
+
+      if (aResult && bResult) {
+        document.getElementById(resultIds.diff.total).textContent = differenceFormat.format(bResult.total - aResult.total);
+        document.getElementById(resultIds.diff.unit).textContent = differenceFormat.format(bResult.unit - aResult.unit);
+        document.getElementById(resultIds.diff.share).textContent =
+          aResult.share === null || bResult.share === null
+            ? "n/a"
+            : percentDifferenceFormat.format(bResult.share - aResult.share) + " pp";
+      } else {
+        document.getElementById(resultIds.diff.total).textContent = "Enter both";
+        document.getElementById(resultIds.diff.unit).textContent = "Enter both";
+        document.getElementById(resultIds.diff.share).textContent = "Enter both";
+      }
+
+      const notes = [];
+      if (aResult) notes.push(formulaFor("Scenario A", aResult));
+      if (bResult) notes.push(formulaFor("Scenario B", bResult));
+      if (!aResult || !bResult) notes.push("Enter both scenarios to see the B − A comparison.");
+      resultNote.textContent = notes.join("\n") + "\nIllustrative arithmetic, not our prices.";
+
+      placeholder.hidden = true;
+      outputWrap.hidden = false;
+    }
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      calculate();
+    });
+  })();
+</script>

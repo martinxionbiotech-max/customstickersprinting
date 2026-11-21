@@ -1,0 +1,527 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+
+const faqs = [
+  {
+    q: "Is the overlap included in the calculated label width?",
+    a: "Yes. The calculator adds the overlap you enter to the measured circumference. For the 65 mm example, 3.1416 × 65 = 204.204 mm, and adding 4 mm gives a flat label width of 208.2 mm. Use a sample to confirm which end sits on top of the seam.",
+  },
+  {
+    q: "Why does the calculator warn about a taper?",
+    a: "A tapered or stepped container has a different circumference at each height, so one diameter cannot describe the whole label band. The result becomes a rough starting point. Measure the top and bottom of the band and ask for a curved dieline or a physical sample before printing.",
+  },
+  {
+    q: "Can I use this calculator for a flat panel?",
+    a: "Yes, for a full wrap around a rectangular panel or box. Enter the panel width and depth; the calculator uses 2 × (width + depth) + overlap. It does not calculate a single-face label, a corner radius, a recess or a diagonal wrap, so check those with a dieline.",
+  },
+  {
+    q: "Should I add bleed to the result?",
+    a: "The result is the finished cut size, so bleed is not included. Add the printer’s requested bleed to the artwork canvas, commonly 3 mm on each edge as a working target, while keeping the cut size unchanged. Confirm the requirement for your printer and substrate.",
+  },
+];
+
+const webAppLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "Label size calculator",
+  description:
+    "Calculate a flat label wrap width, flat height and area from a round container diameter or rectangular panel dimensions, with optional taper warning.",
+  applicationCategory: "UtilityApplication",
+  operatingSystem: "Any",
+  browserRequirements: "JavaScript enables live calculation; the formula and worked example are visible without it.",
+  isAccessibleForFree: true,
+  url: "https://customstickersprinting.com/tools/label-size-calculator/",
+  featureList: [
+    "Round container circumference with overlap",
+    "Rectangular full-wrap starting width",
+    "Label area in square centimetres",
+    "Taper warning",
+  ],
+};
+
+const faqLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: { "@type": "Answer", text: faq.a },
+  })),
+};
+---
+
+<BaseLayout
+  title="Label size calculator: wrap width and area"
+  description="Calculate flat label width from a container diameter and overlap, or from a rectangular panel. Get label area in cm², assumptions, worked arithmetic and limits."
+  pageType="WebPage"
+  jsonLd={[webAppLd, faqLd]}
+>
+  <Breadcrumbs items={[{ label: "Tools", href: "/tools/" }, { label: "Label size calculator" }]} />
+  <section class="tight">
+    <div class="wrap narrow prose">
+      <p class="eyebrow">Buyer tool · sizing</p>
+      <h1>Label size calculator: flat wrap width and area</h1>
+      <p style="font-size:1.05rem;color:var(--ink-2)">
+        Measure the container at the label band, enter the dimensions and overlap, and get the finished flat label
+        size. The result is a starting specification; a tapered or unusually shaped container still needs a
+        dieline or sample from the <a href="/knowledge/label-sizing/">label sizing guide</a>.
+      </p>
+
+      <h2>Calculate a label size</h2>
+      <noscript>
+        <p class="note">JavaScript is off. Use the formula and the worked example below, or enable JavaScript to calculate with your own dimensions.</p>
+      </noscript>
+      <form id="size-form" class="calculator" action="#worked-example">
+        <div class="calculator-fields">
+          <fieldset class="fieldset">
+            <legend>Container shape</legend>
+            <div class="mode-options">
+              <label><input type="radio" name="shape" value="round" checked /> Round container</label>
+              <label><input type="radio" name="shape" value="flat" /> Rectangular full wrap</label>
+            </div>
+          </fieldset>
+
+          <div id="round-fields">
+            <div class="field">
+              <label for="diameter">Container diameter (mm)</label>
+              <input id="diameter" name="diameter" type="number" min="0" step="0.1" inputmode="decimal" aria-describedby="diameter-help" />
+              <span id="diameter-help" class="help">Measure across the straight sidewall where the label sits.</span>
+            </div>
+          </div>
+
+          <fieldset id="flat-fields" class="fieldset" hidden disabled>
+            <legend>Rectangular panel</legend>
+            <div class="field">
+              <label for="panel-width">Panel width (mm)</label>
+              <input id="panel-width" name="panelWidth" type="number" min="0" step="0.1" inputmode="decimal" />
+            </div>
+            <div class="field">
+              <label for="panel-depth">Panel depth (mm)</label>
+              <input id="panel-depth" name="panelDepth" type="number" min="0" step="0.1" inputmode="decimal" />
+              <span class="help">The formula describes a full wrap around four sides: 2 × (width + depth) + overlap.</span>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="label-height">Finished label height (mm)</label>
+            <input id="label-height" name="labelHeight" type="number" min="0" step="0.1" inputmode="decimal" aria-describedby="height-help" />
+            <span id="height-help" class="help">Use the printable straight-wall height, not the overall container height.</span>
+          </div>
+
+          <div class="field">
+            <label for="overlap">Overlap (mm)</label>
+            <input id="overlap" name="overlap" type="number" min="0" step="0.1" inputmode="decimal" value="4" aria-describedby="overlap-help" />
+            <span id="overlap-help" class="help">4 mm is a working default for a straight-sided wrap. Use 3–5 mm as a working range and confirm the seam on a sample.</span>
+          </div>
+
+          <div class="field">
+            <label for="application">Application method</label>
+            <select id="application" name="application">
+              <option value="hand">Hand</option>
+              <option value="machine">Machine</option>
+            </select>
+          </div>
+
+          <div class="field" id="taper-field">
+            <label for="taper">Does the container taper or step in?</label>
+            <select id="taper" name="taper" aria-describedby="taper-help">
+              <option value="no">No, straight sidewall</option>
+              <option value="yes">Yes, tapered or stepped</option>
+            </select>
+            <span id="taper-help" class="help">Select “yes” to show a warning that the result is only a rough starting point.</span>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Calculate label size</button>
+        </div>
+
+        <div id="size-results" class="results" aria-live="polite" aria-atomic="true">
+          <p id="result-placeholder" class="result-placeholder">Enter a positive diameter or panel dimensions, a label height and an overlap, then calculate.</p>
+          <dl id="size-output" class="result-grid" hidden>
+            <div><dt>Flat label width</dt><dd><span id="result-width">—</span> mm</dd></div>
+            <div><dt>Finished height</dt><dd><span id="result-height">—</span> mm</dd></div>
+            <div><dt>Area</dt><dd><span id="result-area">—</span> cm²</dd></div>
+          </dl>
+          <p id="taper-warning" class="warning" hidden><strong>Taper warning.</strong> The circumference changes along a tapered or stepped wall. Use this width only as a starting point and ask for a curved dieline or a sample.</p>
+          <p id="result-note" class="calculation-note" hidden></p>
+          <p id="application-note" class="help" hidden></p>
+        </div>
+      </form>
+
+      <h2>The formula</h2>
+      <div class="formula">
+        <p><strong>Round container:</strong> flat width = π × diameter + overlap</p>
+        <p><strong>Rectangular full wrap:</strong> flat width = 2 × (width + depth) + overlap</p>
+        <p><strong>Area:</strong> flat width × finished height ÷ 100 = area in cm²</p>
+      </div>
+      <p>
+        This calculator uses π = 3.1416. Width, height and overlap are in millimetres. The calculation note in the
+        result repeats the arithmetic with your entered values so the result can be checked by hand.
+      </p>
+
+      <h2>Assumptions</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th scope="col">Assumption</th><th scope="col">What it means</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>The round sidewall is circular</td><td>The formula uses one diameter. An oval, square or irregular cross-section needs a measured perimeter or dieline.</td></tr>
+            <tr><td>There is no taper</td><td>The circumference does not change over the label height. If it does, mark the taper warning and measure both ends.</td></tr>
+            <tr><td>The overlap sits on the seam</td><td>The added millimetres describe the part of the label that lies over its starting end. The design must allow for that seam.</td></tr>
+            <tr><td>Bleed is not included</td><td>The result is the finished cut size. Add the printer’s bleed to the artwork canvas; 3 mm on each edge is a common working target, not part of the cut width.</td></tr>
+            <tr><td>The label is a simple wrap</td><td>Handles, recesses, compound curves and shrink-sleeve geometry are outside this formula.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="worked-example">Illustrative worked example: 65 mm diameter</h2>
+      <p class="small"><strong>Illustrative only.</strong> This is arithmetic for the stated container, not a quotation or a fit guarantee.</p>
+      <p>
+        A straight-sided container is 65 mm in diameter and the label is 80 mm high. With a 4 mm overlap:
+        flat width = 3.1416 × 65 + 4 = 204.204 + 4 = <strong>208.2 mm</strong>. Area = 208.2 × 80 =
+        16,656 mm²; divide by 100 to get <strong>166.6 cm²</strong>.
+      </p>
+      <p>
+        The supplied artwork canvas would be larger by the bleed amount. At 3 mm bleed on each edge, the artwork
+        canvas becomes 208.2 + 6 = 214.2 mm wide and 80 + 6 = 86 mm high. The label that is cut and applied is
+        still 208.2 × 80 mm.
+      </p>
+
+      <h2>What the calculator cannot tell you</h2>
+      <ul>
+        <li><strong>Oval or square containers:</strong> use the full perimeter and corner geometry, not one diameter.</li>
+        <li><strong>Tapered jars:</strong> the width changes over the label height; a curved dieline or sample is needed.</li>
+        <li><strong>Handles and pumps:</strong> the label path may turn around hardware or a compound surface.</li>
+        <li><strong>Deep recesses or panels:</strong> a flat wrap cannot follow a step, inset or raised edge.</li>
+        <li><strong>Curved shrink sleeves:</strong> sleeve material and application distortion need a separate sleeve specification.</li>
+      </ul>
+      <p>
+        The overlap itself is not a tolerance. Three to five millimetres is a working range for a straight-sided
+        container, and the right seam allowance depends on the design, material and application method. Approve a
+        sample on the actual container.
+      </p>
+
+      <h2>Questions about the size calculator</h2>
+      {faqs.map((faq) => (
+        <div style="margin-top:18px">
+          <h3 style="font-size:1rem;margin:0 0 4px">{faq.q}</h3>
+          <p style="margin:0;color:var(--ink-2)">{faq.a}</p>
+        </div>
+      ))}
+      <p class="small" style="margin-top:24px">
+        Read the <a href="/knowledge/label-sizing/">label sizing guide</a> before finalising a tapered container.
+        The <a href="/disclaimer/">disclaimer</a> explains the limits of every calculation on this site.
+      </p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .calculator {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
+    gap: 24px;
+    align-items: start;
+    margin: 22px 0;
+  }
+
+  .calculator-fields,
+  .results {
+    border: 1px solid var(--line);
+    background: #fffdf8;
+    padding: 20px;
+  }
+
+  .fieldset {
+    border: 1px solid var(--line);
+    padding: 14px 16px 16px;
+    margin: 0 0 16px;
+  }
+
+  .fieldset legend {
+    font-weight: 700;
+    padding: 0 6px;
+  }
+
+  .mode-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+  }
+
+  .mode-options label {
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+  }
+
+  .mode-options input {
+    width: auto;
+  }
+
+  .field {
+    display: grid;
+    gap: 6px;
+    margin: 0 0 15px;
+  }
+
+  .field label {
+    font-weight: 700;
+  }
+
+  .field input,
+  .field select {
+    width: 100%;
+    padding: 10px 11px;
+    border: 1px solid var(--line);
+    border-radius: 0;
+    background: #fff;
+    color: var(--ink);
+    font: inherit;
+  }
+
+  .help {
+    font-size: 0.8rem;
+    line-height: 1.45;
+    color: var(--ink-3);
+  }
+
+  .results {
+    position: sticky;
+    top: 18px;
+  }
+
+  .result-placeholder {
+    margin: 0;
+    color: var(--ink-2);
+  }
+
+  .result-grid {
+    display: grid;
+    gap: 10px;
+    margin: 0;
+  }
+
+  .result-grid div {
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 10px;
+  }
+
+  .result-grid div:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .result-grid dt {
+    font-size: 0.76rem;
+    font-family: var(--mono);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--ink-3);
+  }
+
+  .result-grid dd {
+    margin: 2px 0 0;
+    font-size: 1.45rem;
+    font-weight: 700;
+  }
+
+  .warning {
+    margin: 16px 0 0;
+    padding: 12px;
+    border-left: 4px solid var(--accent);
+    background: #fff7ed;
+    font-size: 0.9rem;
+  }
+
+  .calculation-note {
+    margin: 16px 0 0;
+    padding-top: 12px;
+    border-top: 1px solid var(--line);
+    font-size: 0.86rem;
+  }
+
+  .formula {
+    border: 1px solid var(--line);
+    background: var(--bg-2);
+    padding: 14px 16px;
+    font-family: var(--mono);
+    font-size: 0.9rem;
+  }
+
+  .formula p {
+    margin: 0 0 6px;
+  }
+
+  .formula p:last-child {
+    margin-bottom: 0;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+
+  @media (max-width: 760px) {
+    .calculator {
+      grid-template-columns: 1fr;
+    }
+
+    .results {
+      position: static;
+    }
+  }
+</style>
+
+<script is:inline>
+  (() => {
+    const form = document.getElementById("size-form");
+    if (!form) return;
+
+    const shapeInputs = form.querySelectorAll('input[name="shape"]');
+    const roundFields = document.getElementById("round-fields");
+    const flatFields = document.getElementById("flat-fields");
+    const taperField = document.getElementById("taper-field");
+    const diameter = document.getElementById("diameter");
+    const panelWidth = document.getElementById("panel-width");
+    const panelDepth = document.getElementById("panel-depth");
+    const labelHeight = document.getElementById("label-height");
+    const overlap = document.getElementById("overlap");
+    const application = document.getElementById("application");
+    const taper = document.getElementById("taper");
+    const placeholder = document.getElementById("result-placeholder");
+    const output = document.getElementById("size-output");
+    const resultWidth = document.getElementById("result-width");
+    const resultHeight = document.getElementById("result-height");
+    const resultArea = document.getElementById("result-area");
+    const warning = document.getElementById("taper-warning");
+    const calculationNote = document.getElementById("result-note");
+    const applicationNote = document.getElementById("application-note");
+    const pi = 3.1416;
+
+    const numberFormat = new Intl.NumberFormat("en", {
+      minimumFractionDigits: 1,
+      maximumFractionDigits: 1,
+    });
+
+    const inputFormat = new Intl.NumberFormat("en", { maximumFractionDigits: 3 });
+
+    function roundShape() {
+      return form.querySelector('input[name="shape"]:checked').value === "round";
+    }
+
+    function clearResult(message) {
+      placeholder.textContent = message;
+      placeholder.hidden = false;
+      output.hidden = true;
+      warning.hidden = true;
+      calculationNote.hidden = true;
+      applicationNote.hidden = true;
+    }
+
+    function syncShape() {
+      const isRound = roundShape();
+      roundFields.hidden = !isRound;
+      flatFields.hidden = isRound;
+      flatFields.disabled = isRound;
+      taperField.hidden = !isRound;
+      diameter.disabled = !isRound;
+      panelWidth.disabled = isRound;
+      panelDepth.disabled = isRound;
+      taper.disabled = !isRound;
+      clearResult(
+        isRound
+          ? "Enter a positive diameter, label height and overlap, then calculate."
+          : "Enter positive panel width, panel depth, label height and overlap, then calculate."
+      );
+    }
+
+    function positive(value) {
+      const parsed = Number.parseFloat(value);
+      return Number.isFinite(parsed) && parsed > 0 ? parsed : null;
+    }
+
+    function nonNegative(value) {
+      const parsed = Number.parseFloat(value);
+      return Number.isFinite(parsed) && parsed >= 0 ? parsed : null;
+    }
+
+    function calculate() {
+      const height = positive(labelHeight.value);
+      const seam = nonNegative(overlap.value);
+      if (height === null) {
+        clearResult("Enter a label height greater than zero.");
+        return;
+      }
+      if (seam === null) {
+        clearResult("Enter an overlap of zero or more. Use 3–5 mm as a working range.");
+        return;
+      }
+
+      let width;
+      let formulaParts;
+      const isRound = roundShape();
+
+      if (isRound) {
+        const measuredDiameter = positive(diameter.value);
+        if (measuredDiameter === null) {
+          clearResult("Enter a container diameter greater than zero.");
+          return;
+        }
+        width = pi * measuredDiameter + seam;
+        formulaParts = [
+          "3.1416 × " + inputFormat.format(measuredDiameter) + " + " + inputFormat.format(seam),
+          numberFormat.format(width) + " mm",
+        ];
+      } else {
+        const widthValue = positive(panelWidth.value);
+        const depthValue = positive(panelDepth.value);
+        if (widthValue === null || depthValue === null) {
+          clearResult("Enter a positive panel width and panel depth.");
+          return;
+        }
+        width = 2 * (widthValue + depthValue) + seam;
+        formulaParts = [
+          "2 × (" + inputFormat.format(widthValue) + " + " + inputFormat.format(depthValue) + ") + " + inputFormat.format(seam),
+          numberFormat.format(width) + " mm",
+        ];
+      }
+
+      const area = (width * height) / 100;
+      resultWidth.textContent = numberFormat.format(width);
+      resultHeight.textContent = numberFormat.format(height);
+      resultArea.textContent = numberFormat.format(area);
+      calculationNote.textContent =
+        formulaParts[0] +
+        " = " +
+        formulaParts[1] +
+        "; " +
+        numberFormat.format(width) +
+        " × " +
+        numberFormat.format(height) +
+        " ÷ 100 = " +
+        numberFormat.format(area) +
+        " cm².";
+
+      applicationNote.textContent =
+        application.value === "hand"
+          ? "Hand application: this width includes the seam overlap, not a hand-alignment tolerance. Align the label on the container and burnish from the centre outward."
+          : "Machine application: this overlap is a label-geometry input. Confirm the web width, label gap, unwind direction and seam placement with the applicator supplier.";
+
+      warning.hidden = !(isRound && taper.value === "yes");
+      placeholder.hidden = true;
+      output.hidden = false;
+      calculationNote.hidden = false;
+      applicationNote.hidden = false;
+    }
+
+    shapeInputs.forEach((input) => input.addEventListener("change", syncShape));
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      calculate();
+    });
+
+    syncShape();
+  })();
+</script>

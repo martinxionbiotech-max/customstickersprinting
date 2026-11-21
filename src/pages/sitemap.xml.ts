@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import { sitePages } from "../data/sitePages";
 
 const staticPaths = sitePages.map((page) => page.path);
+const toolPaths = ["/tools/", "/tools/label-size-calculator/", "/tools/label-cost-estimator/"];
 
 export const GET: APIRoute = async ({ site }) => {
   const base = (site ?? new URL("https://customstickersprinting.com")).href.replace(/\/$/, "");
@@ -12,6 +13,7 @@ export const GET: APIRoute = async ({ site }) => {
 
   const urls = [
     ...staticPaths,
+    ...toolPaths,
     ...products.map((p) => `/${p.id}/`),
     ...industries.map((i) => `/industries/${i.id}/`),
     ...knowledge.map((k) => `/knowledge/${k.id}/`),

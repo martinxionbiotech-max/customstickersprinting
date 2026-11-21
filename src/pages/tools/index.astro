@@ -1,0 +1,108 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+
+const faqs = [
+  {
+    q: "Do the calculators give a quotation?",
+    a: "No. They repeat the arithmetic behind a measurement or a quote comparison using values you enter. A quotation depends on the final specification, material, finishing, quantity, freight route and current production costs.",
+  },
+  {
+    q: "Do the tools send my figures anywhere?",
+    a: "No. Both calculators run as inline browser scripts. The numbers stay in the page, are not stored and are not sent to us or to a third-party service. Refreshing the page clears them.",
+  },
+  {
+    q: "Which tool should I use for a tapered jar?",
+    a: "The size calculator can give a rough starting width, but a tapered sidewall changes circumference over the label height. Mark the taper warning, measure the top and bottom of the band and ask for a curved dieline or a sample. The cost estimator can still compare quotes once you have a specification.",
+  },
+];
+
+const faqLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: { "@type": "Answer", text: faq.a },
+  })),
+};
+---
+
+<BaseLayout
+  title="Label tools: size and cost calculators"
+  description="Calculate a flat label wrap size or compare two label quotations. Both tools show their formulas, assumptions, worked examples and limits."
+  pageType="WebPage"
+  jsonLd={[faqLd]}
+>
+  <Breadcrumbs items={[{ label: "Tools" }]} />
+  <section class="tight">
+    <div class="wrap narrow prose">
+      <p class="eyebrow">Buyer tools</p>
+      <h1>Label tools for sizing and comparing quotes</h1>
+      <p style="font-size:1.05rem;color:var(--ink-2)">
+        Two calculators for the questions that come before a label order: how large the flat label needs to be,
+        and how two quotations compare once setup, unit costs and freight are visible. Each tool shows its formula
+        and a worked example, so the result can be checked by hand.
+      </p>
+
+      <div class="grid grid-2" style="margin:26px 0 10px">
+        <a class="card" href="/tools/label-size-calculator/">
+          <span class="badge">Sizing</span>
+          <h2 style="font-size:1.25rem;margin:4px 0 0">Label size calculator</h2>
+          <p>Turn a cylindrical diameter or rectangular panel dimensions into a flat wrap width, a flat height and an area in square centimetres.</p>
+          <span class="more">Calculate a label size →</span>
+        </a>
+        <a class="card" href="/tools/label-cost-estimator/">
+          <span class="badge">Quotes</span>
+          <h2 style="font-size:1.25rem;margin:4px 0 0">Label cost estimator</h2>
+          <p>Enter two sets of quote figures and compare total cost, cost per unit and the share taken by setup. No prices are pre-filled.</p>
+          <span class="more">Compare two quotes →</span>
+        </a>
+      </div>
+
+      <h2>Which tool for which question</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th scope="col">Your question</th><th scope="col">Use</th><th scope="col">What to watch</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>What flat width will wrap my round container?</td><td>Size calculator</td><td>The result assumes a circular, straight cross-section and an overlap at the seam.</td></tr>
+            <tr><td>What printed area should I allow for artwork?</td><td>Size calculator</td><td>Area is based on the cut size; add bleed separately in the artwork file.</td></tr>
+            <tr><td>Will ordering more lower the unit cost?</td><td>Cost estimator</td><td>It shows the arithmetic for the rates you enter; it cannot invent a supplier’s quantity break.</td></tr>
+            <tr><td>Which of these two quotes is cheaper overall?</td><td>Cost estimator</td><td>Use the same quantity and make sure both quotes include the same material, finishing and freight.</td></tr>
+            <tr><td>Will this fit my tapered jar?</td><td>Neither, on its own</td><td>Ask for a curved dieline or a sample. A single diameter does not describe a taper.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>How the tools work</h2>
+      <p>
+        The size calculator uses a flat wrap formula: flat width = π × diameter + overlap. For a rectangular full
+        wrap it uses 2 × (width + depth) + overlap. The cost estimator uses total = setup + (material + print +
+        finish) × quantity + freight, then divides by quantity for the unit cost and by total for the setup share.
+        Both pages explain the rounding and assumptions used in their examples.
+      </p>
+
+      <h2>What the tools cannot tell you</h2>
+      <p>
+        A formula cannot see a shoulder radius, a tapered sidewall, an oily surface or a supplier’s quantity break.
+        It cannot approve a material for food contact, a barcode for a retailer, a label for a market or a quotation
+        for your job. Use a result to ask a better question, then verify the measurement on the container, the
+        material on a sample and the price against a written quote.
+      </p>
+      <p>
+        Read the <a href="/methodology/">methodology</a> for how calculations and evidence are handled, and the
+        <a href="/disclaimer/">disclaimer</a> for the limits that apply to every tool and example on the site.
+      </p>
+
+      <h2>Questions about the tools</h2>
+      {faqs.map((faq) => (
+        <div style="margin-top:18px">
+          <h3 style="font-size:1rem;margin:0 0 4px">{faq.q}</h3>
+          <p style="margin:0;color:var(--ink-2)">{faq.a}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
